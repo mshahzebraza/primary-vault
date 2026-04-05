@@ -29,17 +29,16 @@ status: active
 	- [[rapid response refactoring and enhancements]]
 	- [[rapid-response bugs]]
 - ➡️ [[end to end prod testing & checklist|End-to-End Prod Testing Checklist]]
-- 🔴 number of results in devices tab (+ execution time etc)
-- 🔴 add response/device in infra api (agent not connected)
-- [ ] use the target-device refactoring branch to merge into develop
-- [ ] update the shadcn version
-- [ ] add end to end testing of create query flow
+- [x] Number of results in devices tab (+ execution time etc)
+- [x] use the target-device refactoring branch to merge into develop
+- [ ] **update the shadcn version**
+- [ ] add **end to end testing** of create query flow
 - [ ] rename the dashboard collection/sections to dashboard tabs
 - [ ] ensure that the timepicker form field is reusable; not specific to dashboard widgets
+- [x] ⏸️ 🟡 inactivity timeout for console (blocked: filtering v2)
 
 ## Blocked Tasks
 - ⏸️ 🟠 implementation of query diffs (blocked: after filtering v2) — [[Query Response Data Diffing]]
-- ⏸️ 🟡 inactivity timeout for console (blocked: filtering v2)
 - ⏸️ 🟡 logs and metrics — [[Frontend - Observability (Logging & Metrics)|Frontend Observability]] (blocked: active tasks; may go to Rajput)
 - ⏸️ 🟡 agent feature configuration (paused: needs more discussion)
 
