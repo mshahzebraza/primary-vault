@@ -2,11 +2,13 @@
 date: 2026-03-21
 attendees: []
 categories:
-- '[[Meetings]]'
+  - "[[Meetings]]"
 related-tasks:
-- '[[Tasks Manifest - Scholar Bee]]'
-type: '[[Meeting]]'
+  - "[[Tasks Manifest - Scholar Bee]]"
+type: "[[Meeting]]"
 tags: []
+organization:
+  - "[[scholarbee]]"
 ---
 
 ## Context

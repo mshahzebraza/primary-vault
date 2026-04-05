@@ -25,9 +25,17 @@ views:
       - date
       - organization
       - related-tasks
+      - categories
+      - tags
     sort:
+      - property: file.tags
+        direction: ASC
+      - property: tags
+        direction: ASC
       - property: date
         direction: DESC
+    columnSize:
+      note.categories: 191
   - type: table
     name: aiquery.io
     filters:

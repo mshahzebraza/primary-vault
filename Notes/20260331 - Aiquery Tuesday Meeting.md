@@ -2,12 +2,15 @@
 date: 2026-03-31
 attendees: []
 categories:
-- '[[Meetings]]'
+  - "[[Meetings]]"
 related-tasks:
-- '[[DashboardWidgets]]'
-- '[[dashboard-&-widgets]]'
-type: '[[Meeting]]'
-tags: []
+  - "[[DashboardWidgets]]"
+  - "[[dashboard-&-widgets]]"
+type: "[[Meeting]]"
+tags:
+  - scrum
+organization:
+  - "[[aiquery.io]]"
 ---
 
 ## Context

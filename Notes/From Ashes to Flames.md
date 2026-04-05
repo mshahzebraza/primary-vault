@@ -1,9 +1,9 @@
 ---
 tags:
-- note
-- journal
+  - note
+  - journal
 categories:
-- '[[Personal]]'
+  - "[[Personal]]"
 date: 2026-04-03
 ---
 [Reference Post](https://www.linkedin.com/posts/mshahzebraza_webdeveloper-hustle-frontenddeveloper-activity-7160843698996457473-W60T?utm_source=share&utm_medium=member_desktop&rcm=ACoAADF7Gi0B01uPGn1iwjSQ-DwzWWYkBnue8Ds) 
