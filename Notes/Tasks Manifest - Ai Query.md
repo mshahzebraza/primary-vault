@@ -5,7 +5,7 @@ categories:
 - '[[aiquery.io]]'
 - '[[Tasks]]'
 type: '[[Documentation]]'
-status: Active
+status: active
 ---
 ## Legend
 ⏸️: Pending Status

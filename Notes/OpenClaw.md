@@ -1,9 +1,11 @@
 ---
 tags:
-- index
-- open-claw
+  - index
+  - open-claw
 categories:
-- '[[TechLearning]]'
+  - "[[TechLearning]]"
+type:
+  - "[[Reference]]"
 ---
 
 ## OpenClaw (Clawdbot)

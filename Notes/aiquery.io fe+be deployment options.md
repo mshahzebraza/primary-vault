@@ -1,13 +1,16 @@
 ---
-status: null
+status:
+  - completed
 tags:
-- architecture
-- devops
-- RnD
-organization: '[[aiquery.io]]'
+  - architecture
+  - devops
+  - RnD
+organization: "[[aiquery.io]]"
 categories:
-- '[[Work]]'
-- '[[aiquery.io]]'
+  - "[[Work]]"
+  - "[[aiquery.io]]"
+type:
+  - "[[RnD]]"
 ---
 
 ## Services Evaluated

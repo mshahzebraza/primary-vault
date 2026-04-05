@@ -3,8 +3,7 @@ type: "[[Bug]]"
 categories:
   - "[[Work]]"
   - "[[Tasks]]"
-  - "[[aiquery.io]]"
-organization: "[[aiquery.io]]"
+organization:
 projects: []
 status: open
 priority: P2

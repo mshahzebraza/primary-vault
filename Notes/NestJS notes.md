@@ -1,9 +1,11 @@
 ---
 aliases: []
 categories:
-- '[[TechLearning]]'
+  - "[[TechLearning]]"
 tags:
-- misc
+  - misc
+type:
+  - "[[Reference]]"
 ---
 Here are the notes about [[Nest JS]] I’ll generate for you, based on the natural progression of our convo:****
 

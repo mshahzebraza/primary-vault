@@ -1,13 +1,14 @@
 ---
 status: active
 tags:
-- freelance
-- project
-- client-aurangzeb
-organization: '[[Freelance]]'
+  - freelance
+  - project
+  - client-aurangzeb
+organization: "[[Freelance]]"
 categories:
-- '[[Work]]'
-- '[[Freelance]]'
+  - "[[Work]]"
+type:
+  - "[[Documentation]]"
 ---
 > ⚠️ This note contains a live API token and DB URI. Do not share or commit this file.
 

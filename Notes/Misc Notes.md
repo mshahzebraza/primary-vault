@@ -5,6 +5,8 @@ tags:
 categories:
   - "[[TechLearning]]"
   - "[[Journal]]"
+type:
+  - "[[Reference]]"
 ---
 ## Tech Notes
 

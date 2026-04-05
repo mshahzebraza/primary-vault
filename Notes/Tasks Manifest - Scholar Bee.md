@@ -5,7 +5,7 @@ categories:
 - '[[scholarbee]]'
 - '[[Tasks]]'
 type: '[[Documentation]]'
-status: Active
+status: active
 ---
 ## Legend
 ⏸️: Pending Status

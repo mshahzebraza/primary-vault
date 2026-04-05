@@ -3,8 +3,7 @@ type: "[[Task]]"
 categories:
   - "[[Work]]"
   - "[[Tasks]]"
-  - "[[aiquery.io]]"
-organization: "[[aiquery.io]]"
+organization: 
 projects: []
 status: backlog
 priority: P2
