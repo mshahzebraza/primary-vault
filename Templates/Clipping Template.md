@@ -1,10 +1,7 @@
 ---
 type: "[[Reference]]"
-date: {{date}}
+date:
+  "{ date }":
 tags:
   - clippings
-author: []
-url: ""
-published: 
-topics: []
 ---

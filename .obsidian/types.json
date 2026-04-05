@@ -12,11 +12,8 @@
     "parent-task": "text",
     "aliases": "aliases",
     "attendees": "multitext",
-    "author": "multitext",
     "source": "text",
-    "url": "text",
-    "published": "date",
     "topics": "multitext",
-    "clipped": "date"
+    "cssclasses": "multitext"
   }
 }

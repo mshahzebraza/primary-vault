@@ -4,6 +4,5 @@ categories:
   - "[[Documentation]]"
 organization: "[[Freelance]]"
 projects: []
-url:
 status:
 ---
