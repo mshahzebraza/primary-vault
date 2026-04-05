@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/OpenClaw/OpenClaw - useful commands.md
 base: TechLearning
 path_area: OpenClaw
 categories:
-  - "[[TechLearning]]"
-  - "[[OpenClaw]]"
+- '[[TechLearning]]'
+tags:
+- open-claw
 ---
 - how to check/update auth
 - how to setup slack channel

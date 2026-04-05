@@ -1,12 +1,13 @@
 ---
 aliases:
-  - 🔐 How Does `req.user` Get Set in NestJS When Using Passport?
+- 🔐 How Does `req.user` Get Set in NestJS When Using Passport?
 original_path: Notes/Tech Learning/Misc/Nest JS/🔐 How Does `req.user` Get Set in NestJS When Using Passport.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 **What confused me:**  
 I never saw `validate()` being called but somehow `req.user.user_type` exists magically. How?

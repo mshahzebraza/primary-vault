@@ -1,14 +1,15 @@
 ---
 date: 2026-04-02
 attendees: []
-related:
-  - "[[DashboardWidgets]]"
-tasks: "[[dashboard-&-widgets]]"
 original_path: Notes/202604022216 - Widget Creation meeting.md
 base: NotesRoot
 categories:
-  - "[[NotesRoot]]"
-  - "[[Meetings]]"
+- '[[Meetings]]'
+related-tasks:
+- '[[DashboardWidgets]]'
+- '[[dashboard-&-widgets]]'
+type: '[[Meeting]]'
+tags: []
 ---
 
 ## Context

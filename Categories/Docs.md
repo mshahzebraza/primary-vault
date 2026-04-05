@@ -1,11 +1,13 @@
 ---
+aliases:
+  - Documentation
 tags:
   - category
 ---
 
-# Docs
+# Documentation (Docs)
 
-Area hub for documentation-style notes. Link with `- "[[Docs]]"` in `categories`.
+Area hub for documentation-style notes. Link with `- "[[Documentation]]"` (or `- "[[Docs]]"`) in `categories`.
 
 ## Notes in path area Docs
 

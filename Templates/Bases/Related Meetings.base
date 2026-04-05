@@ -1,0 +1,23 @@
+filters:
+  and:
+    - categories.contains(link("Meetings"))
+    - file.path.contains("Notes/")
+    - file.ext == "md"
+    - list(related-tasks).contains(this)
+properties:
+  file.name:
+    displayName: Meeting
+  note.date:
+    displayName: Date
+  note.organization:
+    displayName: Organization
+views:
+  - type: table
+    name: Related meetings
+    order:
+      - file.name
+      - date
+      - organization
+    sort:
+      - property: date
+        direction: DESC

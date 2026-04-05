@@ -1,11 +1,9 @@
 ---
 tags:
-  - reference
-  - resources
+- reference
+- resources
 original_path: Notes/Resources/Cool Resources.md
 base: Resources
-categories:
-  - "[[Resources]]"
 ---
 
 ## Interesting Websites

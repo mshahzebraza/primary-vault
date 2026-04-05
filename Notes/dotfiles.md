@@ -1,15 +1,15 @@
 ---
 created: 2026-04-03
 tags:
-  - tech
-  - dotfiles
-  - reference
+- tech
+- dotfiles
+- reference
+- misc
 original_path: Notes/Tech Learning/Misc/dotfiles.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
 ---
 
 ## Resources

@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/Misc/Types of Linux Applications.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 AppImages, deb, and snap are all ways to distribute applications in Linux: 
 

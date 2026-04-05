@@ -1,18 +1,17 @@
 ---
 status: reference
 tags:
-  - devops
-  - reference
-  - - Docs
+- devops
+- reference
+- '[''Docs'']'
 original_path: Notes/Work/scholarbee/Docs/deployment practice.md
 base: Work
-organization: "[[scholarbee]]"
+organization: '[[scholarbee]]'
 path_area: Docs
 categories:
-  - "[[Work]]"
-  - "[[scholarbee]]"
-  - "[[Docs]]"
-  - "[[Projects]]"
+- '[[Work]]'
+- '[[scholarbee]]'
+- '[[Docs]]'
 ---
 
 ## Branch → Environment Mapping

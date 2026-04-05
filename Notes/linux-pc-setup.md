@@ -1,15 +1,15 @@
 ---
 sticker: emoji//1f427
 tags:
-  - index
-  - linux
-  - setup
+- index
+- linux
+- setup
+- linux-pc-setup
 original_path: Notes/Tech Learning/linux-pc-setup/linux-pc-setup.md
 base: TechLearning
 path_area: linux-pc-setup
 categories:
-  - "[[TechLearning]]"
-  - "[[linux-pc-setup]]"
+- '[[TechLearning]]'
 ---
 
 ## Linux PC Setup Notes

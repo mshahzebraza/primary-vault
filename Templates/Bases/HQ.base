@@ -1,0 +1,101 @@
+filters:
+  and:
+    - file.path.contains("Notes/")
+    - file.ext == "md"
+    - '!file.name.contains("Template")'
+    - '!file.path.contains("/Templates/")'
+properties:
+  file.name:
+    displayName: Name
+  note.type:
+    displayName: Type
+  note.organization:
+    displayName: Organization
+  note.projects:
+    displayName: Projects
+  note.status:
+    displayName: Status
+  note.categories:
+    displayName: Categories
+  note.tags:
+    displayName: Tags
+  file.mtime:
+    displayName: Modified
+views:
+  - type: table
+    name: Overview
+    filters:
+      and:
+        - note.base == "Work"
+    groupBy:
+      property: organization
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - organization
+      - projects
+      - status
+    sort:
+      - property: organization
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: aiquery.io
+    filters:
+      and:
+        - note.organization.contains("aiquery.io")
+    groupBy:
+      property: projects
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - projects
+      - status
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: scholarbee
+    filters:
+      and:
+        - note.organization.contains("scholarbee")
+    groupBy:
+      property: projects
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - projects
+      - status
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: TechLearning
+    filters:
+      and:
+        - note.categories.contains(link("TechLearning"))
+    order:
+      - file.name
+      - tags
+      - mtime
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Tags Browser
+    groupBy:
+      property: tags
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - tags
+    sort:
+      - property: tags
+        direction: ASC
+      - property: file.name
+        direction: ASC

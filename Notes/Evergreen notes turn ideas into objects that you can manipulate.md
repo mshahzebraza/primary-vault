@@ -2,18 +2,16 @@
 created: 2023-09-14
 url: https://stephango.com/evergreen-notes
 author:
-  - "[[Steph Ango]]"
+- '[[Steph Ango]]'
 published: 2022-09-16
 topics:
-  - "[[Evergreen]]"
+- '[[Evergreen]]'
 tags:
-  - 0🌲
+- 0🌲
 status:
-  - "[[Published]]"
+- '[[Published]]'
 original_path: Notes/Evergreen notes turn ideas into objects that you can manipulate.md
 base: NotesRoot
-categories:
-  - "[[NotesRoot]]"
 ---
 Using [[evergreen]] notes in Obsidian has been the most impactful change to how I think.
 

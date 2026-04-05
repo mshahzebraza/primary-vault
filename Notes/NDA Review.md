@@ -1,17 +1,15 @@
 ---
 status: reference
 tags:
-  - legal
-  - reference
-original_path: "Notes/Work/scholarbee/R&D/NDA Review.md"
+- legal
+- reference
+original_path: Notes/Work/scholarbee/R&D/NDA Review.md
 base: Work
-organization: "[[scholarbee]]"
-path_area: "R&D"
+organization: '[[scholarbee]]'
+path_area: R&D
 categories:
-  - "[[Work]]"
-  - "[[scholarbee]]"
-  - "[[R&D]]"
-  - "[[Projects]]"
+- '[[Work]]'
+- '[[scholarbee]]'
 ---
 
 ## Key Clauses

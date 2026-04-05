@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/Misc/Nest JS/NestJS @Injectable() — Why Bot
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 
   

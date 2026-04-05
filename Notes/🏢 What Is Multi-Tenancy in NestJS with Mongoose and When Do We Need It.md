@@ -1,12 +1,13 @@
 ---
 aliases:
-  - 🏢 What Is Multi-Tenancy in NestJS with Mongoose and When Do We Need It?
+- 🏢 What Is Multi-Tenancy in NestJS with Mongoose and When Do We Need It?
 original_path: Notes/Tech Learning/Misc/Nest JS/🏢 What Is Multi-Tenancy in NestJS with Mongoose and When Do We Need It.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 **What I wanted to know:**  
 When do we need multiple DBs, and how does it even work in [[Nest JS]]?

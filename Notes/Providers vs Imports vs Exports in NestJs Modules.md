@@ -1,12 +1,13 @@
 ---
 aliases:
-  - Providers v/s Imports in NestJs Modules
+- Providers v/s Imports in NestJs Modules
 original_path: Notes/Tech Learning/Misc/Nest JS/Providers vs Imports vs Exports in NestJs Modules.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 `providers` and `imports` serve different purposes in [[Nest JS]] dependency injection system:
 

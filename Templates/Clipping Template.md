@@ -1,12 +1,10 @@
 ---
-categories:
-  - "[[Clippings]]"
+type: "[[Reference]]"
+date: {{date}}
 tags:
   - clippings
 author: []
 url: ""
-created: {{date}}
 published: 
 topics: []
 ---
-

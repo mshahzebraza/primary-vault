@@ -7,23 +7,59 @@ filters:
 properties:
   note.date:
     displayName: Date
-  note.people:
-    displayName: People
-  note.type:
-    displayName: Type
   note.organization:
     displayName: Organization
   file.name:
     displayName: Meeting
+  note.related-tasks:
+    displayName: Related tasks
+  note.type:
+    displayName: Type
+  note.people:
+    displayName: People
 views:
   - type: table
-    name: Meetings
+    name: All Meetings
     order:
       - file.name
-      - categories
       - date
-      - type
-      - people
+      - organization
+      - related-tasks
+    sort:
+      - property: date
+        direction: DESC
+  - type: table
+    name: aiquery.io
+    filters:
+      and:
+        - note.organization.contains("aiquery.io")
+    order:
+      - file.name
+      - date
+      - related-tasks
+    sort:
+      - property: date
+        direction: DESC
+  - type: table
+    name: scholarbee
+    filters:
+      and:
+        - note.organization.contains("scholarbee")
+    order:
+      - file.name
+      - date
+      - related-tasks
+    sort:
+      - property: date
+        direction: DESC
+  - type: table
+    name: By Task
+    groupBy:
+      property: related-tasks
+      direction: ASC
+    order:
+      - file.name
+      - date
       - organization
     sort:
       - property: date
@@ -38,6 +74,7 @@ views:
       - date
       - type
       - people
+      - organization
     sort:
       - property: date
         direction: ASC

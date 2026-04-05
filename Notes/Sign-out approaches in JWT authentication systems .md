@@ -4,8 +4,9 @@ original_path: Notes/Tech Learning/Misc/Sign-out approaches in JWT authenticatio
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 ## Overview
 This document outlines different approaches to handling authentication and logout in a JWT-based authentication system, with a focus on their implementation in [[Nest JS]] applications.

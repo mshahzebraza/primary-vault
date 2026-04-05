@@ -1,13 +1,14 @@
 ---
-sticker: ""
+sticker: ''
 aliases:
-  - 🧩 Why Do We Use `forFeature` and `InjectModel` with Mongoose in NestJS
+- 🧩 Why Do We Use `forFeature` and `InjectModel` with Mongoose in NestJS
 original_path: Notes/Tech Learning/Misc/Nest JS/🧩 Why Do We Use `forFeature` and `InjectModel` with Mongoose in NestJS.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 **Problem I faced:** 
 I saw this repeated pattern in my modules: `MongooseModule.forFeature(...)` in the module and `@InjectModel(...)` in the service. But I didn’t know why this setup was needed or how it worked.

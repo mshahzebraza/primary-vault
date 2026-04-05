@@ -1,16 +1,15 @@
 ---
 status: reference
 tags:
-  - reference
+- reference
 original_path: Notes/Work/scholarbee/Docs/Scholarbee - Brag Doc.md
 base: Work
-organization: "[[scholarbee]]"
+organization: '[[scholarbee]]'
 path_area: Docs
 categories:
-  - "[[Work]]"
-  - "[[scholarbee]]"
-  - "[[Docs]]"
-  - "[[Projects]]"
+- '[[Work]]'
+- '[[scholarbee]]'
+- '[[Docs]]'
 ---
 
 ## Notable Work

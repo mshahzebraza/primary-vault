@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/Misc/Elastic Search Integration in University
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 # Integrating Elasticsearch for Search Analytics in Your University Portal
 

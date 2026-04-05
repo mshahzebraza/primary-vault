@@ -1,10 +1,12 @@
 ---
-original_path: "Notes/Tech Learning/OSSU notes/Intro to CS and Programming in Python/Lecture 4 - String Loops, Guess-&-check, Binary/Lecture 4.md"
+original_path: Notes/Tech Learning/OSSU notes/Intro to CS and Programming in Python/Lecture 4 - String Loops, Guess-&-check,
+  Binary/Lecture 4.md
 base: TechLearning
 path_area: OSSU notes
 categories:
-  - "[[TechLearning]]"
-  - "[[OSSU notes]]"
+- '[[TechLearning]]'
+tags:
+- ossu
 ---
 ## Topics
 

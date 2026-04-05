@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/Misc/Nest JS/🔐 JWT Authentication in Nest 
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 Here we discuss the JWT authentication setup in [[Nest JS]]. We'll discuss from the most basic (vanilla) approaches to then incrementally upgrade to using strategies from 3rd party libraries like postman.
 

@@ -2,17 +2,20 @@
 severity: medium
 status: open
 tags:
-  - bug
+- bug
 aliases:
-  - 'Bug: Momentary "No data found" Flash in Query Results Table'
+- 'Bug: Momentary "No data found" Flash in Query Results Table'
 original_path: Notes/Work/aiquery.io/Tasks/Bug Momentary No data found Flash in Query Results Table.md
 base: Work
-organization: "[[aiquery.io]]"
+organization: '[[aiquery.io]]'
 path_area: Tasks
 categories:
-  - "[[Work]]"
-  - "[[aiquery.io]]"
-  - "[[Tasks]]"
+- '[[Work]]'
+- '[[aiquery.io]]'
+- '[[Tasks]]'
+type: '[[Bug]]'
+projects: []
+priority: P2
 ---
 
 ## Description

@@ -1,13 +1,13 @@
 ---
 tags:
-  - index
-  - nestjs
+- index
+- nestjs
+- misc
 original_path: Notes/Tech Learning/Misc/Nest JS/Nest JS.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
 ---
 
 ## NestJS Notes

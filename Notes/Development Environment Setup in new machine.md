@@ -1,12 +1,10 @@
 ---
 tags:
-  - reference
-  - setup
-  - checklist
+- reference
+- setup
+- checklist
 original_path: Notes/Resources/Development Environment Setup in new machine.md
 base: Resources
-categories:
-  - "[[Resources]]"
 ---
 
 ## Tools to Install

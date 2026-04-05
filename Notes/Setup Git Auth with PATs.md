@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/linux-pc-setup/Setup Git Auth with PATs.md
 base: TechLearning
 path_area: linux-pc-setup
 categories:
-  - "[[TechLearning]]"
-  - "[[linux-pc-setup]]"
+- '[[TechLearning]]'
+tags:
+- linux-pc-setup
 ---
 ### Setting up the repo
 When you clone a repository from github into your file-system, it automatically sets the upstream remote-url for the cloned repo. This remote-url is the way for git to know where is the remote repo located and uses this info to establish connection to it when you run commands like `git pull`, `git push` etc.

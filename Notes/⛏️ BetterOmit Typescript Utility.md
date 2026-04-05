@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/Misc/⛏️ BetterOmit Typescript Utility.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 The built-in `Omit<T, K>` is great but sometimes:
 - You want to omit **multiple nested keys**

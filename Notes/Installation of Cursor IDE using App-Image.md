@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/linux-pc-setup/Installation of Cursor IDE usi
 base: TechLearning
 path_area: linux-pc-setup
 categories:
-  - "[[TechLearning]]"
-  - "[[linux-pc-setup]]"
+- '[[TechLearning]]'
+tags:
+- linux-pc-setup
 ---
 ## Context
 Linux has a [few ways to install programs](obsidian://open?vault=Obsidian%20Vault&file=Types%20of%20Linux%20Applications) mainly the [Deb and Snap packages](https://askubuntu.com/questions/1029610/if-a-package-is-available-as-both-a-deb-and-a-snap-which-method-is-preferrable). However, a recent type of installation is the use of 'App Images', which are basically executable files right after the download and contain all the dependencies within them. This allows them with the convenience of using the Image on any Linux distribution.

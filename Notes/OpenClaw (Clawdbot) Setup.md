@@ -1,12 +1,13 @@
 ---
 aliases:
-  - OpenClaw/Clawdbot Setup
+- OpenClaw/Clawdbot Setup
 original_path: Notes/Tech Learning/OpenClaw/OpenClaw (Clawdbot) Setup.md
 base: TechLearning
 path_area: OpenClaw
 categories:
-  - "[[TechLearning]]"
-  - "[[OpenClaw]]"
+- '[[TechLearning]]'
+tags:
+- open-claw
 ---
 **Reference:** [ClawdBot - Full Tutorial & Setup Guide (SECURE)](!https://www.youtube.com/watch?v=tnsrnsy_Lus)
 - VPS Provider: KVM2

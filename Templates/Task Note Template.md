@@ -1,21 +1,19 @@
 ---
+type: "[[Task]]"
+categories:
+  - "[[Work]]"
+  - "[[Tasks]]"
+  - "[[aiquery.io]]"
 organization: "[[aiquery.io]]"
-status: active
+projects: []
+status: backlog
+priority: P2
 ---
 
-## Legend
-💤 Needs discussion / awaiting go-ahead
-⌛ Not started, in queue
-🔥 In progress
-🧪 QA / confirmation awaited
-✅ Done
-⚠️ Blocked
-⏩ Delegated
+## Overview
+> One paragraph describing what and why.
 
 ## Current Tasks
+- [ ] 
 
-## Blocked Tasks
-
-## Unresolved / Open Questions
-
-## Completed
+![[Related Meetings.base]]

@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/OSSU notes/Intro to CS and Programming in Pyt
 base: TechLearning
 path_area: OSSU notes
 categories:
-  - "[[TechLearning]]"
-  - "[[OSSU notes]]"
+- '[[TechLearning]]'
+tags:
+- ossu
 ---
 ## Topics
 

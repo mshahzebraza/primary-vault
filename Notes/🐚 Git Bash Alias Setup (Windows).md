@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/Misc/🐚 Git Bash Alias Setup (Windows).md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 
 ### 🔧 Steps to Create a Bash Alias

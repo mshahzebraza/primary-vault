@@ -1,14 +1,17 @@
 ---
 aliases:
-  - Feature Planning/Date Filters
+- Feature Planning/Date Filters
 original_path: Notes/Work/aiquery.io/Tasks/Filtering Optimization/Feature Planning - Date Filters.md
 base: Work
-organization: "[[aiquery.io]]"
+organization: '[[aiquery.io]]'
 path_area: Tasks
 categories:
-  - "[[Work]]"
-  - "[[aiquery.io]]"
-  - "[[Tasks]]"
+- '[[Work]]'
+- '[[aiquery.io]]'
+- '[[Tasks]]'
+type: '[[Task]]'
+projects: []
+priority: P2
 ---
 Version: 4.0.0
 Description: This version explains in detail the split date-time field handling edge case.

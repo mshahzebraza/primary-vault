@@ -1,12 +1,13 @@
 ---
+type: "[[RnD]]"
+categories:
+  - "[[Work]]"
+  - "[[aiquery.io]]"
 organization: "[[aiquery.io]]"
-version: 1.0.0
+projects: []
 status: draft
-tags:
+tags: []
 ---
-
-Version: {{version}}
-Description: 
 
 ## Overview
 > What problem does this solve? What is the goal?

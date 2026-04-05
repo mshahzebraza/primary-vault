@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/Misc/🔍 Elastic Search for frontend search.
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 # Enhancing User Engagement and Popularity Insights Through Frontend Search Optimization
 

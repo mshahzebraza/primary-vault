@@ -1,18 +1,16 @@
 ---
-status:
+status: null
 tags:
-  - architecture
-  - devops
-  - RnD
-original_path: "Notes/Work/aiquery.io/R&D/aiquery.io fe+be deployment options.md"
+- architecture
+- devops
+- RnD
+original_path: Notes/Work/aiquery.io/R&D/aiquery.io fe+be deployment options.md
 base: Work
-organization: "[[aiquery.io]]"
-path_area: "R&D"
+organization: '[[aiquery.io]]'
+path_area: R&D
 categories:
-  - "[[Work]]"
-  - "[[aiquery.io]]"
-  - "[[R&D]]"
-  - "[[Projects]]"
+- '[[Work]]'
+- '[[aiquery.io]]'
 ---
 
 ## Services Evaluated

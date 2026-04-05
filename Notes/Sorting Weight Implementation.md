@@ -1,18 +1,16 @@
 ---
-status:
+status: null
 tags:
-  - feature
-  - RnD
-  - - R&D
-original_path: "Notes/Work/scholarbee/R&D/Sorting Weight Implementation.md"
+- feature
+- RnD
+- '[''R&D'']'
+original_path: Notes/Work/scholarbee/R&D/Sorting Weight Implementation.md
 base: Work
-organization: "[[scholarbee]]"
-path_area: "R&D"
+organization: '[[scholarbee]]'
+path_area: R&D
 categories:
-  - "[[Work]]"
-  - "[[scholarbee]]"
-  - "[[R&D]]"
-  - "[[Projects]]"
+- '[[Work]]'
+- '[[scholarbee]]'
 ---
 
 ## Overview

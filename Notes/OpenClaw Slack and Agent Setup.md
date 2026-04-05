@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/OpenClaw/OpenClaw Slack and Agent Setup.md
 base: TechLearning
 path_area: OpenClaw
 categories:
-  - "[[TechLearning]]"
-  - "[[OpenClaw]]"
+- '[[TechLearning]]'
+tags:
+- open-claw
 ---
 `[OpenRouter key — stored in Proton Pass]`
 

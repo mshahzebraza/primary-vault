@@ -1,15 +1,18 @@
 ---
 status: active
 tags:
-  - bug
+- bug
 original_path: Notes/Work/aiquery.io/Tasks/rapid-response bugs.md
 base: Work
-organization: "[[aiquery.io]]"
+organization: '[[aiquery.io]]'
 path_area: Tasks
 categories:
-  - "[[Work]]"
-  - "[[aiquery.io]]"
-  - "[[Tasks]]"
+- '[[Work]]'
+- '[[aiquery.io]]'
+- '[[Tasks]]'
+type: '[[Bug]]'
+projects: []
+priority: P2
 ---
 
 ## Open Bugs

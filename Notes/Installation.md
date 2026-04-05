@@ -1,12 +1,13 @@
 ---
 aliases:
-  - OpenClaw/Clawdbot Setup
+- OpenClaw/Clawdbot Setup
 original_path: Notes/Tech Learning/OpenClaw/Installation.md
 base: TechLearning
 path_area: OpenClaw
 categories:
-  - "[[TechLearning]]"
-  - "[[OpenClaw]]"
+- '[[TechLearning]]'
+tags:
+- open-claw
 ---
 **Reference Video:** [ClawdBot - Full Tutorial & Setup Guide (SECURE)](https://www.youtube.com/watch?v=tnsrnsy_Lus)
 **Reference Video 2:** [Moltbot Beginners Setup Guide and Alternative for Free? - Praison AI and Multi-Agent Framework](https://www.youtube.com/watch?v=PleO6KKkfVo)

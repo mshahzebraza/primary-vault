@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/Misc/OpenCode.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 ## Global MCP Setup
 

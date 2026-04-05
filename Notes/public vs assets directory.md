@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/Misc/Next JS/public vs assets directory.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 
 ## `Public` Folder

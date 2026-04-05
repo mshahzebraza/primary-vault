@@ -1,0 +1,119 @@
+filters:
+  and:
+    - file.path.contains("Notes/")
+    - file.ext == "md"
+    - '!file.name.contains("Template")'
+    - or:
+        - list(type).contains(link("Task"))
+        - list(type).contains(link("Bug"))
+        - list(type).contains(link("RnD"))
+properties:
+  file.name:
+    displayName: Name
+  note.organization:
+    displayName: Organization
+  note.projects:
+    displayName: Projects
+  note.priority:
+    displayName: Priority
+  note.status:
+    displayName: Status
+  note.parent-task:
+    displayName: Parent task
+  file.mtime:
+    displayName: Modified
+views:
+  - type: table
+    name: Active
+    filters:
+      and:
+        - note.status == "active"
+    order:
+      - file.name
+      - organization
+      - projects
+      - priority
+      - parent-task
+    sort:
+      - property: priority
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Blocked
+    filters:
+      and:
+        - note.status == "blocked"
+    order:
+      - file.name
+      - organization
+      - projects
+      - priority
+    sort:
+      - property: priority
+        direction: ASC
+  - type: table
+    name: Backlog
+    filters:
+      and:
+        - note.status == "backlog"
+    order:
+      - file.name
+      - organization
+      - projects
+      - priority
+    sort:
+      - property: priority
+        direction: ASC
+  - type: table
+    name: Done
+    filters:
+      and:
+        - note.status == "done"
+    order:
+      - file.name
+      - organization
+      - mtime
+    sort:
+      - property: mtime
+        direction: DESC
+  - type: table
+    name: aiquery.io
+    filters:
+      and:
+        - note.organization.contains("aiquery.io")
+    order:
+      - file.name
+      - projects
+      - status
+      - priority
+    sort:
+      - property: status
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: scholarbee
+    filters:
+      and:
+        - note.organization.contains("scholarbee")
+    order:
+      - file.name
+      - projects
+      - status
+      - priority
+    sort:
+      - property: status
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: By Project
+    groupBy:
+      property: projects
+      direction: ASC
+    order:
+      - file.name
+      - organization
+      - status
+      - priority

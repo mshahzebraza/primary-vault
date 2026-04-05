@@ -1,10 +1,11 @@
 ---
-original_path: "Notes/Tech Learning/OpenClaw/OpenClaw + Tailscale Gateway Setup & Troubleshooting FAQ.md"
+original_path: Notes/Tech Learning/OpenClaw/OpenClaw + Tailscale Gateway Setup & Troubleshooting FAQ.md
 base: TechLearning
 path_area: OpenClaw
 categories:
-  - "[[TechLearning]]"
-  - "[[OpenClaw]]"
+- '[[TechLearning]]'
+tags:
+- open-claw
 ---
 ## 1. Network Connectivity (The "Site Can't Be Reached" Error)
 * **The Problem**: Accessing `127.0.0.1:18789` directly from a local device fails because the Gateway is bound to the VPS loopback.

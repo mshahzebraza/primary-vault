@@ -1,16 +1,19 @@
 ---
 status: active
 tags:
-  - architecture
-  - RnD
+- architecture
+- RnD
 original_path: Notes/Work/aiquery.io/Tasks/Filtering Optimization/Possible Areas to Update of Filtering Architecture.md
 base: Work
-organization: "[[aiquery.io]]"
+organization: '[[aiquery.io]]'
 path_area: Tasks
 categories:
-  - "[[Work]]"
-  - "[[aiquery.io]]"
-  - "[[Tasks]]"
+- '[[Work]]'
+- '[[aiquery.io]]'
+- '[[Tasks]]'
+type: '[[RnD]]'
+projects: []
+priority: P2
 ---
 
 ## Overview

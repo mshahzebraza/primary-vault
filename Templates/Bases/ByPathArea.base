@@ -36,12 +36,16 @@ views:
     name: Tasks
     filters:
       and:
-        - note.path_area.contains("Tasks")
+        - path_area.contains("Tasks")
     order:
       - file.name
       - base
       - organization
       - mtime
+      - type
+      - status
+      - related-tasks
+      - path_area
     sort:
       - property: organization
         direction: ASC

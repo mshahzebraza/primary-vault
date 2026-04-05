@@ -1,8 +1,9 @@
 ---
+type: "[[Documentation]]"
 categories:
-  - "[[Projects]]"
-status: active
-started: 
+  - "[[Documentation]]"
+organization: "[[Freelance]]"
+projects: []
 tags:
   - project
 ---

@@ -1,11 +1,9 @@
 ---
+type: "[[Documentation]]"
 categories:
-  - "[[Projects]]"
-type: []
-org: []
-start:
-year:
+  - "[[Documentation]]"
+organization: "[[Freelance]]"
+projects: []
 url:
 status:
 ---
-

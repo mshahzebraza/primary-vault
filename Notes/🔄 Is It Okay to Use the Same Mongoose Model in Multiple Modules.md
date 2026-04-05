@@ -1,12 +1,13 @@
 ---
 aliases:
-  - 🔄 Is It Okay to Use the Same Mongoose Model in Multiple Modules?
+- 🔄 Is It Okay to Use the Same Mongoose Model in Multiple Modules?
 original_path: Notes/Tech Learning/Misc/Nest JS/🔄 Is It Okay to Use the Same Mongoose Model in Multiple Modules.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 ***My question was*:**  
 If I register the same model in multiple modules using `forFeature` , does it get duplicated?

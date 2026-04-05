@@ -1,7 +1,13 @@
 ---
+type: "[[Bug]]"
+categories:
+  - "[[Work]]"
+  - "[[Tasks]]"
+  - "[[aiquery.io]]"
 organization: "[[aiquery.io]]"
-severity: ""
+projects: []
 status: open
+priority: P2
 tags:
   - bug
 ---

@@ -1,10 +1,12 @@
 ---
+type: "[[Meeting]]"
 categories:
   - "[[Meetings]]"
 organization: "[[aiquery.io]]"
+projects: []
 date: {{date}}
 attendees: []
-topics: []
+related-tasks: []
 ---
 
 ## Context
@@ -16,3 +18,5 @@ topics: []
 
 ## Action Items
 - [ ] 
+
+![[Related Tasks.base]]

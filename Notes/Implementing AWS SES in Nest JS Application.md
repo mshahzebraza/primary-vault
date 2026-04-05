@@ -1,17 +1,15 @@
 ---
 status: completed
 tags:
-  - devops
-  - RnD
-original_path: "Notes/Work/aiquery.io/R&D/Implementing AWS SES in Nest JS Application.md"
+- devops
+- RnD
+original_path: Notes/Work/aiquery.io/R&D/Implementing AWS SES in Nest JS Application.md
 base: Work
-organization: "[[aiquery.io]]"
-path_area: "R&D"
+organization: '[[aiquery.io]]'
+path_area: R&D
 categories:
-  - "[[Work]]"
-  - "[[aiquery.io]]"
-  - "[[R&D]]"
-  - "[[Projects]]"
+- '[[Work]]'
+- '[[aiquery.io]]'
 ---
 
 ## Overview

@@ -1,8 +1,10 @@
 ---
-created: {{date}}
+type: "[[Journal]]"
+categories:
+  - "[[Personal]]"
+date: {{date}}
 tags:
   - journal
 ---
 
 ## {{date}}
-

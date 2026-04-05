@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/Misc/Nest JS/nestjs - env variables and confi
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 - env-vars are not accessible without config-module
 - variable-expansion (constructing envs based on the other envs)

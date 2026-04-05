@@ -3,8 +3,9 @@ original_path: Notes/Personal Journal/Solar System/Solar Resources.md
 base: Personal
 path_area: Solar System
 categories:
-  - "[[Personal]]"
-  - "[[Solar System]]"
+- '[[Personal]]'
+tags:
+- solar-system
 ---
 - [Smart/Heavy Port Settings Issue ](https://www.youtube.com/watch?v=WsEsGSZIMq4)
 

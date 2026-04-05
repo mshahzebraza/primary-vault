@@ -1,8 +1,7 @@
 ---
 original_path: Notes/Junaid Profile.md
 base: NotesRoot
-categories:
-  - "[[NotesRoot]]"
+tags: []
 ---
 Gender:                 Male
 Martial Status:       Single

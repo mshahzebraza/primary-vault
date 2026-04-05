@@ -1,12 +1,13 @@
 ---
 aliases:
-  - Backup/Clone a MongoDB database using Mongo Tools
+- Backup/Clone a MongoDB database using Mongo Tools
 original_path: Notes/Tech Learning/Misc/BackupClone a MongoDB database using Mongo Tools.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 ## Prerequisites
 - MongoDB Community Server

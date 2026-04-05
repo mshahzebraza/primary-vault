@@ -1,13 +1,14 @@
 ---
 date: 2026-03-21
 attendees: []
-related:
-  - "[[Tasks Manifest - Scholar Bee]]"
 original_path: Notes/2026-03-21 AI Meeting.md
 base: NotesRoot
 categories:
-  - "[[NotesRoot]]"
-  - "[[Meetings]]"
+- '[[Meetings]]'
+related-tasks:
+- '[[Tasks Manifest - Scholar Bee]]'
+type: '[[Meeting]]'
+tags: []
 ---
 
 ## Context

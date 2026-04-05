@@ -1,15 +1,18 @@
 ---
 date: 2026-04-03
 tags:
-  - task
+- task
 original_path: Notes/Work/scholarbee/Tasks/202604031318 - scholarbee tasks.md
 base: Work
-organization: "[[scholarbee]]"
+organization: '[[scholarbee]]'
 path_area: Tasks
 categories:
-  - "[[Work]]"
-  - "[[scholarbee]]"
-  - "[[Tasks]]"
+- '[[Work]]'
+- '[[scholarbee]]'
+- '[[Tasks]]'
+type: '[[Task]]'
+projects: []
+priority: P2
 ---
 
 ## Completed

@@ -1,14 +1,15 @@
 ---
-banner_y: "0"
+banner_y: '0'
 Status: Active
 original_path: Notes/Work/aiquery.io/Tasks/Tasks Manifest - Ai Query.md
 base: Work
-organization: "[[aiquery.io]]"
+organization: '[[aiquery.io]]'
 path_area: Tasks
 categories:
-  - "[[Work]]"
-  - "[[aiquery.io]]"
-  - "[[Tasks]]"
+- '[[Work]]'
+- '[[aiquery.io]]'
+- '[[Tasks]]'
+type: '[[Documentation]]'
 ---
 
 ## Legend

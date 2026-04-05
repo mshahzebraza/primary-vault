@@ -1,14 +1,15 @@
 ---
 date: 2026-03-21
 attendees:
-  - Maam Shazia
-related:
-  - "[[Tasks Manifest - Scholar Bee]]"
+- Maam Shazia
 original_path: Notes/2026-03-21 Maam Shazia Meeting.md
 base: NotesRoot
 categories:
-  - "[[NotesRoot]]"
-  - "[[Meetings]]"
+- '[[Meetings]]'
+related-tasks:
+- '[[Tasks Manifest - Scholar Bee]]'
+type: '[[Meeting]]'
+tags: []
 ---
 
 ## Context

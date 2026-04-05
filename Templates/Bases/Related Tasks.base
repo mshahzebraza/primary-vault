@@ -1,0 +1,28 @@
+filters:
+  and:
+    - file.path.contains("Notes/")
+    - file.ext == "md"
+    - list(this.related-tasks).contains(file.name)
+properties:
+  file.name:
+    displayName: Task
+  note.type:
+    displayName: Type
+  note.status:
+    displayName: Status
+  note.priority:
+    displayName: Priority
+  note.organization:
+    displayName: Organization
+views:
+  - type: table
+    name: Linked tasks
+    order:
+      - file.name
+      - type
+      - status
+      - priority
+      - organization
+    sort:
+      - property: file.name
+        direction: ASC

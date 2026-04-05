@@ -1,15 +1,14 @@
 ---
 sticker: emoji//1f4da
 tags:
-  - index
-  - ossu
-  - learning
+- index
+- ossu
+- learning
 original_path: Notes/Tech Learning/OSSU notes/OSSU notes.md
 base: TechLearning
 path_area: OSSU notes
 categories:
-  - "[[TechLearning]]"
-  - "[[OSSU notes]]"
+- '[[TechLearning]]'
 ---
 
 ## OSSU — Open Source Society University

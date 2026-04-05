@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/linux-pc-setup/install-nerd-dictation (failed
 base: TechLearning
 path_area: linux-pc-setup
 categories:
-  - "[[TechLearning]]"
-  - "[[linux-pc-setup]]"
+- '[[TechLearning]]'
+tags:
+- linux-pc-setup
 ---
 
 ```sh

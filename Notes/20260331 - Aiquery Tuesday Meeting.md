@@ -1,14 +1,15 @@
 ---
 date: 2026-03-31
 attendees: []
-related:
-  - "[[DashboardWidgets]]"
-tasks: "[[dashboard-&-widgets]]"
 original_path: Notes/20260331 - Aiquery Tuesday Meeting.md
 base: NotesRoot
 categories:
-  - "[[NotesRoot]]"
-  - "[[Meetings]]"
+- '[[Meetings]]'
+related-tasks:
+- '[[DashboardWidgets]]'
+- '[[dashboard-&-widgets]]'
+type: '[[Meeting]]'
+tags: []
 ---
 
 ## Context

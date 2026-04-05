@@ -1,18 +1,8 @@
 ---
-tags:
-  - daily
+type: "[[Journal]]"
+categories:
+  - "[[Journal]]"
 date: {{date}}
 ---
 
-# Personal
-
-# Work
-
-## aiquery.io
-- 
-
-## Scholarbee
-- 
-
----
-## Notes / Scratch
+## Scratch

@@ -1,16 +1,20 @@
 ---
 status: blocked
 tags:
-  - task
-  - observability
-original_path: "Notes/Work/aiquery.io/Tasks/Frontend - Observability (Logging & Metrics)/Frontend - Observability (Logging & Metrics).md"
+- task
+- observability
+original_path: Notes/Work/aiquery.io/Tasks/Frontend - Observability (Logging & Metrics)/Frontend - Observability (Logging
+  & Metrics).md
 base: Work
-organization: "[[aiquery.io]]"
+organization: '[[aiquery.io]]'
 path_area: Tasks
 categories:
-  - "[[Work]]"
-  - "[[aiquery.io]]"
-  - "[[Tasks]]"
+- '[[Work]]'
+- '[[aiquery.io]]'
+- '[[Tasks]]'
+type: '[[Task]]'
+projects: []
+priority: P2
 ---
 
 ## Status

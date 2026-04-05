@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/linux-pc-setup/Tools to install Post Linux In
 base: TechLearning
 path_area: linux-pc-setup
 categories:
-  - "[[TechLearning]]"
-  - "[[linux-pc-setup]]"
+- '[[TechLearning]]'
+tags:
+- linux-pc-setup
 ---
 Create a script to setup all the applications
 

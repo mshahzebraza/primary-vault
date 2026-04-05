@@ -1,18 +1,17 @@
 ---
 status: reference
 tags:
-  - reference
-  - credentials
-  - - Docs
+- reference
+- credentials
+- '[''Docs'']'
 original_path: Notes/Work/scholarbee/Docs/Scholar Bee Work Resources.md
 base: Work
-organization: "[[scholarbee]]"
+organization: '[[scholarbee]]'
 path_area: Docs
 categories:
-  - "[[Work]]"
-  - "[[scholarbee]]"
-  - "[[Docs]]"
-  - "[[Projects]]"
+- '[[Work]]'
+- '[[scholarbee]]'
+- '[[Docs]]'
 ---
 
 > ⚠️ This note contains credentials. Do not share or commit this file.

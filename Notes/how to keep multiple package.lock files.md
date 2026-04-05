@@ -3,8 +3,9 @@ original_path: Notes/Tech Learning/Misc/how to keep multiple package.lock files.
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 ## Problem
 

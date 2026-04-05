@@ -4,8 +4,9 @@ original_path: Notes/Tech Learning/Misc/Nest JS/🧠 Elasticsearch integration i
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 
 ## 📌 What is Elasticsearch?

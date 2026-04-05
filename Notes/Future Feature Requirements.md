@@ -1,15 +1,18 @@
 ---
 status: todo
 tags:
-  - feature
+- feature
 original_path: Notes/Work/scholarbee/Tasks/Future Feature Requirements.md
 base: Work
-organization: "[[scholarbee]]"
+organization: '[[scholarbee]]'
 path_area: Tasks
 categories:
-  - "[[Work]]"
-  - "[[scholarbee]]"
-  - "[[Tasks]]"
+- '[[Work]]'
+- '[[scholarbee]]'
+- '[[Tasks]]'
+type: '[[Task]]'
+projects: []
+priority: P2
 ---
 
 ## Overview

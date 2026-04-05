@@ -1,18 +1,17 @@
 ---
 status: reference
 tags:
-  - reference
-  - credentials
-  - - Docs
+- reference
+- credentials
+- '[''Docs'']'
 original_path: Notes/Work/aiquery.io/Docs/Accounts and Links.md
 base: Work
-organization: "[[aiquery.io]]"
+organization: '[[aiquery.io]]'
 path_area: Docs
 categories:
-  - "[[Work]]"
-  - "[[aiquery.io]]"
-  - "[[Docs]]"
-  - "[[Projects]]"
+- '[[Work]]'
+- '[[aiquery.io]]'
+- '[[Docs]]'
 ---
 
 > ⚠️ This note contains account IDs and URLs. All passwords are in Proton Pass — nothing sensitive is stored here directly.

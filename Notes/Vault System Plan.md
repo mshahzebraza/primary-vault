@@ -417,26 +417,26 @@ Daily notes are **hubs, not task trackers.** They are not filled manually.
 ## 10. Implementation Phases
 
 ### Phase 1 — Schema and Templates (do first, ~1 hour)
-- [ ] Update all templates: add `type`, `projects` (plural list), `related-tasks`
-- [ ] Remove inconsistent fields (`company`, `created_at`, `related`, `tasks`) from templates
-- [ ] Update `types.json` to reflect the canonical property list
+- [x] Update all templates: add `type`, `projects` (plural list), `related-tasks`
+- [x] Remove inconsistent fields (`company`, `created_at`, `related`, `tasks`) from templates
+- [x] Update `types.json` to reflect the canonical property list
 
 ### Phase 2 — Build Tasks Base and upgrade Meetings Base (~1 hour)
-- [ ] Create `Templates/Bases/Tasks.base` with all views per §3.1
-- [ ] Upgrade `Templates/Bases/Meetings.base` to add `related-tasks` column and By Task view
-- [ ] Create `Templates/Bases/HQ.base` to replace WorkByOrganization/NotesByBase/ByPathArea
-- [ ] Create `Templates/Bases/Related Meetings.base` (mini-base for task notes)
-- [ ] Create `Templates/Bases/Related Tasks.base` (mini-base for meeting notes)
+- [x] Create `Templates/Bases/Tasks.base` with all views per §3.1
+- [x] Upgrade `Templates/Bases/Meetings.base` to add `related-tasks` column and By Task view
+- [x] Create `Templates/Bases/HQ.base` to replace WorkByOrganization/NotesByBase/ByPathArea
+- [x] Create `Templates/Bases/Related Meetings.base` (mini-base for task notes)
+- [x] Create `Templates/Bases/Related Tasks.base` (mini-base for meeting notes)
 
 ### Phase 3 — Bulk metadata update on existing notes (~30 min, script)
-- [ ] Run script to normalise `company` → `organization` on all remaining notes
-- [ ] Run script to normalise `related`/`tasks` → `related-tasks` on meeting notes
-- [ ] Run script to seed `type`, `projects`, `priority`, `status` on task/bug notes missing them
-- [ ] Validate with `audit-metadata` script command
+- [x] Run script to normalise `company` → `organization` on all remaining notes
+- [x] Run script to normalise `related`/`tasks` → `related-tasks` on meeting notes
+- [x] Run script to seed `type`, `projects`, `priority`, `status` on task/bug notes missing them
+- [x] Validate with `audit-metadata` script command
 
 ### Phase 4 — Category cleanup (~30 min)
-- [ ] Delete the 13 categories listed in §4.3
-- [ ] Update affected notes to use tags instead
+- [x] Delete the 13 categories listed in §4.3
+- [x] Update affected notes to use tags instead
 - [ ] Verify remaining 10 categories in §4.2 have correct notes pointing to them
 
 ### Phase 5 — Remove legacy fields (do last, after Phase 3 is confirmed stable)

@@ -2,15 +2,18 @@
 severity: high
 status: open
 tags:
-  - bug
-original_path: "Notes/Work/aiquery.io/Tasks/BUG - Race condition on custom extension Test & Publish tab.md"
+- bug
+original_path: Notes/Work/aiquery.io/Tasks/BUG - Race condition on custom extension Test & Publish tab.md
 base: Work
-organization: "[[aiquery.io]]"
+organization: '[[aiquery.io]]'
 path_area: Tasks
 categories:
-  - "[[Work]]"
-  - "[[aiquery.io]]"
-  - "[[Tasks]]"
+- '[[Work]]'
+- '[[aiquery.io]]'
+- '[[Tasks]]'
+type: '[[Bug]]'
+projects: []
+priority: P2
 ---
 
 ## Description

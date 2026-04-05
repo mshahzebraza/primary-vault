@@ -1,55 +1,60 @@
 ---
+type: "[[Documentation]]"
+categories:
+  - "[[Documentation]]"
 tags:
   - hub
   - navigation
 original_path: Notes/Base Home.md
 base: NotesRoot
-categories:
-  - "[[NotesRoot]]"
 ---
 
 # Base Home
 
-Start here for **navigation by base**, **organization**, **path area**, and **categories** (wikilinks). Full detail: [[Templates/Bases/Metadata contract]].
+Start here for **Bases** navigation. Canonical rules and property schema: [[Vault System Plan]]. Legacy field notes: [[Templates/Bases/Metadata contract]].
 
-## Bases (tables and filters)
+## Primary Bases (use these first)
 
-Open these in Obsidian (Bases plugin). Use **view tabs** inside each base for slices (Work, TechLearning, org, path area, meetings, projects).
+Open from **Command palette → Bases: Open bases** (or embed links below).
 
-| Base file | Use for |
-|-----------|---------|
-| [[Templates/Bases/NotesByBase|NotesByBase]] | Every note under `Notes/` — sort and filter by **`base`**. |
-| [[Templates/Bases/WorkByOrganization|WorkByOrganization]] | **`base == Work`** — split by **`organization`** (aiquery.io, scholarbee, Freelance). |
-| [[Templates/Bases/ByPathArea|ByPathArea]] | Filter by **`path_area`** (Tasks, Docs, R&D, …). |
-| [[Templates/Bases/Meetings|Meetings]] | Notes with **`categories`** containing **`[[Meetings]]`**. |
-| [[Templates/Bases/Projects|Projects]] | Notes with **`categories`** containing **`[[Projects]]`** (products/repos/apps under an org). |
+| Base | Use for |
+|------|---------|
+| [[Templates/Bases/Tasks\|Tasks]] | Task, bug, and R&D notes — tabs by status, org, project |
+| [[Templates/Bases/Meetings\|Meetings]] | Meeting notes; **By Task** groups by `related-tasks` |
+| [[Templates/Bases/HQ\|HQ]] | Work overview by org and project; TechLearning; tag browser |
+| [[Templates/Bases/Related Meetings\|Related Meetings]] | Embed in **task** notes — meetings that linked this task |
+| [[Templates/Bases/Related Tasks\|Related Tasks]] | Embed in **meeting** notes — tasks from `related-tasks` |
 
-Legacy bases for clippings/journal/dailies (optional): [[Templates/Bases/Clippings]], [[Templates/Bases/Journal]], [[Templates/Bases/Daily]].
+## Legacy Bases (until `base` / `path_area` migration is finished)
 
-## Category hubs (Steph-style)
+| Base | Use for |
+|------|---------|
+| [[Templates/Bases/NotesByBase\|NotesByBase]] | All `Notes/` — filter by legacy **`base`** |
+| [[Templates/Bases/WorkByOrganization\|WorkByOrganization]] | **`base == Work`** by **`organization`** |
+| [[Templates/Bases/ByPathArea\|ByPathArea]] | Filter by **`path_area`** |
+| [[Templates/Bases/Projects\|Projects]] | **Deprecated** — `[[Projects]]` category removed; use **`projects`** property + HQ / Tasks bases |
 
-- **`categories`** in YAML holds `[[Hub]]` links; hub notes live in the `Categories/` folder (e.g. [[Work]], [[TechLearning]], [[aiquery.io]], [[Tasks]], [[Meetings]], [[Projects]]).
-- After path/metadata repair, run **`sync-categories`** so `categories` stays aligned with `base` / `organization` / `path_area` (see Metadata contract).
+Optional: [[Templates/Bases/Clippings]], [[Templates/Bases/Journal]], [[Templates/Bases/Daily]].
 
-## Quick open (daily)
+## Category hubs
 
-- **Command palette**: “Bases” to pick a base, or **Quick switcher** for a note by title.
-- **Omnisearch** (plugin): search across the vault.
-- **Tasks**: [[Tasks Manifest - Ai Query]], [[Tasks Manifest - Scholar Bee]].
+Hub notes live under `Categories/` (e.g. [[Work]], [[TechLearning]], [[aiquery.io]], [[Tasks]], [[Meetings]], [[Documentation]]). Use **`categories`** for structural routing; use **tags** for topics (see Vault System Plan §4–5).
 
-## Bookmarks (one-time setup)
+## Quick open
 
-1. Right‑click **Base Home** in the file explorer → **Add bookmark**.
-2. Bookmark your task manifests and daily note the same way.
-3. **Settings → Hotkeys**: assign keys for **Bases: Open bases** and **Quick switcher** if you like.
+- **Command palette**: Bases, Quick switcher, Templates: Insert template
+- **Sprint narrative (not task lists)**: [[Tasks Manifest - Ai Query]], [[Tasks Manifest - Scholar Bee]]
 
-## Metadata commands
-
-From the vault root:
+## Metadata scripts (vault root)
 
 ```bash
-python3 scripts/migrate_notes_flat.py inject
-python3 scripts/migrate_notes_flat.py fix-meta
-python3 scripts/migrate_notes_flat.py sync-categories
-python3 scripts/migrate_notes_flat.py audit-metadata
+python3 scripts/vault_metadata.py normalize
+python3 scripts/vault_metadata.py audit
+python3 scripts/category_cleanup.py --dry-run   # Phase 4 — already applied once
+```
+
+Phase 5 (remove `base`, `path_area`, `original_path`) when you are ready:
+
+```bash
+python3 scripts/vault_metadata.py remove-legacy --dry-run
 ```

@@ -4,8 +4,9 @@ original_path: Notes/Tech Learning/Misc/Nest JS/NestJS notes.md
 base: TechLearning
 path_area: Misc
 categories:
-  - "[[TechLearning]]"
-  - "[[Misc]]"
+- '[[TechLearning]]'
+tags:
+- misc
 ---
 Here are the notes about [[Nest JS]] I’ll generate for you, based on the natural progression of our convo:****
 
