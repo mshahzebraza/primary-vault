@@ -43,7 +43,7 @@ Every note in `Notes/` should carry the applicable subset of these properties. D
 | `priority` | text | `P0` `P1` `P2` `P3` | Task, Bug notes | P0 = highest. |
 | `date` | date | ISO 8601 | Meeting, Daily notes | |
 | `tags` | tags | See §5 | Optional for all | Plain text, not wikilinks. |
-| `related_tasks` | list of wikilinks | `[[TaskNote]]` | Meeting notes | Powers meeting↔task relationship in Bases. |
+| `related-tasks` | list of wikilinks | `[[TaskNote]]` | Meeting notes | Powers meeting↔task relationship in Bases. |
 | `parent` | wikilink | `[[ParentTask]]` | Sub-task notes | Optional. Creates task hierarchy. |
 
 ### 2.2 Properties to Eventually Remove (Legacy)
@@ -60,13 +60,13 @@ These exist on notes from the flat migration. They stay until `type` + `categori
 
 These are inconsistent names currently in the vault for the same concept:
 
-| Current inconsistent names | Canonical name |
-|---|---|
-| `company`, `organization` | `organization` only |
-| `related`, `tasks`, `related_tasks` | `related_tasks` only |
-| `created`, `created_at`, `date` | `date` only |
-| `project` (single) | `projects` (list) |
-| `type: task` (plain text) | `type: "[[Task]]"` (wikilink) |
+| Current inconsistent names          | Canonical name                |
+| ----------------------------------- | ----------------------------- |
+| `company`, `organization`           | `organization` only           |
+| `related`, `tasks`, `related-tasks` | `related-tasks` only          |
+| `created`, `created_at`, `date`     | `date` only                   |
+| `project` (single)                  | `projects` (list)             |
+| `type: task` (plain text)           | `type: "[[Task]]"` (wikilink) |
 
 
 ---
@@ -105,12 +105,12 @@ Open these from `Base Home` or via the Command Palette (`Bases: Open bases`).
 
 | Tab | Filter | Columns | Sort |
 |---|---|---|---|
-| All Meetings | — | name, date, organization, related_tasks | date DESC |
-| aiquery.io | `organization` contains `aiquery.io` | name, date, related_tasks | date DESC |
-| scholarbee | `organization` contains `scholarbee` | name, date, related_tasks | date DESC |
-| By Task | grouped by `related_tasks` | name, date, organization | date ASC |
+| All Meetings | — | name, date, organization, related-tasks | date DESC |
+| aiquery.io | `organization` contains `aiquery.io` | name, date, related-tasks | date DESC |
+| scholarbee | `organization` contains `scholarbee` | name, date, related-tasks | date DESC |
+| By Task | grouped by `related-tasks` | name, date, organization | date ASC |
 
-The **By Task** tab is the answer to "show me every meeting that discussed X task." Click a task wikilink in the `related_tasks` column and the view filters to just that task's meetings.
+The **By Task** tab is the answer to "show me every meeting that discussed X task." Click a task wikilink in the `related-tasks` column and the view filters to just that task's meetings.
 
 ### 3.3 HQ Base (`HQ.base`)
 
@@ -233,7 +233,7 @@ Every note type has a template. Access via Command Palette: `Templates: Insert t
 
 | Template file | Use when | Key properties it sets |
 |---|---|---|
-| `Meeting Template.md` | Any meeting, sync, or client call | `type: [[Meeting]]`, `categories: [[Meetings]]`, `date`, `organization`, `related_tasks` |
+| `Meeting Template.md` | Any meeting, sync, or client call | `type: [[Meeting]]`, `categories: [[Meetings]]`, `date`, `organization`, `related-tasks` |
 | `Task Note Template.md` | Any standalone task or feature note | `type: [[Task]]`, `organization`, `projects`, `status: backlog`, `priority` |
 | `Bug Template.md` | Any bug report | `type: [[Bug]]`, `organization`, `projects`, `status: open`, `priority` |
 | `RnD Template.md` | Research, architecture exploration, or design | `type: [[RnD]]`, `organization`, `projects`, `status: draft` |
@@ -246,7 +246,7 @@ Every note type has a template. Access via Command Palette: `Templates: Insert t
 - **Always** use a template when creating a new note. Don't start with a blank file.
 - **Fill `organization` and `projects` first** — these drive which Base tabs surface the note.
 - **`status` defaults to `backlog`** for tasks. Change to `active` when you start working on it.
-- **`related_tasks` on meeting notes** — fill this before closing the meeting note. It's the one field that enables the whole meeting↔task linking system.
+- **`related-tasks` on meeting notes** — fill this before closing the meeting note. It's the one field that enables the whole meeting↔task linking system.
 - If you create a note without a template, add frontmatter manually before closing it.
 
 ### 6.3 Mini-Bases Inside Notes (Task ↔ Meeting Cross-Reference)
@@ -257,13 +257,13 @@ Two embedded Bases are designed to be placed inside note bodies:
 ```
 ![[Templates/Bases/Related Meetings.base]]
 ```
-This works because `Related Meetings.base` filters on `related_tasks` containing `this` (the current note's filename).
+This works because `Related Meetings.base` filters on `related-tasks` containing `this` (the current note's filename).
 
 **Inside any Meeting note** — shows all task notes linked from this meeting:
 ```
 ![[Templates/Bases/Related Tasks.base]]
 ```
-This works because `Related Tasks.base` shows all notes whose filename appears in the current note's `related_tasks` list.
+This works because `Related Tasks.base` shows all notes whose filename appears in the current note's `related-tasks` list.
 
 Both base files need to be created as part of the implementation. Once created, add the embed to the Meeting and Task Note templates so every new note gets it automatically.
 
@@ -282,7 +282,7 @@ Both base files need to be created as part of the implementation. Once created, 
 3. Fill `organization`, `date`, `attendees` in the frontmatter
 4. During the meeting: write bullets in `## Discussion`
 5. After the meeting: move confirmed decisions to `## Decisions Made`, open items to `## Action Items`
-6. **Critical step:** fill `related_tasks` with wikilinks to every task this meeting touched. If a task note doesn't exist yet, create a stub file for it now (title + frontmatter only) and link it.
+6. **Critical step:** fill `related-tasks` with wikilinks to every task this meeting touched. If a task note doesn't exist yet, create a stub file for it now (title + frontmatter only) and link it.
 7. Done. The Meetings Base and the Related Meetings embed inside each linked task will automatically reflect this meeting.
 
 **Time cost:** 2 minutes during meeting setup + 3 minutes filing after.
@@ -328,7 +328,7 @@ Both base files need to be created as part of the implementation. Once created, 
 1. Create a note from `RnD Template.md`
 2. Set `type: [[RnD]]`, `organization`, `projects`, `status: draft`
 3. Write Overview, Requirements, Implementation Phases, and Open Questions sections
-4. When the R&D produces a decision that affects a task: open the relevant task note and add this R&D note to `related_tasks` on it (or link it in the task body under a `## Related R&D` section)
+4. When the R&D produces a decision that affects a task: open the relevant task note and add this R&D note to `related-tasks` on it (or link it in the task body under a `## Related R&D` section)
 
 ---
 
@@ -417,20 +417,20 @@ Daily notes are **hubs, not task trackers.** They are not filled manually.
 ## 10. Implementation Phases
 
 ### Phase 1 — Schema and Templates (do first, ~1 hour)
-- [ ] Update all templates: add `type`, `projects` (plural list), `related_tasks`
+- [ ] Update all templates: add `type`, `projects` (plural list), `related-tasks`
 - [ ] Remove inconsistent fields (`company`, `created_at`, `related`, `tasks`) from templates
 - [ ] Update `types.json` to reflect the canonical property list
 
 ### Phase 2 — Build Tasks Base and upgrade Meetings Base (~1 hour)
 - [ ] Create `Templates/Bases/Tasks.base` with all views per §3.1
-- [ ] Upgrade `Templates/Bases/Meetings.base` to add `related_tasks` column and By Task view
+- [ ] Upgrade `Templates/Bases/Meetings.base` to add `related-tasks` column and By Task view
 - [ ] Create `Templates/Bases/HQ.base` to replace WorkByOrganization/NotesByBase/ByPathArea
 - [ ] Create `Templates/Bases/Related Meetings.base` (mini-base for task notes)
 - [ ] Create `Templates/Bases/Related Tasks.base` (mini-base for meeting notes)
 
 ### Phase 3 — Bulk metadata update on existing notes (~30 min, script)
 - [ ] Run script to normalise `company` → `organization` on all remaining notes
-- [ ] Run script to normalise `related`/`tasks` → `related_tasks` on meeting notes
+- [ ] Run script to normalise `related`/`tasks` → `related-tasks` on meeting notes
 - [ ] Run script to seed `type`, `projects`, `priority`, `status` on task/bug notes missing them
 - [ ] Validate with `audit-metadata` script command
 
