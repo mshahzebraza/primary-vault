@@ -177,3 +177,4 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 [Next JS Docs](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image#generate-images-using-code-js-ts-tsx)
 [Youtube Shorts - Dynamic OG Generation](https://www.youtube.com/shorts/iBv8qGGSqH4)
 [Youtube Tutorial - Complete OG Image Gen Guide (Static Only)](https://www.youtube.com/watch?v=QHi4XZ8K72A&pp=ygUgZ2VuZXJhdGUgb3BlbmdyYXBoIGltYWdlIGR5bmFtaWM%3D)
+[[aiquery.io]]
