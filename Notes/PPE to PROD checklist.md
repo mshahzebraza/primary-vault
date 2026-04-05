@@ -1,14 +1,14 @@
 ---
 status: active
 tags:
-- checklist
-organization: '[[aiquery.io]]'
+  - checklist
+organization: "[[aiquery.io]]"
 categories:
-- '[[Work]]'
-- '[[aiquery.io]]'
-- '[[Tasks]]'
-type: '[[Task]]'
-projects: []
+  - "[[Work]]"
+  - "[[Tasks]]"
+type: "[[Task]]"
+projects:
+  - "[[aq-devops]]"
 priority: P2
 ---
 

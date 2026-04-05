@@ -1,14 +1,15 @@
 ---
 status: active
 tags:
-- task
-- script
-organization: '[[scholarbee]]'
+  - task
+  - script
+organization:
+  - "[[scholarbee]]"
 categories:
-- '[[Work]]'
-- '[[scholarbee]]'
-- '[[Tasks]]'
-type: '[[Task]]'
+  - "[[Work]]"
+  - "[[scholarbee]]"
+  - "[[Tasks]]"
+type: "[[Task]]"
 projects: []
 priority: P2
 ---

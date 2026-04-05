@@ -28,70 +28,55 @@ views:
     filters:
       and:
         - note.status == "active"
+    groupBy:
+      property: organization
+      direction: ASC
     order:
       - file.name
-      - organization
       - projects
       - priority
+      - tags
+      - categories
+      - type
       - parent-task
+      - organization
     sort:
+      - property: organization
+        direction: ASC
+      - property: projects
+        direction: ASC
+      - property: categories
+        direction: ASC
       - property: priority
         direction: ASC
       - property: file.name
         direction: ASC
-  - type: table
-    name: Blocked
-    filters:
-      and:
-        - note.status == "blocked"
-    order:
-      - file.name
-      - organization
-      - projects
-      - priority
-    sort:
-      - property: priority
-        direction: ASC
-  - type: table
-    name: Backlog
-    filters:
-      and:
-        - note.status == "backlog"
-    order:
-      - file.name
-      - organization
-      - projects
-      - priority
-    sort:
-      - property: priority
-        direction: ASC
-  - type: table
-    name: Done
-    filters:
-      and:
-        - note.status == "done"
-    order:
-      - file.name
-      - organization
-      - mtime
-    sort:
-      - property: mtime
-        direction: DESC
+    columnSize:
+      file.name: 383
+      note.organization: 180
+      note.projects: 177
   - type: table
     name: aiquery.io
     filters:
       and:
         - note.organization.contains("aiquery.io")
+    groupBy:
+      property: status
+      direction: ASC
     order:
       - file.name
       - projects
-      - status
       - priority
+      - status
     sort:
       - property: status
         direction: ASC
       - property: file.name
         direction: ASC
+    columnSize:
+      file.name: 383
+      note.projects: 177
+      note.priority: 739
   - type: table
     name: scholarbee
     filters:
@@ -107,13 +92,3 @@ views:
         direction: ASC
       - property: file.name
         direction: ASC
-  - type: table
-    name: By Project
-    groupBy:
-      property: projects
-      direction: ASC
-    order:
-      - file.name
-      - organization
-      - status
-      - priority

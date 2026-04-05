@@ -1,15 +1,16 @@
 ---
 status: active
 tags:
-- RnD
-- feature
-organization: '[[aiquery.io]]'
+  - RnD
+  - feature
+organization: "[[aiquery.io]]"
 categories:
-- '[[Work]]'
-- '[[aiquery.io]]'
-- '[[Tasks]]'
-type: '[[RnD]]'
-projects: []
+  - "[[Work]]"
+  - "[[Tasks]]"
+type: "[[RnD]]"
+projects:
+  - "[[aq-backend]]"
+  - "[[aq-client]]"
 priority: P2
 ---
 

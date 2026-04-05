@@ -1,14 +1,14 @@
 ---
 status: active
 tags:
-- feature
-organization: '[[aiquery.io]]'
+  - feature
+organization: "[[aiquery.io]]"
 categories:
-- '[[Work]]'
-- '[[aiquery.io]]'
-- '[[Tasks]]'
-type: '[[Task]]'
-projects: []
+  - "[[Work]]"
+  - "[[Tasks]]"
+type: "[[Task]]"
+projects:
+  - "[[aq-client]]"
 priority: P2
 ---
 
