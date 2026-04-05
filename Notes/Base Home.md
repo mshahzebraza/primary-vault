@@ -1,10 +1,10 @@
 ---
-type: '[[Documentation]]'
+type: "[[Documentation]]"
 categories:
-- '[[Documentation]]'
+  - "[[Documentation]]"
 tags:
-- hub
-- navigation
+  - hub
+  - navigation
 ---
 
 # Base Home

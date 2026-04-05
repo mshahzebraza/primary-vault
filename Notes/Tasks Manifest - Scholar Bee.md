@@ -1,14 +1,12 @@
 ---
-banner_y: '0'
-Status: Active
 organization: '[[scholarbee]]'
 categories:
 - '[[Work]]'
 - '[[scholarbee]]'
 - '[[Tasks]]'
 type: '[[Documentation]]'
+status: Active
 ---
-
 ## Legend
 ⏸️: Pending Status
 ➡️: Active Status

@@ -1,12 +1,12 @@
 ---
 categories:
-  - "[[Clippings]]"
+- '[[Clippings]]'
 author:
-  - "[[Kevin Kelly]]"
+- '[[Kevin Kelly]]'
 url: https://kk.org/thetechnium/68-bits-of-unsolicited-advice/
-created: 2023-09-12
 published: 2020-04-28
 topics: []
+date: 2023-09-12
 ---
 It’s my birthday. I’m 68. I feel like pulling up a rocking chair and dispensing advice to the young ‘uns. Here are 68 pithy bits of unsolicited advice which I offer as my birthday present to all of you.
 

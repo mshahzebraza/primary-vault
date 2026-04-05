@@ -1,5 +1,4 @@
 ---
-severity: high
 status: open
 tags:
 - bug
@@ -10,9 +9,8 @@ categories:
 - '[[Tasks]]'
 type: '[[Bug]]'
 projects: []
-priority: P2
+priority: P1
 ---
-
 ## Description
 Race condition on the Custom Extension "Test & Publish" tab. Occurs specifically when the "Test Query" input is edited.
 

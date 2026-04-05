@@ -1,14 +1,12 @@
 ---
-banner_y: '0'
-Status: Active
 organization: '[[aiquery.io]]'
 categories:
 - '[[Work]]'
 - '[[aiquery.io]]'
 - '[[Tasks]]'
 type: '[[Documentation]]'
+status: Active
 ---
-
 ## Legend
 ⏸️: Pending Status
 ➡️: Active Status

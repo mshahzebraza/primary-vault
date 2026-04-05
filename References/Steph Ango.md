@@ -1,18 +1,15 @@
 ---
 categories:
-  - "[[People]]"
-type:
-  - "[[Authors]]"
-org:
-  - "[[Obsidian]]"
-created: 2023-09-12
-twitter: kepano
+  - "[[Documentation]]"
+type: "[[Reference]]"
+organization: "[[Obsidian]]"
+date: 2023-09-12
+tags:
+  - twitter-kepano
+  - obsidian
 url: https://stephango.com/
 ---
- ## Clippings
+
+## Clippings
 
 ![[Clippings.base#Author]]
-
-## Meetings
-
-![[Meetings.base#Person]]

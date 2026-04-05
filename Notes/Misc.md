@@ -1,12 +1,10 @@
 ---
-sticker: emoji//1f4c2
 tags:
 - index
 - misc
 categories:
 - '[[TechLearning]]'
 ---
-
 ## Tech Notes
 
 ### NestJS

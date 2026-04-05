@@ -1,11 +1,9 @@
 ---
-sticker: emoji//1f9e0
 categories:
 - '[[TechLearning]]'
 tags:
 - misc
 ---
-
 ## 📌 What is Elasticsearch?
 
 Elasticsearch is a distributed, RESTful **search and analytics engine** based on Apache Lucene. It's designed for:

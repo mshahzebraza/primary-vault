@@ -1,5 +1,4 @@
 ---
-created: 2026-04-03
 tags:
 - tech
 - dotfiles
@@ -7,8 +6,8 @@ tags:
 - misc
 categories:
 - '[[TechLearning]]'
+date: 2026-04-03
 ---
-
 ## Resources
 - [FreeCodeCamp: Setting up Ubuntu with dotfiles and bash scripts](https://www.freecodecamp.org/news/how-to-set-up-a-fresh-ubuntu-desktop-using-only-dotfiles-and-bash-scripts/)
 - [Dries Vints: Getting started with dotfiles (macOS / Zsh)](https://driesvints.com/blog/getting-started-with-dotfiles/)

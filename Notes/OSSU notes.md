@@ -1,5 +1,4 @@
 ---
-sticker: emoji//1f4da
 tags:
 - index
 - ossu
@@ -7,7 +6,6 @@ tags:
 categories:
 - '[[TechLearning]]'
 ---
-
 ## OSSU — Open Source Society University
 
 Self-paced CS curriculum notes.

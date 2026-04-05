@@ -1,5 +1,4 @@
 ---
-sticker: emoji//1f427
 tags:
 - index
 - linux
@@ -8,7 +7,6 @@ tags:
 categories:
 - '[[TechLearning]]'
 ---
-
 ## Linux PC Setup Notes
 
 Setup guides and reference notes for a fresh Linux development machine.

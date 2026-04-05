@@ -1,5 +1,4 @@
 ---
-sticker: emoji//1f513
 categories:
 - '[[TechLearning]]'
 tags:

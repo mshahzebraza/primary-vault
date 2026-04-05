@@ -1,5 +1,4 @@
 ---
-sticker: ''
 aliases:
 - 🧩 Why Do We Use `forFeature` and `InjectModel` with Mongoose in NestJS
 categories:

@@ -1,8 +1,7 @@
 ---
 categories:
-  - "[[Companies]]"
-  - "[[Apps]]"
-type:
-  - "[[Apps]]"
+  - "[[TechLearning]]"
+  - "[[Documentation]]"
+type: "[[Reference]]"
 url: https://obsidian.md/
 ---

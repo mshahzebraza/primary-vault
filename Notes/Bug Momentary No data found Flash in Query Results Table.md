@@ -1,5 +1,4 @@
 ---
-severity: medium
 status: open
 tags:
 - bug
@@ -14,7 +13,6 @@ type: '[[Bug]]'
 projects: []
 priority: P2
 ---
-
 ## Description
 On the Custom Extension testing tab, on subsequent query runs (not the first), the table briefly flashes "No data found for this query" before the loading spinner appears.
 

@@ -1,5 +1,4 @@
 ---
-created: 2023-09-14
 url: https://stephango.com/evergreen-notes
 author:
 - '[[Steph Ango]]'
@@ -10,6 +9,7 @@ tags:
 - 0🌲
 status:
 - '[[Published]]'
+date: 2023-09-14
 ---
 Using [[evergreen]] notes in Obsidian has been the most impactful change to how I think.
 

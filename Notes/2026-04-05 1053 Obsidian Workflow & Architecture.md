@@ -1,7 +1,7 @@
 ---
-created: 2026-04-05
 tags:
-  - journal
+- journal
+date: 2026-04-05
 ---
 ## Work Related
 3 Primary Bases

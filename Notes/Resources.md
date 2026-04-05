@@ -1,9 +1,7 @@
 ---
-sticker: emoji//1f481
 tags:
 - index
 ---
-
 ## Resources
 
 - [[Cool Resources]]

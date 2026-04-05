@@ -28,7 +28,12 @@ pip install -r scripts/requirements.txt
 python3 scripts/vault_metadata.py normalize
 python3 scripts/vault_metadata.py audit
 python3 scripts/vault_metadata.py remove-legacy
+python3 scripts/normalize_property_keys.py   # merge created→date, drop plugin keys, etc.
 ```
+
+### `.obsidian/types.json`
+
+Registered types are the **canonical** fields above plus: `aliases` (Obsidian), `attendees` (meetings), `author` / `source` / `url` / `published` / `topics` / `clipped` (clippings). The monthly template may still use `previous` / `next` in YAML; they are not registered in `types.json`. **Not** registered: plugin-only keys (`sticker`, `banner_y`), duplicate spellings (`Status`, `created` as a second date), `severity` (use `priority`), `client` / `org` / `twitter` (use `tags` + `organization`).
 
 ## Hub embeds
 
