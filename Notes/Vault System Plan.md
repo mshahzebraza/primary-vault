@@ -33,18 +33,18 @@ Every note in `Notes/` should carry the applicable subset of these properties. D
 
 ### 2.1 Property Reference Table
 
-| Property | Type | Allowed Values | Required for | Notes |
-|---|---|---|---|---|
-| `type` | wikilink | `[[Task]]` `[[Bug]]` `[[Meeting]]` `[[RnD]]` `[[Documentation]]` `[[Journal]]` `[[Reference]]` | All notes | Single value. Drives Base filtering. |
-| `organization` | wikilink | `[[aiquery.io]]` `[[scholarbee]]` `[[Freelance]]` | Work notes | Single value. |
-| `projects` | list of wikilinks | `[[aq-client]]` `[[aq-infrastructure]]` `[[sb-backend]]` `[[sb-frontend-student]]` `[[sb-ops-scripts]]` `[[other]]` | Work notes | **Multi-value list.** Omit for cross-project or non-project notes. |
-| `categories` | list of wikilinks | See §4 | All notes | Multi-value. Drives Base filtering. |
-| `status` | text | `active` `blocked` `backlog` `done` `open` | Task, Bug notes | |
-| `priority` | text | `P0` `P1` `P2` `P3` | Task, Bug notes | P0 = highest. |
-| `date` | date | ISO 8601 | Meeting, Daily notes | |
-| `tags` | tags | See §5 | Optional for all | Plain text, not wikilinks. |
-| `related-tasks` | list of wikilinks | `[[TaskNote]]` | Meeting notes | Powers meeting↔task relationship in Bases. |
-| `parent` | wikilink | `[[ParentTask]]` | Sub-task notes | Optional. Creates task hierarchy. |
+| Property        | Type              | Allowed Values                                                                                                      | Required for         | Notes                                                              |
+| --------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------------------------------------------------------------ |
+| `type`          | wikilink          | `[[Task]]` `[[Bug]]` `[[Meeting]]` `[[RnD]]` `[[Documentation]]` `[[Journal]]` `[[Reference]]`                      | All notes            | Single value. Drives Base filtering.                               |
+| `organization`  | wikilink          | `[[aiquery.io]]` `[[scholarbee]]` `[[Freelance]]`                                                                   | Work notes           | Single value.                                                      |
+| `projects`      | list of wikilinks | `[[aq-client]]` `[[aq-infrastructure]]` `[[sb-backend]]` `[[sb-frontend-student]]` `[[sb-ops-scripts]]` `[[other]]` | Work notes           | **Multi-value list.** Omit for cross-project or non-project notes. |
+| `categories`    | list of wikilinks | See §4                                                                                                              | All notes            | Multi-value. Drives Base filtering.                                |
+| `status`        | text              | `active` `blocked` `backlog` `done` `open`                                                                          | Task, Bug notes      |                                                                    |
+| `priority`      | text              | `P0` `P1` `P2` `P3`                                                                                                 | Task, Bug notes      | P0 = highest.                                                      |
+| `date`          | date              | ISO 8601                                                                                                            | Meeting, Daily notes |                                                                    |
+| `tags`          | tags              | See §5                                                                                                              | Optional for all     | Plain text, not wikilinks.                                         |
+| `related-tasks` | list of wikilinks | `[[TaskNote]]`                                                                                                      | Meeting notes        | Powers meeting↔task relationship in Bases.                         |
+| `parent-task`   | wikilink          | `[[ParentTask]]`                                                                                                    | Sub-task notes       | Optional. Creates task hierarchy.                                  |
 
 ### 2.2 Properties to Eventually Remove (Legacy)
 
@@ -83,15 +83,15 @@ Open these from `Base Home` or via the Command Palette (`Bases: Open bases`).
 
 **Views (tabs):**
 
-| Tab | Filter | Columns | Sort |
-|---|---|---|---|
-| Active | `status: active` | name, organization, projects, priority, parent | priority ASC, name ASC |
-| Blocked | `status: blocked` | name, organization, projects, priority | priority ASC |
-| Backlog | `status: backlog` | name, organization, projects, priority | priority ASC |
-| Done | `status: done` | name, organization, date modified | mtime DESC |
-| aiquery.io | `organization` contains `aiquery.io` | name, projects, status, priority | status ASC, name ASC |
-| scholarbee | `organization` contains `scholarbee` | name, projects, status, priority | status ASC, name ASC |
-| By Project | grouped by `projects` | name, organization, status, priority | — |
+| Tab | Filter | Columns                                             | Sort |
+| ---------- | ------------------------------------ | --------------------------------------------------- | ---------------------- |
+| Active | `status: active` | name, organization, projects, priority, parent-task | priority ASC, name ASC |
+| Blocked | `status: blocked` | name, organization, projects, priority              | priority ASC |
+| Backlog | `status: backlog` | name, organization, projects, priority              | priority ASC |
+| Done | `status: done` | name, organization, date modified                   | mtime DESC |
+| aiquery.io | `organization` contains `aiquery.io` | name, projects, status, priority                    | status ASC, name ASC |
+| scholarbee | `organization` contains `scholarbee` | name, projects, status, priority                    | status ASC, name ASC |
+| By Project | grouped by `projects` | name, organization, status, priority                | — |
 
 **What the manifests become:** Sprint narrative notes. They stop being edited as task lists. They become a pinned short-form summary of the current focus written in prose, linking to relevant task notes. The Tasks Base replaces their functional role.
 
