@@ -1,0 +1,40 @@
+/* Custom variables for Obsidian Bases */
+body {
+	--bases-table-header-color: var(--text-normal);
+	--bases-table-header-background: color-mix(
+		in srgb,
+		var(--background-modifier-hover) 55%,
+		var(--background-primary)
+	);
+	--bases-table-border-color: var(--background-modifier-border);
+	--bases-card-background: var(--background-secondary);
+
+	/* Table view: alternating rows (set both to transparent to disable zebra) */
+	--bases-row-odd: color-mix(in srgb, var(--background-modifier-hover) 45%, transparent);
+	--bases-row-even: transparent;
+	/* Row interaction (hover = mouse; focus = keyboard / focused cell) */
+	--bases-row-hover: color-mix(in srgb, var(--color-accent) 18%, var(--background-primary));
+	--bases-row-focus: color-mix(in srgb, var(--color-accent) 28%, var(--background-primary));
+}
+
+/* Bases table: zebra rows + hover / focus-within highlight
+   (`.bases-table-container` is the wrapper used in current Bases table views) */
+:is(.bases-table-container, .bases-table) .bases-tbody .bases-tr {
+	transition: background-color 0.12s ease;
+}
+
+:is(.bases-table-container, .bases-table) .bases-tbody .bases-tr:nth-child(odd) {
+	background-color: var(--bases-row-odd);
+}
+
+:is(.bases-table-container, .bases-table) .bases-tbody .bases-tr:nth-child(even) {
+	background-color: var(--bases-row-even);
+}
+
+:is(.bases-table-container, .bases-table) .bases-tbody .bases-tr:hover {
+	background-color: var(--bases-row-hover) !important;
+}
+
+:is(.bases-table-container, .bases-table) .bases-tbody .bases-tr:focus-within {
+	background-color: var(--bases-row-focus) !important;
+}

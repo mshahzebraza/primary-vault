@@ -10,7 +10,8 @@ categories:
   - "[[scholarbee]]"
   - "[[Tasks]]"
 type: "[[Task]]"
-projects: []
+projects:
+  - "[[sb-backend]]"
 priority: P2
 ---
 
