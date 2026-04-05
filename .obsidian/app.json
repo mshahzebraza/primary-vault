@@ -5,5 +5,5 @@
   "readableLineLength": true,
   "newFileFolderPath": "Notes",
   "attachmentFolderPath": "Attachments",
-  "spellcheck": true
+  "spellcheck": false
 }

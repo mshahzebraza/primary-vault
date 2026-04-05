@@ -1,7 +1,7 @@
 {
   "types": {
     "base": "text",
-    "organization": "text",
+    "organization": "multitext",
     "path_area": "text",
     "original_path": "text",
     "categories": "multitext",

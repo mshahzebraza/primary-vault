@@ -14,3 +14,4 @@ Use **`[[Projects]]`** in `categories` for work that tracks a **product, app, re
 ## Browse project-tagged notes
 
 ![[Templates/Bases/Projects.base]]
+![[Notes/]]
