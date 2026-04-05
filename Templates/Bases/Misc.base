@@ -1,0 +1,34 @@
+filters:
+  and:
+    - '!file.inFolder("Templates")'
+    - or:
+        - file.tags.containsAny("misc", "other")
+        - categories.contains(link("Others & Misc"))
+        - categories.isEmpty()
+    - '!file.inFolder("Daily")'
+    - '!file.ext.containsAny("py", "json")'
+properties:
+  file.name:
+    displayName: Note
+  note.type:
+    displayName: Type
+  note.tags:
+    displayName: Tags
+  note.categories:
+    displayName: Categories
+  file.mtime:
+    displayName: Modified
+views:
+  - type: table
+    name: All
+    order:
+      - file.name
+      - type
+      - tags
+      - categories
+      - mtime
+    sort:
+      - property: mtime
+        direction: DESC
+    columnSize:
+      file.name: 423

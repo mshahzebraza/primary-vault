@@ -1,10 +1,14 @@
 filters:
   and:
+    - file.path.contains("Notes/")
+    - file.ext == "md"
     - '!file.name.contains("Template")'
     - tags.contains("journal")
 properties:
   file.name:
     displayName: Entry
+  note.date:
+    displayName: Date
   note.created:
     displayName: Created
 views:
@@ -12,4 +16,8 @@ views:
     name: Table
     order:
       - file.name
+      - date
       - created
+    sort:
+      - property: file.name
+        direction: ASC

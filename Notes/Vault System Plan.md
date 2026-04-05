@@ -152,6 +152,7 @@ These are the canonical categories going forward. All other `Categories/` hub no
 | `[[TechLearning]]` | `Categories/TechLearning.md` | All tech learning and self-study notes |
 | `[[Personal]]` | `Categories/Personal.md` | Personal journal, life notes |
 | `[[Journal]]` | `Categories/Journal.md` | Daily notes and journal entries |
+| `[[Others & Misc]]` | `Categories/Others & Misc.md` | Uncategorized or misc notes that do not fit other hubs |
 
 ### 4.3 Categories to Delete
 

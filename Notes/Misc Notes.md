@@ -1,9 +1,10 @@
 ---
 tags:
-- index
-- misc
+  - index
+  - misc
 categories:
-- '[[TechLearning]]'
+  - "[[TechLearning]]"
+  - "[[Journal]]"
 ---
 ## Tech Notes
 
