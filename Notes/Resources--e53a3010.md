@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/OSSU notes/Intro to CS and Programming in Python/Resources.md
-base: TechLearning
-path_area: OSSU notes
 categories:
 - '[[TechLearning]]'
 tags:

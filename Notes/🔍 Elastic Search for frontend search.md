@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/Misc/🔍 Elastic Search for frontend search.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

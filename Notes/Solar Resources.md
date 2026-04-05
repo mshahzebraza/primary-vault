@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Personal Journal/Solar System/Solar Resources.md
-base: Personal
-path_area: Solar System
 categories:
 - '[[Personal]]'
 tags:

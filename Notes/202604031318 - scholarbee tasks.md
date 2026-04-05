@@ -2,10 +2,7 @@
 date: 2026-04-03
 tags:
 - task
-original_path: Notes/Work/scholarbee/Tasks/202604031318 - scholarbee tasks.md
-base: Work
 organization: '[[scholarbee]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[scholarbee]]'

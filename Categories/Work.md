@@ -7,9 +7,9 @@ tags:
 
 Hub for paid / employer work. In note frontmatter use `categories` with quoted wikilinks, e.g. `- "[[Work]]"` and `- "[[aiquery.io]]"` (quotes avoid YAML misparsing `[[...]]`).
 
-## Notes with base Work
+## Work overview (HQ)
 
-![[Templates/Bases/NotesByBase.base#Work]]
+![[Templates/Bases/HQ.base#Overview]]
 
 ## By organization (aiquery.io, scholarbee, Freelance)
 

@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/Misc/Nest JS/🔐 JWT Authentication in Nest JS.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

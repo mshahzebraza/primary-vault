@@ -2,9 +2,6 @@
 tags:
 - index
 - open-claw
-original_path: Notes/Tech Learning/OpenClaw/OpenClaw.md
-base: TechLearning
-path_area: OpenClaw
 categories:
 - '[[TechLearning]]'
 ---

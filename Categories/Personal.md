@@ -9,4 +9,4 @@ Hub for personal journal and non-work notes. Link with `- "[[Personal]]"` in `ca
 
 ## Notes in Personal
 
-![[Templates/Bases/NotesByBase.base#Personal]]
+![[Templates/Bases/HQ.base#Personal]]

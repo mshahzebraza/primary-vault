@@ -3,10 +3,7 @@ status: active
 tags:
 - RnD
 - feature
-original_path: Notes/Work/aiquery.io/Tasks/Filtering Optimization/Filtering V2 - Athena, Clickhouse and MongoDB.md
-base: Work
 organization: '[[aiquery.io]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[aiquery.io]]'

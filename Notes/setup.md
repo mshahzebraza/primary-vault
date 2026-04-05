@@ -1,11 +1,9 @@
 ---
 tags:
-  - setup
-  - tech
-original_path: Notes/Tech Learning/setup.md
-base: TechLearning
+- setup
+- tech
 categories:
-  - "[[TechLearning]]"
+- '[[TechLearning]]'
 ---
 
 ## Tasks

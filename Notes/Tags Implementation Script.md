@@ -3,10 +3,7 @@ status: active
 tags:
 - task
 - script
-original_path: Notes/Work/scholarbee/Tasks/Tags Implementation Script.md
-base: Work
 organization: '[[scholarbee]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[scholarbee]]'

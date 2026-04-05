@@ -1,8 +1,5 @@
 ---
 sticker: emoji//1f9e0
-original_path: Notes/Tech Learning/Misc/Nest JS/🧠 Elasticsearch integration in a NestJS + MongoDB university portal project.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

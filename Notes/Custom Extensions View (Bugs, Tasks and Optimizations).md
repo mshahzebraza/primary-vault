@@ -2,10 +2,7 @@
 status: active
 tags:
 - feature
-original_path: Notes/Work/aiquery.io/Tasks/Custom Extensions View (Bugs, Tasks and Optimizations).md
-base: Work
 organization: '[[aiquery.io]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[aiquery.io]]'

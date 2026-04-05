@@ -9,4 +9,4 @@ Hub for learning notes (courses, tutorials, experiments). Link with `- "[[TechLe
 
 ## Notes in TechLearning
 
-![[Templates/Bases/NotesByBase.base#TechLearning]]
+![[Templates/Bases/HQ.base#TechLearning]]

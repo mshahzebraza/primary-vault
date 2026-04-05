@@ -2,8 +2,6 @@
 tags:
 - reference
 - resources
-original_path: Notes/Resources/Cool Resources.md
-base: Resources
 ---
 
 ## Interesting Websites

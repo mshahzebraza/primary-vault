@@ -4,10 +4,7 @@ tags:
 - reference
 - credentials
 - '[''Docs'']'
-original_path: Notes/Work/aiquery.io/Docs/Accounts and Links.md
-base: Work
 organization: '[[aiquery.io]]'
-path_area: Docs
 categories:
 - '[[Work]]'
 - '[[aiquery.io]]'

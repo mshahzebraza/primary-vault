@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/OpenClaw/OpenClaw Slack and Agent Setup.md
-base: TechLearning
-path_area: OpenClaw
 categories:
 - '[[TechLearning]]'
 tags:

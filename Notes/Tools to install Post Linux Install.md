@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/linux-pc-setup/Tools to install Post Linux Install.md
-base: TechLearning
-path_area: linux-pc-setup
 categories:
 - '[[TechLearning]]'
 tags:

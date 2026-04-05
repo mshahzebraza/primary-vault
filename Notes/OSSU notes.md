@@ -4,9 +4,6 @@ tags:
 - index
 - ossu
 - learning
-original_path: Notes/Tech Learning/OSSU notes/OSSU notes.md
-base: TechLearning
-path_area: OSSU notes
 categories:
 - '[[TechLearning]]'
 ---

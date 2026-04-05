@@ -1,19 +1,17 @@
 ---
-type: "[[Documentation]]"
+type: '[[Documentation]]'
 categories:
-  - "[[Documentation]]"
+- '[[Documentation]]'
 tags:
-  - hub
-  - navigation
-original_path: Notes/Base Home.md
-base: NotesRoot
+- hub
+- navigation
 ---
 
 # Base Home
 
-Start here for **Bases** navigation. Canonical rules and property schema: [[Vault System Plan]]. Legacy field notes: [[Templates/Bases/Metadata contract]].
+Start here for **Bases** navigation. Canonical rules and property schema: [[Vault System Plan]]. Technical reference: [[Templates/Bases/Metadata contract]].
 
-## Primary Bases (use these first)
+## Primary Bases
 
 Open from **Command palette → Bases: Open bases** (or embed links below).
 
@@ -21,18 +19,10 @@ Open from **Command palette → Bases: Open bases** (or embed links below).
 |------|---------|
 | [[Templates/Bases/Tasks\|Tasks]] | Task, bug, and R&D notes — tabs by status, org, project |
 | [[Templates/Bases/Meetings\|Meetings]] | Meeting notes; **By Task** groups by `related-tasks` |
-| [[Templates/Bases/HQ\|HQ]] | Work overview by org and project; TechLearning; tag browser |
+| [[Templates/Bases/HQ\|HQ]] | Work (`[[Work]]`), org slices, TechLearning, Documentation, Personal, tags |
+| [[Templates/Bases/WorkByOrganization\|WorkByOrganization]] | Work notes grouped by **`organization`** (same org tabs as before; uses `categories` + `organization`) |
 | [[Templates/Bases/Related Meetings\|Related Meetings]] | Embed in **task** notes — meetings that linked this task |
 | [[Templates/Bases/Related Tasks\|Related Tasks]] | Embed in **meeting** notes — tasks from `related-tasks` |
-
-## Legacy Bases (until `base` / `path_area` migration is finished)
-
-| Base | Use for |
-|------|---------|
-| [[Templates/Bases/NotesByBase\|NotesByBase]] | All `Notes/` — filter by legacy **`base`** |
-| [[Templates/Bases/WorkByOrganization\|WorkByOrganization]] | **`base == Work`** by **`organization`** |
-| [[Templates/Bases/ByPathArea\|ByPathArea]] | Filter by **`path_area`** |
-| [[Templates/Bases/Projects\|Projects]] | **Deprecated** — `[[Projects]]` category removed; use **`projects`** property + HQ / Tasks bases |
 
 Optional: [[Templates/Bases/Clippings]], [[Templates/Bases/Journal]], [[Templates/Bases/Daily]].
 
@@ -50,11 +40,5 @@ Hub notes live under `Categories/` (e.g. [[Work]], [[TechLearning]], [[aiquery.i
 ```bash
 python3 scripts/vault_metadata.py normalize
 python3 scripts/vault_metadata.py audit
-python3 scripts/category_cleanup.py --dry-run   # Phase 4 — already applied once
-```
-
-Phase 5 (remove `base`, `path_area`, `original_path`) when you are ready:
-
-```bash
-python3 scripts/vault_metadata.py remove-legacy --dry-run
+python3 scripts/vault_metadata.py remove-legacy --dry-run   # no-op if Phase 5 already applied
 ```

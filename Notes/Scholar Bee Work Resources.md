@@ -4,10 +4,7 @@ tags:
 - reference
 - credentials
 - '[''Docs'']'
-original_path: Notes/Work/scholarbee/Docs/Scholar Bee Work Resources.md
-base: Work
 organization: '[[scholarbee]]'
-path_area: Docs
 categories:
 - '[[Work]]'
 - '[[scholarbee]]'

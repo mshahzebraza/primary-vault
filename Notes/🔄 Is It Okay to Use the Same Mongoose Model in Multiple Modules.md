@@ -1,9 +1,6 @@
 ---
 aliases:
 - 🔄 Is It Okay to Use the Same Mongoose Model in Multiple Modules?
-original_path: Notes/Tech Learning/Misc/Nest JS/🔄 Is It Okay to Use the Same Mongoose Model in Multiple Modules.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

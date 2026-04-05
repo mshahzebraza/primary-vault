@@ -1,10 +1,7 @@
 ---
 aliases:
 - Feature Planning/Date Filters
-original_path: Notes/Work/aiquery.io/Tasks/Filtering Optimization/Feature Planning - Date Filters.md
-base: Work
 organization: '[[aiquery.io]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[aiquery.io]]'

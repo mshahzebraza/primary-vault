@@ -1,10 +1,7 @@
 ---
 banner_y: '0'
 Status: Active
-original_path: Notes/Work/scholarbee/Tasks/Tasks Manifest - Scholar Bee.md
-base: Work
 organization: '[[scholarbee]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[scholarbee]]'

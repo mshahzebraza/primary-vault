@@ -3,10 +3,7 @@ status: active
 tags:
 - task
 - RnD
-original_path: Notes/Work/aiquery.io/Tasks/Task - Add Debouncing to Table Search Input.md
-base: Work
 organization: '[[aiquery.io]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[aiquery.io]]'

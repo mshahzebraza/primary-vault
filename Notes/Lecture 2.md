@@ -1,8 +1,4 @@
 ---
-original_path: Notes/Tech Learning/OSSU notes/Intro to CS and Programming in Python/Lecture 2 - Strings, IO and Branching/Lecture
-  2.md
-base: TechLearning
-path_area: OSSU notes
 categories:
 - '[[TechLearning]]'
 tags:

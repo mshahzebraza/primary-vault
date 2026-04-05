@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/OpenClaw/OpenClaw + Tailscale Gateway Setup & Troubleshooting FAQ.md
-base: TechLearning
-path_area: OpenClaw
 categories:
 - '[[TechLearning]]'
 tags:

@@ -10,8 +10,6 @@ tags:
 - 0🌲
 status:
 - '[[Published]]'
-original_path: Notes/Evergreen notes turn ideas into objects that you can manipulate.md
-base: NotesRoot
 ---
 Using [[evergreen]] notes in Obsidian has been the most impactful change to how I think.
 

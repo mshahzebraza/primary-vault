@@ -1,8 +1,6 @@
 ---
 date: 2026-04-02
 attendees: []
-original_path: Notes/202604022216 - Widget Creation meeting.md
-base: NotesRoot
 categories:
 - '[[Meetings]]'
 related-tasks:

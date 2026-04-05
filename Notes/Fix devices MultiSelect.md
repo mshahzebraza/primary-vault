@@ -2,10 +2,7 @@
 status: closed
 tags:
 - bug
-original_path: Notes/Work/aiquery.io/Tasks/Fix devices MultiSelect.md
-base: Work
 organization: '[[aiquery.io]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[aiquery.io]]'

@@ -4,10 +4,7 @@ tags:
 - devops
 - reference
 - '[''Docs'']'
-original_path: Notes/Work/scholarbee/Docs/deployment practice.md
-base: Work
 organization: '[[scholarbee]]'
-path_area: Docs
 categories:
 - '[[Work]]'
 - '[[scholarbee]]'

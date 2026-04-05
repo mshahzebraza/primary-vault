@@ -2,8 +2,6 @@
 date: 2026-03-21
 attendees:
 - Maam Shazia
-original_path: Notes/2026-03-21 Maam Shazia Meeting.md
-base: NotesRoot
 categories:
 - '[[Meetings]]'
 related-tasks:

@@ -2,10 +2,7 @@
 status: active
 tags:
 - task
-original_path: Notes/Work/aiquery.io/Tasks/Query Response Data Diffing .md
-base: Work
 organization: '[[aiquery.io]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[aiquery.io]]'

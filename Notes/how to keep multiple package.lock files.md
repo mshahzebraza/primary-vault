@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/Misc/how to keep multiple package.lock files.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

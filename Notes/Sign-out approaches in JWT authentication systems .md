@@ -1,8 +1,5 @@
 ---
 sticker: emoji//1f513
-original_path: Notes/Tech Learning/Misc/Sign-out approaches in JWT authentication systems .md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

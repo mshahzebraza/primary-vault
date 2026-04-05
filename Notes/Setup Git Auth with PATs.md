@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/linux-pc-setup/Setup Git Auth with PATs.md
-base: TechLearning
-path_area: linux-pc-setup
 categories:
 - '[[TechLearning]]'
 tags:

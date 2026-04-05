@@ -5,10 +5,7 @@ tags:
 - bug
 aliases:
 - 'Bug: Momentary "No data found" Flash in Query Results Table'
-original_path: Notes/Work/aiquery.io/Tasks/Bug Momentary No data found Flash in Query Results Table.md
-base: Work
 organization: '[[aiquery.io]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[aiquery.io]]'

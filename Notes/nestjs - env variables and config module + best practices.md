@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/Misc/Nest JS/nestjs - env variables and config module + best practices.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

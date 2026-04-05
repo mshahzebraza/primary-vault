@@ -3,16 +3,18 @@ filters:
     - '!file.name.contains("Template")'
     - file.path.contains("Notes/")
     - file.ext == "md"
-    - note.base == "Work"
+    - note.categories.contains(link("Work"))
 properties:
   file.name:
     displayName: Note
   note.organization:
     displayName: Organization
-  note.path_area:
-    displayName: Area
-  note.original_path:
-    displayName: Original path
+  note.projects:
+    displayName: Projects
+  note.type:
+    displayName: Type
+  note.categories:
+    displayName: Categories
   file.mtime:
     displayName: Modified
 views:
@@ -24,10 +26,11 @@ views:
     order:
       - file.name
       - organization
-      - path_area
+      - projects
+      - type
       - mtime
     sort:
-      - property: path_area
+      - property: organization
         direction: ASC
       - property: file.name
         direction: ASC
@@ -38,10 +41,11 @@ views:
         - note.organization.contains("aiquery.io")
     order:
       - file.name
-      - path_area
+      - projects
+      - type
       - mtime
     sort:
-      - property: path_area
+      - property: projects
         direction: ASC
       - property: file.name
         direction: ASC
@@ -52,10 +56,10 @@ views:
         - note.organization.contains("scholarbee")
     order:
       - file.name
-      - path_area
-      - mtime
+      - projects
+      - type
     sort:
-      - property: path_area
+      - property: projects
         direction: ASC
       - property: file.name
         direction: ASC
@@ -66,7 +70,8 @@ views:
         - note.organization.contains("Freelance")
     order:
       - file.name
-      - path_area
+      - projects
+      - type
       - mtime
     sort:
       - property: file.name

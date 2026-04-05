@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/Misc/Types of Linux Applications.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

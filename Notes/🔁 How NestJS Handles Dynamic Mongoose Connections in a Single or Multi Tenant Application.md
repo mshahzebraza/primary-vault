@@ -1,10 +1,6 @@
 ---
 aliases:
 - 🔁 How NestJS Handles Dynamic Mongoose Connections in a Single/Multi-Tenant Application
-original_path: Notes/Tech Learning/Misc/Nest JS/🔁 How NestJS Handles Dynamic Mongoose Connections in a Single or Multi Tenant
-  Application.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

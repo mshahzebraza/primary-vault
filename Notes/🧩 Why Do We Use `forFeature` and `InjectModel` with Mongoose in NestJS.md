@@ -2,9 +2,6 @@
 sticker: ''
 aliases:
 - 🧩 Why Do We Use `forFeature` and `InjectModel` with Mongoose in NestJS
-original_path: Notes/Tech Learning/Misc/Nest JS/🧩 Why Do We Use `forFeature` and `InjectModel` with Mongoose in NestJS.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

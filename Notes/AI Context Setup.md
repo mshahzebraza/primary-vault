@@ -3,10 +3,7 @@ status: todo
 tags:
 - setup
 - dx
-original_path: Notes/Work/scholarbee/Tasks/AI Context Setup.md
-base: Work
 organization: '[[scholarbee]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[scholarbee]]'

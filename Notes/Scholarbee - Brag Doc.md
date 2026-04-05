@@ -2,10 +2,7 @@
 status: reference
 tags:
 - reference
-original_path: Notes/Work/scholarbee/Docs/Scholarbee - Brag Doc.md
-base: Work
 organization: '[[scholarbee]]'
-path_area: Docs
 categories:
 - '[[Work]]'
 - '[[scholarbee]]'

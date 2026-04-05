@@ -3,10 +3,7 @@ status: backlog
 tags:
 - RnD
 - architecture
-original_path: Notes/Work/aiquery.io/Tasks/Filtering Optimization/Filtering Optimization.md
-base: Work
 organization: '[[aiquery.io]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[aiquery.io]]'

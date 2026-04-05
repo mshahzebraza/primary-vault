@@ -3,9 +3,6 @@ sticker: emoji//1f4c2
 tags:
 - index
 - misc
-original_path: Notes/Tech Learning/Misc/Misc.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 ---

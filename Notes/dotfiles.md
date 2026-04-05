@@ -5,9 +5,6 @@ tags:
 - dotfiles
 - reference
 - misc
-original_path: Notes/Tech Learning/Misc/dotfiles.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 ---

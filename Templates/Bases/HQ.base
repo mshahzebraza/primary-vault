@@ -26,7 +26,7 @@ views:
     name: Overview
     filters:
       and:
-        - note.base == "Work"
+        - note.categories.contains(link("Work"))
     groupBy:
       property: organization
       direction: ASC
@@ -80,6 +80,32 @@ views:
         - note.categories.contains(link("TechLearning"))
     order:
       - file.name
+      - tags
+      - mtime
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Documentation
+    filters:
+      and:
+        - note.categories.contains(link("Documentation"))
+    order:
+      - file.name
+      - type
+      - organization
+      - tags
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Personal
+    filters:
+      and:
+        - note.categories.contains(link("Personal"))
+    order:
+      - file.name
+      - type
       - tags
       - mtime
     sort:

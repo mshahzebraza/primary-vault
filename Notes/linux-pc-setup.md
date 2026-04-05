@@ -5,9 +5,6 @@ tags:
 - linux
 - setup
 - linux-pc-setup
-original_path: Notes/Tech Learning/linux-pc-setup/linux-pc-setup.md
-base: TechLearning
-path_area: linux-pc-setup
 categories:
 - '[[TechLearning]]'
 ---

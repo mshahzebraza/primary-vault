@@ -1,9 +1,6 @@
 ---
 aliases:
 - 🔐 How Does `req.user` Get Set in NestJS When Using Passport?
-original_path: Notes/Tech Learning/Misc/Nest JS/🔐 How Does `req.user` Get Set in NestJS When Using Passport.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

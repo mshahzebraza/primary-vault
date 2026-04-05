@@ -1,8 +1,6 @@
 ---
 date: 2026-03-31
 attendees: []
-original_path: Notes/20260331 - Aiquery Tuesday Meeting.md
-base: NotesRoot
 categories:
 - '[[Meetings]]'
 related-tasks:

@@ -1,6 +1,4 @@
 ---
-original_path: Notes/Junaid Profile.md
-base: NotesRoot
 tags: []
 ---
 Gender:                 Male

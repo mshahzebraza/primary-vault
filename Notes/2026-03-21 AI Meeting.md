@@ -1,8 +1,6 @@
 ---
 date: 2026-03-21
 attendees: []
-original_path: Notes/2026-03-21 AI Meeting.md
-base: NotesRoot
 categories:
 - '[[Meetings]]'
 related-tasks:

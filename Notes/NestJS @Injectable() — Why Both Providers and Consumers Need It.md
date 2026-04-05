@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/Misc/Nest JS/NestJS @Injectable() — Why Both Providers and Consumers Need It.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

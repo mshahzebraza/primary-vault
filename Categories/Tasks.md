@@ -7,6 +7,6 @@ tags:
 
 Area hub for task-tracked work. Link with `- "[[Tasks]]"` in `categories` (often with `- "[[Work]]"` and an org hub).
 
-## Notes in path area Tasks
+## Tasks, bugs, and R&D (Tasks base)
 
-![[Templates/Bases/ByPathArea.base#Tasks]]
+![[Templates/Bases/Tasks.base]]

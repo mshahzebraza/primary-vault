@@ -1,7 +1,9 @@
 filters:
   and:
-    - note.categories.contains(link("Clippings"))
+    - file.path.contains("Notes/")
+    - file.ext == "md"
     - '!file.name.contains("Template")'
+    - tags.contains("clippings")
 properties:
   file.name:
     displayName: Title

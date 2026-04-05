@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/linux-pc-setup/install-nerd-dictation (failed).md
-base: TechLearning
-path_area: linux-pc-setup
 categories:
 - '[[TechLearning]]'
 tags:

@@ -1,8 +1,5 @@
 ---
 aliases: []
-original_path: Notes/Tech Learning/Misc/Nest JS/NestJS notes.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

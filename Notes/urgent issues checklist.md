@@ -1,13 +1,11 @@
 ---
 status: active
 tags:
-  - checklist
-original_path: Notes/Work/scholarbee/urgent issues checklist.md
-base: Work
-organization: "[[scholarbee]]"
+- checklist
+organization: '[[scholarbee]]'
 categories:
-  - "[[Work]]"
-  - "[[scholarbee]]"
+- '[[Work]]'
+- '[[scholarbee]]'
 ---
 
 ## Open Issues

@@ -1,11 +1,9 @@
 ---
 tags:
-  - index
-  - tech
-original_path: Notes/Tech Learning/Tech Learning.md
-base: TechLearning
+- index
+- tech
 categories:
-  - "[[TechLearning]]"
+- '[[TechLearning]]'
 ---
 
 ## Tech Learning

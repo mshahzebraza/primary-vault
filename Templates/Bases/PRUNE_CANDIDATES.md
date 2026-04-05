@@ -1,15 +1,9 @@
-# Bases inventory (current)
+# Bases prune log
 
-**Primary navigation (filter on `note.base` / `note.organization` / `note.path_area`):**
+The following base files were **removed** during Vault System Plan Phase 5 (replaced by [[HQ.base]] and category/`projects`-based navigation):
 
-- [NotesByBase.base](NotesByBase.base)
-- [WorkByOrganization.base](WorkByOrganization.base) (formerly Work by company)
-- [ByPathArea.base](ByPathArea.base)
+- ~~NotesByBase.base~~
+- ~~ByPathArea.base~~
+- ~~Projects.base~~ (`[[Projects]]` category removed; use `projects` property + Tasks / HQ bases)
 
-**Category-driven (filter on `note.categories`):**
-
-- [Meetings.base](Meetings.base) — `[[Meetings]]`, scoped to `Notes/`
-- [Projects.base](Projects.base) — `[[Projects]]`, scoped to `Notes/`
-- [Clippings.base](Clippings.base), [Journal.base](Journal.base), [Daily.base](Daily.base) — optional; use if you tag clippings/journal/dailies with matching `categories`
-
-**Removed (redundant or unused here):** Everything, Templates, Evergreen, Ratings, Map, People, Related, Backlinks, Attachments.
+Remaining bases live alongside this file in `Templates/Bases/`.

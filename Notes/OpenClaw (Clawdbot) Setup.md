@@ -1,9 +1,6 @@
 ---
 aliases:
 - OpenClaw/Clawdbot Setup
-original_path: Notes/Tech Learning/OpenClaw/OpenClaw (Clawdbot) Setup.md
-base: TechLearning
-path_area: OpenClaw
 categories:
 - '[[TechLearning]]'
 tags:

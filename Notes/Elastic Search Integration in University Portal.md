@@ -1,7 +1,4 @@
 ---
-original_path: Notes/Tech Learning/Misc/Elastic Search Integration in University Portal.md
-base: TechLearning
-path_area: Misc
 categories:
 - '[[TechLearning]]'
 tags:

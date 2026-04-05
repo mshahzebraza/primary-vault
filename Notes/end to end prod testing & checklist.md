@@ -1,14 +1,12 @@
 ---
 status: reference
 tags:
-  - checklist
-  - testing
-original_path: "Notes/Work/aiquery.io/end to end prod testing & checklist.md"
-base: Work
-organization: "[[aiquery.io]]"
+- checklist
+- testing
+organization: '[[aiquery.io]]'
 categories:
-  - "[[Work]]"
-  - "[[aiquery.io]]"
+- '[[Work]]'
+- '[[aiquery.io]]'
 ---
 
 ## Feature Testing Notes

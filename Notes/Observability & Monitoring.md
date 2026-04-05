@@ -3,10 +3,7 @@ status: reference
 tags:
 - observability
 - reference
-original_path: Notes/Work/aiquery.io/Tasks/Frontend - Observability (Logging & Metrics)/Observability & Monitoring.md
-base: Work
 organization: '[[aiquery.io]]'
-path_area: Tasks
 categories:
 - '[[Work]]'
 - '[[aiquery.io]]'

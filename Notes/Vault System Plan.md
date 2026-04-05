@@ -46,15 +46,9 @@ Every note in `Notes/` should carry the applicable subset of these properties. D
 | `related-tasks` | list of wikilinks | `[[TaskNote]]`                                                                                                      | Meeting notes        | Powers meeting↔task relationship in Bases.                         |
 | `parent-task`   | wikilink          | `[[ParentTask]]`                                                                                                    | Sub-task notes       | Optional. Creates task hierarchy.                                  |
 
-### 2.2 Properties to Eventually Remove (Legacy)
+### 2.2 Legacy fields (removed)
 
-These exist on notes from the flat migration. They stay until `type` + `categories` routing is confirmed stable, then a script pass removes them.
-
-| Property | Why it exists | When to remove |
-|---|---|---|
-| `base` | Migration artifact from path structure | After `categories` covers all routing |
-| `path_area` | Migration artifact — replaced by `type` | After `type` is populated on all notes |
-| `original_path` | Rollback reference from flatten script | After links are confirmed stable |
+`base`, `path_area`, and `original_path` were **removed** from all notes in Phase 5. Navigation uses `type`, `categories`, `organization`, and `projects` only. Do not add these keys back to new notes.
 
 ### 2.3 Properties to Normalise Now
 
@@ -114,7 +108,7 @@ The **By Task** tab is the answer to "show me every meeting that discussed X tas
 
 ### 3.3 HQ Base (`HQ.base`)
 
-**Purpose:** Landing pad. Overview of all work notes by organisation and project. Replaces `WorkByOrganization.base`, `NotesByBase.base`, and `ByPathArea.base`.
+**Purpose:** Landing pad. Overview of all work notes by organisation and project. Supersedes the old `NotesByBase` / `ByPathArea` / `Projects` bases (removed in Phase 5); `WorkByOrganization.base` remains as an org-sliced view using `categories` + `organization`.
 
 **Filters:** All notes in `Notes/`, excluding Templates.
 
@@ -122,11 +116,13 @@ The **By Task** tab is the answer to "show me every meeting that discussed X tas
 
 | Tab | Filter | Columns | Group by |
 |---|---|---|---|
-| Overview | `base: Work` | name, type, organization, projects, status | organization |
+| Overview | `categories` contains `[[Work]]` | name, type, organization, projects, status | organization |
 | aiquery.io | organization = aiquery.io | name, type, projects, status | projects |
 | scholarbee | organization = scholarbee | name, type, projects, status | projects |
 | TechLearning | categories contains `[[TechLearning]]` | name, tags, date modified | — |
-| Tags Browser | all notes with tags | name, type, tags | tags |
+| Documentation | categories contains `[[Documentation]]` | name, type, organization, tags | — |
+| Personal | categories contains `[[Personal]]` | name, type, tags, date modified | — |
+| Tags Browser | all notes (grouped by tags) | name, type, tags | tags |
 
 
 ---
@@ -437,12 +433,12 @@ Daily notes are **hubs, not task trackers.** They are not filled manually.
 ### Phase 4 — Category cleanup (~30 min)
 - [x] Delete the 13 categories listed in §4.3
 - [x] Update affected notes to use tags instead
-- [ ] Verify remaining 10 categories in §4.2 have correct notes pointing to them
+- [x] Verify remaining 10 categories in §4.2 have correct notes pointing to them
 
 ### Phase 5 — Remove legacy fields (do last, after Phase 3 is confirmed stable)
-- [ ] Script pass to remove `base`, `path_area`, `original_path` from all notes
-- [ ] Update all Bases to not reference these fields
-- [ ] Delete `NotesByBase.base` and `ByPathArea.base` (replaced by HQ)
+- [x] Script pass to remove `base`, `path_area`, `original_path` from all notes
+- [x] Update all Bases to not reference these fields
+- [x] Delete `NotesByBase.base`, `ByPathArea.base`, and `Projects.base` (replaced by HQ / `projects` property)
 
 ---
 
@@ -451,9 +447,9 @@ Daily notes are **hubs, not task trackers.** They are not filled manually.
 - **Do not add new categories** without checking §4.2 first. If it's not on the keep list, it's a tag.
 - **Do not maintain manifest bullet lists.** Change the task note's `status` field instead.
 - **Do not add more than 4–5 properties to a note.** If you need more, the metadata schema has expanded beyond what Bases can usefully filter on.
-- **Do not use `base`, `path_area`, or `original_path` in new notes.** They are legacy fields.
+- **Do not use `base`, `path_area`, or `original_path`.** They were removed in Phase 5; use `type`, `categories`, `organization`, and `projects`.
 - **Do not create category hub notes for repos or codebases** (like `[[aq-client]]`). Those belong in the `projects` property, not as category hubs. Project-level navigation is handled by the `projects` column in the Tasks Base.
 
 ---
 
-*Last updated: 2026-04-05. This is a living document — update it when the system changes.*
+*Last updated: 2026-04-05. Phases 1–5 complete. This is a living document — update it when the system changes.*

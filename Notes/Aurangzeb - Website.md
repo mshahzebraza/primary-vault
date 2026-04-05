@@ -2,14 +2,12 @@
 client: Aurangzeb
 status: active
 tags:
-  - freelance
-  - project
-original_path: Notes/Work/Freelance/Aurangzeb - Website.md
-base: Work
-organization: "[[Freelance]]"
+- freelance
+- project
+organization: '[[Freelance]]'
 categories:
-  - "[[Work]]"
-  - "[[Freelance]]"
+- '[[Work]]'
+- '[[Freelance]]'
 ---
 
 > ⚠️ This note contains a live API token and DB URI. Do not share or commit this file.
