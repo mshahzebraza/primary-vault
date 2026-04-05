@@ -1,4 +1,5 @@
 ---
+type: "[[Bug]]"
 status: active
 tags:
   - bug
@@ -6,7 +7,6 @@ organization: "[[aiquery.io]]"
 categories:
   - "[[Work]]"
   - "[[Tasks]]"
-type: "[[Bug]]"
 projects:
   - "[[aq-client]]"
 priority: P2
