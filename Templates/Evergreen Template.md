@@ -2,7 +2,8 @@
 type: "[[Reference]]"
 categories:
   - "[[Documentation]]"
-date: {{date}}
+date:
+  "{ date }":
 tags:
-  - 0🌲
+  - evergreen
 ---

@@ -1,6 +1,6 @@
 # Metadata contract (Bases + Properties)
 
-Notes under `Notes/` follow the **canonical property schema** in [[Vault System Plan]] (§2). This file summarizes types and tooling.
+Notes under `Notes/` follow the **canonical property schema** in [[Documentation Template]] (§2). This file summarizes types and tooling.
 
 ## Primary fields
 

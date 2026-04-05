@@ -2,7 +2,7 @@
 .cursor/
 
 # Local migration tooling — not part of the vault snapshot in git
-scripts/
+scripts/*
 
 # Secrets — never commit API keys or env files
 .env

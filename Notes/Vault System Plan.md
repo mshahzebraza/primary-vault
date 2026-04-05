@@ -6,6 +6,7 @@ categories:
 tags:
   - vault-system
   - plan
+  - evergreen
 date: 2026-04-05
 status: active
 ---
