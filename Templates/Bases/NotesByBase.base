@@ -1,0 +1,140 @@
+filters:
+  and:
+    - '!file.name.contains("Template")'
+    - file.path.contains("Notes/")
+    - file.ext == "md"
+properties:
+  file.name:
+    displayName: Note
+  note.base:
+    displayName: Base
+  note.organization:
+    displayName: Organization
+  note.path_area:
+    displayName: Area
+  note.original_path:
+    displayName: Original path
+  file.mtime:
+    displayName: Modified
+views:
+  - type: table
+    name: All by base
+    groupBy:
+      property: base
+      direction: ASC
+    order:
+      - file.name
+      - base
+      - organization
+      - path_area
+      - original_path
+      - mtime
+      - tags
+      - categories
+    sort:
+      - property: base
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      note.base: 123
+  - type: table
+    name: Work
+    filters:
+      and:
+        - note.base == "Work"
+    order:
+      - file.name
+      - organization
+      - path_area
+      - mtime
+    sort:
+      - property: organization
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: TechLearning
+    filters:
+      and:
+        - note.base == "TechLearning"
+    order:
+      - file.name
+      - path_area
+      - mtime
+    sort:
+      - property: path_area
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Personal
+    filters:
+      and:
+        - note.base == "Personal"
+    order:
+      - file.name
+      - path_area
+      - mtime
+    sort:
+      - property: path_area
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Resources
+    filters:
+      and:
+        - note.base == "Resources"
+    order:
+      - file.name
+      - path_area
+      - mtime
+    sort:
+      - property: path_area
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: NotesRoot
+    filters:
+      and:
+        - note.base == "NotesRoot"
+    order:
+      - file.name
+      - organization
+      - path_area
+      - mtime
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Attachments
+    filters:
+      and:
+        - note.base == "Attachments"
+    order:
+      - file.name
+      - path_area
+      - mtime
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Evergreen
+    filters:
+      and:
+        - note.categories.contains(link("Evergreen"))
+    order:
+      - file.name
+      - base
+      - mtime
+  - type: table
+    name: People
+    filters:
+      and:
+        - note.categories.contains(link("People"))
+    order:
+      - file.name
+      - base
+      - mtime

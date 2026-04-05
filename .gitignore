@@ -1,0 +1,23 @@
+# Cursor IDE (local)
+.cursor/
+
+# Local migration tooling — not part of the vault snapshot in git
+scripts/
+
+# Secrets — never commit API keys or env files
+.env
+.env.*
+!.env.example
+
+# obsidian
+.obsidian/appearance.json
+.obsidian/hotkeys.json
+.obsidian/workspace.json
+.obsidian/themes
+.obsidian/plugins
+.obsidian/community-plugins.json
+.obsidian/core-plugins-migration.json
+
+# Exclude macOS Finder (System Explorer) View States
+.DS_Store
+.makemd/*

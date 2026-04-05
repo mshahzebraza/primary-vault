@@ -1,0 +1,73 @@
+filters:
+  and:
+    - '!file.name.contains("Template")'
+    - file.path.contains("Notes/")
+    - file.ext == "md"
+    - note.base == "Work"
+properties:
+  file.name:
+    displayName: Note
+  note.organization:
+    displayName: Organization
+  note.path_area:
+    displayName: Area
+  note.original_path:
+    displayName: Original path
+  file.mtime:
+    displayName: Modified
+views:
+  - type: table
+    name: All Work
+    groupBy:
+      property: organization
+      direction: ASC
+    order:
+      - file.name
+      - organization
+      - path_area
+      - mtime
+    sort:
+      - property: path_area
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: aiquery.io
+    filters:
+      and:
+        - note.organization.contains("aiquery.io")
+    order:
+      - file.name
+      - path_area
+      - mtime
+    sort:
+      - property: path_area
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: scholarbee
+    filters:
+      and:
+        - note.organization.contains("scholarbee")
+    order:
+      - file.name
+      - path_area
+      - mtime
+    sort:
+      - property: path_area
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Freelance
+    filters:
+      and:
+        - note.organization.contains("Freelance")
+    order:
+      - file.name
+      - path_area
+      - mtime
+    sort:
+      - property: file.name
+        direction: ASC
