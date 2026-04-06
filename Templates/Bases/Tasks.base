@@ -69,6 +69,8 @@ views:
       - priority
       - status
     sort:
+      - property: projects
+        direction: ASC
       - property: status
         direction: ASC
       - property: file.name
