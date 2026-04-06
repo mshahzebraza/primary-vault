@@ -3,62 +3,55 @@ organization: "[[scholarbee]]"
 categories:
   - "[[Work]]"
   - "[[Tasks]]"
-type: "[[Documentation]]"
+type:
+  - "[[Task]]"
 status: active
 tags:
   - orphan-tasks
   - minor-tasks
+  - evergreen
+projects:
+  - "[[sb-backend]]"
+  - "[[sb-ops-scripts]]"
 ---
 
 ## Document Intent
 This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
-## Summary
+## ▶️ In Progress
+- Search listing ranking issue
 
-| Sr. | Priority |  Status   | Title                                                  |
-| :-: | :------: | :-------: | ------------------------------------------------------ |
-|  1  |    P1    |  Active   | [[Migrate Media Items]]                                |
-|  2  |    P1    |  Active   | [[Tags Implementation Script]]                         |
-|  3  |    P1    |  Active   | Add Draft Admission Program functionality              |
-|  4  |    P2    |  Blocked  | Review Shahwaiz Chat Socket Testing Video              |
-|  5  |    P1    |  Blocked  | Timezone Filtering                                     |
-|  6  |    P1    |  Blocked  | Chat Issue                                             |
-|  7  |    P1    |   Todo    | R&D on Elastic Search storage options                  |
-|  8  |    P1    |   Todo    | [[Future Feature Requirements]]                        |
-|  9  |    P1    |   Todo    | [[202604031318 - scholarbee tasks]]                    |
-| 10  |    P1    |   Todo    | [[urgent issues checklist]]                            |
-| 11  |    P2    |   Todo    | [[referral system setup]]                              |
-| 12  |    P2    |   Todo    | Fix & Maintain the Test User Creation Script           |
-| 13  |    P2    |   Todo    | Data Inconsistency due to missing fields               |
-| 14  |    P2    |   Todo    | [[AI Context Setup]]                                   |
-
-
-
-### Explaination
-
-- **Sr. 1:** [[Migrate Media Items]]
-- **Sr. 2:** [[Tags Implementation Script]]
-- **Sr. 3:** Add Draft Admission Program functionality
+## 🟥 Pending
+- [ ] Favourite program notification
+- [ ] Review the program creation flow outside the admin CMS (from university portal)
+- [ ] University dropdown lookup should search against both abbreviation and name
+- [ ] Add Draft Admission Program functionality
 	- Add ability to create draft admission programs; hide in ES indexing and DB results
-- **Sr. 4:** Review Shahwaiz Chat Socket Testing Video
+- [ ] R&D on Elastic Search storage options
+- [ ] Data Inconsistency due to missing fields
+	- Data Team should be informed about the es-indexing failures due to bad/stale data
+
+## ⚠️ Blocked
+- Commit the program template data from data entry into the database
+- Review Shahwaiz Chat Socket Testing Video
 	- Blocked; pending on Shahwaiz
-- **Sr. 5:** Timezone Filtering
+- Timezone Filtering
 	- Blocked; needs discussion
 	- If frontend handles timezone conversion, backend date-only APIs will be offset; need decision
-- **Sr. 6:** Chat Issue
-	- Blocked; needs devops debugging
-	- `api-dev`: sockets connect, no messages sent regardless of `user_type`
-	- `api-prod`: sockets not connecting
-	- `api-staging`: sockets connect, admin chat broken
-- **Sr. 7:** R&D on Elastic Search storage options
-- **Sr. 8:** [[Future Feature Requirements|Chat Observability & Delayed Reply Alerting]]
-- **Sr. 9:** [[202604031318 - scholarbee tasks|Program Creation from University Portal]]
-	- Architecture unresolved
-- **Sr. 10:** [[urgent issues checklist|Urgent Issues Checklist]]
-- **Sr. 11:** [[referral system setup|Referral Code Architecture & Setup]]
-- **Sr. 12:** Fix & Maintain the Test User Creation Script
-- **Sr. 13:** Data Inconsistency due to missing fields
-- **Sr. 14:** [[AI Context Setup|AI / Cursor Rules & Testing Setup]]
-- **Sr. 15:** Slug not available in ES List
-	- Completed: fixed (missing slug-generation logic for new CMS entries)
-- **Sr. 16:** Accept redirect link in body of email verification APIg
+## 🟥 Unresolved — Program Creation from University Portal
+Architecture decisions still needed:
+
+- Should university admins be allowed to **create** program templates directly, or only **request** creation (requiring super-admin approval)?
+  - If allowed: a lookup API must be provided matching against `abbreviation`, `name`, and `field_of_study`
+
+- If direct creation is allowed, how do we prevent race conditions creating duplicate templates with the same name?
+  - Option: make `(name + degree_level)` a unique compound key in the schema
+
+- Should we allow university admins to use existing program endpoints and **auto-create** a program template if none exists with the same title?
+  - Problem: if a template with the same name but different `field_of_study`/`tags` already exists and takes over, the admin won't understand why their provided values were ignored
+
+
+## ✅ Completed
+- Transaction code fix (temporary + permanent)
+- University name+abbreviation search — Shahwaiz
+	- Program and scholarship listing interweaving results — Shahwaiz

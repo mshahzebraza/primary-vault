@@ -52,9 +52,9 @@ views:
       - property: file.name
         direction: ASC
     columnSize:
-      file.name: 383
+      file.name: 333
+      note.projects: 238
       note.organization: 180
-      note.projects: 177
   - type: table
     name: aiquery.io
     filters:
@@ -87,6 +87,7 @@ views:
       - projects
       - status
       - priority
+      - date
     sort:
       - property: status
         direction: ASC

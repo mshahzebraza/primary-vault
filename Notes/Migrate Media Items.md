@@ -21,8 +21,8 @@ Migrate media storage from the old webhook-based setup to direct GCS-Adapter int
 ## Tasks
 
 ### GCS Integration
-- [ ] Replace the webhook with direct GCS-Adapter integration
-- [ ] Confirm credentials are correct (service account + local auth)
+- [x] Replace the webhook with direct GCS-Adapter integration
+- [x] Confirm credentials are correct (service account + local auth)
 
 ```env
 GCS_PROJECT_ID=scholarbee-student-portal
@@ -32,7 +32,7 @@ GCS_PRIVATE_KEY=dummy
 ```
 
 ### URL Migration Script
-Hard-coded base URLs need to be fixed across these collections:
+- [x] Hard-coded base URLs need to be fixed across these collections:
 
 | Collection | Fields |
 |---|---|
@@ -47,12 +47,17 @@ Hard-coded base URLs need to be fixed across these collections:
 | chat | `attachments` |
 
 **Options to explore:**
-- Option A: Replace the base URL in all affected fields via migration script
-- Option B: Strip the base URL from DB; construct it dynamically at query time
+- [x] Option A: Replace the base URL in all affected fields via migration script
+- [ ] Option B: Strip the base URL from DB; construct it dynamically at query time
 
 ## Open Questions
 - When did the file migration happen?
 - Is it safe to re-run the migration without creating duplicate files in storage?
+
+
+## Related Bugs
+- [ ] Application Snapshot still stores the legacy url path i.e. from aws-s3-storage
+
 
 ## Related Notes
 - [[Tasks Manifest - Scholar Bee]]
