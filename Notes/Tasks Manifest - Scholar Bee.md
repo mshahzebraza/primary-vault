@@ -19,7 +19,7 @@ projects:
 This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
 ## ▶️ In Progress
-- [[Bug - Search listing ranking issue]]
+- [[26-Apr-06 (Mon) Bug - Program Search listing ranking issue in Student Portal]]
 
 ## 🟥 Pending
 - [ ] Search Listing to conform to the requirements criteria submitted by the [[SB Outreach Team]]
@@ -56,3 +56,12 @@ Architecture decisions still needed:
 - Transaction code fix (temporary + permanent)
 - University name+abbreviation search — Shahwaiz
 	- Program and scholarship listing interweaving results — Shahwaiz
+
+---
+
+## Ideas
+
+
+---
+## Tech Debt
+- Support Chat should be separated from the admin-chat workflow
