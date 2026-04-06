@@ -9,6 +9,7 @@ status: open
 priority: P2
 tags:
   - bug
+date: {{date}}
 ---
 
 ## Description

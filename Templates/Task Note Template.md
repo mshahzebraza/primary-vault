@@ -7,6 +7,7 @@ organization:
 projects: []
 status: backlog
 priority: P2
+date: {{date}}
 ---
 
 ## Overview
