@@ -11,28 +11,27 @@ tags:
 ---
 
 ## Document Intent
-This document is meant to document the tasks that do not warrant a dedicated document-note yet.
+This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
 ## Summary
 
-| Sr. | Priority |  Status   | Title                                                                 |
-| :-: | :------: | :-------: | --------------------------------------------------------------------- |
-|  1  |    P1    |  Active   | [[Migrate Media Items]]                                               |
-|  2  |    P1    |  Active   | [[Tags Implementation Script]]                                        |
-|  3  |    P1    |  Active   | Add Draft Admission Program functionality                             |
-|  4  |    P2    |  Blocked  | Review Shahwaiz Chat Socket Testing Video                             |
-|  5  |    P1    |  Blocked  | Timezone Filtering                                                    |
-|  6  |    P1    |  Blocked  | Chat Issue                                                            |
-|  7  |    P1    |   Todo    | R&D on Elastic Search storage options                                 |
-|  8  |    P1    |   Todo    | [[Future Feature Requirements]]                                       |
-|  9  |    P1    |   Todo    | [[202604031318 - scholarbee tasks]]                                   |
-| 10  |    P1    |   Todo    | [[urgent issues checklist]]                                           |
-| 11  |    P2    |   Todo    | [[referral system setup]]                                             |
-| 12  |    P2    |   Todo    | Fix & Maintain the Test User Creation Script                          |
-| 13  |    P2    |   Todo    | Data Inconsistency due to missing fields                              |
-| 14  |    P2    |   Todo    | [[AI Context Setup]]                                                  |
-| 15  |    P1    | Completed | Slug not available in ES List                                         |
-| 16  |    P1    | Completed | Accept redirect link in body of email verification API              |
+| Sr. | Priority |  Status   | Title                                                  |
+| :-: | :------: | :-------: | ------------------------------------------------------ |
+|  1  |    P1    |  Active   | [[Migrate Media Items]]                                |
+|  2  |    P1    |  Active   | [[Tags Implementation Script]]                         |
+|  3  |    P1    |  Active   | Add Draft Admission Program functionality              |
+|  4  |    P2    |  Blocked  | Review Shahwaiz Chat Socket Testing Video              |
+|  5  |    P1    |  Blocked  | Timezone Filtering                                     |
+|  6  |    P1    |  Blocked  | Chat Issue                                             |
+|  7  |    P1    |   Todo    | R&D on Elastic Search storage options                  |
+|  8  |    P1    |   Todo    | [[Future Feature Requirements]]                        |
+|  9  |    P1    |   Todo    | [[202604031318 - scholarbee tasks]]                    |
+| 10  |    P1    |   Todo    | [[urgent issues checklist]]                            |
+| 11  |    P2    |   Todo    | [[referral system setup]]                              |
+| 12  |    P2    |   Todo    | Fix & Maintain the Test User Creation Script           |
+| 13  |    P2    |   Todo    | Data Inconsistency due to missing fields               |
+| 14  |    P2    |   Todo    | [[AI Context Setup]]                                   |
+
 
 
 ### Explaination
