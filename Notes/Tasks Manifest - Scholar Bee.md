@@ -19,9 +19,10 @@ projects:
 This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
 ## ▶️ In Progress
-- Search listing ranking issue
+- [[Bug - Search listing ranking issue]]
 
 ## 🟥 Pending
+- [ ] Search Listing to conform to the requirements criteria submitted by the [[SB Outreach Team]]
 - [ ] Favourite program notification
 - [ ] Review the program creation flow outside the admin CMS (from university portal)
 - [ ] University dropdown lookup should search against both abbreviation and name

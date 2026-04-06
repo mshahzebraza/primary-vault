@@ -82,6 +82,9 @@ views:
     filters:
       and:
         - note.organization.contains("scholarbee")
+    groupBy:
+      property: status
+      direction: ASC
     order:
       - file.name
       - projects

@@ -8,7 +8,8 @@ organization:
   - "[[scholarbee]]"
 projects:
   - "[[sb-ops-scripts]]"
-status: backlog
+status:
+  - completed
 priority: P2
 parent-task: "[[Migrate Media Items]]"
 ---
