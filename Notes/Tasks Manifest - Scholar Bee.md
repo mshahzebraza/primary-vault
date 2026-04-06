@@ -33,7 +33,6 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 	- Data Team should be informed about the es-indexing failures due to bad/stale data
 
 ## ⚠️ Blocked
-- Commit the program template data from data entry into the database
 - Review Shahwaiz Chat Socket Testing Video
 	- Blocked; pending on Shahwaiz
 - Timezone Filtering

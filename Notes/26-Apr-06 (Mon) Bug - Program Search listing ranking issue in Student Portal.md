@@ -9,7 +9,7 @@ organization:
 projects:
   - "[[sb-backend]]"
 status:
-  - backlog
+  - delegated
 priority: P2
 date: 2026-04-06
 ---

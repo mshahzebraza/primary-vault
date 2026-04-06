@@ -1,5 +1,6 @@
 ---
 type:
+  - "[[Meeting]]"
   - "[[Journal]]"
 categories:
   - "[[Meetings]]"
@@ -25,6 +26,8 @@ organization:
 	- [[26-Apr-06 (Mon) Bug - Program Creation blocked on Program Template availability in university portal | Program Creation blocked on Program Template availability in university portal]]
 	- [[26-Apr-06 (Mon) Bug - Program Search listing ranking issue in Student Portal | Bug - Program Search listing ranking issue in Student Portal]]
 		  - To be taken up by Anees further investigation, fixing and documentation
-
+	  - [[26-Apr-06 (Mon) Task - Commit the program template data from data entry into the database]]
 - Discussion Related to 
-	- Setitng up of [[26-Apr-06 (Mon) University specific configuration management | Client/University specific configuration management]] (aka preferences, aka template engine)
+	- Setting up of [[26-Apr-06 (Mon) University specific configuration management | Client/University specific configuration management]] (aka preferences, aka template engine)
+
+![[Related Tasks.base]]

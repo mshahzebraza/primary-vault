@@ -4,9 +4,9 @@ categories:
   - "[[Meetings]]"
 organization: "[[aiquery.io]]"
 projects: []
-date: {{date}}
+date:
+  "{ date }":
 attendees: []
-related-tasks: []
 ---
 
 ## Context

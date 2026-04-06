@@ -35,6 +35,8 @@ views:
       - property: date
         direction: DESC
     columnSize:
+      note.organization: 108
+      note.related-tasks: 167
       note.categories: 191
   - type: table
     name: aiquery.io

@@ -4,8 +4,6 @@ attendees:
   - Maam Shazia
 categories:
   - "[[Meetings]]"
-related-tasks:
-  - "[[Tasks Manifest - Scholar Bee]]"
 type: "[[Meeting]]"
 tags: []
 organization:
