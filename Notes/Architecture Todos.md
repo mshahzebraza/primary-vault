@@ -1,6 +1,6 @@
 ---
 type:
-  - "[[Documentation]]"
+  - "[[Task]]"
 organization:
   - "[[Personal]]"
 tags:
