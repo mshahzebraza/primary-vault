@@ -18,7 +18,11 @@ priority: P2
 > One paragraph describing what and why.
 
 ## Current Tasks
-- [ ] 
+- [ ] Setup & Configuration Task
+	- [ ] GPaste Shortcut Setup to Super + V (like windows history)
+	- [ ] Setup Emojis like in Windows with shortcut: Super + .
+	- [ ] Save Cursor Configuration
+	- [ ] Save the ubuntu shortcuts (*It might be a good idea to `stow` every dotfile from root*)
 
 
 
