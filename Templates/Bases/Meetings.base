@@ -62,6 +62,8 @@ views:
     sort:
       - property: date
         direction: DESC
+    columnSize:
+      file.name: 312
   - type: table
     name: By Task
     groupBy:

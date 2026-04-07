@@ -2,11 +2,7 @@ filters:
   and:
     - file.path.contains("Notes/")
     - file.ext == "md"
-    - '!file.name.contains("Template")'
-    - or:
-        - list(type).contains(link("Task"))
-        - list(type).contains(link("Bug"))
-        - list(type).contains(link("RnD"))
+    - type.containsAny(link("Bug"), link("Task"), link("RnD"))
 properties:
   file.name:
     displayName: Name

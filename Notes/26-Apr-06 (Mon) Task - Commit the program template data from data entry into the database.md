@@ -1,5 +1,6 @@
 ---
-type: "[[Task]]"
+type:
+  - "[[Task]]"
 categories:
   - "[[Work]]"
   - "[[Tasks]]"
@@ -7,7 +8,8 @@ organization:
   - "[[scholarbee]]"
 projects:
   - "[[sb-ops-scripts]]"
-status: backlog
+status:
+  - active
 priority: P2
 date: 2026-04-06
 ---
