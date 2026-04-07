@@ -21,6 +21,7 @@ date: 2026-04-06
 - [ ] create and implement new theme
 	- [Use TweakCN for theming](https://tweakcn.com/editor/theme?p=dashboard)
 	- Use Resources from [[Cool Resources]]
+	- Might need to reinitialize the shadcn to reset theme
 
 
 
