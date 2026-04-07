@@ -20,6 +20,7 @@ date: 2026-04-06
 - [ ] refactor components ui and replace with updated ones
 - [ ] create and implement new theme
 	- [Use TweakCN for theming](https://tweakcn.com/editor/theme?p=dashboard)
+	- Use [Shacn Create Page](https://ui.shadcn.com/create?preset=bdvyQ2zb)
 	- Use Resources from [[Cool Resources]]
 	- Might need to reinitialize the shadcn to reset theme
 
