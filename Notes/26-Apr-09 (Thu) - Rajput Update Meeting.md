@@ -8,7 +8,8 @@ tags:
 organization: "[[aiquery.io]]"
 projects:
   - "[[aq-client]]"
-attendees: []
+attendees:
+  - "[[Rajput]]"
 ---
 
 ## Context
@@ -26,6 +27,7 @@ attendees: []
 - [ ] Create Query Panel in Rapid Response
 - [ ] Create Query List Panel in Query Detail View
 	- filters should be kept when switching between the queries
+	- filters are applied until reset disclaimer to be shown
 
 ![[Related Tasks.base]]
 

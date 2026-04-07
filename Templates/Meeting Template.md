@@ -2,7 +2,7 @@
 type: "[[Meeting]]"
 categories:
   - "[[Meetings]]"
-organization: "[[aiquery.io]]"
+organization:
 projects: []
 date:
   "{ date }":

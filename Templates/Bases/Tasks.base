@@ -96,3 +96,9 @@ views:
         direction: ASC
     columnSize:
       file.name: 468
+  - type: list
+    name: Personal
+    filters:
+      and:
+        - and:
+            - categories.contains(link("Journal"))

@@ -1,9 +1,11 @@
 filters:
   and:
-    - categories.contains(link("Meetings"))
     - '!file.name.contains("Template")'
     - file.path.contains("Notes/")
     - file.ext == "md"
+    - or:
+        - type.contains(link("Meeting"))
+        - categories.contains(link("Meetings"))
 properties:
   note.date:
     displayName: Date
