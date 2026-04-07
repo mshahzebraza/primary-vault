@@ -19,12 +19,21 @@ priority: P2
 
 ## Current Tasks
 - [ ] Setup & Configuration Task
-	- [ ] GPaste Shortcut Setup to Super + V (like windows history)
-	- [ ] Setup Emojis like in Windows with shortcut: Super + .
+	- [x] GPaste Shortcut Setup to Super + V (like windows history)
+	- [x] Setup Emojis like in Windows with shortcut: Super + .
 	- [ ] Save Cursor Configuration
-	- [ ] Save the ubuntu shortcuts (*It might be a good idea to `stow` every dotfile from root*)
+		- setup settings.json and keybindings.json for the user in `home/mshahzebraza/.config/Cursor/User/settings.json` or `home/mshahzebraza/.config/Cursor/User/keybindings.json`
+	- [ ] Save the ubuntu configs & shortcuts (*It might be a good idea to `stow` every dotfile from root as that might also include ubuntu os configurations*)
+	- [ ] [[#Folder Restructure of Dotfiles/Scripts]]
+	- [ ] [[#Folder Restructure  of Dotfiles/Dofiles]]
+	- [ ] Cloud CLIs (AWS & GCloud)
+	- [ ] 
 
 
+## Folder Restructure of Dotfiles/Scripts
+...
+## Folder Restructure  of Dotfiles/Dofiles
+...
 
 
 
