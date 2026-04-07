@@ -1,5 +1,6 @@
 ---
-status: active
+status:
+  - completed
 tags:
   - task
   - script

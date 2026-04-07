@@ -13,9 +13,8 @@ status:
 priority: P2
 date: 2026-04-06
 ---
-
 ## Overview
-> One paragraph describing what and why.
+> University Admins are failing to create new programs due to reliance on program templates
 
 - program templates will be controlled by scholarbee
 - if a university needs to create a program which is not available in the program templates list, they'll contact the tech support
@@ -29,3 +28,4 @@ date: 2026-04-06
 - Ensure that University can lookup on the program templates to choose a template for program creation
 
 ![[Related Meetings.base]]
+

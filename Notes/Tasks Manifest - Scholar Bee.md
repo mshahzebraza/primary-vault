@@ -5,7 +5,8 @@ categories:
   - "[[Tasks]]"
 type:
   - "[[Task]]"
-status: active
+status:
+  - active
 tags:
   - orphan-tasks
   - minor-tasks
@@ -19,7 +20,6 @@ projects:
 This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
 ## ▶️ In Progress
-- [[26-Apr-06 (Mon) Bug - Program Search listing ranking issue in Student Portal]]
 
 ## 🟥 Pending
 - [ ] Search Listing to conform to the requirements criteria submitted by the [[SB Outreach Team]]
@@ -38,18 +38,6 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 - Timezone Filtering
 	- Blocked; needs discussion
 	- If frontend handles timezone conversion, backend date-only APIs will be offset; need decision
-## 🟥 Unresolved — Program Creation from University Portal
-Architecture decisions still needed:
-
-- Should university admins be allowed to **create** program templates directly, or only **request** creation (requiring super-admin approval)?
-  - If allowed: a lookup API must be provided matching against `abbreviation`, `name`, and `field_of_study`
-
-- If direct creation is allowed, how do we prevent race conditions creating duplicate templates with the same name?
-  - Option: make `(name + degree_level)` a unique compound key in the schema
-
-- Should we allow university admins to use existing program endpoints and **auto-create** a program template if none exists with the same title?
-  - Problem: if a template with the same name but different `field_of_study`/`tags` already exists and takes over, the admin won't understand why their provided values were ignored
-
 
 ## ✅ Completed
 - Transaction code fix (temporary + permanent)
@@ -57,10 +45,17 @@ Architecture decisions still needed:
 	- Program and scholarship listing interweaving results — Shahwaiz
 
 ---
-
-## Ideas
-
-
+## Ideas/Future Requirements
+- [ ] Chat support observability and delayed-response alerting features.
+- [ ] Draft issues to be shown in the UI
+	- [ ] Without Dates - might conflict with dates and tags
+### Delayed Reply Observability
+- [ ] Track and surface observability of delayed chat replies
+- [ ] Send reminder emails to support persons for delayed replies
+- [ ] Send reminders via WhatsApp to individual support persons as well
+- [ ] Add analytics around delayed response times
+### Student Chat UX
+- [ ] Show an unavailability fallback message in the student chat when support is offline
 ---
 ## Tech Debt
 - Support Chat should be separated from the admin-chat workflow

@@ -27,7 +27,11 @@ organization:
 	- [[26-Apr-06 (Mon) Bug - Program Search listing ranking issue in Student Portal | Bug - Program Search listing ranking issue in Student Portal]]
 		  - To be taken up by Anees further investigation, fixing and documentation
 	  - [[26-Apr-06 (Mon) Task - Commit the program template data from data entry into the database]]
+	  - 
 - Discussion Related to 
-	- Setting up of [[26-Apr-06 (Mon) University specific configuration management | Client/University specific configuration management]] (aka preferences, aka template engine)
+	- Setting up of [[26-Apr-06 (Mon) University specific configuration management | Client/University specific configuration management]] (aka preferences, aka template engine). [[Tasks Manifest - Scholar Bee#Ideas]] 
+
+## References
+- [Sprint 11 link doc from Aliza](https://docs.google.com/document/d/1FkY51Xgg8xpcJSmWdaBz27gxpxIplnsG/edit)
 
 ![[Related Tasks.base]]
