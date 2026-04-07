@@ -23,7 +23,7 @@ status: active
 - ➡️ [[end to end prod testing & checklist|End-to-End Prod Testing Checklist]]
 - [x] Number of results in devices tab (+ execution time etc)
 - [x] use the target-device refactoring branch to merge into develop
-- [ ] **[[26-Apr-06 (Mon) update the shadcn version]]**
+- [ ] **[[26-Apr-06 (Mon) update the shadcn version, components and theme]]**
 - [ ] [[26-Apr-06 (Mon) add end to end testing of create query flow]]
 - [ ] rename the dashboard collection/sections to dashboard tabs
 - [ ] ensure that the timepicker form field is reusable; not specific to dashboard widgets

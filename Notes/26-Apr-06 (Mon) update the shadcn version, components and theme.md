@@ -16,7 +16,11 @@ date: 2026-04-06
 > One paragraph describing what and why.
 
 ## Current Tasks
-- [ ] 
+- [ ] update the version
+- [ ] refactor components ui and replace with updated ones
+- [ ] create and implement new theme
+	- [Use TweakCN for theming](https://tweakcn.com/editor/theme?p=dashboard)
+	- Use Resources from [[Cool Resources]]
 
 
 
