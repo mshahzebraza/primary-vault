@@ -100,5 +100,7 @@ views:
     name: Personal
     filters:
       and:
-        - and:
+        - or:
             - categories.contains(link("Journal"))
+            - organization.isEmpty()
+            - organization.contains(link("Personal"))

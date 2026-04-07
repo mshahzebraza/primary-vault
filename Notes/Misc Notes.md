@@ -7,6 +7,8 @@ categories:
   - "[[Journal]]"
 type:
   - "[[Reference]]"
+organization:
+  - "[[Personal]]"
 ---
 ## Tech Notes
 

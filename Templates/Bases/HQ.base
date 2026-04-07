@@ -2,7 +2,6 @@ filters:
   and:
     - file.path.contains("Notes/")
     - file.ext == "md"
-    - '!file.name.contains("Template")'
     - '!file.path.contains("/Templates/")'
 properties:
   file.name:
@@ -57,6 +56,9 @@ views:
     sort:
       - property: file.name
         direction: ASC
+    columnSize:
+      file.name: 402
+      note.type: 100
   - type: table
     name: scholarbee
     filters:
@@ -102,7 +104,14 @@ views:
     name: Personal
     filters:
       and:
-        - note.categories.contains(link("Personal"))
+        - or:
+            - categories.contains(link("Personal"))
+            - type.contains(link("Personal"))
+            - organization.contains(link("Personal"))
+            - organization.isEmpty()
+    groupBy:
+      property: type
+      direction: ASC
     order:
       - file.name
       - type

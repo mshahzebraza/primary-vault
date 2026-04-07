@@ -9,6 +9,8 @@ tags:
   - evergreen
 date: 2026-04-05
 status: active
+organization:
+  - "[[Personal]]"
 ---
 
 # Vault System Plan

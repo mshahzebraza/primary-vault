@@ -1,6 +1,8 @@
 ---
 tags:
   - category
+organization:
+  - "[[Personal]]"
 ---
 
 # Others & Misc
