@@ -60,6 +60,7 @@ To avoid conflicts  of name and seo-title with the sources of the same cluster, 
 	- if the conflicts cannot be solved we may need to merge them by manually adding the uuid suffix to conflicting `seo-title-key` values.
 - resolved-templates vs db-templates
 	- *...?*
+	- *exclude the source docs from the checks*
 
 
 

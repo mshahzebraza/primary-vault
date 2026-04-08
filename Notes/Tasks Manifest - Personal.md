@@ -27,7 +27,9 @@ priority: P2
 	- [ ] [[#Folder Restructure of Dotfiles/Scripts]]
 	- [ ] [[#Folder Restructure  of Dotfiles/Dofiles]]
 	- [ ] Cloud CLIs (AWS & GCloud)
-	- [ ] 
+- [ ] Investigate the sluggishness of the linux in the laptop
+	- Use the [chat session](https://gemini.google.com/app/1eb0d8e05372bf91)
+	- related to dedicated vram partition
 
 
 ## Folder Restructure of Dotfiles/Scripts
