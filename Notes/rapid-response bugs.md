@@ -1,6 +1,7 @@
 ---
 type: "[[Bug]]"
-status: active
+status:
+  - completed
 tags:
   - bug
 organization: "[[aiquery.io]]"

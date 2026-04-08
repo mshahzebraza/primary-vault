@@ -1,5 +1,6 @@
 ---
-status: active
+status:
+  - completed
 tags:
   - RnD
   - feature
@@ -39,9 +40,6 @@ Upgrade the filtering system to support Athena, Clickhouse, and MongoDB with a u
 
 ### Phase 4: API Integration
 - [ ] Integrate with API layer
-
-## Notes
-- Take a look at P0 tasks first before starting this
 
 ## Related Notes
 - [[Filtering Optimization]] — core Filter type definition

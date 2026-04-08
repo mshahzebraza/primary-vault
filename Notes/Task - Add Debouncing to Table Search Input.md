@@ -1,5 +1,6 @@
 ---
-status: active
+status:
+  - backlog
 tags:
   - task
   - RnD

@@ -51,6 +51,9 @@ status: active
 - 🟡 class-based typed API call builder
 - 🟡 BUG: active column filters dropdown keeps closing
 - 🟡 BUG: teams and invites view dropdowns close on first click
+### Refactoring / Tech Debt
+- [ ] Standardise the query param interface and schema logic
+- [ ] Add code templates (`template.model.ts`, `template-view.hook.ts`, `template.hook.ts`, `template.api.ts`, `template.dto.ts`, `template.view.tsx`, `template.page.tsx`) with pseudo-code and instructions for: dialogs, tabs, toasts, one-off requests, and other edge cases
 
 ## Completed
 - ✅ [[Fix devices MultiSelect|Fix: Devices MultiSelect pagination bug]] — PR #380 merged

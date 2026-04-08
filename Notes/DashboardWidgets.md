@@ -1,5 +1,6 @@
 ---
-status: active
+status:
+  - blocked
 tags:
   - feature
 organization: "[[aiquery.io]]"
