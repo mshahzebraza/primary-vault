@@ -20,7 +20,8 @@ priority: P2
 ## Current Tasks
 ## 2026-04-08
 - [ ] Create a [[#Plan|plan for the implementation]]
-- [ ] Create a query-panel
+- [x] Create a query-panel UI
+- [ ] Integrate the query-list hook and add the real query-list navigation
 - [ ] How to keep the filters intact for the query detail.
 	- The query click is supposed to change the query-param in the url, which *might* always trigger the new page mount, causing the state to be lost for the view. *Please confirm this...*
 	- If this unmount is inevitable, should we keep the filters in the local storage somewhere?
