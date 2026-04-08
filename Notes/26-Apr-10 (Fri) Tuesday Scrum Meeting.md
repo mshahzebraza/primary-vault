@@ -9,7 +9,8 @@ tags:
   - scrum
 organization:
   - "[[aiquery.io]]"
-projects: []
+projects:
+  - "[[aq-client]]"
 attendees:
   - "[[Rajput]]"
   - "[[Nick]]"
