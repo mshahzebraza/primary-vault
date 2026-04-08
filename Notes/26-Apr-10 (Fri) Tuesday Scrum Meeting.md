@@ -18,7 +18,7 @@ attendees:
 > Brief note on why this meeting happened / what triggered it.
 ## Discussion
 ## 2026-04-07
-- Discuss the tasks in [[26-Apr-09 (Thu) - Rajput Update Meeting]]
+- Discuss the tasks in [[26-Apr-06 (Monday) - Rajput Update Meeting]]
 	- add the disclaimer for filters applied
 	- [[Rajput]] showed draft ui for investigations 
 	- query-list panels in the rapid response and query detail
