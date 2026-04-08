@@ -2,7 +2,7 @@
 type: "[[Meeting]]"
 categories:
   - "[[Work]]"
-date: 2026-04-09
+date: 2026-04-06
 tags:
   - journal
 organization: "[[aiquery.io]]"
