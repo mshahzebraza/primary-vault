@@ -25,9 +25,12 @@ priority: P2
 - [ ] How to keep the filters intact for the query detail.
 	- The query click is supposed to change the query-param in the url, which *might* always trigger the new page mount, causing the state to be lost for the view. *Please confirm this...*
 	- If this unmount is inevitable, should we keep the filters in the local storage somewhere?
+		- yes, and replace the local storage of the previous query-pack with the current one.
 - Quality of life improvements
+	- [ ] Add Searching
 	- [ ] Add Collapse button
 	- [ ] Add Resizable Component (dynamic resizing support)
+- [ ] Perform the refactoring mentioned in the `src/client/views/query-detail/query-detail.view.tsx` related to the query list hook
 
 ### Plan
 - Either page level config or the availability of the query pack should decide the rendering of the query-panel. 
