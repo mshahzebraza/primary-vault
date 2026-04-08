@@ -14,10 +14,11 @@ priority: P2
 ---
 
 ## Overview
-> One paragraph describing what and why.
+> It is inconvenient to compare each instance of a query pack query by view detail of each query-run separately. We need a way to quickly toggle between the different variations of the query-pack
 
 ## Current Tasks
-- [ ] 
+## 2026-04-08
+- [ ] Create a plan
 
 
 
@@ -25,4 +26,3 @@ priority: P2
 
 ![[Related Meetings.base]]
 
-## 2026-04-08
