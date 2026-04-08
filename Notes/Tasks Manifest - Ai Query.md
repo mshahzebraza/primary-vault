@@ -27,7 +27,6 @@ status: active
 - [ ] [[26-Apr-06 (Mon) add end to end testing of create query flow]]
 - [ ] rename the dashboard collection/sections to dashboard tabs
 - [ ] ensure that the timepicker form field is reusable; not specific to dashboard widgets
-- [x] ⏸️ 🟡 inactivity timeout for console (blocked: filtering v2)
 
 ## Blocked Tasks
 - ⏸️ 🟠 implementation of query diffs (blocked: after filtering v2) — [[Query Response Data Diffing]]
