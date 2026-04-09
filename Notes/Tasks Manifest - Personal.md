@@ -18,6 +18,8 @@ priority: P2
 > One paragraph describing what and why.
 
 ## Current Tasks
+- [ ] Linux Crash Courses
+	- [ ] [Learn Linux TV - Youtube](https://www.youtube.com/watch?v=XTMyJ5l0GLg)
 - [ ] Setup & Configuration Task
 	- [ ] Save Cursor Configuration
 		- setup settings.json and keybindings.json for the user in `home/mshahzebraza/.config/Cursor/User/settings.json` or `home/mshahzebraza/.config/Cursor/User/keybindings.json`
