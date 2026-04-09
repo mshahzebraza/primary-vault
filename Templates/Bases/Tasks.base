@@ -96,7 +96,7 @@ views:
         direction: ASC
     columnSize:
       file.name: 468
-  - type: list
+  - type: table
     name: Personal
     filters:
       and:
@@ -104,3 +104,11 @@ views:
             - categories.contains(link("Journal"))
             - organization.isEmpty()
             - organization.contains(link("Personal"))
+    order:
+      - file.name
+      - status
+      - categories
+      - tags
+      - type
+    columnSize:
+      file.name: 268
