@@ -19,17 +19,17 @@ priority: P2
 
 ## Current Tasks
 - [ ] Setup & Configuration Task
-	- [x] GPaste Shortcut Setup to Super + V (like windows history)
-	- [x] Setup Emojis like in Windows with shortcut: Super + .
 	- [ ] Save Cursor Configuration
 		- setup settings.json and keybindings.json for the user in `home/mshahzebraza/.config/Cursor/User/settings.json` or `home/mshahzebraza/.config/Cursor/User/keybindings.json`
 	- [ ] Save the ubuntu configs & shortcuts (*It might be a good idea to `stow` every dotfile from root as that might also include ubuntu os configurations*)
 	- [ ] [[#Folder Restructure of Dotfiles/Scripts]]
 	- [ ] [[#Folder Restructure  of Dotfiles/Dofiles]]
 	- [ ] Cloud CLIs (AWS & GCloud)
+	- [ ] update steps into [[linux-pc-setup]] note
 - [ ] Investigate the sluggishness of the linux in the laptop
 	- Use the [chat session](https://gemini.google.com/app/1eb0d8e05372bf91)
 	- related to dedicated vram partition
+	- zram configuration
 
 
 ## Folder Restructure of Dotfiles/Scripts
