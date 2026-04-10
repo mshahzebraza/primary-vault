@@ -21,6 +21,7 @@ priority: P2
 - [ ] Linux Crash Courses
 	- [ ] [Learn Linux TV - Youtube](https://www.youtube.com/watch?v=XTMyJ5l0GLg)
 - [ ] Setup & Configuration Task
+	- [ ] Opinionated Ubuntu Setup [Tutorial Video](https://www.youtube.com/watch?v=aXLra-31Jh0)
 	- [ ] Save Cursor Configuration
 		- setup settings.json and keybindings.json for the user in `home/mshahzebraza/.config/Cursor/User/settings.json` or `home/mshahzebraza/.config/Cursor/User/keybindings.json`
 	- [ ] Save the ubuntu configs & shortcuts (*It might be a good idea to `stow` every dotfile from root as that might also include ubuntu os configurations*)
