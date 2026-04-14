@@ -28,6 +28,7 @@ status: active
 - [ ] rename the dashboard collection/sections to dashboard tabs
 - [ ] ensure that the timepicker form field is reusable; not specific to dashboard widgets
 - [ ] Change highlighting of the sidebar from BLUE to PURPLE
+- [ ] Change the color of Mac Logo to Accept Black in the QuerySmith
 - [ ] ![[26 Apr 12 (Sun) Developers Meeting#Decisions Made/Action Items]]
 	- [ ] ![[26 Apr 12 (Sun) Developers Meeting#Further Feedback from Nick]]
 

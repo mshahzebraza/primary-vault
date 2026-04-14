@@ -23,7 +23,7 @@ attendees:
 ## Decisions Made
 
 ## Action Items
-- [ ] 
+- [ ] Change highlighting of the sidebar from BLUE to PURPLE
 
 ![[Related Tasks.base]]
 

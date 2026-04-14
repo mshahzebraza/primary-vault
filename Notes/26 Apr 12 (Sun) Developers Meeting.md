@@ -35,17 +35,17 @@ attendees:
 ## Further Feedback from Nick
 ### Feature Flags (FF) Cleanup
 - [x] Enable `Rapid Response` by default.
-- [ ] Remove the `general v2` feature flag (or move it to 'internal').
-- [ ] Enable `Compliance` by default. 
-- [ ] Move the `Dashboard` feature flag to 'internal' for the time being.
+- [x] Remove the `general v2` feature flag (or move it to 'internal').
+- [x] Enable `Compliance` by default. 
+- [x] Move the `Dashboard` feature flag to 'internal' for the time being.
 
 ### Compliance Mode Updates
 - [ ] Rename all UI text from 'Compliance' to 'Vulnerability' (Exception: Keep it as 'Compliance' inside the Marketing FF).
-- [ ] Remove the empty/non-filled-in tabs within this mode.
+- [ ] ~~Remove the empty/non-filled-in tabs within this mode.~~
 - [ ] Ensure the internal Marketing FF remains intact and untouched.
 
 ### Cosmetic Changes
-- [ ] move export buttons to defualt behavior
+- [ ] move export buttons to default behavior
 - [ ] change vulnerability text and api call
 
 
