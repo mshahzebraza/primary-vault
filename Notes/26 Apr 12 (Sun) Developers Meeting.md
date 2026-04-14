@@ -46,4 +46,4 @@ attendees:
 
 ### Cosmetic Changes
 - [x] move export buttons to default behavior
-- [ ] change vulnerability text and api call
+- [x] change vulnerability text and api call
