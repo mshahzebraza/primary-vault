@@ -51,7 +51,7 @@ views:
       - related-tasks
     sort:
       - property: date
-        direction: ASC
+        direction: DESC
   - type: table
     name: scholarbee
     filters:

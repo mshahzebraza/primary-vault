@@ -32,7 +32,9 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 - [ ] R&D on Elastic Search storage options
 - [ ] Data Inconsistency due to missing fields
 	- Data Team should be informed about the es-indexing failures due to bad/stale data
-
+- [ ] CMS Field of 'Admission Session' needs to be added - Data Entry team will handle it themselves
+- [ ] SEO title key and short name be added for remaining items
+- [ ] Campus Slug to be updated only based on the title
 ## ⚠️ Blocked
 - Review Shahwaiz Chat Socket Testing Video
 	- Blocked; pending on Shahwaiz

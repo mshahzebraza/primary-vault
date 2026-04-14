@@ -27,10 +27,27 @@ attendees:
 	- [ ] current filters identification
 	- [ ] query list panel's active filters cache identification
 - [ ] removal of feature flags
-	- [ ] filters v2 should replace filters v1 for query detail view
-	- [ ] rapid response is always enabled
-	- [ ] query-charts is scraped off completely.
+	- [x] filters v2 should replace filters v1 for query detail view
+	- [x] rapid response is always enabled
+	- [x] query-charts is scraped off completely.
 - [ ] backend will look into the issue of the `[eq]` filter for the query detail's devices tab as other endpoints are correctly handling the eq filter
+
+## Further Feedback from Nick
+### Feature Flags (FF) Cleanup
+- [x] Enable `Rapid Response` by default.
+- [ ] Remove the `general v2` feature flag (or move it to 'internal').
+- [ ] Enable `Compliance` by default. 
+- [ ] Move the `Dashboard` feature flag to 'internal' for the time being.
+
+### Compliance Mode Updates
+- [ ] Rename all UI text from 'Compliance' to 'Vulnerability' (Exception: Keep it as 'Compliance' inside the Marketing FF).
+- [ ] Remove the empty/non-filled-in tabs within this mode.
+- [ ] Ensure the internal Marketing FF remains intact and untouched.
+
+### Cosmetic Changes
+- [ ] move export buttons to defualt behavior
+- [ ] change vulnerability text and api call
+
 
 ![[Related Tasks.base]]
 

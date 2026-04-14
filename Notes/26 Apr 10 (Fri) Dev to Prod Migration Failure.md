@@ -181,6 +181,7 @@ Yes
 ## Attempted Fixes
 
 ## Solution / Fix
+- A possible fix would be to remove the unique indexes on the slugs and retry.  But we definitely have to document the root cause of it.  
 
 ## Notes
 

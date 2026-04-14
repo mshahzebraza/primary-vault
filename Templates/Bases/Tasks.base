@@ -72,7 +72,7 @@ views:
       - property: file.name
         direction: ASC
     columnSize:
-      file.name: 383
+      file.name: 603
       note.projects: 177
       note.priority: 739
   - type: table

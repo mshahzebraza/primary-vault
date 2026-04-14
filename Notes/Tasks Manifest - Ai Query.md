@@ -27,6 +27,9 @@ status: active
 - [ ] [[26-Apr-06 (Mon) add end to end testing of create query flow]]
 - [ ] rename the dashboard collection/sections to dashboard tabs
 - [ ] ensure that the timepicker form field is reusable; not specific to dashboard widgets
+- [ ] Change highlighting of the sidebar from BLUE to PURPLE
+- [ ] ![[26 Apr 12 (Sun) Developers Meeting#Decisions Made/Action Items]]
+	- [ ] ![[26 Apr 12 (Sun) Developers Meeting#Further Feedback from Nick]]
 
 ## Blocked Tasks
 - ⏸️ 🟠 implementation of query diffs (blocked: after filtering v2) — [[Query Response Data Diffing]]
