@@ -29,9 +29,9 @@ status: active
 - [ ] ensure that the timepicker form field is reusable; not specific to dashboard widgets
 - [ ] Change highlighting of the sidebar from BLUE to PURPLE
 - [ ] Change the color of Mac Logo to Accept Black in the QuerySmith
-- [ ] ![[26 Apr 12 (Sun) Developers Meeting#Decisions Made/Action Items]]
-	- [ ] ![[26 Apr 12 (Sun) Developers Meeting#Further Feedback from Nick]]
-
+- [ ] Rajput feedback on Query Pack List and Feature Flag Tasks ![[26 Apr 12 (Sun) Developers Meeting#Decisions Made/Action Items]]
+	- [ ] Nick Feedback on Feature Flags Cleanup & Tasks![[26 Apr 12 (Sun) Developers Meeting#Further Feedback from Nick]]
+	- [ ] Weekly Meeting Tasks![[26 Apr 14 (Tue) Weekly Scrum Meeting#Action Items]]
 ## Blocked Tasks
 - ⏸️ 🟠 implementation of query diffs (blocked: after filtering v2) — [[Query Response Data Diffing]]
 - ⏸️ 🟡 logs and metrics — [[Frontend - Observability (Logging & Metrics)|Frontend Observability]] (blocked: active tasks; may go to Rajput)

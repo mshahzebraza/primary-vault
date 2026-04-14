@@ -18,5 +18,3 @@ attendees: []
 
 ## Action Items
 - [ ] 
-
-![[Related Tasks.base]]

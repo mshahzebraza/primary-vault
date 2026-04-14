@@ -40,14 +40,10 @@ attendees:
 - [x] Move the `Dashboard` feature flag to 'internal' for the time being.
 
 ### Compliance Mode Updates
-- [ ] Rename all UI text from 'Compliance' to 'Vulnerability' (Exception: Keep it as 'Compliance' inside the Marketing FF).
-- [ ] ~~Remove the empty/non-filled-in tabs within this mode.~~
-- [ ] Ensure the internal Marketing FF remains intact and untouched.
+- [x] Rename all UI text from 'Compliance' to 'Vulnerability' (Exception: Keep it as 'Compliance' inside the Marketing FF).
+- ~~Remove the empty/non-filled-in tabs within this mode.~~
+- [x] Ensure the internal Marketing FF remains intact and untouched.
 
 ### Cosmetic Changes
-- [ ] move export buttons to default behavior
+- [x] move export buttons to default behavior
 - [ ] change vulnerability text and api call
-
-
-![[Related Tasks.base]]
-
