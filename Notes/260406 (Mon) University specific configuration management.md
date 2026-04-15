@@ -5,7 +5,8 @@ categories:
   - "[[Tasks]]"
 organization:
   - "[[scholarbee]]"
-projects: []
+projects:
+  - "[[sb-backend]]"
 status: backlog
 priority: P2
 date: 2026-04-06

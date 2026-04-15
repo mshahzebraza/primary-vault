@@ -6,5 +6,3 @@ date: {{date}}
 tags:
   - journal
 ---
-
-## {{date}}

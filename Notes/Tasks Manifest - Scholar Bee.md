@@ -21,6 +21,7 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 
 ## ▶️ In Progress
 - [ ] [Transcript and ID Card Fields Are Not Mandatory in Application Form](https://scholarbee-team.atlassian.net/browse/SB-1417)
+- [ ] ![[260415T1204 Wed Signup Simplification#Action Items]]
 
 ## 🟥 Pending
 - [ ] Search Listing to conform to the requirements criteria submitted by the [[SB Outreach Team]]
