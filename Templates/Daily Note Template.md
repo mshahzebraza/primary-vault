@@ -2,7 +2,7 @@
 type: "[[Journal]]"
 categories:
   - "[[Journal]]"
-date: {{date}}
+date: {{date: YYYY-MM-DD}}
 ---
 
 ## Scratch

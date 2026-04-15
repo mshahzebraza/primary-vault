@@ -18,7 +18,7 @@ priority: P1
 ---
 
 ## Overview
-> The [[26-Apr-06 (Mon) Task - Commit the program template data from data entry into the database]] task didn't update all the program templates for some reason, and about 650 entries need to be assigned the short name and seo title manually.
+> The [[260406 (Mon) Task - Commit the program template data from data entry into the database]] task didn't update all the program templates for some reason, and about 650 entries need to be assigned the short name and seo title manually.
 
 ## Pseudo Code
 ```ts title:"phase-1 generation"

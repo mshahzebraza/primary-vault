@@ -23,15 +23,15 @@ status: active
 - ➡️ [[end to end prod testing & checklist|End-to-End Prod Testing Checklist]]
 - [x] Number of results in devices tab (+ execution time etc)
 - [x] use the target-device refactoring branch to merge into develop
-- [ ] **[[26-Apr-06 (Mon) update the shadcn version, components and theme]]**
-- [ ] [[26-Apr-06 (Mon) add end to end testing of create query flow]]
+- [ ] **[[260406 (Mon) update the shadcn version, components and theme]]**
+- [ ] [[260406 (Mon) add end to end testing of create query flow]]
 - [ ] rename the dashboard collection/sections to dashboard tabs
 - [ ] ensure that the timepicker form field is reusable; not specific to dashboard widgets
 - [ ] Change highlighting of the sidebar from BLUE to PURPLE
 - [x] Change the color of Mac Logo to Accept Black in the QuerySmith
-- [ ] Rajput feedback on Query Pack List and Feature Flag Tasks ![[26 Apr 12 (Sun) Developers Meeting#Decisions Made/Action Items]]
-	- [ ] Nick Feedback on Feature Flags Cleanup & Tasks![[26 Apr 12 (Sun) Developers Meeting#Further Feedback from Nick]]
-	- [ ] Weekly Meeting Tasks![[26 Apr 14 (Tue) Weekly Scrum Meeting#Action Items]]
+- [ ] Rajput feedback on Query Pack List and Feature Flag Tasks ![[260412 (Sun) Developers Meeting#Decisions Made/Action Items]]
+	- [ ] Nick Feedback on Feature Flags Cleanup & Tasks![[260412 (Sun) Developers Meeting#Further Feedback from Nick]]
+	- [ ] Weekly Meeting Tasks![[260414 (Tue) Weekly Scrum Meeting#Action Items]]
 ## Blocked Tasks
 - ⏸️ 🟠 implementation of query diffs (blocked: after filtering v2) — [[Query Response Data Diffing]]
 - ⏸️ 🟡 logs and metrics — [[Frontend - Observability (Logging & Metrics)|Frontend Observability]] (blocked: active tasks; may go to Rajput)

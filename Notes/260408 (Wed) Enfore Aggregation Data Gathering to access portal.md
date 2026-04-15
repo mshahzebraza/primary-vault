@@ -16,7 +16,7 @@ priority: P2
 ## Overview
 > One paragraph describing what and why.
 
-Discussed in [[26-Apr-06 (Mon) Scrum - Sprint Planning]].
+Discussed in [[260406 (Mon) Scrum - Sprint Planning]].
 
 ## Current Tasks
 - [ ] Add a boolean field in user document e.g. `is_aggregation_data_added` to record if the data required for search ranking aggregation is submitted by user or not. Otherwise, don't let them access the application.

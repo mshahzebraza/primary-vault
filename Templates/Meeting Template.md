@@ -4,8 +4,7 @@ categories:
   - "[[Meetings]]"
 organization:
 projects: []
-date:
-  "{ date }":
+date: {{date: YYYY-MM-DD}}
 attendees: []
 ---
 

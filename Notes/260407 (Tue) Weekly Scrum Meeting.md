@@ -19,13 +19,13 @@ attendees:
 > Brief note on why this meeting happened / what triggered it.
 ## Discussion
 ## 2026-04-07
-- Discuss the tasks in [[26-Apr-06 (Monday) - Developers Meeting]]
+- Discuss the tasks in [[260406 (Monday) - Developers Meeting]]
 	- add the disclaimer for filters applied
 	- [[Rajput]] showed draft ui for investigations 
 	- query-list panels in the rapid response and query detail
 	- BUG: query editor gives UI jerk when content in the editor is too much due to a resizing change added earlier.
 	- BUG: the color of Mac Icon is not respecting the black color override in the query-smith query composer (See [Nick's Message](https://aiquerytesting.slack.com/archives/C07LN92GW94/p1775660288811639))
-	- [[26 Apr 09 (Thu) BUG - Data Table pagination row causes the parent container to scroll|BUG: Data Table pagination row causes the parent container to scroll]]
+	- [[260409 (Thu) BUG - Data Table pagination row causes the parent container to scroll|BUG: Data Table pagination row causes the parent container to scroll]]
 
 ## Decisions Made
 
