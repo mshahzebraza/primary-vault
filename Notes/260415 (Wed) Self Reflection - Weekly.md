@@ -17,6 +17,12 @@ organization:
 	- how to fix?
 	- would ram help or is issue specific to cpu/architecture?
 
+
+## Pending Tasks/Pressing Tasks
+- Portfolio Website
+- OpenClaw Setup
+	- connect with Discord, Github to basically achieve coding tasks
+	- accept audio
 ## Regular Good Habits
 - seerah
 - reading existing book collection
@@ -34,3 +40,5 @@ organization:
 		- search a job and move?
 	- 
 - 
+
+test all flows

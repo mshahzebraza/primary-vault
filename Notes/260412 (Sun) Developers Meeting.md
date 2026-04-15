@@ -26,6 +26,9 @@ attendees:
 - [ ] filters identification in the query list panel of the query detail view
 	- [ ] current filters identification
 	- [ ] query list panel's active filters cache identification
+		- why signal; why not just use the useState
+		- why list pane needs to read the active tab; the list items info should include the with-or-without filters state
+		- can we not include the filter indicator evaluation logic in the sync hook
 - [ ] removal of feature flags
 	- [x] filters v2 should replace filters v1 for query detail view
 	- [x] rapid response is always enabled

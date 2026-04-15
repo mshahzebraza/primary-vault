@@ -20,3 +20,11 @@ organization:
 | Split/Expand Window                    | Super Arrows              |
 |                                        |                           |
 |                                        |                           |
+## Cursor IDE
+
+| Function            | Command             | Keys           |
+| ------------------- | ------------------- | -------------- |
+| Show Hovering JSDoc | Show or Focus Hover | Ctrl K Ctrl I  |
+| Peeking Definition  | Peeking Definition  | Ctrl Shift F10 |
+| Go to Definition    | Go to Definition    | F12            |
+| Peek References     | Peek References     | Shift F12      |

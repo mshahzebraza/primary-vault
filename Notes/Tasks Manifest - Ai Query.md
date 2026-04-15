@@ -27,7 +27,6 @@ status: active
 - [ ] [[260406 (Mon) add end to end testing of create query flow]]
 - [ ] rename the dashboard collection/sections to dashboard tabs
 - [ ] ensure that the timepicker form field is reusable; not specific to dashboard widgets
-- [ ] Change highlighting of the sidebar from BLUE to PURPLE
 - [x] Change the color of Mac Logo to Accept Black in the QuerySmith
 - [ ] Rajput feedback on Query Pack List and Feature Flag Tasks ![[260412 (Sun) Developers Meeting#Decisions Made/Action Items]]
 	- [ ] Nick Feedback on Feature Flags Cleanup & Tasks![[260412 (Sun) Developers Meeting#Further Feedback from Nick]]
