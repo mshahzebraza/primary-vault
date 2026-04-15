@@ -22,9 +22,10 @@ organization:
 |                                        |                           |
 ## Cursor IDE
 
-| Function            | Command             | Keys           |
-| ------------------- | ------------------- | -------------- |
-| Show Hovering JSDoc | Show or Focus Hover | Ctrl K Ctrl I  |
-| Peeking Definition  | Peeking Definition  | Ctrl Shift F10 |
-| Go to Definition    | Go to Definition    | F12            |
-| Peek References     | Peek References     | Shift F12      |
+| Function                                                             | Command                 | Keys             |
+| -------------------------------------------------------------------- | ----------------------- | ---------------- |
+| Show Hovering JSDoc<br>(works only when cursor is on function name)  | Show or Focus Hover     | Ctrl K Ctrl I    |
+| Trigger Parameter Hints <br>(works only when cursor is on parameter) | Trigger Parameter Hints | Ctrl Shift Space |
+| Peeking Definition                                                   | Peeking Definition      | Ctrl Shift F10   |
+| Go to Definition                                                     | Go to Definition        | F12              |
+| Peek References                                                      | Peek References         | Shift F12        |
