@@ -27,6 +27,9 @@ status: active
 - [ ] [[260406 (Mon) add end to end testing of create query flow]]
 - [ ] rename the dashboard collection/sections to dashboard tabs
 - [ ] ensure that the timepicker form field is reusable; not specific to dashboard widgets
+- [ ] **Bug:** Filter Sidebar hide animation issue on first filters in query detail view with query list pane
+	- when in query detail view with the query list nav pane, go to a fresh query item, apply filters, go to a 2nd fresh query item, you'll notice the filter sidebar suddenly closing.
+	- Now come back to 1st query item, and reapply the filters, and now click on other query item, you'll notice the filter sidebar animating to 0 width this time.
 - [x] Change the color of Mac Logo to Accept Black in the QuerySmith
 - [ ] Rajput feedback on Query Pack List and Feature Flag Tasks ![[260412 (Sun) Developers Meeting#Decisions Made/Action Items]]
 	- [ ] Nick Feedback on Feature Flags Cleanup & Tasks![[260412 (Sun) Developers Meeting#Further Feedback from Nick]]
