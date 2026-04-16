@@ -29,3 +29,17 @@ organization:
 | Peeking Definition                                                   | Peeking Definition      | Ctrl Shift F10   |
 | Go to Definition                                                     | Go to Definition        | F12              |
 | Peek References                                                      | Peek References         | Shift F12        |
+
+## Firefox
+
+| Function    | Keys                                   |
+| ----------- | -------------------------------------- |
+| Switch Tabs | Ctrl PageUp/PageDn, Ctrl Tab/Shift-Tab |
+| Move Tabs   | Ctrl Shift PageUp/PageDn               |
+
+## Obsidian.
+
+| Function              | Keys                |
+| --------------------- | ------------------- |
+| Navigate Back/Forward | Ctrl Alt Left/Right |
+|                       |                     |

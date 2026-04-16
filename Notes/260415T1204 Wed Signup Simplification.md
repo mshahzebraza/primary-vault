@@ -27,8 +27,8 @@ attendees:
 - [x] [[#Documents + toc validation removal]]
 - [x] auto signup by sending tokens on signup
 - [x] update all documentation
-- [ ] create the full name of existing users as well
-- [ ] [[#Testing|Testing of all flows]]
+- [x] create the full name of existing users as well
+- [x] [[#Testing|Testing of all flows]]
 
 
 ### make application credentials accept optional lastname

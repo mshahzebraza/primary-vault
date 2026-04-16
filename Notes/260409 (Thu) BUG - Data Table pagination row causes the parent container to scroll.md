@@ -1,7 +1,6 @@
 ---
 type: "[[Bug]]"
 categories:
-  - "[[Personal]]"
   - "[[Work]]"
 date: 2026-04-09
 tags:

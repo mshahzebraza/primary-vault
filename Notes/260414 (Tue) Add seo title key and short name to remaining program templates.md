@@ -1,7 +1,6 @@
 ---
 type: "[[Task]]"
 categories:
-  - "[[Personal]]"
   - "[[Work]]"
   - "[[Tasks]]"
 date: 2026-04-14
@@ -13,7 +12,7 @@ organization:
 projects:
   - "[[sb-ops-scripts]]"
 status:
-  - active
+  - completed
 priority: P1
 ---
 
@@ -104,7 +103,7 @@ class ProgramTemplatesMissingInfoGenerator(){
 ```
 
 ## Current Tasks
-- [ ] 
+- [x] Add the seo title and short name to the program templates
 
 
 

@@ -85,6 +85,9 @@ Follow ups:
 - [ ] Add a frequency count indicator for duplicate queries with exactly same metadata i.e. agent, os etc with timestamp of first query or show them grouped somehow
 - [ ] Allow Optional Grouping in UI for agent or OS only for items which are consecutive in the timeline; i.e. `A1 A2 A3 B4 B5 A6 A7 => A(1,2,3) B(4,5) A(6,7)` where `A` is group and `1,2 ...` are items
 - [ ] Move the device selector panel to the left like the query list nav panel, and the query history should be moved to right; but both should take up space from the view instead of a global drawer
+- [ ] Implementation Bugs Consequences:
+	- [ ] Fix the positioning of agent button indicator
+	- [ ] Fix the stretching of the response table (compare it with existing implementation first) and also fix scrolling
 
 
 ![[Related Meetings.base]]
