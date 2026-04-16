@@ -19,10 +19,12 @@ priority: P2
 > Frontend needs a way to click on admission programs from the listing and get to the unique results. To make results narrower and unique, we need to filter the admission program detail list endpoint using the fields like "fall" and "2026".
 
 ## Current Tasks
-- [ ] update the schema of admissions collection
-- [ ] extract the information from the admission titles & save it in new fields
+- [x] Allow search of campus slug in detail list
+- [ ] Create a revised campus slug in campus collection
+- [x] update the schema of admissions collection
+- [ ] create a script extract the information from the admission titles & save it in new fields
 	- [ ] extract the admission documents which couldn't retreive the new field information or had missing information and submit the list to PM
-- [ ] allow searching of admissin program detail list based on the new fields
+- [ ] allow searching of admission program detail list based on the new fields
 
 ## Acceptance Criteria
 Frontend should be able to search the admission program with the url like:
