@@ -13,8 +13,6 @@ status: active
 - ➡️ [[custom extension bugs|Custom Extension Bugs]]
 - ➡️ [[Custom Extensions View (Bugs, Tasks and Optimizations)|Custom Extensions View]]
 - ➡️ [[PPE to PROD checklist|PPE → PROD Checklist & Settings Tasks]]
-- ➡️ [[Marketing Website]]
-- ➡️ [[aiquery exports task|Exports]]
 - ➡️ 🔴 [[Filtering V2 - Athena, Clickhouse and MongoDB]]
 - ➡️ 🔴 [[Possible Areas to Update of Filtering Architecture]]
 - ➡️ Rapid Response
@@ -26,14 +24,10 @@ status: active
 - [ ] **[[260406 (Mon) update the shadcn version, components and theme]]**
 - [ ] [[260406 (Mon) add end to end testing of create query flow]]
 - [ ] rename the dashboard collection/sections to dashboard tabs
-- [ ] ensure that the timepicker form field is reusable; not specific to dashboard widgets
-- [ ] **Bug:** Filter Sidebar hide animation issue on first filters in query detail view with query list pane
-	- when in query detail view with the query list nav pane, go to a fresh query item, apply filters, go to a 2nd fresh query item, you'll notice the filter sidebar suddenly closing.
-	- Now come back to 1st query item, and reapply the filters, and now click on other query item, you'll notice the filter sidebar animating to 0 width this time.
+- [ ] Query Detail's Query List Panel - Pending Tasks![[260411 (Sat) Create Query List Panel in Query Detail View#Pending Todos]]
 - [x] Change the color of Mac Logo to Accept Black in the QuerySmith
-- [ ] Rajput feedback on Query Pack List and Feature Flag Tasks ![[260412 (Sun) Developers Meeting#Decisions Made/Action Items]]
-	- [ ] Nick Feedback on Feature Flags Cleanup & Tasks![[260412 (Sun) Developers Meeting#Further Feedback from Nick]]
-	- [ ] Weekly Meeting Tasks![[260414 (Tue) Weekly Scrum Meeting#Action Items]]
+- [ ] current filters identification for all views
+- [ ] Weekly Meeting Tasks![[260414 (Tue) Weekly Scrum Meeting#Action Items]]
 ## Blocked Tasks
 - ⏸️ 🟠 implementation of query diffs (blocked: after filtering v2) — [[Query Response Data Diffing]]
 - ⏸️ 🟡 logs and metrics — [[Frontend - Observability (Logging & Metrics)|Frontend Observability]] (blocked: active tasks; may go to Rajput)

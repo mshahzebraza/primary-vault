@@ -37,8 +37,6 @@ Dashboard/Widget system — creation, layout, and detail view for widgets on das
 - [ ] Rename section actions: "Edit Title", "Delete Section"
 - [x] Add "Add" button to toolbar in edit layout mode
 - [x] Add edit button to individual widgets in edit layout mode
-- UI accent: something purple
-- [ ] Review cache invalidation on dashboard update/delete hooks
 - [ ] Use promise-to-resolved toast pattern for dashboard mutations
 
 ## 2026-03-24
@@ -57,12 +55,12 @@ Dashboard/Widget system — creation, layout, and detail view for widgets on das
 - [x] Widget compatibility disclaimer in dialog
 - [x] Remove target days, lock run cadence to creation
 - [x] Add start-cycle field
-- [ ] Use [Time Component from shadcn](https://ui.shadcn.com/docs/components/radix/date-picker#time-picker) instead of custom functionality
-- [ ] Rename all sections → tabs, Edit Layout → Edit Mode
+- [x] Use [Time Component from shadcn](https://ui.shadcn.com/docs/components/radix/date-picker#time-picker) instead of custom functionality
+- [x] Rename all sections → tabs, Edit Layout → Edit Mode
 - [x] Move export data + query results into Widget Detail Dialog
 - [x] Add Add/Edit buttons to toolbar and individual widgets in edit mode
 - [x] Fix Delete Widget button visibility (edit mode only)
-- [ ] Add date range subtitle in widget detail dialog
+- [x] Add date range subtitle in widget detail dialog
 	- Query: We currently get the data for all the widgets in the dashboard-tab in one api request. If that stays valid, then how'd we be able to fetch the specific widgets' data for a specific time-frame. Because that'd require either (1) a widget specific request + merging of query-cache with the `section-widgets` API, or (2) we re-fetch the `section-widgets` API with a filter object like `{widget_1: ["2026-01-10","2026-01-10" ]}`
 - [x] inherit & overridden flag for widget
 - [x] choose widgets from inventory (frequency, type)

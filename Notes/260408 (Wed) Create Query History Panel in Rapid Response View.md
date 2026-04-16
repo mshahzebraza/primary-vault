@@ -1,0 +1,89 @@
+---
+type: "[[Task]]"
+categories:
+  - "[[Work]]"
+date: 2026-04-08
+tags:
+  - feature
+organization:
+  - "[[aiquery.io]]"
+projects:
+  - "[[aq-client]]"
+status:
+  - active
+priority: P2
+---
+
+## Overview
+> We require a query history panel to quickly rerun all the executed queries.
+
+[UI Link](https://www.figma.com/design/JoOPDwbtWdrqaz1XliNG97/AI-Query?node-id=6739-42719&t=8nwlskO6nhDPGkY8-4)
+
+## Prompts
+## P1
+
+```md title="initial plan prompt"
+**Title:** Feature: Rapid Response Temporary Query History Panel
+
+**1. Objective** Implement a temporary query history panel for the Rapid Response tool. This panel will act as a "clipboard manager" for queries executed during an active session, allowing users to keep track of their investigation steps and quickly rerun previous queries.
+
+**2. Context & Background** Rapid Response is a real-time investigation tool. Currently, queries executed here are not stored in the backend, nor do we keep a history of the requests. Because users lose their query context as they work, they need a temporary, client-side storage mechanism that persists only while they are actively viewing the Rapid Response screen.
+
+**3. UI/UX Requirements**
+
+- **Visual Reference:** The UI must closely match the existing **Query List Pane** found in the **Query Detail View**. Reuse existing layouts, typography, and styling paradigms to maintain design consistency across the application.
+    
+
+**4. Functional Requirements**
+
+- **Capture History:** Every time a query is executed in Rapid Response, it must be added to the top of the Query History Panel.
+    
+- **Rerun Capability:** Users must be able to click on/select a previous query from the history panel to instantly rerun it (or populate it into the query input).
+    
+- **Session Lifecycle:** The history must not be saved to the backend. It should persist only for the duration of the user's active session in the Rapid Response view.
+    
+
+**5. Technical Considerations (`useRef` vs `useState`)**
+
+- For context, the original `Query List Pane` (in the Query Detail View) was initially built using a `useRef` to track items. We only migrated it to `useState` when we introduced the filter identification requirement, which necessitated reactivity to keep track of filters applied per query/tab.
+    
+- Since this new Rapid Response history panel serves purely as a history log and likely doesn't require complex reactivity (like filtering), it may be better/more performant to use a `useRef`.
+    
+- **Your Task:** Please analyze the feasibility of using `useRef` versus `useState` for this specific implementation. You are free to choose `useState` if your analysis determines it is the superior or more stable approach for this use case.
+    
+
+**6. Deliverables & Planning Requirements** Before writing the code, please provide a detailed implementation plan broken into two distinct sections:
+
+- **Section A: Overview (Non-Technical)**
+    
+    - Create a dedicated overview section that avoids heavy technical jargon.
+        
+    - Explain the plan purely in terms of context, behavior, and functionality.
+        
+    - Keep references to the codebase minimal. If you absolutely must discuss code implementation here, provide the specific code blocks and clearly explain the context around them so it is easy to understand for someone who hasn't looked at the codebase recently.
+        
+- **Section B: Technical Implementation Plan**
+    
+    - Detail the technical aspects, architecture, state management decisions (`useRef` vs `useState` analysis), and step-by-step coding plan. You can be as highly technical as needed in this section.
+      
+--- 
+
+Note: Once plan is finished and finalized, please save the plan in the codebase in documentation directory for refernce later before execution. Also while execution, please keep the progress on execution documented so that I can use any other agent to continue work if your tokens max out
+```
+Follow ups:
+- is the query store specific to devices
+
+## Current Tasks
+## 2026-04-08
+- Searching
+- Timestamps
+- Run Query & Load/Edit Query actions
+- Optional Label Assignment for History Item
+- UI Should follow no-padding and no-space-lost approach
+- store the device metadata i.e device name, device os for the captured queries
+- Allow running queries run on other devices or even other OS if user wants to do that but show the data to user; Optionally show a confirmation toast to user if they try to apply a query of OS X to the current device of OS Y etc.
+- Allow Optional Grouping in UI for agent or OS only for items which are consecutive in the timeline; i.e. `A1 A2 A3 B4 B5 A6 A7 => A(1,2,3) B(4,5) A(6,7)` where `A` is group and `1,2 ...` are items
+
+
+![[Related Meetings.base]]
+

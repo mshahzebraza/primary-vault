@@ -24,7 +24,6 @@ attendees:
 - disccussed the removal of deprecated and stable feature flags
 ## Decisions Made/Action Items
 - [ ] filters identification in the query list panel of the query detail view
-	- [ ] current filters identification
 	- [x] query list panel's active filters cache identification
 - [ ] removal of feature flags
 	- [x] filters v2 should replace filters v1 for query detail view
