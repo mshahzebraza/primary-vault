@@ -71,7 +71,7 @@ priority: P2
 Note: Once plan is finished and finalized, please save the plan in the codebase in documentation directory for refernce later before execution. Also while execution, please keep the progress on execution documented so that I can use any other agent to continue work if your tokens max out
 ```
 Follow ups:
-- is the query store specific to devices
+- is the proposed query store specific to devices and os. i.e. would it not allow storing the history across the devices? would it not allow running queries run on previously selected devices (while in the same session/mount)
 
 ## Current Tasks
 ## 2026-04-08
@@ -82,7 +82,9 @@ Follow ups:
 - UI Should follow no-padding and no-space-lost approach
 - store the device metadata i.e device name, device os for the captured queries
 - Allow running queries run on other devices or even other OS if user wants to do that but show the data to user; Optionally show a confirmation toast to user if they try to apply a query of OS X to the current device of OS Y etc.
+- Add a frequency count indicator for duplicate queries with exactly same metadata i.e. agent, os etc with timestamp of first query or show them grouped somehow
 - Allow Optional Grouping in UI for agent or OS only for items which are consecutive in the timeline; i.e. `A1 A2 A3 B4 B5 A6 A7 => A(1,2,3) B(4,5) A(6,7)` where `A` is group and `1,2 ...` are items
+- Move the device selector panel to the left like the query list nav panel, and the query history should be moved to right; but both should take up space from the view instead of a global drawer
 
 
 ![[Related Meetings.base]]
