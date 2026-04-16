@@ -19,13 +19,11 @@ status: active
 	- [[rapid response refactoring and enhancements]]
 	- [[rapid-response bugs]]
 - ➡️ [[end to end prod testing & checklist|End-to-End Prod Testing Checklist]]
-- [x] Number of results in devices tab (+ execution time etc)
-- [x] use the target-device refactoring branch to merge into develop
 - [ ] **[[260406 (Mon) update the shadcn version, components and theme]]**
 - [ ] [[260406 (Mon) add end to end testing of create query flow]]
 - [ ] rename the dashboard collection/sections to dashboard tabs
+- [ ] Rapid Response's Query History Panel - Pending Tasks ![[260408 (Wed) Create Query History Panel in Rapid Response View#Current Tasks]] 
 - [ ] Query Detail's Query List Panel - Pending Tasks![[260411 (Sat) Create Query List Panel in Query Detail View#Pending Todos]]
-- [x] Change the color of Mac Logo to Accept Black in the QuerySmith
 - [ ] current filters identification for all views
 - [ ] Weekly Meeting Tasks![[260414 (Tue) Weekly Scrum Meeting#Action Items]]
 ## Blocked Tasks

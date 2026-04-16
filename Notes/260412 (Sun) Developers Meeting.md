@@ -23,13 +23,12 @@ attendees:
 	- informed little refactoring and optimization is pending
 - disccussed the removal of deprecated and stable feature flags
 ## Decisions Made/Action Items
-- [ ] filters identification in the query list panel of the query detail view
+- [x] filters identification in the query list panel of the query detail view
 	- [x] query list panel's active filters cache identification
-- [ ] removal of feature flags
+- [x] removal of feature flags
 	- [x] filters v2 should replace filters v1 for query detail view
 	- [x] rapid response is always enabled
 	- [x] query-charts is scraped off completely.
-- [ ] backend will look into the issue of the `[eq]` filter for the query detail's devices tab as other endpoints are correctly handling the eq filter
 
 ## Further Feedback from Nick
 ### Feature Flags (FF) Cleanup
