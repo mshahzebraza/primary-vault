@@ -72,7 +72,20 @@ Note: Once plan is finished and finalized, please save the plan in the codebase 
 ```
 Follow ups:
 - is the proposed query store specific to devices and os. i.e. would it not allow storing the history across the devices? would it not allow running queries run on previously selected devices (while in the same session/mount)
+## P2
+```md
+So, on analyzing the depth of changes, the first thing I note is that even before the changes, the form provider was wrapping the inspection panel toolbar, the inspection panel query editor, as well as the stats bar. So I'm not sure why we needed to wrap all these components with the form provider when the query editor is only in the inspection panel query editor.
 
+The second thing I note is that the components in the right side or the right sizable panel are not stretching like they were before. So, for example, earlier the QD editor and the response live response inspection panel, live response component, were competing to get the available height and they were stretching, but they were not going beyond the viewport. Right now, I think they are just having their default heights and they expand to cover the content within them, even if it means overflowing the viewport. In this regard, I have attached the screenshot of the current UI with and without extensive data to show the state of UI without results and state of UI with a lot of results. And then another screenshot of how the actual UI looked like before implementation of Qt history.
+
+Furthermore, other UI bugs include that the device selection display button is centered instead of being stuck to the left, along with the collapse/slash/expand icon button.   
+
+Moreover, there is no display of or storage of the device name, the device OS against the query either, nor do we have any searching for the query list. I mean query history items.  
+
+Even though the searching is not supported in the backend and there's no backend at all for this feature, we can however support searching on the client side.  
+
+Furthermore, there should be buttons available for the query history item instead of always assuming that clicking on the query history item means selection. We can just add buttons within the history item to either run it immediately or edit run, which basically puts the item into the query editor like how it's doing now.  
+```
 ## Current Tasks
 ## 2026-04-08
 - [ ] Searching
