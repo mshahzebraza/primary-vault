@@ -101,6 +101,8 @@ Furthermore, there should be buttons available for the query history item instea
 - [ ] Implementation Bugs Consequences:
 	- [ ] Fix the positioning of agent button indicator
 	- [ ] Fix the stretching of the response table (compare it with existing implementation first) and also fix scrolling
+- [ ] Ensure that the data columns in the rapid response data table also follow the same UI as in updated data table component in query detail to avoid limiting the columns to specific width if more width is available.
+	- [ ] Also investigate the exact style changes that resulted in the fixing of Data Table UIgit 
 
 
 ![[Related Meetings.base]]
