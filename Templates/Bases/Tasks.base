@@ -90,8 +90,12 @@ views:
       - priority
       - date
     sort:
+      - property: priority
+        direction: ASC
       - property: status
         direction: ASC
+      - property: date
+        direction: DESC
       - property: file.name
         direction: ASC
     columnSize:
