@@ -42,4 +42,4 @@ organization:
 | Function              | Keys                |
 | --------------------- | ------------------- |
 | Navigate Back/Forward | Ctrl Alt Left/Right |
-|                       |                     |
+| Manage Workspaces     | Cltrl Shift Q       |
