@@ -23,21 +23,19 @@ attendees:
 
 ## Discussion
 
-## Decisions Made
 
-## Action Items
+## Action Items/Bugs
+### Task Specific
+#### Rapid Response Item Actions
+- [x] Save the rapid response history data as well
+- [ ] Save the name of Device in the history context
+- [ ] Point rapid response 'Need Help?' link to rapid response page: https://docs.aiquery.io/rapid-response/rapid-response-overview
+
+### Non-Task Specific
 - [ ] Remove the Mitre Link in Yara Mode. Replace it with - YARA Docs –  with [this link](https://yara.readthedocs.io/en/stable/)
 - [ ] Update Link in Windows Event Log Mode (Or add it as a Second Link: *Windows Event Catalog*. Rename the existing one as *Window Security Events*)
 - [ ] Need to update the yara mode text blurb
 	- "Please specify what binary attributes, or contents, you wish AI to generate a yara-based query on, and the desired operating system...(e.g. Social Security Numbers in files on Windows User Desktops)"
-- [ ] Rapid Response History Item
-	- [ ] Save the rapid response history data as well
-	- [ ] Save the name of Device in the history context
-	- [ ] Point rapid response 'Need Help?' link to rapid response page
-
-
-
-### Bugs
 - [ ] Optional: timezone selection should preferable use local TZ selection
 - [ ] Daylight Saving Timezone Issue (Need to Swap automatically; Look for better solution)
 		- [ ] Second Sunday march moves forwards New York is -4

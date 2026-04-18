@@ -20,25 +20,25 @@ priority: P2
 [UI Link](https://www.figma.com/design/JoOPDwbtWdrqaz1XliNG97/AI-Query?node-id=6739-42719&t=8nwlskO6nhDPGkY8-4)
 
 ## Current Tasks
-## 2026-04-08
+### Requirements
 - [x] Searching
 - [x] Timestamps
 - [x] Run Query & Load/Edit Query actions
 - [x] Optional Label Assignment for History Item
-- [ ] UI Should follow no-padding and no-space-lost approach
 - [x] store the device metadata i.e device name, device os for the captured queries
 - [x] Allow running queries run on other devices or even other OS if user wants to do that but show the data to user; Optionally show a confirmation toast to user if they try to apply a query of OS X to the current device of OS Y etc.
-- [ ] Add a frequency count indicator for duplicate queries with exactly same metadata i.e. agent, os etc with timestamp of first query or show them grouped somehow
-- [ ] Allow Optional Grouping in UI for agent or OS only for items which are consecutive in the timeline; i.e. `A1 A2 A3 B4 B5 A6 A7 => A(1,2,3) B(4,5) A(6,7)` where `A` is group and `1,2 ...` are items
-- [ ] Move the device selector panel to the left like the query list nav panel, and the query history should be moved to right; but both should take up space from the view instead of a global drawer
-- [ ] Implementation Bugs Consequences:
+- [x] Implementation Bugs Consequences:
 	- [x] Fix the positioning of agent button indicator
 	- [x] Fix the stretching of the response table (compare it with existing implementation first) and also fix scrolling
-- [ ] Ensure that the data columns in the rapid response data table also follow the same UI as in updated data table component in query detail to avoid limiting the columns to specific width if more width is available.
-	- [ ] Also investigate the exact style changes that resulted in the fixing of Data Table UI 
+- [x] Ensure that the data columns in the rapid response data table also follow the same UI as in updated data table component in query detail to avoid limiting the columns to specific width if more width is available.
 - [x] Show hovercard for info of query history items
+- [ ] Tasks from Bug Bash Meeting:![[260417T2004 (Fri) Bug Bash Meeting#Rapid Response Item Actions]]
 
 
+### Good to Have
+- [ ] UI Should follow no-padding and no-space-lost approach
+- [ ] Move the device selector panel to the left like the query list nav panel, and the query history should be moved to right; but both should take up space from the view instead of a global drawer
+- [ ] Investigate the exact style changes that resulted in the fixing of Data Table UI  but caused issue in the Rapid Response Data Table UI
 
 ## Prompts
 ### P1

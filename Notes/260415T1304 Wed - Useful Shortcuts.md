@@ -43,3 +43,4 @@ organization:
 | --------------------- | ------------------- |
 | Navigate Back/Forward | Ctrl Alt Left/Right |
 | Manage Workspaces     | Cltrl Shift Q       |
+| Focus Note Fullscreen | Shift F11           |
