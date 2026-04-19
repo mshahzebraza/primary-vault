@@ -1,9 +1,11 @@
 ---
-type: "[[Meeting]]"
+type: "[[Task]]"
 categories:
   - "[[Personal]]"
   - "[[Meetings]]"
-date: 2026-04-17
+  - "[[Work]]"
+  - "[[Tasks]]"
+date: 2026-04-19
 tags:
   - bug
   - task
@@ -16,6 +18,9 @@ projects:
 attendees:
   - "[[Rajput]]"
   - "[[Nick]]"
+status:
+  - active
+priority: P1
 ---
 
 ## Context
@@ -29,6 +34,18 @@ attendees:
 - [x] Point rapid response 'Need Help?' link to rapid response page: https://docs.aiquery.io/rapid-response/rapid-response-overview
 
 ### Non-Task Specific
+## Overview
+> One paragraph describing what and why.
+
+## Current Tasks
+- [ ] 
+
+
+
+
+
+![[Related Meetings.base]]
+
 - [ ] Remove the Mitre Link in Yara Mode. Replace it with - YARA Docs –  with [this link](https://yara.readthedocs.io/en/stable/)
 - [ ] Update Link in Windows Event Log Mode (Or add it as a Second Link: *Windows Event Catalog*. Rename the existing one as *Window Security Events*)
 - [ ] Need to update the yara mode text blurb
