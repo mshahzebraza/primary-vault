@@ -46,7 +46,7 @@ priority: P1
 		- [ ] First Sunday in november go back to New York is -5
 - [ ] Keep the logout on inactivity consider the activity on other tabs before logging user our
 
-- [ ] **[ID 2] Remove unneeded FFs/Move to internal**
+- [x] **[ID 2] Remove unneeded FFs/Move to internal**
   - **Category:** Task | **Severity:** Need 
   - **Comments:** See prior discussions/team meeting for full summary
 
