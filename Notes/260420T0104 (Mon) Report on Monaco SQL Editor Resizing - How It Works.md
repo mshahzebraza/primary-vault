@@ -163,7 +163,7 @@ Result: minimal-mode resizing rules do not interfere with full mode.
 
 ---
 
-## Why `requestAnimationFrame` is used here
+## Why `requestAnimationFrame`(rAF) is used here
 
 ## Quick explanation
 
