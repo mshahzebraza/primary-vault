@@ -162,11 +162,17 @@ In full mode, minimal auto-resize path is bypassed. Full mode uses different siz
 Result: minimal-mode resizing rules do not interfere with full mode.
 
 ---
+## What is `requestAnimationFrame (rAF)`?
+`rAF` means `requestAnimationFrame`.
 
-## Why `requestAnimationFrame`(rAF) is used here
+It’s a browser API used to run a callback right before the next screen paint/frame render.  
+In simple terms: “run this on the next visual frame when layout is more up-to-date.”
 
-## Quick explanation
-
+Common use cases:
+- smooth animations,
+- reading/updating layout at the right time,
+- avoiding measuring DOM too early during transient render states.
+## Why `requestAnimationFrame` is used here
 `requestAnimationFrame` (rAF) schedules code to run right before the browser paints the next frame.
 
 In UI/layout code, this helps when you need **post-layout, frame-aligned measurements** instead of immediate synchronous reads during transient render phases.

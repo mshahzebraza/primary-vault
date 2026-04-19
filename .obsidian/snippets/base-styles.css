@@ -1,3 +1,7 @@
+body {
+  --file-line-width: 1100px; /* Adjust as needed */
+}
+
 /* Custom variables for Obsidian Bases */
 body {
 	--bases-table-header-color: var(--text-normal);
