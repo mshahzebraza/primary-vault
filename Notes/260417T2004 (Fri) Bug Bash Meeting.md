@@ -1,5 +1,7 @@
 ---
-type: "[[Task]]"
+type:
+  - "[[Meeting]]"
+  - "[[Task]]"
 categories:
   - "[[Personal]]"
   - "[[Meetings]]"
@@ -27,25 +29,13 @@ priority: P1
 > We need to find and mark bugs for removal later. 
 
 ## Action Items/Bugs
-### Task Specific
+### Feature Specific
 #### Rapid Response Item Actions
 - [x] Save the rapid response history data as well
 - [x] Save the name of Device in the history context
 - [x] Point rapid response 'Need Help?' link to rapid response page: https://docs.aiquery.io/rapid-response/rapid-response-overview
 
-### Non-Task Specific
-## Overview
-> One paragraph describing what and why.
-
-## Current Tasks
-- [ ] 
-
-
-
-
-
-![[Related Meetings.base]]
-
+### Non Specific
 - [ ] Remove the Mitre Link in Yara Mode. Replace it with - YARA Docs –  with [this link](https://yara.readthedocs.io/en/stable/)
 - [ ] Update Link in Windows Event Log Mode (Or add it as a Second Link: *Windows Event Catalog*. Rename the existing one as *Window Security Events*)
 - [ ] Need to update the yara mode text blurb
