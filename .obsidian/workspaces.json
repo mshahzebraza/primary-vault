@@ -12,7 +12,7 @@
               {
                 "id": "3d68a255fe2b1867",
                 "type": "split",
-                "dimension": 35.44776119402985,
+                "dimension": 38.40970350404312,
                 "children": [
                   {
                     "id": "a0e307992ec15a39",
@@ -30,6 +30,20 @@
                           },
                           "icon": "lucide-table",
                           "title": "Tasks"
+                        }
+                      },
+                      {
+                        "id": "a7d1f246d308caf5",
+                        "type": "leaf",
+                        "state": {
+                          "type": "markdown",
+                          "state": {
+                            "file": "Notes/260407 (Tue) Weekly Scrum Meeting.md",
+                            "mode": "source",
+                            "source": false
+                          },
+                          "icon": "lucide-file",
+                          "title": "260407 (Tue) Weekly Scrum Meeting"
                         }
                       }
                     ]
@@ -60,7 +74,7 @@
               {
                 "id": "af1c47ef0320bc69",
                 "type": "tabs",
-                "dimension": 64.55223880597015,
+                "dimension": 61.59029649595688,
                 "children": [
                   {
                     "id": "3e7791c229069312",
@@ -91,6 +105,20 @@
                     }
                   },
                   {
+                    "id": "53fc1b2ddf18c78c",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Notes/260408 (Wed) Create Query History Panel in Rapid Response View.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "260408 (Wed) Create Query History Panel in Rapid Response View"
+                    }
+                  },
+                  {
                     "id": "19b552d110d6430c",
                     "type": "leaf",
                     "state": {
@@ -104,7 +132,8 @@
                       "title": "260408 (Wed) Create Query History Panel in Rapid Response View"
                     }
                   }
-                ]
+                ],
+                "currentTab": 2
               }
             ],
             "direction": "vertical"
@@ -212,13 +241,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Notes/260417T2004 (Fri) Bug Bash Meeting.md",
+                    "file": "Notes/260408 (Wed) Create Query History Panel in Rapid Response View.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of 260417T2004 (Fri) Bug Bash Meeting"
+                  "title": "Outline of 260408 (Wed) Create Query History Panel in Rapid Response View"
                 }
               },
               {
@@ -273,8 +302,8 @@
           "zk-prefixer:Create new unique note": false
         }
       },
-      "active": "3e7791c229069312",
-      "mtime": "2026-04-17T22:40:35+05:00"
+      "active": "53fc1b2ddf18c78c",
+      "mtime": "2026-04-18T23:38:24+05:00"
     },
     "Personal": {
       "main": {

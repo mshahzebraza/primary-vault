@@ -21,15 +21,12 @@ attendees:
 ## Context
 > We need to find and mark bugs for removal later. 
 
-## Discussion
-
-
 ## Action Items/Bugs
 ### Task Specific
 #### Rapid Response Item Actions
 - [x] Save the rapid response history data as well
-- [ ] Save the name of Device in the history context
-- [ ] Point rapid response 'Need Help?' link to rapid response page: https://docs.aiquery.io/rapid-response/rapid-response-overview
+- [x] Save the name of Device in the history context
+- [x] Point rapid response 'Need Help?' link to rapid response page: https://docs.aiquery.io/rapid-response/rapid-response-overview
 
 ### Non-Task Specific
 - [ ] Remove the Mitre Link in Yara Mode. Replace it with - YARA Docs –  with [this link](https://yara.readthedocs.io/en/stable/)

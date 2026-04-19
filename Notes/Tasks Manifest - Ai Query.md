@@ -9,6 +9,20 @@ status: active
 ---
 ## Active Tasks
 
+- [ ] [[260406 (Mon) add end to end testing of create query flow]]
+- [ ] User is logged out even when he is active on another tab. Need to sync the session activity across browser tabs.
+
+- [ ] *Query Detail's Query List Panel - Pending Tasks*![[260411 (Sat) Create Query List Panel in Query Detail View#Pending]]
+- [ ] rename the dashboard collection/sections to dashboard tabs
+- [ ] current filters identification for all views
+- [ ] **[[260406 (Mon) update the shadcn version, components and theme]]**
+- [ ] Weekly Meeting Tasks![[260414 (Tue) Weekly Scrum Meeting#Action Items]]
+
+
+
+
+
+
 - ➡️ [[DashboardWidgets|Dashboard / Widgets]]
 - ➡️ [[custom extension bugs|Custom Extension Bugs]]
 - ➡️ [[Custom Extensions View (Bugs, Tasks and Optimizations)|Custom Extensions View]]
@@ -19,20 +33,12 @@ status: active
 	- [[rapid response refactoring and enhancements]]
 	- [[rapid-response bugs]]
 - ➡️ [[end to end prod testing & checklist|End-to-End Prod Testing Checklist]]
-- [ ] **[[260406 (Mon) update the shadcn version, components and theme]]**
-- [ ] [[260406 (Mon) add end to end testing of create query flow]]
-- [ ] rename the dashboard collection/sections to dashboard tabs
-- [ ] User is logged out even when he is active on another tab. Need to sync the session activity across browser tabs.
-- [ ] Rapid Response's Query History Panel - Pending Tasks ![[260408 (Wed) Create Query History Panel in Rapid Response View#Current Tasks]] 
-- [ ] *Query Detail's Query List Panel - Pending Tasks*![[260411 (Sat) Create Query List Panel in Query Detail View#Pending Todos]]
-- [ ] current filters identification for all views
-- [ ] Weekly Meeting Tasks![[260414 (Tue) Weekly Scrum Meeting#Action Items]]
 ## Blocked Tasks
 - ⏸️ 🟠 implementation of query diffs (blocked: after filtering v2) — [[Query Response Data Diffing]]
 - ⏸️ 🟡 logs and metrics — [[Frontend - Observability (Logging & Metrics)|Frontend Observability]] (blocked: active tasks; may go to Rajput)
 - ⏸️ 🟡 agent feature configuration (paused: needs more discussion)
 
-## Todo Tasks
+## Backlog Tasks
 
 ### High Priority
 - 🔴 [[BUG - Race condition on custom extension Test & Publish tab]]
@@ -53,6 +59,3 @@ status: active
 ### Refactoring / Tech Debt
 - [ ] Standardise the query param interface and schema logic
 - [ ] Add code templates (`template.model.ts`, `template-view.hook.ts`, `template.hook.ts`, `template.api.ts`, `template.dto.ts`, `template.view.tsx`, `template.page.tsx`) with pseudo-code and instructions for: dialogs, tabs, toasts, one-off requests, and other edge cases
-
-## Completed
-- ✅ [[Fix devices MultiSelect|Fix: Devices MultiSelect pagination bug]] — PR #380 merged

@@ -10,7 +10,7 @@ organization:
 projects:
   - "[[aq-client]]"
 status:
-  - active
+  - completed
 priority: P2
 ---
 
@@ -32,19 +32,17 @@ priority: P2
 	- [x] Fix the stretching of the response table (compare it with existing implementation first) and also fix scrolling
 - [x] Ensure that the data columns in the rapid response data table also follow the same UI as in updated data table component in query detail to avoid limiting the columns to specific width if more width is available.
 - [x] Show hovercard for info of query history items
-- [ ] Keep the status as empty/pending until the 2nds api query is to `query-response-data` resource is resolved (either failed/success)
-	- Prompt:
-		- I also note that as soon as I create the query, the status turns to warning without getting the data. So I'm not sure why it's warning because I haven't yet received any response.  Could you please confirm that it is an intermittent API request whose response is giving us the status of warning, and then another API request is made to get the data which is causing the warning sign to show up earlier than the data?  
-		- I believe that this is because we have the response of Query Response API that is giving us a suggestion that while we are waiting for the Query Response Data API to ask, we still show the loader. and I think that's why we have the status of pending after the resolution of the first API while we are waiting for the response of the second API request but it should be changed of it so that the status flag is either not shown or is shown as pending until the second I believe that this is because we have the response of Query Response API that is giving us a suggestion that while we are waiting for the Query Response Data API to ask, we still show the loader. and I think that's why we have the status of pending after the resolution of the first API while we are waiting for the response of the second API request but it should be changed of it so that the status flag is either not shown or is shown as pending until the second API's response has resolved. Like, either we know that it's a success or failure or the response should be resolved. The API should be resolved.  
-
-
-- [ ] Tasks from Bug Bash Meeting:![[260417T2004 (Fri) Bug Bash Meeting#Rapid Response Item Actions]]
+- [x] Tasks from Bug Bash Meeting:![[260417T2004 (Fri) Bug Bash Meeting#Rapid Response Item Actions]]
 
 
 ### Good to Have
 - [ ] UI Should follow no-padding and no-space-lost approach
 - [ ] Move the device selector panel to the left like the query list nav panel, and the query history should be moved to right; but both should take up space from the view instead of a global drawer
 - [ ] Investigate the exact style changes that resulted in the fixing of Data Table UI  but caused issue in the Rapid Response Data Table UI
+- [ ] Keep the status as empty/pending until the 2nds api query is to `query-response-data` resource is resolved (either failed/success)
+	- Prompt:
+		- I also note that as soon as I create the query, the status turns to warning without getting the data. So I'm not sure why it's warning because I haven't yet received any response.  Could you please confirm that it is an intermittent API request whose response is giving us the status of warning, and then another API request is made to get the data which is causing the warning sign to show up earlier than the data?  
+		- I believe that this is because we have the response of Query Response API that is giving us a suggestion that while we are waiting for the Query Response Data API to ask, we still show the loader. and I think that's why we have the status of pending after the resolution of the first API while we are waiting for the response of the second API request but it should be changed of it so that the status flag is either not shown or is shown as pending until the second I believe that this is because we have the response of Query Response API that is giving us a suggestion that while we are waiting for the Query Response Data API to ask, we still show the loader. and I think that's why we have the status of pending after the resolution of the first API while we are waiting for the response of the second API request but it should be changed of it so that the status flag is either not shown or is shown as pending until the second API's response has resolved. Like, either we know that it's a success or failure or the response should be resolved. The API should be resolved.  
 
 ## Prompts
 ### P1
