@@ -66,7 +66,7 @@ priority: P1
   - **Category:** Task | **Severity:** Need
   - **Comments:** As minimal as possible, just to check a box
 
-- [ ] **[ID 14] Create preset SQL field bug**
+- [x] **[ID 14] [[260419T1504 (Sun) BUG - query editor gives UI jerk when content in the editor is too much due to a resizing change added earlier]]**
   - **Category:** Bug | **Severity:** Need/Nice
   - **Comments:** When you save somethign as a preset on the create query page, the SQL box is massive and looks strange. If you type anything in the box it auto scales to the correct size, but is odd and def a bug currently
 
