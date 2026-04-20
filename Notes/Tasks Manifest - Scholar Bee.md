@@ -21,8 +21,8 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 
 ## ▶️ In Progress
 - [x] [Transcript and ID Card Fields Are Not Mandatory in Application Form](https://scholarbee-team.atlassian.net/browse/SB-1417)
-- [ ] [[260416T1704 (Thu) - Add Session(Intake) Term(Season) & Year Information]]
-- [ ] [[260420T1904 (Mon) Create a revised campus slug in campus collection]]
+- [ ] [[260416T1704 (Thu) Admission Program Details - Session Term Filtering & "Latest Term" Query Parameter]]
+- [ ] [[260420T1904 (Mon) Update Admission Program Filtering - Replace University Slug with Campus Slug]]
 
 ## 🟥 Pending
 - [ ] Search Listing to conform to the requirements criteria submitted by the [[SB Outreach Team]]
