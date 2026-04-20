@@ -36,10 +36,9 @@ priority: P1
 - [x] Point rapid response 'Need Help?' link to rapid response page: https://docs.aiquery.io/rapid-response/rapid-response-overview
 
 ### Non Specific
-- [ ] Remove the Mitre Link in Yara Mode. Replace it with - YARA Docs –  with [this link](https://yara.readthedocs.io/en/stable/)
-- [ ] Update Link in Windows Event Log Mode (Or add it as a Second Link: *Windows Event Catalog*. Rename the existing one as *Window Security Events*)
-- [ ] Need to update the yara mode text blurb
-	- "Please specify what binary attributes, or contents, you wish AI to generate a yara-based query on, and the desired operating system...(e.g. Social Security Numbers in files on Windows User Desktops)"
+- [x] Remove the Mitre Link in Yara Mode. Replace it with - YARA Docs –  with this link: https://yara.readthedocs.io/en/stable/
+- [x] Update Link in Windows Event Log Mode (Or add it as a Second Link: *Windows Event Catalog*. Rename the existing one as *Window Security Events*). Use this link: https://detection.wiki/
+- [x] Need to update the yara mode text blurb: "Please specify what binary attributes, or contents, you wish AI to generate a yara-based query on, and the desired operating system...(e.g. Social Security Numbers in files on Windows User Desktops)"
 - [ ] Optional: timezone selection should preferable use local TZ selection
 - [ ] Daylight Saving Timezone Issue (Need to Swap automatically; Look for better solution)
 		- [ ] Second Sunday march moves forwards New York is -4
@@ -69,18 +68,6 @@ priority: P1
 - [x] **[ID 14] [[260419T1504 (Sun) BUG - query editor gives UI jerk when content in the editor is too much due to a resizing change added earlier]]**
   - **Category:** Bug | **Severity:** Need/Nice
   - **Comments:** When you save somethign as a preset on the create query page, the SQL box is massive and looks strange. If you type anything in the box it auto scales to the correct size, but is odd and def a bug currently
-
-- [ ] **[ID 19] Need to update the yara mode text blurb**
-  - **Category:** Task | **Severity:** Nice
-  - **Comments:** Nick to provide blurb to Shazeb
-
-- [ ] **[ID 20] Update Link in Windows Event Log Mode**
-  - **Category:** Task | **Severity:** Nice
-  - **Comments:** Super minor, but think this link is better than the one we have now: https://detection.wiki/
-
-- [ ] **[ID 21] Create one page PDF of ins**
-  - **Category:** Task | **Severity:** Need
-  - **Comments:** Will give you updated link to reference (or just remove)
 
 - [ ] **[ID 22] Timezone adjustments based on Daylight Savings**
   - **Category:** Bug | **Severity:** Need
