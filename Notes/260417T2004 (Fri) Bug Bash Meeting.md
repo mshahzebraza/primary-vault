@@ -48,6 +48,8 @@ priority: P1
 	- [ ] Non Critical: searching and back-ing takes many steps to go back
 	- [ ] Non Critical: search resolution takes the focus out of search input
 
+- [ ] In API Roles Page, Expiry Pill positioning and Range is not correct
+
 - [ ] Integrate the transfer ownership action in the team settings view with a CONFIRM action dialog. 
 	- API code block
 ```
