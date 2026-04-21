@@ -45,6 +45,16 @@ priority: P1
 		- [ ] First Sunday in november go back to New York is -5
 - [ ] Automatically Select the local time in the schedules dialog
 
+- [ ] Integrate the transfer ownership action in the team settings view with a CONFIRM action dialog. 
+	- API code block
+```
+{[domain}}/tenant/transfer-ownership  
+body: {  
+    @IsNotEmpty()  
+    newRootUserId: string  
+}
+```
+
 - [x] **[ID 2] Remove unneeded FFs/Move to internal**
   - **Category:** Task | **Severity:** Need 
   - **Comments:** See prior discussions/team meeting for full summary
