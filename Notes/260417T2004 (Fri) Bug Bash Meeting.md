@@ -44,6 +44,9 @@ priority: P1
 		- [ ] Second Sunday march moves forwards New York is -4
 		- [ ] First Sunday in november go back to New York is -5
 - [ ] Automatically Select the local time in the schedules dialog
+- [ ] Investigate the invite/team settings view for bugs:
+	- [ ] Non Critical: searching and back-ing takes many steps to go back
+	- [ ] Non Critical: search resolution takes the focus out of search input
 
 - [ ] Integrate the transfer ownership action in the team settings view with a CONFIRM action dialog. 
 	- API code block
@@ -87,7 +90,7 @@ body: {
   - **Category:** Bug | **Severity:** Nice
   - **Comments:** Currently points to create query – needs to point to https://docs.aiquery.io/rapid-response
 
-- [x] **[ID 24] Refresh not showing toast on Settings > Team page**
+- [ ] **[ID 24] Refresh not showing toast on Settings > Team page** (QA Failed)
   - **Category:** Bug | **Severity:** Nice
   - **Comments:** the literal button is not showing a refresh toast – confirmed it IS refreshing, just no toast
 
@@ -111,7 +114,8 @@ body: {
   - **Category:** Bug | **Severity:** Need/Nice
   - **Comments:** The order should be; Refresh, Resend, Delete. Additionally, make 'Delete' red, so that it aligns with everything in the console...only putting it as need/nice so there arent accidental deletions
 
-- [x] **[ID 30] On Settings > Invite Page – toast issue on existing user**
+
+- [ ] **[ID 30] On Settings > Invite Page – toast issue on existing user** (QA Failed)
   - **Category:** Bug | **Severity:** Trivial
   - **Comments:** Genuinely might not even want to worry about this – beyond trivial. Basically, the failed invite is PERFECT – that is what we want to happen. BUT the error toast says 'Invite Created – Failed to send invite'. That is weird, it should say invite failed – and ideally say say something like 'Invite Failed – User exists' or something.
 
