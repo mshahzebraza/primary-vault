@@ -43,7 +43,6 @@ priority: P1
 - [ ] Daylight Saving Timezone Issue (Need to Swap automatically; Look for better solution)
 		- [ ] Second Sunday march moves forwards New York is -4
 		- [ ] First Sunday in november go back to New York is -5
-- [ ] Keep the logout on inactivity consider the activity on other tabs before logging user our
 
 - [x] **[ID 2] Remove unneeded FFs/Move to internal**
   - **Category:** Task | **Severity:** Need 
@@ -73,15 +72,15 @@ priority: P1
   - **Category:** Bug | **Severity:** Need
   - **Comments:** i.e. now EST is -4 UTC, on nov 1 2026 goes back to -5...currently is -4 and says -5
 
-- [ ] **[ID 23] Point rapid response 'Need Help?' link to rapid response page**
+- [x] **[ID 23] Point rapid response 'Need Help?' link to rapid response page**
   - **Category:** Bug | **Severity:** Nice
   - **Comments:** Currently points to create query – needs to point to https://docs.aiquery.io/rapid-response
 
-- [ ] **[ID 24] Refresh not showing toast on Settings > Team page**
+- [x] **[ID 24] Refresh not showing toast on Settings > Team page**
   - **Category:** Bug | **Severity:** Nice
   - **Comments:** the literal button is not showing a refresh toast – confirmed it IS refreshing, just no toast
 
-- [ ] **[ID 25] On settings > Team page – search seems to be broken**
+- [x] **[ID 25] On settings > Team page – search seems to be broken**
   - **Category:** Bug | **Severity:** Nice
   - **Comments:** If you search anything on the team page, it seems to not be working? here is the request url: `https://ppe-api.aiquery.io/memberships/tenant/tnt_kjFNB8kJkl1fI6iv6e-84-qqt?filters%5Buser.name%5D%5Bregex%5D=Nick&limit=10&page=1&populate=tenant%2Cuser%2Croles&sort%5Bcreated_at%5D=-1&user.name%5Bregex%5D=Nick`
 
@@ -89,23 +88,23 @@ priority: P1
   - **Category:** Bug | **Severity:** Nice
   - **Comments:** SO minor, but remove (Default) for now, since they are ALL default
 
-- [ ] **[ID 27] Auto log out if ONE tab is inactive, even if using another tab**
+- [x] **[ID 27] Auto log out if ONE tab is inactive, even if using another tab**
   - **Category:** Bug | **Severity:** Nice
   - **Comments:** Minor but kinda annoying, if I am working on tab A and B, but then if I have tab C and I am not using that, it can kick me out of the console across all tabs – can cause issues when using querysmith and stuff
 
-- [ ] **[ID 28] On settings > Invite page – search is broken also**
+- [x] **[ID 28] On settings > Invite page – search is broken also**
   - **Category:** Bug | **Severity:** Nice
   - **Comments:** BUT honestly not even needed for this page...so if you want to fix with the same way as the team search (item 25 on list) then cool, but also can just remove the search from this page
 
-- [ ] **[ID 29] On Settings > Invite Page – when you click into 'Actions', the order needs to be changed for options/delete should be red**
+- [x] **[ID 29] On Settings > Invite Page – when you click into 'Actions', the order needs to be changed for options/delete should be red**
   - **Category:** Bug | **Severity:** Need/Nice
   - **Comments:** The order should be; Refresh, Resend, Delete. Additionally, make 'Delete' red, so that it aligns with everything in the console...only putting it as need/nice so there arent accidental deletions
 
-- [ ] **[ID 30] On Settings > Invite Page – toast issue on existing user**
+- [x] **[ID 30] On Settings > Invite Page – toast issue on existing user**
   - **Category:** Bug | **Severity:** Trivial
   - **Comments:** Genuinely might not even want to worry about this – beyond trivial. Basically, the failed invite is PERFECT – that is what we want to happen. BUT the error toast says 'Invite Created – Failed to send invite'. That is weird, it should say invite failed – and ideally say say something like 'Invite Failed – User exists' or something.
 
-- [ ] **[ID 31] On Settings > Invite Page – no refresh button**
+- [x] **[ID 31] On Settings > Invite Page – no refresh button**
   - **Category:** Bug | **Severity:** Trivial
   - **Comments:** SO minor, but there just isnt a refesh on this page, but is on others – totally not needed though, adding this as the lowest priority
 
@@ -120,10 +119,6 @@ priority: P1
 - [ ] **[ID 34] Reset Password email went to spam (other invite emails DO NOT go to spam?)**
   - **Category:** Other | **Severity:** Nice
   - **Comments:** Just kind of odd and wanted to note – also the toast says that its coming from noreply@aiquery.io – but the email actually came from noreply@aiquery-dev.firebaseapp.com, while the tenant invite comes from admin@aiquery.io?
-
-- [ ] **[ID 35] SQL box resizing issue on query schedules, packs, and templates**
-  - **Category:** Bug | **Severity:** Need/Nice
-  - **Comments:** Def the same bug as ID 14, since its the same form, just wanted to note down
 
 - [ ] **[ID 36] Duplicate 'close' button**
   - **Category:** Bug | **Severity:** Trivial
