@@ -48,6 +48,11 @@ priority: P1
 	- [ ] Non Critical: searching and back-ing takes many steps to go back
 	- [ ] Non Critical: search resolution takes the focus out of search input
 
+- [ ] UI Bug: Query SQL Input in the Query Schedule, View Detail Dialog is one-line and scrollable.
+	- Take a reference from Query Pack Schedule SQL Input (it also has sql highlighting)
+
+- [ ] Query Pack Data View's Edit and Create Dialog has 2 close buttons.
+
 - [ ] In API Roles Page, Expiry Pill positioning and Range is not correct
 
 - [ ] Integrate the transfer ownership action in the team settings view with a CONFIRM action dialog. 
