@@ -43,6 +43,7 @@ priority: P1
 - [ ] Daylight Saving Timezone Issue (Need to Swap automatically; Look for better solution)
 		- [ ] Second Sunday march moves forwards New York is -4
 		- [ ] First Sunday in november go back to New York is -5
+- [ ] Automatically Select the local time in the schedules dialog
 
 - [x] **[ID 2] Remove unneeded FFs/Move to internal**
   - **Category:** Task | **Severity:** Need 
