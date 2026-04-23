@@ -33,5 +33,10 @@ Confirm in codebase/DB: unread persistence, mark-read API(s) (single vs batch), 
 ## Current Tasks
 - [ ] Phase 1 — map storage, APIs, participant isolation, email template structure
 - [ ] Phase 2 — queries, cron wiring, send path, new template, edge cases
+- [ ] Updates
+	- [ ] Add hard-coded Contact Support Number
+	- [ ] Coprights 2024 -> 2026
+	- [ ] Add frontend change to handle the redirects mapping (`unread_conversation` -> `chat-page`)
+		- Currently, only send to the dashboard page
 
 ![[Related Meetings.base]]

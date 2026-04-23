@@ -23,7 +23,10 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 - [x] [Transcript and ID Card Fields Are Not Mandatory in Application Form](https://scholarbee-team.atlassian.net/browse/SB-1417)
 - [x] [[260416T1704 (Thu) Admission Program Details - Session Term Filtering & "Latest Term" Query Parameter]]
 - [x] [[260420T1904 (Mon) Update Admission Program Filtering - Replace University Slug with Campus Slug]]
-
+- [ ] **BUG:** `univerisities/detail-list` -> `campuses/detail-list`
+- [ ] **BUG:** notifications for recent admission programs not generated in db[]
+- [ ] **Enhancement:** use a reusable frontend url link for media domain for email templates, instead of always sending the same link.
+- [ ] redirect the chat messages action button from emails to a generic REDIRECTS page, that maintains a mapping of redirect-type to frontend-route.
 ## 🟥 Pending
 - [ ] Search Listing to conform to the requirements criteria submitted by the [[SB Outreach Team]]
 - [ ] Favourite program notification
