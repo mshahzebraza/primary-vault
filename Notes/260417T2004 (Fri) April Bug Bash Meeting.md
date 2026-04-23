@@ -25,6 +25,7 @@ status:
 priority: P1
 related-tasks:
   - "[[260423T0904 (Thu) Timezone Dropdown List adjustments based on Daylight Savings]]"
+  - "[[260423T1204 (Thu) Task - Integrate transfer ownership action in team settings view]]"
 ---
 
 ## Context
@@ -40,25 +41,24 @@ related-tasks:
 - 
 
 #### Non Specific
-- [ ] [ID: 30] Trivial - Bug - On Settings > Invite Page – toast issue on existing user
-  - QA failed
-  - Genuinely might not even want to worry about this – beyond trivial. Basically, the failed invite is PERFECT – that is what we want to happen. BUT the error toast says 'Invite Created – Failed to send invite'. That is weird, it should say invite failed – and ideally say say something like 'Invite Failed – User exists' or something.
-
+- [x] [ID: 30] Trivial - Bug - On Settings > Invite Page – toast issue on existing user
+	- **QA failed**
+	- Genuinely might not even want to worry about this – beyond trivial. Basically, the failed invite is PERFECT – that is what we want to happen. BUT the error toast says 'Invite Created – Failed to send invite'. That is weird, it should say invite failed – and ideally say say something like 'Invite Failed – User exists' or something.
 
 - [ ] Optional: timezone selection should preferable use local TZ selection
 
 - [ ] Automatically Select the local time in the schedules dialog
 
-- [ ] UI Bug: Query SQL Input in the Query Schedule, View Detail Dialog is one-line and scrollable.
+- [x] UI Bug: Query SQL Input in the Query Schedule, View Detail Dialog is one-line and scrollable.
 	- Take a reference from Query Pack Schedule SQL Input (it also has sql highlighting)
 
 - [ ] Add an optional OS Pill distinction b/w AMD, and ARM. (Might be able to use a absolute positioned pill). 
 
 
 
-- [ ] In API Roles Page, Expiry Pill positioning and Range is not correct
+- [x] In API Roles Page, Expiry Pill positioning and Range is not correct
 
-- [ ] Integrate the transfer ownership action in the team settings view with a CONFIRM action dialog. 
+- [ ] [[260423T1204 (Thu) Task - Integrate transfer ownership action in team settings view]]
 	- API code block
 ```
 {[domain}}/tenant/transfer-ownership  
