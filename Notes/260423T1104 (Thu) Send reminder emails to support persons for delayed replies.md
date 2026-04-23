@@ -16,6 +16,8 @@ tags:
   - chat
 ---
 
+Jira Ticket (**SB-1394**): https://scholarbee-team.atlassian.net/browse/SB-1394
+
 ## Overview
 Nightly batch (cron at midnight) emails to **all university admins** (including support modeled as a normal uni/campus) who have **unread** student chat messages—not unreplied threads. Copy must state that they have **X unread messages** worth replying to. Reuse existing Scholarbee email layout/components for visual consistency.
 
