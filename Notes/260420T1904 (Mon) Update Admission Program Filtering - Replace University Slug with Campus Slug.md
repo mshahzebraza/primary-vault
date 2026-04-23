@@ -39,8 +39,8 @@ Jira Ticket: https://scholarbee-team.atlassian.net/browse/SB-1400
 * **Migration Alert:** Because we are changing the normalization logic for the `campus_slug`, existing campus records in the database will need to have their slugs regenerated/updated to match the new `normalized(campus_name)` format.
 ## Current Tasks
 - [ ] Create a prompt based on the curent task/note description
-	- [ ] Create a mongosh script
-	- [ ] ensure special characters are normalize and `&` is converted to `and`.
+	- [x] Create a mongosh script
+	- [x] ensure special characters are normalize and `&` is converted to `and`.
 - [ ] confirm if the normalization has worked using a verification aggregation pipeline
 - [ ] elastic search scriipt to ensure feed data contains the data for session
 

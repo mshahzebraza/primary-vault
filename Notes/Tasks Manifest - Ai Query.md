@@ -12,7 +12,7 @@ status: active
 - [ ] [[260406 (Mon) add end to end testing of create query flow]]
 - [ ] User is logged out even when he is active on another tab. Need to sync the session activity across browser tabs.
 
-- Bug Bash Tasks ![[260417T2004 (Fri) Bug Bash Meeting#Action Items/Bugs]]
+- Bug Bash Tasks ![[260417T2004 (Fri) April Bug Bash Meeting#Action Items/Bugs]]
 - [ ] *Query Detail's Query List Panel - Pending Tasks*![[260411 (Sat) Create Query List Panel in Query Detail View#Pending]]
 - [ ] rename the dashboard collection/sections to dashboard tabs
 - [ ] current filters identification for all views

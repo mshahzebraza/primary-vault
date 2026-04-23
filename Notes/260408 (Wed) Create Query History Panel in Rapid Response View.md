@@ -32,7 +32,7 @@ priority: P2
 	- [x] Fix the stretching of the response table (compare it with existing implementation first) and also fix scrolling
 - [x] Ensure that the data columns in the rapid response data table also follow the same UI as in updated data table component in query detail to avoid limiting the columns to specific width if more width is available.
 - [x] Show hovercard for info of query history items
-- [x] Tasks from Bug Bash Meeting:![[260417T2004 (Fri) Bug Bash Meeting#Rapid Response Item Actions]]
+- [x] Tasks from Bug Bash Meeting:![[260417T2004 (Fri) April Bug Bash Meeting#Rapid Response Item Actions]]
 
 
 ### Good to Have

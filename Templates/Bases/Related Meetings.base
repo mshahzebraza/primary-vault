@@ -3,7 +3,7 @@ filters:
     - categories.contains(link("Meetings"))
     - file.path.contains("Notes/")
     - file.ext == "md"
-    - list(related-tasks).contains(this)
+    - note["related-tasks"].contains(link(this.file))
 properties:
   file.name:
     displayName: Meeting
