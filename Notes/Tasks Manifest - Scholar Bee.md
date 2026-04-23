@@ -56,7 +56,7 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 	- [ ] Without Dates - might conflict with dates and tags
 ### Delayed Reply Observability
 - [ ] Track and surface observability of delayed chat replies
-- [ ] Send reminder emails to support persons for delayed replies
+- [ ] [[260423T1104 (Thu) Send reminder emails to support persons for delayed replies|Nightly email — unread student messages (all admins, inc. support)]]
 - [ ] Send reminders via WhatsApp to individual support persons as well
 - [ ] Add analytics around delayed response times
 ### Student Chat UX
