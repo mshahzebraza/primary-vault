@@ -99,11 +99,11 @@ body: {
   - **Category:** Bug | **Severity:** Need/Nice
   - **Comments:** **Oddities:** Expire pill is too close to the API Key Field. Only 2 keys allowed per role...not a problem, but wanted to note since I was not sure if that is expected. The default expiration date when creating a Key OR an API Role is today – it should default to some time in the future. **BUG:** If I set an API Key Expiration date <=3 days in the future, it will show expired. We don't need the expires soon if we dont want, we just cant have it say expired when it is not expired. **LOOM:** https://www.loom.com/share/4dd44859c3fa47d994d74a34e1141c6e
 
-- [ ] **[ID 36] Duplicate 'close' button**
+- [x] **[ID 36] Duplicate 'close' button**
   - **Category:** Bug | **Severity:** Trivial
   - **Comments:** If you go to Query Pack Presets OR Assessment Templates then go to [Actions > View Details] there are 2 'Close' buttons at the bottom, and both work lol. purely cosmetic. So, Query Pack Data View's Edit and Create Dialog has 2 close buttons.
 
-- [ ] **[ID 37] No MST in the timezone**
+- [ ] **[ID 37] No MST in the timezone** ?? 
   - **Category:** Bug | **Severity:** Trivial
   - **Comments:** There is techincally not a Mountain time (MST) in the timezone selection options – I know this is nuanced and minor, but there is ONE entry that between PST (Los_Angeles) and CST (Chicago), but unfortunately that is Arizona
 
