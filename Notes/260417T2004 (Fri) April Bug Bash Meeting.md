@@ -33,13 +33,6 @@ related-tasks:
 
 ## Action Items/Bugs
 ### Feature Specific
-#### Team Page
-- Refresh on team view doesn't show toast
-- search doesn't work on team page
-	- dual filters on team table page, i.e. `filters[user.name][regex]` and `user.name[regex]` filters
-- role text for system roles should not include `(Default)` 
-- 
-
 #### Non Specific
 - [x] [ID: 30] Trivial - Bug - On Settings > Invite Page – toast issue on existing user
 	- **QA failed**
@@ -49,9 +42,9 @@ related-tasks:
   - **QA failed**
   - the literal button is not showing a refresh toast – confirmed it IS refreshing, just no toast
 
-- [ ] Optional: timezone selection should preferable use local TZ selection
+- [x] Optional: timezone selection should preferable use local TZ selection
 
-- [ ] Automatically Select the local time in the schedules dialog
+- [x] Automatically Select the local time in the schedules dialog
 
 - [x] UI Bug: Query SQL Input in the Query Schedule, View Detail Dialog is one-line and scrollable.
 	- Take a reference from Query Pack Schedule SQL Input (it also has sql highlighting)

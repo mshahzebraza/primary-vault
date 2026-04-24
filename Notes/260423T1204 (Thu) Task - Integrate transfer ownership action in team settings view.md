@@ -27,9 +27,9 @@ Integrate **Transfer Ownership** action in **Settings → Team** with an explici
 - **UX**: disable confirm while pending; show success + failure messaging; keep user list refreshed if needed.
 
 ## Current Tasks
-- [ ] Locate current Team Settings actions + patterns for confirm dialogs
-- [ ] Wire action → API call → toast/feedback + refresh
-- [ ] QA: permission constraints (root/admin only), self-transfer prevention, error states
+- [x] Locate current Team Settings actions + patterns for confirm dialogs
+- [x] Wire action → API call → toast/feedback + refresh
+- [x] QA: permission constraints (root/admin only), self-transfer prevention, error states
 
 
 ![[Related Meetings.base]]
