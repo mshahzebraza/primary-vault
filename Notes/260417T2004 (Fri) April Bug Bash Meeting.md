@@ -34,6 +34,30 @@ related-tasks:
 ## Action Items/Bugs
 ### Feature Specific
 #### Non Specific
+
+- [ ] Add an optional OS Pill distinction b/w AMD, and ARM. (Might be able to use a absolute positioned pill). 
+
+- [ ] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.  
+
+- [ ] [ID: 10] Need - Task - LiveShell Audit Logging
+  - As minimal as possible, just to check a box
+
+- [ ] [ID: 32] Trivial - Bug - Minor weird activity with account access
+  - See the loom, hard to explain – the only one I could repro was that a user could login with creds that had no workspaces...which isnt a problem I dont think, just odd? Here is the overly long loom: https://www.loom.com/share/5afb3c17897b4e2ea1ef2f782144e7bc
+
+- [ ] [ID: 43] Need/Nice - Bug - Custom Extensions target agent group selection
+  - Idk if this is a bug or more a design flaw – groups cannot be selected for extension deployment since its always 1:1. However, I literally tried making an agent group with ONE agent in it, and it generates the error 'Only connected agents can be selected for deployment'. 100% a bug, and broken.
+
+- [ ] [ID: 44] Trivial - Bug - Custom extension deployment per group or device select is inverted?
+  - Super obscure – BUT if you go to Actions > Deploy Extension and click the select option, the oldest extensions show up first, and the newest show up last. It should like be the inverse.
+
+- [ ] [ID: 45] Need - Bug - There is no way to add agents to an existing static group in the UI
+  - Prob more an oversight/task than bug – and I literally never realized until now, but if create a static agent group, and then want to add devices to that group, there is LITERALLY no way of doing that in the UI currently.
+
+- [x] [ID: 27] Nice - Bug - Auto log out if ONE tab is inactive, even if using another tab (**QA Failed**)
+  - **QA failed** in prod for normal timeout
+  - Minor but kinda annoying, if I am working on tab A and B, but then if I have tab C and I am not using that, it can kick me out of the console across all tabs – can cause issues when using querysmith and stuff
+
 - [x] [ID: 30] Trivial - Bug - On Settings > Invite Page – toast issue on existing user
 	- **QA failed**
 	- Genuinely might not even want to worry about this – beyond trivial. Basically, the failed invite is PERFECT – that is what we want to happen. BUT the error toast says 'Invite Created – Failed to send invite'. That is weird, it should say invite failed – and ideally say say something like 'Invite Failed – User exists' or something.
@@ -49,10 +73,6 @@ related-tasks:
 - [x] UI Bug: Query SQL Input in the Query Schedule, View Detail Dialog is one-line and scrollable.
 	- Take a reference from Query Pack Schedule SQL Input (it also has sql highlighting)
 
-- [ ] Add an optional OS Pill distinction b/w AMD, and ARM. (Might be able to use a absolute positioned pill). 
-
-
-
 - [x] In API Roles Page, Expiry Pill positioning and Range is not correct
 
 - [x] [[260423T1204 (Thu) Task - Integrate transfer ownership action in team settings view]]
@@ -65,10 +85,6 @@ body: {
 }
 ```
 
-- [ ] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.  
-
-- [ ] [ID: 10] Need - Task - LiveShell Audit Logging
-  - As minimal as possible, just to check a box
 
 - [x] [ID: 22] Need - Bug - [[260423T0904 (Thu) Timezone Dropdown List adjustments based on Daylight Savings]]
   - i.e. now EST is -4 UTC, on nov 1 2026 goes back to -5... currently is -4 and says -5
@@ -77,34 +93,18 @@ body: {
 - [x] [ID: 26] Nice - Bug - Remove (Default) from the Role on the frontend on Settings > Team
   - SO minor, but remove (Default) for now, since they are ALL default
 
-- [ ] [ID: 27] Nice - Bug - Auto log out if ONE tab is inactive, even if using another tab
-  - QA failed in prod for normal timeout
-  - Minor but kinda annoying, if I am working on tab A and B, but then if I have tab C and I am not using that, it can kick me out of the console across all tabs – can cause issues when using querysmith and stuff
 
-
-- [ ] [ID: 32] Trivial - Bug - Minor weird activity with account access
-  - See the loom, hard to explain – the only one I could repro was that a user could login with creds that had no workspaces...which isnt a problem I dont think, just odd? Here is the overly long loom: https://www.loom.com/share/5afb3c17897b4e2ea1ef2f782144e7bc
-
-- [ ] [ID: 33] Need/Nice - Bug - On Settings > API Keys – few oddities, one real bug
+- [x] [ID: 33] Need/Nice - Bug - On Settings > API Keys – few oddities, one real bug
   - Oddities: Expire pill is too close to the API Key Field. Only 2 keys allowed per role... not a problem, but wanted to note since I was not sure if that is expected. The default expiration date when creating a Key OR an API Role is today – it should default to some time in the future. Bug: If I set an API Key Expiration date <=3 days in the future, it will show expired. We don't need the expires soon if we dont want, we just cant have it say expired when it is not expired. Loom: https://www.loom.com/share/4dd44859c3fa47d994d74a34e1141c6e
 
 - [x] [ID: 36] Trivial - Bug - Duplicate 'close' button
   - If you go to Query Pack Presets OR Assessment Templates then go to [Actions > View Details] there are 2 'Close' buttons at the bottom, and both work lol. purely cosmetic. So, Query Pack Data View's Edit and Create Dialog has 2 close buttons.
 
-- [ ] [ID: 37] Trivial - Bug - No MST in the timezone? 
+- [x] [ID: 37] Trivial - Bug - No MST in the timezone? 
   - There is techincally not a Mountain time (MST) in the timezone selection options – I know this is nuanced and minor, but there is ONE entry that between PST (Los_Angeles) and CST (Chicago), but unfortunately that is Arizona
 
-- [ ] [ID: 42] Need - Bug - LiveShell naming convention incorrect
+- [x] [ID: 42] Need - Bug - LiveShell naming convention incorrect
   - Likely not a bug, but think its kinda important to note: we have LiveShell spelled differently in different parts of the tool ('Live shell', 'Liveshell', 'LiveShell'). I think we need to standardize to one, or at the very least one word vs two words. Personally, I would say LiveShell.
-
-- [ ] [ID: 43] Need/Nice - Bug - Custom Extensions target agent group selection
-  - Idk if this is a bug or more a design flaw – groups cannot be selected for extension deployment since its always 1:1. However, I literally tried making an agent group with ONE agent in it, and it generates the error 'Only connected agents can be selected for deployment'. 100% a bug, and broken.
-
-- [ ] [ID: 44] Trivial - Bug - Custom extension deployment per group or device select is inverted?
-  - Super obscure – BUT if you go to Actions > Deploy Extension and click the select option, the oldest extensions show up first, and the newest show up last. It should like be the inverse.
-
-- [ ] [ID: 45] Need - Bug - There is no way to add agents to an existing static group in the UI
-  - Prob more an oversight/task than bug – and I literally never realized until now, but if create a static agent group, and then want to add devices to that group, there is LITERALLY no way of doing that in the UI currently.
 
 - [x] Remove the Mitre Link in Yara Mode. Replace it with - YARA Docs –  with this link: https://yara.readthedocs.io/en/stable/
 - [x] Update Link in Windows Event Log Mode (Or add it as a Second Link: *Windows Event Catalog*. Rename the existing one as *Window Security Events*). Use this link: https://detection.wiki/
