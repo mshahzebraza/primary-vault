@@ -28,6 +28,19 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 - [ ] **Enhancement:** use a reusable frontend url link for media domain for email templates, instead of always sending the same link.
 - [ ] redirect the chat messages action button from emails to a generic REDIRECTS page, that maintains a mapping of redirect-type to frontend-route.
 ## 🟥 Pending
+- [ ] [[260424T1736 (Fri) Task - Signup parity for Google OAuth callback (required fields)]]
+	- [ ] Ensure required signup fields remain required for Google signup too
+	- [ ] Frontend intercepts OAuth callback and forces completion flow when required fields missing
+	- [ ] Backend rejects incomplete Google signup payloads (no OAuth bypass)
+- [ ] [[260424T1736 (Fri) Task - Admission status offload to frontend (derive openSoon etc)]]
+	- [ ] Backend accepts only value-based filters (no derived buckets like openSoon/closingSoon)
+	- [ ] Frontend derives UI state labels from dates/flags/status (covers edge cases)
+- [ ] [[260424T1736 (Fri) Task - Backend: admission dates + receivingApplication + status (rich filters + app draft/submit)]]
+	- [ ] Rich filters API (`withFilters`) returns correct admission programs across admission dates + receivingApplication + status (+ edge cases)
+	- [ ] Application draft creation + submission enforce the same combined rules as listing
+- [ ] [[260424T1736 (Fri) Task - CMS portal strict validation for admissions receivingApplication fields]]
+	- [ ] Strict validation on admission start/end dates + status + receivingApplication fields
+	- [ ] Disallow setting receiving application plan when `receivingApplication=false`
 - [ ] Search Listing to conform to the requirements criteria submitted by the [[SB Outreach Team]]
 - [ ] Favourite program notification
 - [ ] Review the program creation flow outside the admin CMS (from university portal)
