@@ -45,6 +45,10 @@ related-tasks:
 	- **QA failed**
 	- Genuinely might not even want to worry about this – beyond trivial. Basically, the failed invite is PERFECT – that is what we want to happen. BUT the error toast says 'Invite Created – Failed to send invite'. That is weird, it should say invite failed – and ideally say say something like 'Invite Failed – User exists' or something.
 
+- [x] [ID: 24] Nice - Bug - Refresh not showing toast on Settings > Team page
+  - **QA failed**
+  - the literal button is not showing a refresh toast – confirmed it IS refreshing, just no toast
+
 - [ ] Optional: timezone selection should preferable use local TZ selection
 
 - [ ] Automatically Select the local time in the schedules dialog
@@ -68,6 +72,7 @@ body: {
 }
 ```
 
+- [ ] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.  
 
 - [ ] [ID: 10] Need - Task - LiveShell Audit Logging
   - As minimal as possible, just to check a box
@@ -75,9 +80,6 @@ body: {
 - [x] [ID: 22] Need - Bug - [[260423T0904 (Thu) Timezone Dropdown List adjustments based on Daylight Savings]]
   - i.e. now EST is -4 UTC, on nov 1 2026 goes back to -5... currently is -4 and says -5
 
-- [ ] [ID: 24] Nice - Bug - Refresh not showing toast on Settings > Team page
-  - QA failed
-  - the literal button is not showing a refresh toast – confirmed it IS refreshing, just no toast
 
 - [x] [ID: 26] Nice - Bug - Remove (Default) from the Role on the frontend on Settings > Team
   - SO minor, but remove (Default) for now, since they are ALL default
