@@ -55,7 +55,7 @@ related-tasks:
 
 - [x] In API Roles Page, Expiry Pill positioning and Range is not correct
 
-- [ ] [[260423T1204 (Thu) Task - Integrate transfer ownership action in team settings view]]
+- [x] [[260423T1204 (Thu) Task - Integrate transfer ownership action in team settings view]]
 	- API code block
 ```
 {[domain}}/tenant/transfer-ownership  
