@@ -3,7 +3,6 @@ type:
   - "[[Meeting]]"
   - "[[Task]]"
 categories:
-  - "[[Personal]]"
   - "[[Meetings]]"
   - "[[Work]]"
   - "[[Tasks]]"
@@ -26,6 +25,7 @@ priority: P1
 related-tasks:
   - "[[260423T0904 (Thu) Timezone Dropdown List adjustments based on Daylight Savings]]"
   - "[[260423T1204 (Thu) Task - Integrate transfer ownership action in team settings view]]"
+  - "[[260425T1604 (Sat) Add Agents to existing group]]"
 ---
 
 ## Context
@@ -34,18 +34,18 @@ related-tasks:
 ## Action Items / Bugs
 
 ### Pending
-- [ ] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.
+- [x] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.
 - [ ] [ID: 10] Need - Task - LiveShell Audit Logging
   - As minimal as possible, just to check a box
-- [ ] [ID: 43] Need/Nice - Bug - Custom Extensions target agent group selection
+- [x] [ID: 43] Need/Nice - Bug - Custom Extensions target agent group selection
   - Groups cannot be selected for extension deployment since it is always 1:1. Making an agent group with ONE agent yields error 'Only connected agents can be selected for deployment' — incorrect error; field effectively broken for custom extension creation.
 - [ ] [ID: 44] Trivial - Bug - Custom extension deployment list order inverted (+ optional AMD vs ARM pill)
   - Oldest extensions show first, newest last — should be inverse. Sheet also calls out optional pill distinction for AMD vs ARM on deploy flows.
-- [ ] [ID: 45] Need - Bug - There is no way to add agents to an existing static group in the UI
-  - Oversight: after creating a static group, no UI path to add more agents unless on install.
+- [ ] [ID: 45] Need - Bug - [[260425T1604 (Sat) Add Agents to existing group|Add agents to an existing static group in the UI]]
+  - See dedicated task note for full context/description.
 - [ ] [ID: 50] Trivial - Bug - Registration Key Refresh oddity
   - UX not intuitive; see https://www.loom.com/share/fb9d8ea48f8647f385f4e80f9dc3542c
-- [ ] [ID: 55] Need - Bug - Schedule: EST timezone off when selected (DST)
+- [x] [ID: 55] Need - Bug - Schedule: EST timezone off when selected (DST)
   - Without timezone, local time in error message is correct; with EST selected, offset wrong (-5 vs -4 during DST). Related to timezone bugs.
 - [ ] [ID: 56] Trivial - Task - Lack of OR operators when creating dynamic group
   - Only one input per field; cannot express OR (e.g. device name contains EC2 OR nick). Low priority.
