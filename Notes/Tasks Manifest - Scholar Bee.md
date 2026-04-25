@@ -64,6 +64,7 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 - Transaction code fix (temporary + permanent)
 - University name+abbreviation search — Shahwaiz
 	- Program and scholarship listing interweaving results — Shahwaiz
+- [x] [[260425T1351 (Sat) Task - Onboarding preferences + self-update endpoint]]
 
 ---
 ## Ideas/Future Requirements
