@@ -34,50 +34,54 @@ related-tasks:
 ## Action Items / Bugs
 
 ### Pending
+- [ ] A single agent should be able to be moved to an agent group if required; through the row actions
+- [ ] Create a variation pattern for the agent list views
 - [x] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.
 - [ ] [ID: 10] Need - Task - LiveShell Audit Logging
   - As minimal as possible, just to check a box
 - [x] [ID: 43] Need/Nice - Bug - Custom Extensions target agent group selection
   - Groups cannot be selected for extension deployment since it is always 1:1. Making an agent group with ONE agent yields error 'Only connected agents can be selected for deployment' — incorrect error; field effectively broken for custom extension creation.
 - [ ] [ID: 44] Trivial - Bug - Custom extension deployment list order inverted (+ optional AMD vs ARM pill)
-  - Oldest extensions show first, newest last — should be inverse. Sheet also calls out optional pill distinction for AMD vs ARM on deploy flows.
+  - Oldest extensions show first, newest last — should be inverse. Sheet also calls out optional pill distinction for AMD vs ARM on deploy flows. 🔥🔥
 - [ ] [ID: 45] Need - Bug - [[260425T1604 (Sat) Add Agents to existing group|Add agents to an existing static group in the UI]]
   - See dedicated task note for full context/description.
-- [ ] [ID: 50] Trivial - Bug - Registration Key Refresh oddity
+- [ ] [ID: 50] Trivial - Bug - Registration Key Refresh oddity 🔥🔥🔥
   - UX not intuitive; see https://www.loom.com/share/fb9d8ea48f8647f385f4e80f9dc3542c
 - [x] [ID: 55] Need - Bug - Schedule: EST timezone off when selected (DST)
   - Without timezone, local time in error message is correct; with EST selected, offset wrong (-5 vs -4 during DST). Related to timezone bugs.
-- [ ] [ID: 56] Trivial - Task - Lack of OR operators when creating dynamic group
+- [ ] [ID: 56] Trivial - Task - Lack of OR operators when creating dynamic group 
   - Only one input per field; cannot express OR (e.g. device name contains EC2 OR nick). Low priority.
 - [ ] [ID: 62] Need/Nice - Bug - Edit & rerun for expired query pack goes to Oops page
-  - Realistic solve: remove expired / do not offer edit & rerun for expired blank packs. (Rajput/Shazeb)
-- [ ] [ID: 66] Nice - Bug - Query export on failed status — do not allow download
+  - **No Fix from frontend required**, because eealistic solve is to remove expired / do not offer edit & rerun for expired blank packs. (Rajput/Shazeb)
+- [x] [ID: 66] Nice - Bug - Query export on failed status — do not allow download
   - Status failed but user can still trigger download of non-existent file; disable download.
 - [ ] [ID: 70] Nice - Bug - Delay in query results details showing
   - Minor; likely DB write latency between success and viewable results. (Rajput/Shazeb)
-- [ ] [ID: 73] Need/Nice - Task - Allow AI confidence to return N/A
+  - Probably from backend
+- [x] [ID: 73] Need/Nice - Task - Allow AI confidence to return N/A
   - Error-handling path when confidence cannot be an int.
-- [ ] [ID: 74] Critical - Task - Need UI changes to support agent group move (relates to ID 45)
+- [x] [ID: 74] Critical - Task - Need UI changes to support agent group move (relates to ID 45)
   - Agents > Agent List: Actions → "Add to Agent Group" → popup to select group (like version select for agent update).
   - Agent Groups > group > agent list: Actions → "Remove from Agent Group" (confirm optional); no extra group picker.
 - [ ] [ID: 76] Need/Nice - Bug - Query results for removed agent returns wrong warning
   - Error: `invalid_type` at `data[0].agent` — expected object, received undefined. (Rajput/Shazeb)
-- [ ] [ID: 75] Nice - Bug - Minor UI hiccup (Windows Event Log mode links squished during AI "constructing query")
+- [x] [ID: 75] Nice - Bug - Minor UI hiccup (Windows Event Log mode links squished during AI "constructing query")
   - Cosmetic: second Windows Event Log link squeezes layout; consider shortening link labels (e.g. drop "Windows" — "Security Events" / "Event Catalog"). Sheet: not yet resolved.
 
 ### QA
-- [ ] [ID: 22] Need - Bug - [[260423T0904 (Thu) Timezone Dropdown List adjustments based on Daylight Savings]]
+- [x] [ID: 22] Need - Bug - [[260423T0904 (Thu) Timezone Dropdown List adjustments based on Daylight Savings]]
   - Sheet: Resolved y, Confirmed working (ppe) n — verify on PPE after deploy.
-- [ ] [ID: 24] Nice - Bug - Refresh not showing toast on Settings > Team page
+- [x] [ID: 24] Nice - Bug - Refresh not showing toast on Settings > Team page
   - Previously marked QA failed; verify toast after fix on PPE.
-- [ ] [ID: 27] Nice - Bug - Auto log out if ONE tab is inactive, even if using another tab
+- [x] [ID: 27] Nice - Bug - Auto log out if ONE tab is inactive, even if using another tab
   - **QA failed** in prod for normal timeout; re-verify after fix.
-- [ ] [ID: 30] Trivial - Bug - On Settings > Invite Page – toast wording when user already exists
+- [x] [ID: 30] Trivial - Bug - On Settings > Invite Page – toast wording when user already exists
   - **QA failed**; verify copy ("Invite Failed – User exists" or similar) on PPE.
-- [ ] [ID: 42] Need - Bug - LiveShell naming convention incorrect
+- [x] [ID: 42] Need - Bug - LiveShell naming convention incorrect
   - Sheet: Resolved y, PPE n — standardize to LiveShell (or chosen casing) and confirm in UI + userguide on PPE.
 - [ ] [ID: 63] Need/Nice - Bug - Export UX annoyance
   - Sheet: Resolved y, Confirmed working (ppe) n — after export, "See Results" should show job without manual refresh; verify on PPE.
+	  - ***Couldn't Test. Was getting 500 errors for exports***
 
 ### Completed
 - [x] Optional: timezone selection should preferable use local TZ selection
