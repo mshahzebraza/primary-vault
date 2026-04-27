@@ -46,7 +46,9 @@ related-tasks:
 - [ ] [ID: 45] Need - Bug - [[260425T1604 (Sat) Add Agents to existing group|Add agents to an existing static group in the UI]]
   - See dedicated task note for full context/description.
 - [ ] [ID: 50] Trivial - Bug - Registration Key Refresh oddity 🔥🔥🔥
-  - UX not intuitive; see https://www.loom.com/share/fb9d8ea48f8647f385f4e80f9dc3542c
+  - UX not intuitive; see https://www.loom.com/share/fb9d8ea48f8647f385f4e80f9dc3542c.
+  - Part 1: ...
+  - Part 2 (Main Issue): the selected date is not shown as selected by defualt in the date picker. i.e. if 20 may is selected, the dropdown shows a different date i.e. 20 april, which causes the user to accidently select the wrong data, thinking he's in the same month as is shown in form field input. 
 - [x] [ID: 55] Need - Bug - Schedule: EST timezone off when selected (DST)
   - Without timezone, local time in error message is correct; with EST selected, offset wrong (-5 vs -4 during DST). Related to timezone bugs.
 - [ ] [ID: 56] Trivial - Task - Lack of OR operators when creating dynamic group 
