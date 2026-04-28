@@ -20,8 +20,8 @@ projects:
 This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
 ## ▶️ In Progress
-- [ ] [[260428T1004 (Tue) BUG - Notifications for recent admission programs not generated in db]]
-- [ ] [[260428T1104 (Tue) Bug - Scheduled Emails are not sent to admins regarding missed replies]]
+- [ ] [[260428T1004 (Tue) BUG - Notifications for recent admission programs not generated in db]] (Not Pushed)
+- [ ] [[260428T1104 (Tue) Bug - Scheduled Emails are not sent to admins regarding missed replies]] (Not Pushed)
 - [ ] Favourites API isn't sending the resolved statuses for the `receiving_applications` and `status` properties across the admission program and admission.
 - [ ] **BUG:** Chat Messages Not working in the dev portal ([Jira Ticket Link](https://scholarbee-team.atlassian.net/browse/SB-1227))
 	- [ ] Ask shawaiz to run the chat confirmation cycly in local development
@@ -31,6 +31,7 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 - [x] [[260416T1704 (Thu) Admission Program Details - Session Term Filtering & "Latest Term" Query Parameter]]
 - [x] [[260420T1904 (Mon) Update Admission Program Filtering - Replace University Slug with Campus Slug]]
 ## 🟥 Pending
+- [ ] Favourite program notification
 - [ ] [[260424T1736 (Fri) Task - Signup parity for Google OAuth callback (required fields)]]
 	- [ ] Ensure required signup fields remain required for Google signup too
 	- [ ] Frontend intercepts OAuth callback and forces completion flow when required fields missing
@@ -45,7 +46,6 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 	- [ ] Strict validation on admission start/end dates + status + receivingApplication fields
 	- [ ] Disallow setting receiving application plan when `receivingApplication=false`
 - [ ] Search Listing to conform to the requirements criteria submitted by the [[SB Outreach Team]]
-- [ ] Favourite program notification
 - [ ] Review the program creation flow outside the admin CMS (from university portal)
 - [ ] University dropdown lookup should search against both abbreviation and name
 - [ ] Add Draft Admission Program functionality
