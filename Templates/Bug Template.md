@@ -9,7 +9,9 @@ status: open
 priority: P2
 tags:
   - bug
-date: {{date: YYYY-MM-DD}}
+date:
+  "{ date: YYYY-MM-DD }":
+related-tasks:
 ---
 
 ## Description

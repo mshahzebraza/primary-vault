@@ -20,8 +20,11 @@ projects:
 This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
 ## ▶️ In Progress
+- [ ] [[260428T1104 (Tue) Bug - Scheduled Emails are not sent to admins regarding missed replies]]
 - [ ] Favourites API isn't sending the resolved statuses for the `receiving_applications` and `status` properties across the admission program and admission.
 - [ ] **BUG:** Chat Messages Not working in the dev portal ([Jira Ticket Link](https://scholarbee-team.atlassian.net/browse/SB-1227))
+	- [ ] Ask shawaiz to run the chat confirmation cycly in local development
+- [ ] BUG: Email Messages for delayed
 - [ ] [[260428 (Tue) BUG - Notifications for recent admission programs not generated in db]]
 - [ ] **Enhancement:** use a reusable frontend url link for media domain for email templates, instead of always sending the same link. 
 	- [ ] Instead of putting the redirect url to the exact frontend page, redirect the user to `frontend-domain/redirects?redirect_type=signup-email-confirmation`. For example, redirect the chat messages action button from emails to a generic REDIRECTS page, that maintains a mapping of redirect-type to frontend-route.

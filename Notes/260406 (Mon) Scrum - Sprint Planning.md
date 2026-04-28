@@ -19,7 +19,7 @@ organization:
 	- PR Review of University search across name + abbreviation
 	- Fixing of application_snapshot holding media references to s3 instead of gcs
 - Sprint Planning Task Discussion
-	- [[260407 (Tue) Emails, Notification & Acknowlegments| Emails, Notification & Acknowlegments]]
+	- [[260407 (Tue) Emails  Notification regarding missed replies from campus admins to students| Emails, Notification & Acknowlegments]]
 	- [[260406 (Mon) support admins to be manually created| Manual Support User Creation]] 
 	- [[260406 (Mon) User should be auto signed-in after signup| User should be auto signed-in after signup]] 
 	- [[260408 (Wed) Enfore Aggregation Data Gathering to access portal| Compulsory Aggregation Data Requirements after signup to access portal.]] 

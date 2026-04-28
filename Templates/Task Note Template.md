@@ -3,11 +3,13 @@ type: "[[Task]]"
 categories:
   - "[[Work]]"
   - "[[Tasks]]"
-organization: 
+organization:
 projects: []
 status: backlog
 priority: P2
-date: {{date: YYYY-MM-DD}}
+date:
+  "{ date: YYYY-MM-DD }":
+related-bugs:
 ---
 
 ## Overview
@@ -18,6 +20,6 @@ date: {{date: YYYY-MM-DD}}
 
 
 
-
+%% Add a related bugs base
 
 ![[Related Meetings.base]]
