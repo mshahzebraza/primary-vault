@@ -20,6 +20,6 @@ related-bugs:
 
 
 
-%% Add a related bugs base
+![[Related Bugs.base]]
 
 ![[Related Meetings.base]]

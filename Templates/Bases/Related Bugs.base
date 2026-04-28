@@ -1,0 +1,28 @@
+filters:
+  and:
+    - type.contains(link("Bug"))
+    - file.path.contains("Notes/")
+    - file.ext == "md"
+    - note["related-tasks"].contains(link(this.file))
+properties:
+  file.name:
+    displayName: Bug
+  note.date:
+    displayName: Date
+  note.status:
+    displayName: Status
+  note.priority:
+    displayName: Priority
+views:
+  - type: table
+    name: Related bugs
+    order:
+      - file.name
+      - date
+      - status
+      - priority
+    sort:
+      - property: note.priority
+        direction: ASC
+      - property: note.date
+        direction: DESC

@@ -22,6 +22,8 @@ priority: P2
 	- [ ] [Learn Linux TV - Youtube](https://www.youtube.com/watch?v=XTMyJ5l0GLg)
 - [ ] Setup & Configuration Task
 	- [ ] Opinionated Ubuntu Setup [Tutorial Video](https://www.youtube.com/watch?v=aXLra-31Jh0)
+	- [ ] Obsidian
+		- [ ] Add related bugs base in the task note
 	- [ ] Save Claude Configuration
 		- [ ] save rules, skills, mcps etc.
 	- [ ] Save Cursor Configuration

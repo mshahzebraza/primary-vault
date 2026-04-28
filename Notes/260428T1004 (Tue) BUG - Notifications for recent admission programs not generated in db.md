@@ -20,7 +20,7 @@ date: 2026-04-28
 
 ## Investigations
 - Is this a migration issue? Check db for latest notifications for admission programs 
-	- attempt to connect the db with cursor and claude using mcp
+	- attempt to connect the db with cursor and claude
 
 ## Steps to Reproduce
 1. 
