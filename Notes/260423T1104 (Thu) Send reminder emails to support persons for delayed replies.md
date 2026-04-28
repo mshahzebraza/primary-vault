@@ -8,7 +8,7 @@ organization:
 projects:
   - "[[sb-backend]]"
 status:
-  - active
+  - completed
 priority: P1
 date: 2026-04-23
 tags:
@@ -31,12 +31,16 @@ Nightly batch (cron at midnight) emails to **all university admins** (including 
 Confirm in codebase/DB: unread persistence, mark-read API(s) (single vs batch), whether read state is inferred from later messages, and where templates + engine live.
 
 ## Current Tasks
-- [ ] Phase 1 — map storage, APIs, participant isolation, email template structure
-- [ ] Phase 2 — queries, cron wiring, send path, new template, edge cases
-- [ ] Updates
+- [x] Phase 1 — map storage, APIs, participant isolation, email template structure
+- [x] Phase 2 — queries, cron wiring, send path, new template, edge cases
+- [x] Updates
 	- [ ] Add hard-coded Contact Support Number
 	- [ ] Coprights 2024 -> 2026
 	- [ ] Add frontend change to handle the redirects mapping (`unread_conversation` -> `chat-page`)
 		- Currently, only send to the dashboard page
+
+## Conclusion
+Completed to send an email all campus admins (including the support admins) at each day 5AM PKT.
+
 
 ![[Related Meetings.base]]

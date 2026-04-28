@@ -11,6 +11,7 @@ projects:
   - "[[sb-ops-scripts]]"
 status:
   - active
+  - completed
 priority: P1
 ---
 
