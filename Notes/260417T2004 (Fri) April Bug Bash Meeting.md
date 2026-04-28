@@ -54,7 +54,7 @@ related-tasks:
 - [ ] [ID: 56] Trivial - Task - Lack of OR operators when creating dynamic group 
   - Only one input per field; cannot express OR (e.g. device name contains EC2 OR nick). Low priority.
 - [ ] [ID: 62] Need/Nice - Bug - Edit & rerun for expired query pack goes to Oops page
-  - **No Fix from frontend required**, because eealistic solve is to remove expired / do not offer edit & rerun for expired blank packs. (Rajput/Shazeb)
+  - **No Fix from frontend required**, because realistic solve is to remove expired / do not offer edit & rerun for expired blank packs. (Rajput/Shazeb)
 - [x] [ID: 66] Nice - Bug - Query export on failed status — do not allow download
   - Status failed but user can still trigger download of non-existent file; disable download.
 - [ ] [ID: 70] Nice - Bug - Delay in query results details showing
