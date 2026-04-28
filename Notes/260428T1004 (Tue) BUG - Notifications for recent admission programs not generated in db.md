@@ -52,4 +52,13 @@ Introduced `src/collections/admission-programs/index.utils.ts` with:
 ### Bonus — `isAdmissionProgramIndexable` utility
 Added a parallel utility for the (currently commented-out) indexing webhook. Indexability is **status-only** — a program should appear in search results even if `receiving_applications` is `False` (visible but not yet open). Same fast-path and parent-fetch pattern, no `receiving_applications` evaluation.
 
-## Notes
+## Conclusion
+🐛 _Fix: Admission Program Notifications_ | [SB-1227](https://scholarbee-team.atlassian.net/browse/SB-1227) · [PR #22](https://github.com/Scholarbee-pk/cms-portal/pull/22)
+
+_Issue_ Notifications were not being generated for newly created admission programs. A temporary `throw new Error("Not Implemented")` had been left in the `afterChange` webhook hook, silently blocking all outbound notifications.
+
+_Fix_ Removed the throw so the notification webhook fires correctly on program create/update.
+
+_Optimization_ Replaced the previous simplistic `status === Draft` guard with a proper eligibility check that correctly resolves `inherit` values against the parent admission session: • Programs with `status = inherit` now check whether the parent session is published before firing. • Programs with `receiving_applications = false` are now explicitly excluded. • A lightweight `depth: 0` parent fetch is only triggered when the program document alone isn't enough to determine eligibility — explicit `Draft` and `False` cases fast-exit without any DB call.
+
+A parallel `isAdmissionProgramIndexable` utility was also added (status-only, ignores `receiving_applications`) in preparation for the upcoming auto-indexing webhook.
