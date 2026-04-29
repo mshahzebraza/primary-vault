@@ -34,6 +34,18 @@ related-tasks:
 ## Action Items / Bugs
 
 ### Pending
+- [ ] Rapid Response View Issues
+	- [ ] Put the export button behind FF
+	- [ ] Add the Query Smith Panel on the right, that closes all the other open panels automatically on open
+- [ ] Incase of a query ran on a deleted agent, the error should be handled instead of showing the error
+	- [ ] showing the id with a tooltip saying device may have been deleted; instead of not showing the data for any of other devices.
+	- [ ] OR wait for backend to send a fix
+- [ ] Update the Team Settings Page to reflect the Root Ownership Transfer instead of needing to navigate away and come back. (Otherwise, they are able to delete users, even after root transfer to another user)
+- [ ] Stop the user from transfering ownership from ROOT to ROOT.
+- [ ] Agent > Bulk Create /Deploy Actions > Deploy Dialog should be having narrow like other dropdown items
+- [ ] Query Overview Dialog Sql input should be copy-able
+	- [ ] query-pack preset detail view for queries dropdown should have copy-able
+- [ ] Remove Linting SQL Issue in query editor
 - [ ] A single agent should be able to be moved to an agent group if required; through the row actions
 - [ ] Create a variation pattern for the agent list views
 - [x] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.
@@ -47,8 +59,8 @@ related-tasks:
   - See dedicated task note for full context/description.
 - [ ] [ID: 50] Trivial - Bug - Registration Key Refresh oddity 🔥🔥🔥
   - UX not intuitive; see https://www.loom.com/share/fb9d8ea48f8647f385f4e80f9dc3542c.
-  - Part 1: ...
-  - Part 2 (Main Issue): the selected date is not shown as selected by defualt in the date picker. i.e. if 20 may is selected, the dropdown shows a different date i.e. 20 april, which causes the user to accidently select the wrong data, thinking he's in the same month as is shown in form field input. 
+	  - Part 1: ...
+	  - Part 2 (Main Issue): the selected date is not shown as selected by defualt in the date picker. i.e. if 20 may is selected, the dropdown shows a different date i.e. 20 april, which causes the user to accidently select the wrong data, thinking he's in the same month as is shown in form field input. 
 - [x] [ID: 55] Need - Bug - Schedule: EST timezone off when selected (DST)
   - Without timezone, local time in error message is correct; with EST selected, offset wrong (-5 vs -4 during DST). Related to timezone bugs.
 - [ ] [ID: 56] Trivial - Task - Lack of OR operators when creating dynamic group 
