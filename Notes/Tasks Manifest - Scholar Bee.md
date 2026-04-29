@@ -20,6 +20,11 @@ projects:
 This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
 ## ▶️ In Progress
+- Backfill notifications
+- Status deciding based on R.A and status of admission programs
+- sort descending of detail-list admission programs
+- notification bug still for student in dev - was checked local
+- temporarily de-rank the admission programs with the deadline=false, lower than r.a=true
 - [ ] [[260428T1004 (Tue) BUG - Notifications for recent admission programs not generated in db]] (Not Pushed)
 - [ ] [[260428T1104 (Tue) Bug - Scheduled Emails are not sent to admins regarding missed replies]] (Not Pushed)
 - [ ] Favourites API isn't sending the resolved statuses for the `receiving_applications` and `status` properties across the admission program and admission.
