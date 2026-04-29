@@ -13,11 +13,11 @@ projects:
 attendees:
   - "[[Rajput]]"
 ---
-## Context
-- clickhouse invitation received in gmail. Need to accept
-- MFA
+## Tasks
+- [ ] clickhouse invitation received in gmail. Need to accept for maintainence as well as context for new feature of MFA
+- [ ] MFA feature
 
-## MFA
+## MFA Feature
 ### 1. Business Logic & User Requirements
 
 - **Optional Enrollment:** MFA will be optional for all users; they can choose whether or not to configure it.
