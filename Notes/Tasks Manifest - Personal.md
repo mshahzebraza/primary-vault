@@ -20,10 +20,11 @@ priority: P2
 ## Current Tasks
 - [ ] Linux Crash Courses
 	- [ ] [Learn Linux TV - Youtube](https://www.youtube.com/watch?v=XTMyJ5l0GLg)
+- [ ] Obsidian
+	- [ ] Add related bugs base in the task note
 - [ ] Setup & Configuration Task
 	- [ ] Opinionated Ubuntu Setup [Tutorial Video](https://www.youtube.com/watch?v=aXLra-31Jh0)
-	- [ ] Obsidian
-		- [ ] Add related bugs base in the task note
+	- [ ] Install and Setup UGEE Table
 	- [ ] Save Claude Configuration
 		- [ ] save rules, skills, mcps etc.
 	- [ ] Save Cursor Configuration
@@ -34,10 +35,7 @@ priority: P2
 	- [ ] [[#Folder Restructure  of Dotfiles/Dofiles]]
 	- [ ] Cloud CLIs (AWS & GCloud)
 	- [ ] update steps into [[linux-pc-setup]] note
-- [ ] Investigate the sluggishness of the linux in the laptop
-	- Use the [chat session](https://gemini.google.com/app/1eb0d8e05372bf91)
-	- related to dedicated vram partition
-	- zram configuration
+
 
 
 ## Folder Restructure of Dotfiles/Scripts
