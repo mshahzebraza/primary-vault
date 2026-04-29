@@ -37,9 +37,13 @@ related-tasks:
 - [ ] Rapid Response View Issues
 	- [ ] Put the export button behind FF
 	- [ ] Add the Query Smith Panel on the right, that closes all the other open panels automatically on open
+- [ ] [ID: 76] Need/Nice - Bug - Query results for removed/deleted agent returns wrong warning
+  - Error: `invalid_type` at `data[0].agent` — expected object, received undefined. (Rajput/Shazeb)
 - [ ] Incase of a query ran on a deleted agent, the error should be handled instead of showing the error
 	- [ ] showing the id with a tooltip saying device may have been deleted; instead of not showing the data for any of other devices.
 	- [ ] OR wait for backend to send a fix
+	- [ ] fix the backend so that it atleast returns the agnet id when population fails.
+	- [ ] italicise the agent name - put the agent id here, and show the unkown flag in the device os column
 - [ ] Update the Team Settings Page to reflect the Root Ownership Transfer instead of needing to navigate away and come back. (Otherwise, they are able to delete users, even after root transfer to another user)
 - [ ] Stop the user from transfering ownership from ROOT to ROOT.
 - [ ] Agent > Bulk Create /Deploy Actions > Deploy Dialog should be having narrow like other dropdown items
@@ -48,16 +52,17 @@ related-tasks:
 - [ ] Remove Linting SQL Issue in query editor
 - [ ] A single agent should be able to be moved to an agent group if required; through the row actions
 - [ ] Create a variation pattern for the agent list views
+- [ ] [ID: 62] Need/Nice - Bug - Edit & rerun for expired query pack goes to Oops page
+  - Frontend needs to allow the device name to be showing undefined with an id and tooltip saying device may be uninstalled etc.
+
 - [x] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.
-- [ ] [ID: 10] Need - Task - LiveShell Audit Logging
-  - As minimal as possible, just to check a box
 - [x] [ID: 43] Need/Nice - Bug - Custom Extensions target agent group selection
   - Groups cannot be selected for extension deployment since it is always 1:1. Making an agent group with ONE agent yields error 'Only connected agents can be selected for deployment' — incorrect error; field effectively broken for custom extension creation.
 - [ ] [ID: 44] Trivial - Bug - Custom extension deployment list order inverted (+ optional AMD vs ARM pill)
   - Oldest extensions show first, newest last — should be inverse. Sheet also calls out optional pill distinction for AMD vs ARM on deploy flows. 🔥🔥
 - [ ] [ID: 45] Need - Bug - [[260425T1604 (Sat) Add Agents to existing group|Add agents to an existing static group in the UI]]
   - See dedicated task note for full context/description.
-- [ ] [ID: 50] Trivial - Bug - Registration Key Refresh oddity 🔥🔥🔥
+- [x] [ID: 50] Trivial - Bug - Registration Key Refresh oddity 🔥🔥🔥
   - UX not intuitive; see https://www.loom.com/share/fb9d8ea48f8647f385f4e80f9dc3542c.
 	  - Part 1: ...
 	  - Part 2 (Main Issue): the selected date is not shown as selected by defualt in the date picker. i.e. if 20 may is selected, the dropdown shows a different date i.e. 20 april, which causes the user to accidently select the wrong data, thinking he's in the same month as is shown in form field input. 
@@ -65,8 +70,8 @@ related-tasks:
   - Without timezone, local time in error message is correct; with EST selected, offset wrong (-5 vs -4 during DST). Related to timezone bugs.
 - [ ] [ID: 56] Trivial - Task - Lack of OR operators when creating dynamic group 
   - Only one input per field; cannot express OR (e.g. device name contains EC2 OR nick). Low priority.
-- [ ] [ID: 62] Need/Nice - Bug - Edit & rerun for expired query pack goes to Oops page
-  - **No Fix from frontend required**, because realistic solve is to remove expired / do not offer edit & rerun for expired blank packs. (Rajput/Shazeb)
+
+  - because realistic solve is to remove expired / do not offer edit & rerun for expired blank packs. (Rajput/Shazeb)
 - [x] [ID: 66] Nice - Bug - Query export on failed status — do not allow download
   - Status failed but user can still trigger download of non-existent file; disable download.
 - [ ] [ID: 70] Nice - Bug - Delay in query results details showing
@@ -77,8 +82,7 @@ related-tasks:
 - [x] [ID: 74] Critical - Task - Need UI changes to support agent group move (relates to ID 45)
   - Agents > Agent List: Actions → "Add to Agent Group" → popup to select group (like version select for agent update).
   - Agent Groups > group > agent list: Actions → "Remove from Agent Group" (confirm optional); no extra group picker.
-- [ ] [ID: 76] Need/Nice - Bug - Query results for removed agent returns wrong warning
-  - Error: `invalid_type` at `data[0].agent` — expected object, received undefined. (Rajput/Shazeb)
+
 - [x] [ID: 75] Nice - Bug - Minor UI hiccup (Windows Event Log mode links squished during AI "constructing query")
   - Cosmetic: second Windows Event Log link squeezes layout; consider shortening link labels (e.g. drop "Windows" — "Security Events" / "Event Catalog"). Sheet: not yet resolved.
 
