@@ -37,9 +37,9 @@ related-tasks:
 - [ ] Rapid Response View Issues
 	- [ ] Put the export button behind FF
 	- [ ] Add the Query Smith Panel on the right, that closes all the other open panels automatically on open
-- [ ] [ID: 76] Need/Nice - Bug - Query results for removed/deleted agent returns wrong warning
+- [x] [ID: 76] Need/Nice - Bug - Query results for removed/deleted agent returns wrong warning
   - Error: `invalid_type` at `data[0].agent` — expected object, received undefined. (Rajput/Shazeb)
-- [ ] Incase of a query ran on a deleted agent, the error should be handled instead of showing the error
+- [x] Incase of a query ran on a deleted agent, the error should be handled instead of showing the error
 	- [ ] showing the id with a tooltip saying device may have been deleted; instead of not showing the data for any of other devices.
 	- [ ] OR wait for backend to send a fix
 	- [ ] fix the backend so that it atleast returns the agnet id when population fails.
@@ -53,15 +53,16 @@ We could also updte the backend to return the agent details in a dedicated objec
 Also, italicise the agent name - put the agent id there, and show the unkown flag in the device os column
 
 ```
-- [ ] Update the Team Settings Page to reflect the Root Ownership Transfer instead of needing to navigate away and come back. (Otherwise, they are able to delete users, even after root transfer to another user)
-- [ ] Stop the user from transfering ownership from ROOT to ROOT.
+- [x] Update the Team Settings Page to reflect the Root Ownership Transfer instead of needing to navigate away and come back. (Otherwise, they are able to delete users, even after root transfer to another user)
+- [x] Stop the user from transfering ownership from ROOT to ROOT.
 - [ ] Agent > Bulk Create /Deploy Actions > Deploy Dialog should be having narrow like other dropdown items
+- [x] Empty Dropdown is shown for invalid/deleted users. Empty Cell is shown for Users with no Role
 - [ ] Query Overview Dialog Sql input should be copy-able
 	- [ ] query-pack preset detail view for queries dropdown should have copy-able
 - [ ] Remove Linting SQL Issue in query editor
-- [ ] A single agent should be able to be moved to an agent group if required; through the row actions
+
 - [ ] Create a variation pattern for the agent list views
-- [ ] [ID: 62] Need/Nice - Bug - Edit & rerun for expired query pack goes to Oops page
+- [x] [ID: 62] Need/Nice - Bug - Edit & rerun for expired query pack goes to Oops page
   - Frontend needs to allow the device name to be showing undefined with an id and tooltip saying device may be uninstalled etc.
 - [ ] [ID: 44] Trivial - Bug - Custom extension deployment list order inverted (+ optional AMD vs ARM pill)
   - Oldest extensions show first, newest last — should be inverse. Sheet also calls out optional pill distinction for AMD vs ARM on deploy flows. 🔥🔥
