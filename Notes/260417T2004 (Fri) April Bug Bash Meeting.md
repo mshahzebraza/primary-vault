@@ -63,14 +63,15 @@ Also, italicise the agent name - put the agent id there, and show the unkown fla
 - [ ] Create a variation pattern for the agent list views
 - [ ] [ID: 62] Need/Nice - Bug - Edit & rerun for expired query pack goes to Oops page
   - Frontend needs to allow the device name to be showing undefined with an id and tooltip saying device may be uninstalled etc.
-
-- [x] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.
-- [x] [ID: 43] Need/Nice - Bug - Custom Extensions target agent group selection
-  - Groups cannot be selected for extension deployment since it is always 1:1. Making an agent group with ONE agent yields error 'Only connected agents can be selected for deployment' — incorrect error; field effectively broken for custom extension creation.
 - [ ] [ID: 44] Trivial - Bug - Custom extension deployment list order inverted (+ optional AMD vs ARM pill)
   - Oldest extensions show first, newest last — should be inverse. Sheet also calls out optional pill distinction for AMD vs ARM on deploy flows. 🔥🔥
 - [ ] [ID: 45] Need - Bug - [[260425T1604 (Sat) Add Agents to existing group|Add agents to an existing static group in the UI]]
-  - See dedicated task note for full context/description.
+	- See dedicated task note for full context/description.
+- [ ] ![[260429T2304 (Wed) Developers Meeting#Action Items]]
+- [x] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.
+- [x] [ID: 43] Need/Nice - Bug - Custom Extensions target agent group selection
+  - Groups cannot be selected for extension deployment since it is always 1:1. Making an agent group with ONE agent yields error 'Only connected agents can be selected for deployment' — incorrect error; field effectively broken for custom extension creation.
+
 - [x] [ID: 50] Trivial - Bug - Registration Key Refresh oddity 🔥🔥🔥
   - UX not intuitive; see https://www.loom.com/share/fb9d8ea48f8647f385f4e80f9dc3542c.
 	  - Part 1: ...

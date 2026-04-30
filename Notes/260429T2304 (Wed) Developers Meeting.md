@@ -55,3 +55,16 @@ There is a specific technical uncertainty regarding the **Subsequent Sign-in** u
 - **Scenario B (Manual):** The application must intercept the initial login response. If Firebase indicates MFA is required, the application must manually trigger a custom "MFA Token Input" view.
 
 > **Next Step:** Verify the Firebase Authentication documentation to determine if the MFA challenge UI is handled natively or requires a custom-built view in the frontend.
+
+## Action Items
+
+### UI
+
+- [ ] **Security Tab — Settings Page:** Build the MFA configuration screen where a user can see their current MFA status (enabled / disabled) and trigger the setup flow.
+- [ ] **MFA Challenge Screen — Login Flow:** Design and implement the screen that collects the TOTP code from the user during sign-in when MFA is active on their account.
+- [ ] *(Nice-to-have)* **Team Settings Page:** Add a read-only MFA status indicator per user so the tenant owner can see enrollment at a glance.
+
+### Research
+
+- [ ] Watch tutorials covering MFA setup with Firebase Authentication and TOTP authenticator apps (e.g., Google Authenticator, Authy).
+- [ ] Clarify Firebase's behaviour for the MFA challenge step during login — determine whether it falls under **Scenario A** (Firebase redirects automatically and returns to the app callback on success) or **Scenario B** (the app must detect the MFA-required signal and render a custom token-input view manually).
