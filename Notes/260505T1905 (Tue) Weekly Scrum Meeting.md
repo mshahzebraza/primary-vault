@@ -26,7 +26,8 @@ attendees: []
 	- User Role cannot be changed to `ROOT`;  only to `POWER USER` and `USER`
 - **TODO:** Developing the power user invite flow
 	- ??? What does developing mean
-- primary sidebar should be closed automatically on query smith opening in Rapid Response View 
+- primary sidebar should be closed automatically on query smith opening in Rapid Response View
+- remove the `LOAD QUERY` button, in favor of `click-to-load` functionality 
 ## Decisions Made
 
 ## Action Items
