@@ -21,6 +21,9 @@ attendees: []
 	- OR guard it to not show up when user navigates to `auth/login` through URL while he is logged out 
 - Not Confirmed: if screen is on sleep, the inactivity timeout doesn't logout the user.
 	- sync with Rajput to discuss the working of inactivity timeout
+- Allow roles in create invitation dialog
+- Change User Role should be allowed for `ROOT` user
+	- User Role cannot be changed to `ROOT`;  only to `POWER USER` and `USER`
 
 ## Decisions Made
 
