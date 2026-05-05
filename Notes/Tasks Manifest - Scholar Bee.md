@@ -20,6 +20,7 @@ projects:
 This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
 ## ▶️ In Progress
+- extract applications for student team in a google sheet
 - Backfill notifications
 - Status deciding based on R.A and status of admission programs
 - sort descending of detail-list admission programs
