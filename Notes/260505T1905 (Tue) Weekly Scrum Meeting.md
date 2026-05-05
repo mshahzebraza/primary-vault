@@ -28,6 +28,11 @@ attendees: []
 	- ??? What does developing mean
 - primary sidebar should be closed automatically on query smith opening in Rapid Response View
 - remove the `LOAD QUERY` button, in favor of `click-to-load` functionality 
+- Actions Button dropdown on rapid response
+	- load from preset
+	- save as preset (should be added to query history items as well preferably)
+	- go to create query
+- Optional: Multi Select for Query History Item to Save as Query Preset in Rapid Response View
 ## Decisions Made
 
 ## Action Items
