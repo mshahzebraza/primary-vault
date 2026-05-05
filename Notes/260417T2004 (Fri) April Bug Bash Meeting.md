@@ -34,15 +34,16 @@ related-tasks:
 ## Action Items / Bugs
 
 ### Pending
+- [ ] Icon for `Deploy Custom Extension` is the same as `Run Query Pack`. Nitpick
+- [ ] Path to linux agent installation is wrong. it should use `downloads.aiquery.io/...`
 - [ ] Rapid Response View Issues
-	- [ ] Put the export button behind FF
+	- [x] Put the export button behind FF
 	- [ ] Add the Query Smith Panel on the right, that closes all the other open panels automatically on open
 - [x] [ID: 76] Need/Nice - Bug - Query results for removed/deleted agent returns wrong warning
   - Error: `invalid_type` at `data[0].agent` — expected object, received undefined. (Rajput/Shazeb)
 - [x] Incase of a query ran on a deleted agent, the error should be handled instead of showing the error
-	- [ ] showing the id with a tooltip saying device may have been deleted; instead of not showing the data for any of other devices.
-	- [ ] OR wait for backend to send a fix
-	- [ ] fix the backend so that it atleast returns the agnet id when population fails.
+	- [x] showing the id with a tooltip saying device may have been deleted; instead of not showing the data for any of other devices.
+	- [x] fix the backend so that it atleast returns the agnet id when population fails.
 	- [ ] italicise the agent name - put the agent id here, and show the unkown flag in the device os column
 ```
 Even though the  Agent ID is received as undefined if the population on the backend side fails. Let us assume that the agent ID would not be undefined and it would actually be a string. However, the agent name could definitely be undefined.  Because if the agent is received as a string instead of an object, there would be no device or stripe available in the agent property.  
@@ -68,7 +69,7 @@ Also, italicise the agent name - put the agent id there, and show the unkown fla
   - Oldest extensions show first, newest last — should be inverse. Sheet also calls out optional pill distinction for AMD vs ARM on deploy flows. 🔥🔥
 - [ ] [ID: 45] Need - Bug - [[260425T1604 (Sat) Add Agents to existing group|Add agents to an existing static group in the UI]]
 	- See dedicated task note for full context/description.
-- [ ] ![[260429T2304 (Wed) Developers Meeting#Action Items]]
+
 - [x] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.
 - [x] [ID: 43] Need/Nice - Bug - Custom Extensions target agent group selection
   - Groups cannot be selected for extension deployment since it is always 1:1. Making an agent group with ONE agent yields error 'Only connected agents can be selected for deployment' — incorrect error; field effectively broken for custom extension creation.
