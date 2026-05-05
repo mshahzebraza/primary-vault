@@ -19,7 +19,9 @@ tags:
 
 ## Overview
 
-Add optional Multi-Factor Authentication (TOTP) via Firebase to the app. Users enroll through a new Security tab in Settings; enrolled users are challenged for a TOTP code on every subsequent login. The tenant owner can monitor enrollment status across the team but cannot enforce it.
+Adds TOTP-based two-factor authentication via Firebase. Users enroll an authenticator app (Google Authenticator, Authy, etc.) from **Settings → Security**. Once enrolled, every sign-in requires a password and a 6-digit TOTP code. Users can disable MFA at any time, with identity re-verified first. The tenant owner can monitor enrollment status across the team but cannot enforce it.
+
+The Security tab is gated behind the `totp_mfa` feature flag (default off) so it can be enabled per-environment when ready.
 
 ## Business Requirements
 
@@ -34,43 +36,48 @@ Add optional Multi-Factor Authentication (TOTP) via Firebase to the app. Users e
 
 Triggered from **Settings → Security tab**:
 
-1. User clicks **Enable authenticator app**.
-2. *(Maybe)* Require password re-authentication.
-3. Generate TOTP secret.
-4. Display QR code (TOTP URL) and manual setup key.
-5. User enters the 6-digit verification code.
-6. Enroll the factor — fail silently on error (surface a retry prompt).
-7. Show backup / recovery instructions.
+1. Email verification is enforced before enrollment can begin (client-side + Firebase).
+2. User clicks **Enable MFA**.
+3. A side-by-side dialog shows a QR code (TOTP URL) and the raw manual setup key.
+4. User scans the QR (or enters the key manually) in their authenticator app.
+5. User enters the 6-digit OTP to confirm enrollment.
+6. On success: toggle shows "Enabled". On failure: silent retry — a fresh QR is regenerated if the session has expired (~10 min timeout).
 
 ### Login Challenge Flow
 
-Triggered automatically when an enrolled user signs in:
+**Scenario B applies** — the app owns the challenge UI:
 
 1. User enters email + password.
 2. Firebase returns an `MFA required` error.
-3. App displays TOTP code input screen.
+3. App shows a TOTP code input step (instead of redirecting to the dashboard).
 4. User enters the 6-digit code.
 5. App resolves the sign-in with Firebase.
-6. Redirect to dashboard.
+6. Redirect to dashboard. Wrong/expired code shows an inline error; the OTP step stays for retry.
 
-### Open Question — Challenge UI Ownership
+### Re-authentication Flow
 
-There is an unresolved question about who renders the MFA challenge screen:
+Sensitive operations (enabling/disabling MFA) gate on session freshness:
 
-- **Scenario A (Automatic):** Firebase handles the redirect to an MFA input screen and returns the user to the app callback on success — no custom UI needed.
-- **Scenario B (Manual):** The app must detect the `MFA required` signal from Firebase and render a custom TOTP input view before completing sign-in.
+- If the session is stale, a re-auth modal appears automatically.
+- For users with MFA enrolled, the modal transitions inline from a password step to an OTP step — no separate screen.
+- The `getIsFreshAuth()` synchronous getter was exported from the auth store to fix a bug where the stale mount-time value of `useIsFreshAuth()` could skip the re-auth gate after 30+ minutes on the page.
+
+### Backend Sync
+
+On enrollment and unenrollment, a best-effort POST is sent to `/auth/mfa/enable` and `/auth/mfa/disable` to keep the backend `mfaEnabled` flag in sync. Failures are silent — Firebase is the source of truth.
 
 ## Tasks
 
 ### Research
 
-- [ ] Watch tutorials on Firebase Authentication + TOTP setup (Google Authenticator, Authy).
-- [ ] Review Firebase docs to resolve **Scenario A vs B** — does Firebase handle the challenge UI natively, or must the app build a custom view?
+- [x] Watch tutorials on Firebase Authentication + TOTP setup (Google Authenticator, Authy).
+- [x] Resolved **Scenario A vs B**: Firebase does **not** handle the challenge UI natively — the app must build custom views (Scenario B).
 
 ### UI
 
-- [ ] **Security Tab — Settings Page:** MFA configuration screen showing current status (enabled / disabled) and the setup trigger button.
-- [ ] **MFA Challenge Screen — Login Flow:** Custom TOTP input screen shown after the Firebase `MFA required` signal *(needed only if Scenario B applies)*.
+- [x] **Security Tab — Settings Page:** MFA configuration screen (gated by `totp_mfa` flag) with status toggle, QR enrollment dialog, and disable flow.
+- [x] **MFA Challenge Screen — Login Flow:** Custom TOTP input step after password sign-in for enrolled users.
+- [x] **Re-auth Modal:** Extended to handle MFA-enrolled users inline (password → OTP steps).
 - [ ] *(Nice-to-have)* **Team Settings Page:** Read-only MFA status indicator per user for the tenant owner.
 
 ![[Related Meetings.base]]
