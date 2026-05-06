@@ -9,6 +9,9 @@ status: active
 ---
 ## Active Tasks
 
+- [ ] Team Settings & Role Management Tasks ![[260505 (Tue) Task - Team Settings & Role Management#Tasks]]
+
+
 - [ ] [[260406 (Mon) add end to end testing of create query flow]]
 - [ ] User is logged out even when he is active on another tab. Need to sync the session activity across browser tabs.
 - [ ] Create a variation pattern for the agent list views
@@ -19,8 +22,6 @@ status: active
 - [ ] rename the dashboard collection/sections to dashboard tabs
 - [ ] current filters identification for all views
 - [ ] **[[260406 (Mon) update the shadcn version, components and theme]]**
-- [ ] Weekly Meeting Tasks![[260414 (Tue) Weekly Scrum Meeting#Action Items]]
-
 
 
 
