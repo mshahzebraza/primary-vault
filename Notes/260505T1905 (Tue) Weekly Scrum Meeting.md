@@ -1,55 +1,99 @@
 ---
 type: "[[Meeting]]"
 categories:
-  - "[[Personal]]"
   - "[[Meetings]]"
+  - "[[Work]]"
 date: 2026-05-05
 tags:
-  - journal
+  - scrum
+  - weekly
 organization:
-projects: []
-attendees: []
+  - "[[aiquery.io]]"
+projects:
+  - "[[aq-client]]"
+attendees:
+  - "[[Rajput]]"
 ---
 
 ## Context
-> Brief note on why this meeting happened / what triggered it.
 
-## Discussion
-- split the setting views
-- Sheet to update based on the features
-- document in codebase the UX issue that user when logged in can go to the login page again
-	- Either document that its a minor UX issue, and not an issue
-	- OR guard it to not show up when user navigates to `auth/login` through URL while he is logged out 
-- Not Confirmed: if screen is on sleep, the inactivity timeout doesn't logout the user.
-	- sync with Rajput to discuss the working of inactivity timeout
-- Allow roles in create invitation dialog
-- Liveshell can only be access through `POWER USERS`, `ADMIN` and `ROOT`
-- Change User Role should be allowed for `ROOT` user
-	- User Role cannot be changed to `ROOT`;  only to `POWER USER` and `USER`
-- **TODO:** Developing the power user invite flow
-	- ??? What does developing mean
-- primary sidebar should be closed automatically on query smith opening in Rapid Response View
-- remove the `LOAD QUERY` button, in favor of `click-to-load` functionality 
-- Actions Button dropdown on rapid response
-	- load from preset
-	- save as preset (should be added to query history items as well preferably)
-	- go to create query
-- Optional: Multi Select for Query History Item to Save as Query Preset in Rapid Response View
-- each selection should have a description along with label in the invite user dialog
-- user type is required in the invitations table
+Weekly scrum covering UI/UX improvements across Settings, Team Management, and the Rapid Response view. Also aligned on role-permission rules for team actions.
 
 ---
-- Invites:
-    - Root & Admin
-- Change role:
-    - Root & Admin (Cannot change Root users role)
-- Transfer Ownership:
-    - Root
-- Liveshell:
-    - Power User, Root & Admin
-- Create API Roles
-    - Power User, Root & Admin
-## Decisions Made
+
+## Discussion
+
+### Settings
+
+- Split the settings views (Account and Security tabs — confirmed in dev meeting).
+- Update the feature tracking sheet to reflect newly shipped features.
+
+### Auth UX
+
+- **Issue:** A logged-in user can navigate to `/auth/login` via the URL bar and see the login page.
+- **Options:**
+  - Document it as a known minor UX issue and leave it.
+  - Guard the route so it redirects authenticated users away from `/auth/login`.
+- **Unconfirmed:** When the screen is on sleep, the inactivity timeout may not log the user out — needs verification.
+
+### Team Settings & Role Management
+
+- Add role selection to the **Create Invitation** dialog; each role option must include a label and a short description.
+- User type must be visible/required in the invitations table.
+- **Change User Role** action is restricted to the `ROOT` user.
+  - A user's role can only be changed to `POWER USER` or `USER` — not to `ROOT`.
+- **Liveshell** access is restricted to `POWER USER`, `ADMIN`, and `ROOT`.
+- Power user invite flow needs to be developed — scope TBD (needs clarification from Rajput).
+
+### Rapid Response View
+
+- The primary sidebar should auto-close when Query Smith opens.
+- Remove the **Load Query** button in favour of click-to-load behaviour.
+- Add an **Actions** dropdown button with the following options:
+  - Load from preset
+  - Save as preset *(also expose this action on individual query history items)*
+  - Go to Create Query
+- *(Optional)* Multi-select on query history items to batch-save as a query preset.
+
+---
+
+## Role Permissions Reference
+
+| Action | ROOT | ADMIN | POWER USER | USER |
+|---|:---:|:---:|:---:|:---:|
+| Send invites | ✓ | ✓ | | |
+| Change user role | ✓ | ✓ | | |
+| Transfer ownership | ✓ | | | |
+| Liveshell access | ✓ | ✓ | ✓ | |
+| Create API roles | ✓ | ✓ | ✓ | |
+
+> Note: A user's role cannot be changed to `ROOT`. Root users' roles cannot be changed by Admins.
+
+---
 
 ## Action Items
-- [ ] 
+
+### Auth & Settings
+
+- [ ] Decide: document logged-in → `/auth/login` as a known UX quirk, or guard the route with a redirect.
+- [ ] Sync with Rajput to verify inactivity timeout behaviour when the screen is on sleep.
+
+### Team Settings
+
+- [ ] Add role selector to the Create Invitation dialog — each option needs a label + description.
+- [ ] Ensure user type is shown in the invitations table.
+- [ ] Enforce role-change restrictions: ROOT-only action, target role cannot be `ROOT`.
+- [ ] Restrict Liveshell access to `POWER USER`, `ADMIN`, and `ROOT`.
+- [ ] Clarify scope of "develop the power user invite flow" with Rajput.
+
+### Rapid Response View
+
+- [ ] Auto-close the primary sidebar when Query Smith opens.
+- [ ] Remove the **Load Query** button; implement click-to-load.
+- [ ] Add **Actions** dropdown (load preset / save as preset / go to create query).
+- [ ] Add "Save as preset" action to individual query history items.
+- [ ] *(Optional)* Multi-select on query history items to batch-save as a preset.
+
+### Misc
+
+- [ ] Update the feature tracking sheet with shipped features.
