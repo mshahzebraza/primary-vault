@@ -64,7 +64,7 @@ Sensitive operations (enabling/disabling MFA) gate on session freshness:
 
 ### Backend Sync
 
-On enrollment and unenrollment, a best-effort POST is sent to `/auth/mfa/enable` and `/auth/mfa/disable` to keep the backend `mfaEnabled` flag in sync. Failures are silent — Firebase is the source of truth.
+On enrollment and unenrollment, a best-effort POST is sent to `/auth/user/mfa/sync` to keep the backend `mfaEnabled` flag in sync. Failures are silent — Firebase is the source of truth.
 
 ## Tasks
 

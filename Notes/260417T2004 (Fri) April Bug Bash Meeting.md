@@ -45,15 +45,7 @@ related-tasks:
 	- [x] showing the id with a tooltip saying device may have been deleted; instead of not showing the data for any of other devices.
 	- [x] fix the backend so that it atleast returns the agnet id when population fails.
 	- [ ] italicise the agent name - put the agent id here, and show the unkown flag in the device os column
-```
-Even though the  Agent ID is received as undefined if the population on the backend side fails. Let us assume that the agent ID would not be undefined and it would actually be a string. However, the agent name could definitely be undefined.  Because if the agent is received as a string instead of an object, there would be no device or stripe available in the agent property.  
 
-Later we'd fix the backend so that it atleast returns the agnet id when population fails.
-We could also updte the backend to return the agent details in a dedicated object instead of the agent field itself, so that the agent field could always be shown as agent_id, even if population fails
-
-Also, italicise the agent name - put the agent id there, and show the unkown flag in the device os column
-
-```
 - [x] Update the Team Settings Page to reflect the Root Ownership Transfer instead of needing to navigate away and come back. (Otherwise, they are able to delete users, even after root transfer to another user)
 - [x] Stop the user from transfering ownership from ROOT to ROOT.
 - [ ] Agent > Bulk Create /Deploy Actions > Deploy Dialog should be having narrow like other dropdown items

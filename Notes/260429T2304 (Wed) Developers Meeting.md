@@ -12,6 +12,8 @@ projects:
   - "[[aq-client]]"
 attendees:
   - "[[Rajput]]"
+related-tasks:
+  - "[[260505 (Tue) Task - MFA Feature (Firebase TOTP)]]"
 ---
 ## Tasks
 - [ ] Accept ClickHouse invitation in Gmail (needed for maintenance access and MFA feature context).

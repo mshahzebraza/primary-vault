@@ -15,6 +15,7 @@ attendees: []
 > Brief note on why this meeting happened / what triggered it.
 
 ## Discussion
+- split the setting views
 - Sheet to update based on the features
 - document in codebase the UX issue that user when logged in can go to the login page again
 	- Either document that its a minor UX issue, and not an issue
@@ -22,6 +23,7 @@ attendees: []
 - Not Confirmed: if screen is on sleep, the inactivity timeout doesn't logout the user.
 	- sync with Rajput to discuss the working of inactivity timeout
 - Allow roles in create invitation dialog
+- Liveshell can only be access through `POWER USERS`, `ADMIN` and `ROOT`
 - Change User Role should be allowed for `ROOT` user
 	- User Role cannot be changed to `ROOT`;  only to `POWER USER` and `USER`
 - **TODO:** Developing the power user invite flow
@@ -33,6 +35,20 @@ attendees: []
 	- save as preset (should be added to query history items as well preferably)
 	- go to create query
 - Optional: Multi Select for Query History Item to Save as Query Preset in Rapid Response View
+- each selection should have a description along with label in the invite user dialog
+- user type is required in the invitations table
+
+---
+- Invites:
+    - Root & Admin
+- Change role:
+    - Root & Admin (Cannot change Root users role)
+- Transfer Ownership:
+    - Root
+- Liveshell:
+    - Power User, Root & Admin
+- Create API Roles
+    - Power User, Root & Admin
 ## Decisions Made
 
 ## Action Items

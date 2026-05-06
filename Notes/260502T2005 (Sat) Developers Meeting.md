@@ -15,6 +15,8 @@ projects:
   - "[[aq-client]]"
 attendees:
   - "[[Rajput]]"
+related-tasks:
+  - "[[260505 (Tue) Task - MFA Feature (Firebase TOTP)]]"
 ---
 
 ## Context
@@ -27,7 +29,7 @@ attendees:
 
 ## Decisions Made
 
-- User Settings will have separate **Account** and **Security** tabs.
+- User Settings will have separate **Account** and **Security** tabs only.
 
 ## Action Items
 - [ ] See [[260505 (Tue) Task - MFA Feature (Firebase TOTP)]] for all outstanding tasks.
