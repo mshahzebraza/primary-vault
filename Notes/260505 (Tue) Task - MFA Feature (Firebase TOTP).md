@@ -78,6 +78,6 @@ On enrollment and unenrollment, a best-effort POST is sent to `/auth/user/mfa/sy
 - [x] **Security Tab — Settings Page:** MFA configuration screen (gated by `totp_mfa` flag) with status toggle, QR enrollment dialog, and disable flow.
 - [x] **MFA Challenge Screen — Login Flow:** Custom TOTP input step after password sign-in for enrolled users.
 - [x] **Re-auth Modal:** Extended to handle MFA-enrolled users inline (password → OTP steps).
-- [ ] *(Nice-to-have)* **Team Settings Page:** Read-only MFA status indicator per user for the tenant owner.
+- [x] *(Nice-to-have)* **Team Settings Page:** Read-only MFA status indicator per user for the tenant owner.
 
 ![[Related Meetings.base]]

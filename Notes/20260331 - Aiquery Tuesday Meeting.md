@@ -8,6 +8,8 @@ tags:
   - scrum
 organization:
   - "[[aiquery.io]]"
+status:
+  - open
 ---
 
 ## Context

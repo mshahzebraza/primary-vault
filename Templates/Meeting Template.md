@@ -4,8 +4,10 @@ categories:
   - "[[Meetings]]"
 organization:
 projects: []
-date: {{date: YYYY-MM-DD}}
+date:
+  "{ date: YYYY-MM-DD }":
 attendees: []
+status:
 ---
 
 ## Context

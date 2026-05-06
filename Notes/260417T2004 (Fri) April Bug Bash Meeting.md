@@ -34,61 +34,23 @@ related-tasks:
 ## Action Items / Bugs
 
 ### Pending
-- [ ] Icon for `Deploy Custom Extension` is the same as `Run Query Pack`. Nitpick
-- [ ] Path to linux agent installation is wrong. it should use `downloads.aiquery.io/...`
-- [ ] Rapid Response View Issues
-	- [x] Put the export button behind FF
-	- [ ] Add the Query Smith Panel on the right, that closes all the other open panels automatically on open
-- [x] [ID: 76] Need/Nice - Bug - Query results for removed/deleted agent returns wrong warning
-  - Error: `invalid_type` at `data[0].agent` — expected object, received undefined. (Rajput/Shazeb)
-- [x] Incase of a query ran on a deleted agent, the error should be handled instead of showing the error
-	- [x] showing the id with a tooltip saying device may have been deleted; instead of not showing the data for any of other devices.
-	- [x] fix the backend so that it atleast returns the agnet id when population fails.
-	- [ ] italicise the agent name - put the agent id here, and show the unkown flag in the device os column
+- [ ] [ID: 63] Need/Nice - Bug - Export UX annoyance
+  - Sheet: Resolved y, Confirmed working (ppe) n — after export, "See Results" should show job without manual refresh; verify on PPE.
+	  - ***Couldn't Test. Was getting 500 errors for exports***
 
-- [x] Update the Team Settings Page to reflect the Root Ownership Transfer instead of needing to navigate away and come back. (Otherwise, they are able to delete users, even after root transfer to another user)
-- [x] Stop the user from transfering ownership from ROOT to ROOT.
-- [ ] Agent > Bulk Create /Deploy Actions > Deploy Dialog should be having narrow like other dropdown items
-- [x] Empty Dropdown is shown for invalid/deleted users. Empty Cell is shown for Users with no Role
+- [ ] [ID: 44] Trivial - Bug - Custom extension deployment list order inverted (+ optional AMD vs ARM pill)
+  - Oldest extensions show first, newest last — should be inverse. Sheet also calls out optional pill distinction for AMD vs ARM on deploy flows. 🔥🔥
 - [ ] Query Overview Dialog Sql input should be copy-able
 	- [ ] query-pack preset detail view for queries dropdown should have copy-able
 - [ ] Remove Linting SQL Issue in query editor
-
-- [ ] Create a variation pattern for the agent list views
-- [x] [ID: 62] Need/Nice - Bug - Edit & rerun for expired query pack goes to Oops page
-  - Frontend needs to allow the device name to be showing undefined with an id and tooltip saying device may be uninstalled etc.
-- [ ] [ID: 44] Trivial - Bug - Custom extension deployment list order inverted (+ optional AMD vs ARM pill)
-  - Oldest extensions show first, newest last — should be inverse. Sheet also calls out optional pill distinction for AMD vs ARM on deploy flows. 🔥🔥
-- [ ] [ID: 45] Need - Bug - [[260425T1604 (Sat) Add Agents to existing group|Add agents to an existing static group in the UI]]
-	- See dedicated task note for full context/description.
-
-- [x] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.
-- [x] [ID: 43] Need/Nice - Bug - Custom Extensions target agent group selection
-  - Groups cannot be selected for extension deployment since it is always 1:1. Making an agent group with ONE agent yields error 'Only connected agents can be selected for deployment' — incorrect error; field effectively broken for custom extension creation.
-
-- [x] [ID: 50] Trivial - Bug - Registration Key Refresh oddity 🔥🔥🔥
-  - UX not intuitive; see https://www.loom.com/share/fb9d8ea48f8647f385f4e80f9dc3542c.
-	  - Part 1: ...
-	  - Part 2 (Main Issue): the selected date is not shown as selected by defualt in the date picker. i.e. if 20 may is selected, the dropdown shows a different date i.e. 20 april, which causes the user to accidently select the wrong data, thinking he's in the same month as is shown in form field input. 
-- [x] [ID: 55] Need - Bug - Schedule: EST timezone off when selected (DST)
-  - Without timezone, local time in error message is correct; with EST selected, offset wrong (-5 vs -4 during DST). Related to timezone bugs.
-- [ ] [ID: 56] Trivial - Task - Lack of OR operators when creating dynamic group 
-  - Only one input per field; cannot express OR (e.g. device name contains EC2 OR nick). Low priority.
-
-  - because realistic solve is to remove expired / do not offer edit & rerun for expired blank packs. (Rajput/Shazeb)
-- [x] [ID: 66] Nice - Bug - Query export on failed status — do not allow download
-  - Status failed but user can still trigger download of non-existent file; disable download.
+- [ ] Icon for `Deploy Custom Extension` is the same as `Run Query Pack`. Nitpick
+- [ ] Path to linux agent installation is wrong. it should use `downloads.aiquery.io/...`
+- [ ] Agent > Bulk Create /Deploy Actions > Deploy Dialog should be having narrow like other dropdown items
 - [ ] [ID: 70] Nice - Bug - Delay in query results details showing
   - Minor; likely DB write latency between success and viewable results. (Rajput/Shazeb)
   - Probably from backend
-- [x] [ID: 73] Need/Nice - Task - Allow AI confidence to return N/A
-  - Error-handling path when confidence cannot be an int.
-- [x] [ID: 74] Critical - Task - Need UI changes to support agent group move (relates to ID 45)
-  - Agents > Agent List: Actions → "Add to Agent Group" → popup to select group (like version select for agent update).
-  - Agent Groups > group > agent list: Actions → "Remove from Agent Group" (confirm optional); no extra group picker.
-
-- [x] [ID: 75] Nice - Bug - Minor UI hiccup (Windows Event Log mode links squished during AI "constructing query")
-  - Cosmetic: second Windows Event Log link squeezes layout; consider shortening link labels (e.g. drop "Windows" — "Security Events" / "Event Catalog"). Sheet: not yet resolved.
+- [ ] [ID: 56] Trivial - Task - Lack of OR operators when creating dynamic group 
+  - Only one input per field; cannot express OR (e.g. device name contains EC2 OR nick). Low priority.
 
 ### QA
 - [x] [ID: 22] Need - Bug - [[260423T0904 (Thu) Timezone Dropdown List adjustments based on Daylight Savings]]
@@ -101,11 +63,55 @@ related-tasks:
   - **QA failed**; verify copy ("Invite Failed – User exists" or similar) on PPE.
 - [x] [ID: 42] Need - Bug - LiveShell naming convention incorrect
   - Sheet: Resolved y, PPE n — standardize to LiveShell (or chosen casing) and confirm in UI + userguide on PPE.
-- [ ] [ID: 63] Need/Nice - Bug - Export UX annoyance
-  - Sheet: Resolved y, Confirmed working (ppe) n — after export, "See Results" should show job without manual refresh; verify on PPE.
-	  - ***Couldn't Test. Was getting 500 errors for exports***
 
 ### Completed
+
+- [x] Rapid Response View Issues
+	- [x] Put the export button behind FF
+	- [x] Add the Query Smith Panel on the right, that closes all the other open panels automatically on open
+- [x] [ID: 76] Need/Nice - Bug - Query results for removed/deleted agent returns wrong warning
+  - Error: `invalid_type` at `data[0].agent` — expected object, received undefined. (Rajput/Shazeb)
+- [x] Incase of a query ran on a deleted agent, the error should be handled instead of showing the error
+	- [x] showing the id with a tooltip saying device may have been deleted; instead of not showing the data for any of other devices.
+	- [x] fix the backend so that it atleast returns the agnet id when population fails.
+	- [x] italicise the agent name - put the agent id here, and show the unkown flag in the device os column
+
+- [x] Update the Team Settings Page to reflect the Root Ownership Transfer instead of needing to navigate away and come back. (Otherwise, they are able to delete users, even after root transfer to another user)
+- [x] Stop the user from transfering ownership from ROOT to ROOT.
+
+- [x] Empty Dropdown is shown for invalid/deleted users. Empty Cell is shown for Users with no Role
+
+
+- [x] [ID: 62] Need/Nice - Bug - Edit & rerun for expired query pack goes to Oops page
+  - Frontend needs to allow the device name to be showing undefined with an id and tooltip saying device may be uninstalled etc.
+  - because realistic solve is to remove expired / do not offer edit & rerun for expired blank packs. (Rajput/Shazeb)
+
+- [x] [ID: 45] Need - Bug - [[260425T1604 (Sat) Add Agents to existing group|Add agents to an existing static group in the UI]]
+	- See dedicated task note for full context/description.
+
+- [x] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.
+- [x] [ID: 43] Need/Nice - Bug - Custom Extensions target agent group selection
+  - Groups cannot be selected for extension deployment since it is always 1:1. Making an agent group with ONE agent yields error 'Only connected agents can be selected for deployment' — incorrect error; field effectively broken for custom extension creation.
+
+- [x] [ID: 50] Trivial - Bug - Registration Key Refresh oddity 🔥🔥🔥
+  - UX not intuitive; see https://www.loom.com/share/fb9d8ea48f8647f385f4e80f9dc3542c.
+	  - Part 1: ...
+	  - Part 2 (Main Issue): the selected date is not shown as selected by defualt in the date picker. i.e. if 20 may is selected, the dropdown shows a different date i.e. 20 april, which causes the user to accidently select the wrong data, thinking he's in the same month as is shown in form field input. 
+- [x] [ID: 55] Need - Bug - Schedule: EST timezone off when selected (DST)
+  - Without timezone, local time in error message is correct; with EST selected, offset wrong (-5 vs -4 during DST). Related to timezone bugs.
+
+- [x] [ID: 66] Nice - Bug - Query export on failed status — do not allow download
+  - Status failed but user can still trigger download of non-existent file; disable download.
+
+- [x] [ID: 73] Need/Nice - Task - Allow AI confidence to return N/A
+  - Error-handling path when confidence cannot be an int.
+- [x] [ID: 74] Critical - Task - Need UI changes to support agent group move (relates to ID 45)
+  - Agents > Agent List: Actions → "Add to Agent Group" → popup to select group (like version select for agent update).
+  - Agent Groups > group > agent list: Actions → "Remove from Agent Group" (confirm optional); no extra group picker.
+
+- [x] [ID: 75] Nice - Bug - Minor UI hiccup (Windows Event Log mode links squished during AI "constructing query")
+  - Cosmetic: second Windows Event Log link squeezes layout; consider shortening link labels (e.g. drop "Windows" — "Security Events" / "Event Catalog"). Sheet: not yet resolved.
+
 - [x] Optional: timezone selection should preferable use local TZ selection
 - [x] Automatically Select the local time in the schedules dialog
 - [x] UI Bug: Query SQL Input in the Query Schedule, View Detail Dialog is one-line and scrollable.

@@ -105,6 +105,20 @@
                     }
                   },
                   {
+                    "id": "883b9ee45ec25298",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Notes/Tasks Manifest - Ai Query.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Tasks Manifest - Ai Query"
+                    }
+                  },
+                  {
                     "id": "909304a64239e9cd",
                     "type": "leaf",
                     "state": {
@@ -131,8 +145,23 @@
                       "icon": "lucide-file",
                       "title": "260429T2304 (Wed) Developers Meeting"
                     }
+                  },
+                  {
+                    "id": "e4c3d005af29173c",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Notes/260505 (Tue) Task - MFA Feature (Firebase TOTP).md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "260505 (Tue) Task - MFA Feature (Firebase TOTP)"
+                    }
                   }
-                ]
+                ],
+                "currentTab": 3
               }
             ],
             "direction": "vertical"
@@ -240,13 +269,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Notes/260417T2004 (Fri) April Bug Bash Meeting.md",
+                    "file": "Notes/260502T2005 (Sat) Developers Meeting.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of 260417T2004 (Fri) April Bug Bash Meeting"
+                  "title": "Outline of 260502T2005 (Sat) Developers Meeting"
                 }
               },
               {
@@ -301,8 +330,8 @@
           "zk-prefixer:Create new unique note": false
         }
       },
-      "active": "3e7791c229069312",
-      "mtime": "2026-05-05T12:29:00+05:00"
+      "active": "909304a64239e9cd",
+      "mtime": "2026-05-06T17:14:53+05:00"
     },
     "Personal": {
       "main": {

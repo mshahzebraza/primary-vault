@@ -8,6 +8,8 @@ tags:
   - scrum
 organization:
   - "[[aiquery.io]]"
+status:
+  - open
 ---
 
 ## Context
@@ -30,6 +32,6 @@ Widget creation form requirements and UX decisions.
 
 ## Action Items
 - [ ] Implement multi-step widget creation form using stepperize
-- [ ] Add compatibility disclaimer to widget dialog
-- [ ] Remove target days field
-- [ ] Lock run cadence to creation mode only
+- [x] Add compatibility disclaimer to widget dialog
+- [x] Remove target days field
+- [x] Lock run cadence to creation mode only

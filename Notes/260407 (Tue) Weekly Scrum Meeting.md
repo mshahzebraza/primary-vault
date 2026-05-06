@@ -14,6 +14,8 @@ projects:
 attendees:
   - "[[Rajput]]"
   - "[[Nick]]"
+status:
+  - completed
 ---
 ## Context
 > Brief note on why this meeting happened / what triggered it.

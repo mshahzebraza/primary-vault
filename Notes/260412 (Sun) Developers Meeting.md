@@ -12,6 +12,8 @@ projects:
   - "[[aq-client]]"
 attendees:
   - "[[Rajput]]"
+status:
+  - completed
 ---
 
 ## Context

@@ -14,7 +14,9 @@ attendees:
   - "[[Rajput]]"
 related-tasks:
   - "[[260505 (Tue) Task - MFA Feature (Firebase TOTP)]]"
+status:
+  - completed
 ---
 ## Tasks
-- [ ] Accept ClickHouse invitation in Gmail (needed for maintenance access and MFA feature context).
-- [ ] See [[260505 (Tue) Task - MFA Feature (Firebase TOTP)]] for all MFA-related tasks and design notes.
+- [x] Accept ClickHouse invitation in Gmail (needed for maintenance access and MFA feature context).
+- [x] See [[260505 (Tue) Task - MFA Feature (Firebase TOTP)]] for all MFA-related tasks and design notes.

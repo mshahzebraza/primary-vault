@@ -12,6 +12,8 @@ projects:
   - "[[aq-client]]"
 attendees:
   - "[[Rajput]]"
+status:
+  - completed
 ---
 
 ## Context
@@ -23,9 +25,7 @@ attendees:
 ## Decisions Made
 
 ## Action Items
-- [ ] Change highlighting of the sidebar from BLUE to PURPLE
 - [x] remove Group/Name suboption of attack option
 - [x] Attach TIK -> Mitre TID (API stays intact)
 - [x] Attack Yara -> Yara (API stays intact)
-
 ## 2026-04-14

@@ -13,6 +13,8 @@ projects:
   - "[[aq-client]]"
 attendees:
   - "[[Rajput]]"
+status:
+  - active
 ---
 
 ## Context
@@ -25,7 +27,7 @@ Weekly scrum covering UI/UX improvements across Settings, Team Management, and t
 
 ### Settings
 
-- Split the settings views (Account and Security tabs — confirmed in dev meeting).
+- [x] Split the settings views (Account and Security tabs — confirmed in dev meeting).
 - Update the feature tracking sheet to reflect newly shipped features.
 
 ### Auth UX
@@ -76,7 +78,7 @@ Weekly scrum covering UI/UX improvements across Settings, Team Management, and t
 ### Auth & Settings
 
 - [ ] Decide: document logged-in → `/auth/login` as a known UX quirk, or guard the route with a redirect.
-- [ ] Sync with Rajput to verify inactivity timeout behaviour when the screen is on sleep.
+- [x] Sync with Rajput to verify inactivity timeout behaviour when the screen is on sleep.
 
 ### Team Settings
 

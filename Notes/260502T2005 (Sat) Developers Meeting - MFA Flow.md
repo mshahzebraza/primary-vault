@@ -17,6 +17,8 @@ attendees:
   - "[[Rajput]]"
 related-tasks:
   - "[[260505 (Tue) Task - MFA Feature (Firebase TOTP)]]"
+status:
+  - completed
 ---
 
 ## Context

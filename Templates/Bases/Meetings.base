@@ -45,10 +45,14 @@ views:
     filters:
       and:
         - note.organization.contains("aiquery.io")
+    groupBy:
+      property: status
+      direction: ASC
     order:
       - file.name
       - date
       - related-tasks
+      - status
     sort:
       - property: date
         direction: DESC

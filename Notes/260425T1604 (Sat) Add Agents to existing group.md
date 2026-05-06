@@ -25,8 +25,6 @@ priority: P2
 - [x] BUG: Confirm refetch on removal-from-agent is working
 
 - [x] Feat: Create a Single-Value-SelectFormField for the device agent group selection
-- [ ] Optional: Omit the current AgentGroup from the Target AgentGroup selection list
-	- [ ] Allow the render callback to in the DeviceGroupFormField component, and use it to custom render the dropdown item component for the existing agent group.
 - [ ] Optional: Add a CTA for the toast to go to the agent group page where the agents are added.
 
 
