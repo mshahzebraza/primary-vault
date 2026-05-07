@@ -8,7 +8,7 @@ type: '[[Documentation]]'
 status: active
 ---
 ## Active Tasks
-
+- [ ] The disabled MFA is not updated in the team settings table
 - [ ] Team Settings & Role Management Tasks ![[260505 (Tue) Task - Team Settings & Role Management#Tasks]]
 
 
