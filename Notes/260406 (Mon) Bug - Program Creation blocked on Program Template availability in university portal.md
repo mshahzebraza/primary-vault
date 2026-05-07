@@ -9,7 +9,7 @@ organization:
 projects:
   - "[[sb-backend]]"
 status:
-  - backlog
+  - completed
 priority: P2
 date: 2026-04-06
 ---
@@ -26,6 +26,9 @@ date: 2026-04-06
 	- For now the complexity to implement exceeds the benefits of dual ownership feature of program templates. 
 ## Current Tasks
 - Ensure that University can lookup on the program templates to choose a template for program creation
+
+### Conclusion
+- New Templates should always be created by data entry team as per discussion with [[Mian Anees]]
 
 ![[Related Meetings.base]]
 

@@ -7,7 +7,8 @@ organization:
   - "[[scholarbee]]"
 projects:
   - "[[sb-ops-scripts]]"
-status: backlog
+status:
+  - completed
 priority: P2
 date: 2026-04-06
 ---
@@ -16,7 +17,7 @@ date: 2026-04-06
 > One paragraph describing what and why.
 
 ## Current Tasks
-- [ ] require credentials and emails from Aliza
+- [x] require credentials and emails from Aliza
 
 
 ![[Related Meetings.base]]
