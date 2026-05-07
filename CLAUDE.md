@@ -1,0 +1,64 @@
+# Obsidian Vault — AI Agent Instructions
+
+This is a personal second-brain Obsidian vault. All notes live under `Notes/`, templates under `Templates/`, category hubs under `Categories/`, and database views under `Templates/Bases/`.
+
+## Organisations
+
+Three canonical work orgs — always use wikilink syntax:
+- `"[[scholarbee]]"` — ScholarBee backend work
+- `"[[aiquery.io]]"` — AiQuery product work
+- `"[[Freelance]]"` — freelance engagements
+
+## Note filename convention
+
+All time-stamped notes use `YYMMDDTHHMM (Weekday) <Type> - <Title>.md`.
+Examples: `260507T1124 (Thu) Task - ...`, `260423T1204 (Thu) Meeting - ...`
+
+Use `date +"%y%m%dT%H%M"` to get the current timestamp before creating any note.
+
+## Metadata contract
+
+Every note under `Notes/` must have frontmatter conforming to `Templates/Bases/Metadata contract.md`. Key rules:
+- `type` — multitext wikilink: `[[Task]]`, `[[Bug]]`, `[[Meeting]]`, `[[RnD]]`, `[[Documentation]]`, `[[Journal]]`, `[[Reference]]`
+- `organization` — single org wikilink (work notes only)
+- `categories` — quoted wikilinks e.g. `"[[Work]]"`, `"[[Tasks]]"`, `"[[Meetings]]"`, `"[[Personal]]"`
+- `status` — `backlog | active | blocked | done`
+- `priority` — `P1 | P2 | P3`
+- `date` — `YYYY-MM-DD`
+- `tags` — plain string labels (not wikilinks)
+- Do NOT use legacy fields: `base`, `path_area`, `original_path`, `org`, `client`
+
+## Task notes
+
+Template: `Templates/Task Note Template.md`
+Sections: frontmatter → `## Overview` (one paragraph) → `## Current Tasks` (checklist) → optional embedded bases.
+After creating a task note, always embed its action items in the relevant Tasks Manifest under `Notes/`.
+
+### Task manifests
+- ScholarBee: `Notes/Tasks Manifest - Scholar Bee.md`
+- Personal: `Notes/Tasks Manifest - Personal.md`
+- AiQuery tasks are inline in the ScholarBee manifest or get their own notes
+
+Manifest sections order: `## ▶️ In Progress` → `## 🟥 Pending` → `## ⚠️ Blocked` → `## ✅ Completed` → `## Ideas/Future Requirements` → `## Tech Debt`
+
+## Meeting notes
+
+Template: `Templates/Meeting Template.md`
+Sections: frontmatter → context → discussion → decisions → action items.
+Link meetings to task notes via `related-tasks` frontmatter on the meeting note. Action items extracted from meetings go into the relevant task note or manifest.
+
+## Daily notes
+
+Live in `Daily/`. Filename format: `26-Mon-DD (Weekday) Daily Note.md` (e.g. `26-May-07 (Thu) Daily Note.md`).
+Template: `Templates/Daily Note Template.md`
+Sections: `## Scratch` then one `## <Org> Work` section per active organisation.
+
+## Navigation entry points
+
+- `Categories/Tasks.md` → Tasks.base (all active tasks)
+- `Categories/Work.md` → HQ.base Overview + WorkByOrganization.base
+- `Categories/Meetings.md` → Meetings.base
+- `Categories/scholarbee.md` → ScholarBee work filtered view
+- `Categories/aiquery.io.md` → AiQuery work filtered view
+- `Notes/Tasks Manifest - Scholar Bee.md` — authoritative ScholarBee task board
+- `Notes/Tasks Manifest - Personal.md` — personal setup tasks

@@ -14,6 +14,8 @@ tags:
   - admission-programs
   - listing-api
   - session-deduplication
+related-meetings:
+  - "[[260507T1105 (Thu) Redundant Admission Program Deduplication in Listings]]"
 ---
 
 ## Overview
