@@ -25,13 +25,13 @@ Team Settings enhancements covering the invitation flow, role assignment, user t
 
 ## Role Permissions Reference
 
-| Action | ROOT | ADMIN | POWER USER | USER |
-|---|:---:|:---:|:---:|:---:|
-| Send invites | ✓ | ✓ | | |
-| Change user role | ✓ | ✓ | | |
-| Transfer ownership | ✓ | | | |
-| Liveshell access | ✓ | ✓ | ✓ | |
-| Create API roles | ✓ | ✓ | ✓ | |
+| Action             | ROOT | ADMIN | POWER USER | USER |
+| ------------------ | :--: | :---: | :--------: | :--: |
+| Send invites       |  ✓   |   ✓   |            |      |
+| Change user role   |  ✓   |   ✓   |            |      |
+| Transfer ownership |  ✓   |       |            |      |
+| Liveshell access   |  ✓   |   ✓   |     ✓      |      |
+| Create API roles   |  ✓   |   ✓   |     ✓      |      |
 
 > A user's role cannot be changed to `ROOT`. Root users' roles cannot be changed by Admins.
 
@@ -54,3 +54,13 @@ Team Settings enhancements covering the invitation flow, role assignment, user t
 ### Power User Invite Flow
 
 - [ ] Clarify scope of "develop the power user invite flow" with Rajput — scope TBD.
+
+## Optimization
+- [ ] Create a Centralized Roles and Permission Class/Hooks, which allows receiving membership/role etc and based on that return callbacks to evaluate the access to different areas of the applications.
+- [ ] Refactor and optimize the code of the features PR
+	- [ ] use the `toast.promise` pattern in `src/application/hooks/membership.hook.ts`
+	- [ ] refactor the utils in a centralized class
+	- [ ] simplify/refactor the `src/client/views/settings/invite-settings/invite-setting-create-dialog.tsx`
+	- [ ] Allow modifying the select-input's option-item to custom items
+	- [ ] Instead of a dedicated check for `user` role in `src/client/views/settings/invite-settings/invite-table-columns.tsx`, a non-conditional uppercase function would have been better
+	- [ ] ...
