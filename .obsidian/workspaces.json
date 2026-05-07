@@ -12,12 +12,12 @@
               {
                 "id": "3d68a255fe2b1867",
                 "type": "split",
-                "dimension": 45.52845528455284,
+                "dimension": 48.655409631019396,
                 "children": [
                   {
                     "id": "a0e307992ec15a39",
                     "type": "tabs",
-                    "dimension": 68.78727634194831,
+                    "dimension": 51.43129770992366,
                     "children": [
                       {
                         "id": "e3b09ac1a6e5e157",
@@ -51,7 +51,7 @@
                   {
                     "id": "7d65696061190b6c",
                     "type": "tabs",
-                    "dimension": 31.21272365805169,
+                    "dimension": 48.56870229007634,
                     "children": [
                       {
                         "id": "4d9d2e43cd8784d1",
@@ -74,22 +74,8 @@
               {
                 "id": "af1c47ef0320bc69",
                 "type": "tabs",
-                "dimension": 54.47154471544715,
+                "dimension": 51.344590368980604,
                 "children": [
-                  {
-                    "id": "3e7791c229069312",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Notes/260417T2004 (Fri) April Bug Bash Meeting.md",
-                        "mode": "source",
-                        "source": false
-                      },
-                      "icon": "lucide-file",
-                      "title": "260417T2004 (Fri) April Bug Bash Meeting"
-                    }
-                  },
                   {
                     "id": "d22f72bcf34c55de",
                     "type": "leaf",
@@ -105,63 +91,49 @@
                     }
                   },
                   {
-                    "id": "883b9ee45ec25298",
+                    "id": "60ee6437a74fb265",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/Tasks Manifest - Ai Query.md",
+                        "file": "Notes/260505T1905 (Tue) Weekly Scrum Meeting.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "Tasks Manifest - Ai Query"
+                      "title": "260505T1905 (Tue) Weekly Scrum Meeting"
                     }
                   },
                   {
-                    "id": "909304a64239e9cd",
+                    "id": "c54c9d5fc31952bc",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/260502T2005 (Sat) Developers Meeting.md",
+                        "file": "Notes/260505 (Tue) Task - Team Settings & Role Management.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "260502T2005 (Sat) Developers Meeting"
+                      "title": "260505 (Tue) Task - Team Settings & Role Management"
                     }
                   },
                   {
-                    "id": "903147464c44dbf6",
+                    "id": "f2366ec31635dc33",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/260429T2304 (Wed) Developers Meeting.md",
+                        "file": "Daily/26-May-06 (Wed) Daily Note.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "260429T2304 (Wed) Developers Meeting"
-                    }
-                  },
-                  {
-                    "id": "e4c3d005af29173c",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Notes/260505 (Tue) Task - MFA Feature (Firebase TOTP).md",
-                        "mode": "source",
-                        "source": false
-                      },
-                      "icon": "lucide-file",
-                      "title": "260505 (Tue) Task - MFA Feature (Firebase TOTP)"
+                      "title": "26-May-06 (Wed) Daily Note"
                     }
                   }
                 ],
-                "currentTab": 3
+                "currentTab": 1
               }
             ],
             "direction": "vertical"
@@ -269,13 +241,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Notes/260502T2005 (Sat) Developers Meeting.md",
+                    "file": "Notes/260505T1905 (Tue) Weekly Scrum Meeting.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of 260502T2005 (Sat) Developers Meeting"
+                  "title": "Outline of 260505T1905 (Tue) Weekly Scrum Meeting"
                 }
               },
               {
@@ -330,8 +302,8 @@
           "zk-prefixer:Create new unique note": false
         }
       },
-      "active": "909304a64239e9cd",
-      "mtime": "2026-05-06T17:14:53+05:00"
+      "active": "60ee6437a74fb265",
+      "mtime": "2026-05-07T10:59:24+05:00"
     },
     "Personal": {
       "main": {
@@ -829,5 +801,5 @@
       "mtime": "2026-04-24T20:07:36+05:00"
     }
   },
-  "active": "aiquery"
+  "active": "scholarbee"
 }
