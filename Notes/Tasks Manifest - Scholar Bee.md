@@ -20,20 +20,12 @@ projects:
 This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
 ## ▶️ In Progress
-- [x] extract applications for student team in a google sheet
-- [x] Backfill notifications
-- Status deciding based on R.A and status of admission programs
-- [x] sort descending of detail-list admission programs
-- [x] [[260428T1004 (Tue) BUG - Notifications for recent admission programs not generated in db]] (Not Pushed)
-- [ ] [[260428T1104 (Tue) Bug - Scheduled Emails are not sent to admins regarding missed replies]] (Not Pushed)
 - [ ] Favourites API isn't sending the resolved statuses for the `receiving_applications` and `status` properties across the admission program and admission.
 - [ ] **BUG:** Chat Messages Not working in the dev portal ([Jira Ticket Link](https://scholarbee-team.atlassian.net/browse/SB-1227))
 	- [ ] Ask shawaiz to run the chat confirmation cycly in local development
 - [ ] **Enhancement:** use a reusable frontend url link for media domain for email templates, instead of always sending the same link. 
 	- [ ] Instead of putting the redirect url to the exact frontend page, redirect the user to `frontend-domain/redirects?redirect_type=signup-email-confirmation`. For example, redirect the chat messages action button from emails to a generic REDIRECTS page, that maintains a mapping of redirect-type to frontend-route.
-- [x] [Transcript and ID Card Fields Are Not Mandatory in Application Form](https://scholarbee-team.atlassian.net/browse/SB-1417)
-- [x] [[260416T1704 (Thu) Admission Program Details - Session Term Filtering & "Latest Term" Query Parameter]]
-- [x] [[260420T1904 (Mon) Update Admission Program Filtering - Replace University Slug with Campus Slug]]
+
 ## 🟥 Pending
 - [ ] Favourite program notification
 - [ ] [[260424T1736 (Fri) Task - Signup parity for Google OAuth callback (required fields)]]
@@ -68,8 +60,16 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 	- If frontend handles timezone conversion, backend date-only APIs will be offset; need decision
 
 ## ✅ Completed
-- Transaction code fix (temporary + permanent)
-- University name+abbreviation search — Shahwaiz
+- [x] extract applications for student team in a google sheet
+- [x] Backfill notifications
+- [x] sort descending of detail-list admission programs
+- [x] [[260428T1004 (Tue) BUG - Notifications for recent admission programs not generated in db]] (Not Pushed)
+- [x] [[260428T1104 (Tue) Bug - Scheduled Emails are not sent to admins regarding missed replies]] (Not Pushed)
+- [x] [Transcript and ID Card Fields Are Not Mandatory in Application Form](https://scholarbee-team.atlassian.net/browse/SB-1417)
+- [x] [[260416T1704 (Thu) Admission Program Details - Session Term Filtering & "Latest Term" Query Parameter]]
+- [x] [[260420T1904 (Mon) Update Admission Program Filtering - Replace University Slug with Campus Slug]]
+- [x] Transaction code fix (temporary + permanent)
+- [x] University name+abbreviation search — Shahwaiz
 	- Program and scholarship listing interweaving results — Shahwaiz
 - [x] [[260425T1351 (Sat) Task - Onboarding preferences + self-update endpoint]]
 
