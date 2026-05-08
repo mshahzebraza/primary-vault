@@ -15,9 +15,9 @@ tags:
   - listing-api
   - session-deduplication
 related-meetings:
-  - "[[260507T1105 (Thu) Redundant Admission Program Deduplication in Listings]]"
+  - "[[260507T1105 (Thu) Daily Note]]"
+  - "[[260508T1431 (Fri) Daily Note]]"
 ---
-
 ## Overview
 
 The admission program listing API should be updated so that when multiple admission programs exist for the same program at the same campus/university across different admission sessions, only the one belonging to the **newest session** is surfaced. For example, if CS at Campus XYZ exists for both Fall 2025 and Spring 2026, the Fall 2025 entry should be suppressed in favour of the Spring 2026 one. The exact implementation approach and edge cases (e.g. overlapping sessions, multiple campuses, draft programs) are pending a meeting with the product owner.

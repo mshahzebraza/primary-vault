@@ -11,7 +11,7 @@ organization:
 projects:
   - "[[sb-backend]]"
 status:
-  - completed
+  - backlog
 priority: P2
 ---
 ## Overview
