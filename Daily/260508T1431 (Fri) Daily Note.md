@@ -2,7 +2,9 @@
 type: "[[Journal]]"
 categories:
   - "[[Journal]]"
-date:  2026-05-08
+date: 2026-05-08
+related-tasks:
+  - "[[260507T1124 (Thu) Task - Admission Program Lifecycle & Term based Archiving]]"
 ---
 
 ## Scratch
@@ -11,15 +13,13 @@ date:  2026-05-08
 - discussion with Arslan on whether these pseudo tags should be computed on FE or BE
 
 #### Task: Admission Session Deduplication for same session term
-Prompt In-Progress:
-```
-Currently, we have the relation for admission program and program collection such that any program, when connected with any admission document, creates a new entity called admission program. An admission can be connected with multiple programs, meaning that multiple programs can be opened as admission programs within the same admission session. The problem is that the admission session or admission document can be of different sessions like fall, spring, winter, etc. And ideally, if a program was created in the session fall 2025 as an admission program, and a new admission program is created from the same program document in the fall 2026, the previous document—or the previous admission program document, more precisely—is not supposed to be shown to the user. Which means that, at any given time for the same session term, only one admission program from the same program should be shown to the user. This means that if, let's say, I've created an admission program for the fall 2026 for the program of CS of campus XYZ and I published it.  
 
-
-...
-```
 #### Daily Scrum Meeting
-- Should Pseudo State Computation be on Frontend or Backend?
+- Agenda:
+	- Should Pseudo State Computation be on Frontend or Backend?
+		- 
+	- Should the DevOps look into the chat socket issues on devops?
 - Updates:
 	- WIP on admission session deduplication based on session term
 	- Shahwaiz Meeting on Legal Docs, Legal Doc requirements. And how the frontend should use it as well as DX improvements proposed.
+	- 

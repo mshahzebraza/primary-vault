@@ -27,7 +27,7 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 	- [ ] Instead of putting the redirect url to the exact frontend page, redirect the user to `frontend-domain/redirects?redirect_type=signup-email-confirmation`. For example, redirect the chat messages action button from emails to a generic REDIRECTS page, that maintains a mapping of redirect-type to frontend-route.
 
 ## 🟥 Pending
-- [ ] [[260507T1124 (Thu) Task - Admission Program Listing - Deduplicate by Latest Session]]
+- [ ] [[260507T1124 (Thu) Task - Admission Program Lifecycle & Term based Archiving]]
 	- [ ] Meet with product owner to finalise requirements and edge cases
 	- [ ] Decide deduplication strategy (DB query, app-layer filter, or ES index-time)
 	- [ ] Implement listing API update once approach is agreed
