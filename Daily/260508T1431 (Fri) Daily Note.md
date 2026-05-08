@@ -20,4 +20,6 @@ Currently, we have the relation for admission program and program collection suc
 ```
 #### Daily Scrum Meeting
 - Should Pseudo State Computation be on Frontend or Backend?
-- 
+- Updates:
+	- WIP on admission session deduplication based on session term
+	- Shahwaiz Meeting on Legal Docs, Legal Doc requirements. And how the frontend should use it as well as DX improvements proposed.
