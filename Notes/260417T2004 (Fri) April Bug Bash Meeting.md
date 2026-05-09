@@ -35,6 +35,23 @@ Source Sheet URL: https://docs.google.com/spreadsheets/d/1tXi9jqdq1CPOsHri8by7_K
 ## Action Items / Bugs
 
 ### Pending
+- [ ] Remove Linting SQL Issue in query editor
+- [ ] Icon for `Deploy Custom Extension` is the same as `Run Query Pack`. Nitpick
+- [ ] Path to linux agent installation is wrong. it should use `downloads.aiquery.io/...`
+- [ ] Agent > Bulk Create /Deploy Actions > Deploy Dialog should be having narrow like other dropdown items
+
+---
+
+- [ ] [ID: 70] Nice - Bug - Delay in query results details showing
+  - Minor; likely DB write latency between success and viewable results. (Rajput/Shazeb)
+  - Probably from backend
+- [ ] [ID: 56] Trivial - Task - Lack of OR operators when creating dynamic group 
+  - Only one input per field; cannot express OR (e.g. device name contains EC2 OR nick). Low priority.
+
+
+
+
+### QA
 - [x] [ID: 63] Need/Nice - Bug - Export UX annoyance
   - Sheet: Resolved y, Confirmed working (ppe) n — after export, "See Results" should show job without manual refresh; verify on PPE.
 	  - ***Couldn't Test. Was getting 500 errors for exports***
@@ -43,17 +60,6 @@ Source Sheet URL: https://docs.google.com/spreadsheets/d/1tXi9jqdq1CPOsHri8by7_K
   - Oldest extensions show first, newest last — should be inverse. Sheet also calls out optional pill distinction for AMD vs ARM on deploy flows. 🔥🔥
 - [x] Query Overview Dialog Sql input should be copy-able
 	- [x] query-pack preset detail view for queries dropdown should have copy-able
-- [ ] Remove Linting SQL Issue in query editor
-- [ ] Icon for `Deploy Custom Extension` is the same as `Run Query Pack`. Nitpick
-- [ ] Path to linux agent installation is wrong. it should use `downloads.aiquery.io/...`
-- [ ] Agent > Bulk Create /Deploy Actions > Deploy Dialog should be having narrow like other dropdown items
-- [ ] [ID: 70] Nice - Bug - Delay in query results details showing
-  - Minor; likely DB write latency between success and viewable results. (Rajput/Shazeb)
-  - Probably from backend
-- [ ] [ID: 56] Trivial - Task - Lack of OR operators when creating dynamic group 
-  - Only one input per field; cannot express OR (e.g. device name contains EC2 OR nick). Low priority.
-
-### QA
 - [x] [ID: 22] Need - Bug - [[260423T0904 (Thu) Timezone Dropdown List adjustments based on Daylight Savings]]
   - Sheet: Resolved y, Confirmed working (ppe) n — verify on PPE after deploy.
 - [x] [ID: 24] Nice - Bug - Refresh not showing toast on Settings > Team page

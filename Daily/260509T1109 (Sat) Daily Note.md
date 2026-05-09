@@ -9,6 +9,7 @@ date: 2026-05-09
 ## Scratch
 - account settings shows the current tenant role
 - syncing enabled on signin
+- ensure copy button is visible for the query overview and query-pack overview dialog's queries
 - after export, "See Results" should show job without manual refresh; verify on PPE.
 - Ensure Query Detail's Tab Queries are run only when the tab is mouted.
 - in Bulk Agents Custom extension Deployments Dialog
