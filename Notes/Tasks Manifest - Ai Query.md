@@ -8,8 +8,7 @@ type: '[[Documentation]]'
 status: active
 ---
 ## Active Tasks
-- [ ] Reset Password should handle the revertMfa mode
-- [ ] add the go back to login on the reset password view
+- [ ] Reset Password - Revert MFA Mode and Back to Login ![[260509T2233 (Sat) Task - Reset Password - Revert MFA Mode and Back to Login#Current Tasks]]
 - [x] Enable Copy to Clipboard of RO_TextField should be bigger and only visible on hover
 - [ ] Vertical Scroll Caused by too manu exports in metadata tab of query detail view
 - [ ] Revert the agent group custom extension test deployments
