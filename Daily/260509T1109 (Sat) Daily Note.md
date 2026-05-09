@@ -23,4 +23,4 @@ date: 2026-05-09
 		- GET — aborted at the network level via TanStack's AbortSignal → axios passthrough
 		- SSE stream — aborted via AbortController
 - fix the SlotClone issue caused by the `TabsContent` component's `asChild` prop in the Query Detail Tabs by using `forwardRef`.
-- 
+- Agent > Bulk Create /Deploy Actions > Deploy Dialog should be having narrow like other dropdown items (Fixed the OS Pills styling to be compact)

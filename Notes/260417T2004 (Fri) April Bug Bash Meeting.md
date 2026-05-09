@@ -38,7 +38,7 @@ Source Sheet URL: https://docs.google.com/spreadsheets/d/1tXi9jqdq1CPOsHri8by7_K
 - [ ] Remove Linting SQL Issue in query editor
 - [ ] Icon for `Deploy Custom Extension` is the same as `Run Query Pack`. Nitpick
 - [ ] Path to linux agent installation is wrong. it should use `downloads.aiquery.io/...`
-- [ ] Agent > Bulk Create /Deploy Actions > Deploy Dialog should be having narrow like other dropdown items
+
 
 ---
 
@@ -52,6 +52,7 @@ Source Sheet URL: https://docs.google.com/spreadsheets/d/1tXi9jqdq1CPOsHri8by7_K
 
 
 ### QA
+- [x] Agent > Bulk Create /Deploy Actions > Deploy Dialog should be having narrow like other dropdown items
 - [x] [ID: 63] Need/Nice - Bug - Export UX annoyance
   - Sheet: Resolved y, Confirmed working (ppe) n — after export, "See Results" should show job without manual refresh; verify on PPE.
 	  - ***Couldn't Test. Was getting 500 errors for exports***
