@@ -8,6 +8,8 @@ type: '[[Documentation]]'
 status: active
 ---
 ## Active Tasks
+- [ ] Vertical Scroll Caused by too manu exports in metadata tab of query detail view
+- [ ] Try to add Title+descript JSX in select options of the  change user role dialog
 - [ ] Bug Bash Tasks ![[260417T2004 (Fri) April Bug Bash Meeting#Pending]]
 - [ ] Refactoring
 	- [ ] Refactor/Retructure the Login Form and MFA to preferably use the Compound Component Pattern

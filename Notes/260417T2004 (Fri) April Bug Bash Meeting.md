@@ -31,6 +31,7 @@ related-tasks:
 ## Context
 > We need to find and mark bugs for removal later.
 
+Source Sheet URL: https://docs.google.com/spreadsheets/d/1tXi9jqdq1CPOsHri8by7_KArBMoevf0cjckQUwONuRE/edit?pli=1&gid=2103484145#gid=2103484145
 ## Action Items / Bugs
 
 ### Pending
@@ -38,10 +39,10 @@ related-tasks:
   - Sheet: Resolved y, Confirmed working (ppe) n — after export, "See Results" should show job without manual refresh; verify on PPE.
 	  - ***Couldn't Test. Was getting 500 errors for exports***
 
-- [ ] [ID: 44] Trivial - Bug - Custom extension deployment list order inverted (+ optional AMD vs ARM pill)
+- [x] [ID: 44] Trivial - Bug - Custom extension deployment list order inverted (+ optional AMD vs ARM pill)
   - Oldest extensions show first, newest last — should be inverse. Sheet also calls out optional pill distinction for AMD vs ARM on deploy flows. 🔥🔥
-- [ ] Query Overview Dialog Sql input should be copy-able
-	- [ ] query-pack preset detail view for queries dropdown should have copy-able
+- [x] Query Overview Dialog Sql input should be copy-able
+	- [x] query-pack preset detail view for queries dropdown should have copy-able
 - [ ] Remove Linting SQL Issue in query editor
 - [ ] Icon for `Deploy Custom Extension` is the same as `Run Query Pack`. Nitpick
 - [ ] Path to linux agent installation is wrong. it should use `downloads.aiquery.io/...`
