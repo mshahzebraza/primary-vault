@@ -39,21 +39,21 @@ Team Settings enhancements covering the invitation flow, role assignment, user t
 
 ### Create Invitation Dialog
 
-- [ ] Add role selector to the Create Invitation dialog — each role option needs a label + short description.
-- [ ] Ensure user type (role) is shown as a visible/required column in the invitations table.
+- [x] Add role selector to the Create Invitation dialog — each role option needs a label + short description.
+- [x] Ensure user type (role) is shown as a visible/required column in the invitations table.
 
 ### Role Change Restrictions
 
-- [ ] Enforce that **Change User Role** is a ROOT-only action.
-- [ ] Restrict target roles to `POWER USER` or `USER` — changing any user to `ROOT` must be blocked.
+- [x] Enforce that **Change User Role** is a ROOT-only action.
+- [x] Restrict target roles to `POWER USER` or `USER` — changing any user to `ROOT` must be blocked.
 
 ### Access Control
 
-- [ ] Restrict Liveshell access to `POWER USER`, `ADMIN`, and `ROOT` only.
+- [x] Restrict Liveshell access to `POWER USER`, `ADMIN`, and `ROOT` only.
 
 ### Power User Invite Flow
 
-- [ ] Clarify scope of "develop the power user invite flow" with Rajput — scope TBD.
+- [x] Clarify scope of "develop the power user invite flow" with Rajput — scope TBD.
 
 ## Optimization
 - [ ] Create a Centralized Roles and Permission Class/Hooks, which allows receiving membership/role etc and based on that return callbacks to evaluate the access to different areas of the applications.
@@ -63,4 +63,3 @@ Team Settings enhancements covering the invitation flow, role assignment, user t
 	- [ ] simplify/refactor the `src/client/views/settings/invite-settings/invite-setting-create-dialog.tsx`
 	- [ ] Allow modifying the select-input's option-item to custom items
 	- [ ] Instead of a dedicated check for `user` role in `src/client/views/settings/invite-settings/invite-table-columns.tsx`, a non-conditional uppercase function would have been better
-	- [ ] ...

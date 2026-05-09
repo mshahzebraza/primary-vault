@@ -8,15 +8,18 @@ type: '[[Documentation]]'
 status: active
 ---
 ## Active Tasks
-- [ ] The disabled MFA is not updated in the team settings table
-- [ ] Team Settings & Role Management Tasks ![[260505 (Tue) Task - Team Settings & Role Management#Tasks]]
+- [ ] Bug Bash Tasks ![[260417T2004 (Fri) April Bug Bash Meeting#Pending]]
+- [ ] Refactoring
+	- [ ] Refactor/Retructure the Login Form and MFA to preferably use the Compound Component Pattern
+- [x] The disabled MFA is not updated in the team settings table
+- [ ] Optimization: Team Settings & Role Management Tasks ![[260505 (Tue) Task - Team Settings & Role Management#Optimization]]
 
 
 - [ ] [[260406 (Mon) add end to end testing of create query flow]]
 - [ ] User is logged out even when he is active on another tab. Need to sync the session activity across browser tabs.
 - [ ] Create a variation pattern for the agent list views
 - [x] MFA Feature Screen [[260505 (Tue) Task - MFA Feature (Firebase TOTP)#Tasks]]
-- [ ] Bug Bash Tasks ![[260417T2004 (Fri) April Bug Bash Meeting#Pending]]
+
 - [ ] *Query Detail's Query List Panel - Pending Tasks*![[260411 (Sat) Create Query List Panel in Query Detail View#Pending]]
 - [ ] Change highlighting of the sidebar from BLUE to PURPLE
 - [ ] rename the dashboard collection/sections to dashboard tabs

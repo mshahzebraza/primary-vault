@@ -34,7 +34,7 @@ related-tasks:
 ## Action Items / Bugs
 
 ### Pending
-- [ ] [ID: 63] Need/Nice - Bug - Export UX annoyance
+- [x] [ID: 63] Need/Nice - Bug - Export UX annoyance
   - Sheet: Resolved y, Confirmed working (ppe) n — after export, "See Results" should show job without manual refresh; verify on PPE.
 	  - ***Couldn't Test. Was getting 500 errors for exports***
 
