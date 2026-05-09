@@ -15,6 +15,9 @@ attendees:
   - "[[Rajput]]"
 status:
   - active
+related-tasks:
+  - "[[260509T1213 (Sat) Task - Rapid Response View Enhancements]]"
+  - "[[260505 (Tue) Task - Team Settings & Role Management]]"
 ---
 
 ## Context
@@ -44,13 +47,7 @@ Weekly scrum covering UI/UX improvements across Settings, Team Management, and t
 
 ### Rapid Response View
 
-- The primary sidebar should auto-close when Query Smith opens.
-- Remove the **Load Query** button in favour of click-to-load behaviour.
-- Add an **Actions** dropdown button with the following options:
-  - Load from preset
-  - Save as preset *(also expose this action on individual query history items)*
-  - Go to Create Query
-- *(Optional)* Multi-select on query history items to batch-save as a query preset.
+→ [[260509T1213 (Sat) Task - Rapid Response View Enhancements]]
 
 ---
 
@@ -69,9 +66,7 @@ Weekly scrum covering UI/UX improvements across Settings, Team Management, and t
 
 - [x] Auto-close the primary sidebar when Query Smith opens.
 - [x] Remove the **Load Query** button; implement click-to-load.
-- [ ] Add **Actions** dropdown (load preset / save as preset / go to create query).
-- [ ] Add "Save as preset" action to individual query history items.
-- [ ] *(Optional)* Multi-select on query history items to batch-save as a preset.
+- [ ] Remaining items → [[260509T1213 (Sat) Task - Rapid Response View Enhancements]]
 
 ### Misc
 

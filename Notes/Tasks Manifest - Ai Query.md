@@ -25,7 +25,7 @@ status: active
 - [ ] rename the dashboard collection/sections to dashboard tabs
 - [ ] current filters identification for all views
 - [ ] **[[260406 (Mon) update the shadcn version, components and theme]]**
-
+- Rapid Response View Enhancements![[260509T1213 (Sat) Task - Rapid Response View Enhancements#Current Tasks]]
 
 
 
@@ -36,9 +36,12 @@ status: active
 - ➡️ [[PPE to PROD checklist|PPE → PROD Checklist & Settings Tasks]]
 - ➡️ 🔴 [[Filtering V2 - Athena, Clickhouse and MongoDB]]
 - ➡️ 🔴 [[Possible Areas to Update of Filtering Architecture]]
-- ➡️ Rapid Response
-	- [[rapid response refactoring and enhancements]]
-	- [[rapid-response bugs]]
+- ➡️ [[260509T1213 (Sat) Task - Rapid Response View Enhancements]]
+	- [ ] Add **Actions** dropdown (load preset / save as preset / go to create query)
+	- [ ] Add "Save as preset" action to individual query history items
+	- [ ] *(Optional)* Multi-select on history items to batch-save as a preset
+	- ➡️ [[rapid response refactoring and enhancements]]
+	- ➡️ [[rapid-response bugs]]
 - ➡️ [[end to end prod testing & checklist|End-to-End Prod Testing Checklist]]
 ## Blocked Tasks
 - ⏸️ 🟠 implementation of query diffs (blocked: after filtering v2) — [[Query Response Data Diffing]]

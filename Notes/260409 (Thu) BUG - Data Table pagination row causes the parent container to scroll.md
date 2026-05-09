@@ -10,7 +10,7 @@ organization:
 projects:
   - "[[aq-client]]"
 status:
-  - active
+  - completed
 priority: P2
 ---
 
