@@ -24,9 +24,9 @@ Enhancements to the Rapid Response view scoped from the 2026-05-05 weekly scrum.
 
 ## Current Tasks
 
-- [ ] Add **Actions** dropdown button to the Rapid Response view with the following options:
-  - [ ] Load from preset
-  - [ ] Save as preset
-  - [ ] Go to Create Query
+- [x] Add **Actions** dropdown button to the Rapid Response view with the following options:
+  - [x] Load from preset
+  - [x] Save as preset
+  - [x] Go to Create Query
 - [ ] Add "Save as preset" action on individual query history items
 - [ ] *(Optional)* Multi-select on query history items to batch-save as a query preset
