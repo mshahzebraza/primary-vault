@@ -10,7 +10,7 @@ status: active
 ## Active Tasks
 - [ ] Reset Password should handle the revertMfa mode
 - [ ] add the go back to login on the reset password view
-- [ ] Enable Copy to Clipboard of RO_TextField should be bigger and only visible on hover
+- [x] Enable Copy to Clipboard of RO_TextField should be bigger and only visible on hover
 - [ ] Vertical Scroll Caused by too manu exports in metadata tab of query detail view
 - [ ] Revert the agent group custom extension test deployments
 - [ ] Try to add Title+descript JSX in select options of the  change user role dialog
