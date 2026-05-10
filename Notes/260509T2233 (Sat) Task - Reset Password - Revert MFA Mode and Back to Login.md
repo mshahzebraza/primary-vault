@@ -23,4 +23,5 @@ Two UX gaps in the Reset Password flow: it does not currently handle the `revert
 ## Current Tasks
 
 - [ ] Handle `revertMfa` mode in the Reset Password flow
+- [ ] Refactor the optimize the Reset Password views and handle mode-based views
 - [ ] Add a "Go back to Login" button/link on the Reset Password view

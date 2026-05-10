@@ -18,10 +18,23 @@ priority: P2
 > One paragraph describing what and why.
 
 ## Current Tasks
+- [ ] Personal Portfolio
+	- [ ] Add a blog section
+	- [ ] Write Blog on "My laptop used more ram than my desktop even for same programs running on same specs"
+	- [ ] Create a MD/MDX supported Portfolio
+	- [ ] Deploy the porfolio
+- [ ] Integrate the Z.Ai in the obsidian
+- [ ] 
 - [ ] Linux Crash Courses
 	- [ ] [Learn Linux TV - Youtube](https://www.youtube.com/watch?v=XTMyJ5l0GLg)
 - [ ] Obsidian
 	- [ ] Add related bugs base in the task note
+	- [ ] Add Rules/Skills for:
+		- [ ] Refactor the Task Manifest or Daily Notes into Dedicated Notes belonging to appropriate organization
+		- [ ] Using Task Manifests and Daily Notes to be entry points of each organization. Even for dedicated notes, the tasks must be referenced/embedded in the manifest file
+		- [ ] If multiple small tasks are completed in the manifest, then occasionally refactor them into Minor Tasks file in chronological order so that, which should have specific sections for each type of tasks, or based on locations, so that Task Manifest doesn't get crowded
+		- [ ] Connect Related Tasks, Bugs and Meetings
+		- [ ] Save Presets/Configs for most used Graph View Filterings. Are they like Bases 
 - [ ] Setup & Configuration Task
 	- [ ] Opinionated Ubuntu Setup [Tutorial Video](https://www.youtube.com/watch?v=aXLra-31Jh0)
 	- [ ] Install and Setup UGEE Table
