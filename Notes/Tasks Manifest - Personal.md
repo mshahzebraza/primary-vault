@@ -21,6 +21,7 @@ priority: P2
 - [ ] Personal Portfolio
 	- [ ] Add a blog section
 	- [ ] Write Blog on "My laptop used more ram than my desktop even for same programs running on same specs"
+	- [ ] Write a blog on how to setup local testing of firebase using emulators and explain the moving parts
 	- [ ] Create a MD/MDX supported Portfolio
 	- [ ] Deploy the porfolio
 - [ ] Integrate the Z.Ai in the obsidian
