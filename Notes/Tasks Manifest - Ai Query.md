@@ -8,6 +8,22 @@ type: '[[Documentation]]'
 status: active
 ---
 ## Active Tasks
+- Refactoring
+	- Add Architeture and Patterns  Files for LLMs and Devs (i.e `skills.md`, `*.architecture.md` etc.) with a dedicated compact section of rules/guides/implementation-notes as well as description/explanation for detailed understanding
+	- implement, refactor, standardize or sync the following:
+		- url json state hook standardization
+		- toast.promise
+		- **NEW:** type-safe query-parameters handling api/usage simplication
+		- filters-sidebar architecture documentation + hoc/protected-context pattern
+		- tabs content pattern
+		- view-variants pattern
+		- view-header/view-layout refactoring
+		- custom extension code optimization
+		- **NEW:** stepperize usage for wizards
+		- standardize selection inputs and document when to use what selection inputs
+		- upgrade to tailwind and shadcn latest
+		- replace button component of shadcn with new one and use theming
+		- 
 - [ ] Reset Password - Revert MFA Mode and Back to Login ![[260509T2233 (Sat) Task - Reset Password - Revert MFA Mode and Back to Login#Current Tasks]]
 - [x] Enable Copy to Clipboard of RO_TextField should be bigger and only visible on hover
 - [ ] Vertical Scroll Caused by too manu exports in metadata tab of query detail view

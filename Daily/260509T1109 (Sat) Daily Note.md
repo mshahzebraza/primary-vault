@@ -24,3 +24,8 @@ date: 2026-05-09
 		- SSE stream — aborted via AbortController
 - fix the SlotClone issue caused by the `TabsContent` component's `asChild` prop in the Query Detail Tabs by using `forwardRef`.
 - Agent > Bulk Create /Deploy Actions > Deploy Dialog should be having narrow like other dropdown items (Fixed the OS Pills styling to be compact)
+
+
+----
+TODO: 
+The useVerifierPasswordReset code should only be responsible for validating the verification code or the Firebase parameters in general. And as such, it should not be the first thing or the first hook of the component. The first hook of the component should actually be the urlgui parameters extractor hook. The output of which should be fed into this server verification hook, and based on this, the form hook should be populated or initialized.  
