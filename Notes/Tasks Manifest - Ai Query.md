@@ -23,7 +23,7 @@ status: active
 		- standardize selection inputs and document when to use what selection inputs
 		- upgrade to tailwind and shadcn latest
 		- replace button component of shadcn with new one and use theming
-		- 
+- [ ] `toast.promise` pattern causes toast for each of the failure, instead of showing a single toast on final failure
 - [ ] Reset Password - Revert MFA Mode and Back to Login ![[260509T2233 (Sat) Task - Reset Password - Revert MFA Mode and Back to Login#Current Tasks]]
 - [x] Enable Copy to Clipboard of RO_TextField should be bigger and only visible on hover
 - [ ] Vertical Scroll Caused by too manu exports in metadata tab of query detail view

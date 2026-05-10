@@ -34,7 +34,8 @@ priority: P2
 		- [ ] Using Task Manifests and Daily Notes to be entry points of each organization. Even for dedicated notes, the tasks must be referenced/embedded in the manifest file
 		- [ ] If multiple small tasks are completed in the manifest, then occasionally refactor them into Minor Tasks file in chronological order so that, which should have specific sections for each type of tasks, or based on locations, so that Task Manifest doesn't get crowded
 		- [ ] Connect Related Tasks, Bugs and Meetings
-		- [ ] Save Presets/Configs for most used Graph View Filterings. Are they like Bases 
+		- [ ] 
+		- [ ] Save Presets/Configs for most used Graph View Filterings. Are they like Bases
 - [ ] Setup & Configuration Task
 	- [ ] Opinionated Ubuntu Setup [Tutorial Video](https://www.youtube.com/watch?v=aXLra-31Jh0)
 	- [ ] Install and Setup UGEE Table
