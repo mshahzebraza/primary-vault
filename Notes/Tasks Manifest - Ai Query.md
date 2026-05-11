@@ -24,6 +24,7 @@ status: active
 		- upgrade to tailwind and shadcn latest
 		- replace button component of shadcn with new one and use theming
 - [ ] `toast.promise` pattern causes toast for each of the failure, instead of showing a single toast on final failure
+- [ ] Add a event listener to submit active query on Pressing `Ctrl + Enter` in the sql editor, specifically on the rapid response editor. Also show a hovering card, presenting the hint
 - [ ] Add distinction of PPE vs PROD for Authenticator Name as well as browser channel api
 - [ ] Fix the Overflow issue of the query preview items caused probably by scroll area overflow styles
 - [ ] Reset Password - Revert MFA Mode and Back to Login ![[260509T2233 (Sat) Task - Reset Password - Revert MFA Mode and Back to Login#Current Tasks]]
