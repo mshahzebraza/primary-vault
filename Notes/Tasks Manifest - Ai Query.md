@@ -23,6 +23,13 @@ status: active
 		- standardize selection inputs and document when to use what selection inputs
 		- upgrade to tailwind and shadcn latest
 		- replace button component of shadcn with new one and use theming
+- [ ] Update the TOTP Revert wording according to Nick's comment.
+>	Ok so a few things:
+>	I cannot load that video for some reason? :lolsob: 
+	Yeah I agree that the wording of calling it "second factor" is kinda weird and not how anyone talks lol
+	Here is how I would change it:
+	When shortened – just call it "2FA" or "MFA"... thats industry standard and everyone knows what that means
+	When written out – just call "two factor authentication"...that is also valid and industry standard (plus we only allow ONE additional auth mechinism, so saying its a second factor implies maybe there is a third, vs just saying two-factor)
 - [ ] `toast.promise` pattern causes toast for each of the failure, instead of showing a single toast on final failure
 - [ ] Add a event listener to submit active query on Pressing `Ctrl + Enter` in the sql editor, specifically on the rapid response editor. Also show a hovering card, presenting the hint
 - [ ] Add distinction of PPE vs PROD for Authenticator Name as well as browser channel api

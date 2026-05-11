@@ -57,13 +57,14 @@
                         "id": "4d9d2e43cd8784d1",
                         "type": "leaf",
                         "state": {
-                          "type": "bases",
+                          "type": "markdown",
                           "state": {
-                            "file": "Templates/Bases/Meetings.base",
-                            "viewName": "aiquery.io"
+                            "file": "Notes/260417T2004 (Fri) April Bug Bash Meeting.md",
+                            "mode": "source",
+                            "source": false
                           },
-                          "icon": "lucide-table",
-                          "title": "Meetings"
+                          "icon": "lucide-file",
+                          "title": "260417T2004 (Fri) April Bug Bash Meeting"
                         }
                       }
                     ]
@@ -316,7 +317,7 @@
         }
       },
       "active": "d22f72bcf34c55de",
-      "mtime": "2026-05-11T00:04:49+05:00"
+      "mtime": "2026-05-11T13:08:19+05:00"
     },
     "Personal": {
       "main": {
