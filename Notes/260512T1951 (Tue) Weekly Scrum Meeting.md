@@ -29,4 +29,5 @@ status:
 ## Action Items
 - [ ] Queries are fetched twice for almost every view
 - [ ] dashboard widget creation description is truncated without reaching the max-width
-- [ ] 
+- [ ] sorting key on query detail from the devices persist for the device name. It should clear out when switching tabs.
+	- [ ] Its happening on all the table views apparently.
