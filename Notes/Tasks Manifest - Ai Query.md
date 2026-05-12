@@ -23,6 +23,9 @@ status: active
 		- standardize selection inputs and document when to use what selection inputs
 		- upgrade to tailwind and shadcn latest
 		- replace button component of shadcn with new one and use theming
+- [ ] View Layout
+	- should handle the help button dynamically (most probably in the row of the title with top right corer block)
+	- description and breadcrumbs design should be optional
 - [ ] Update the TOTP Revert wording according to Nick's comment.
 >	Ok so a few things:
 >	I cannot load that video for some reason? :lolsob: 
