@@ -30,12 +30,12 @@ views:
       - categories
       - tags
     sort:
+      - property: date
+        direction: ASC
       - property: file.tags
         direction: ASC
       - property: tags
         direction: ASC
-      - property: date
-        direction: DESC
     columnSize:
       note.organization: 108
       note.related-tasks: 167

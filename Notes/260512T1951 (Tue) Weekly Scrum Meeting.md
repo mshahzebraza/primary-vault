@@ -23,8 +23,10 @@ status:
 > Brief note on why this meeting happened / what triggered it.
 
 ## Discussion
+- Dashboard/Widgets
 ## Decisions Made
 
 ## Action Items
 - [ ] Queries are fetched twice for almost every view
+- [ ] dashboard widget creation description is truncated without reaching the max-width
 - [ ] 
