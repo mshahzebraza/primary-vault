@@ -19,6 +19,7 @@ priority: P2
 
 ## Current Tasks
 - [ ] Personal Portfolio
+	- [ ] Use the aistudio google with gemini
 	- [ ] Add a blog section
 	- [ ] Write Blog on "My laptop used more ram than my desktop even for same programs running on same specs"
 	- [ ] Write a blog on how to setup local testing of firebase using emulators and explain the moving parts
