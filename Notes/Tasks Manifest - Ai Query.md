@@ -8,7 +8,7 @@ type: '[[Documentation]]'
 status: active
 ---
 ## Active Tasks
-- ![[260512T1951 (Tue) Weekly Scrum Meeting#Action Items]]
+- May 12 Weekly Scrum Tasks ![[260512T1951 (Tue) Weekly Scrum Meeting#Action Items]]
 - Refactoring
 	- Add Architeture and Patterns  Files for LLMs and Devs (i.e `skills.md`, `*.architecture.md` etc.) with a dedicated compact section of rules/guides/implementation-notes as well as description/explanation for detailed understanding
 	- implement, refactor, standardize or sync the following:
@@ -16,7 +16,7 @@ status: active
 		- toast.promise
 		- **NEW:** type-safe query-parameters handling api/usage simplication
 		- filters-sidebar architecture documentation + hoc/protected-context pattern
-		- tabs content pattern
+		- [x] tabs content pattern
 		- view-variants pattern
 		- view-header/view-layout refactoring
 		- custom extension code optimization

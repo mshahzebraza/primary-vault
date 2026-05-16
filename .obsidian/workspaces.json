@@ -161,7 +161,7 @@
                     }
                   }
                 ],
-                "currentTab": 1
+                "currentTab": 2
               }
             ],
             "direction": "vertical"
@@ -269,13 +269,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Templates/Bases/Meetings.base",
+                    "file": "Notes/260509T1213 (Sat) Task - Rapid Response View Enhancements.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of Meetings"
+                  "title": "Outline of 260509T1213 (Sat) Task - Rapid Response View Enhancements"
                 }
               },
               {
@@ -330,8 +330,8 @@
           "zk-prefixer:Create new unique note": false
         }
       },
-      "active": "4d9d2e43cd8784d1",
-      "mtime": "2026-05-12T20:19:16+05:00"
+      "active": "12ff9b32eea34e78",
+      "mtime": "2026-05-15T13:15:26+05:00"
     },
     "Personal": {
       "main": {
