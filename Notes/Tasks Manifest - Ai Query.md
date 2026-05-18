@@ -8,6 +8,7 @@ type: '[[Documentation]]'
 status: active
 ---
 ## Active Tasks
+- [ ] Change Auto to windows in query mode. And remove auto
 
 - Query Response Data Diffing Tasks ![[260518T2007 (Mon) Feat - Query Response Data Diffing#Pending]]
 
