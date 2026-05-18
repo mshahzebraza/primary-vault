@@ -8,7 +8,9 @@ type: '[[Documentation]]'
 status: active
 ---
 ## Active Tasks
-- May 12 Weekly Scrum Tasks ![[260512T1951 (Tue) Weekly Scrum Meeting#Action Items]]
+
+- May 16 Developer Meeting Pending Tasks ![[260516T2157 (Sat) Developer Meeting#Pending]]
+- May 12 Weekly Scrum Tasks ![[260512T1951 (Tue) Weekly Scrum Meeting#Pending]]
 - Refactoring
 	- Add Architeture and Patterns  Files for LLMs and Devs (i.e `skills.md`, `*.architecture.md` etc.) with a dedicated compact section of rules/guides/implementation-notes as well as description/explanation for detailed understanding
 	- implement, refactor, standardize or sync the following:

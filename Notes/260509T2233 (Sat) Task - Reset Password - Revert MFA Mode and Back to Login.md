@@ -7,7 +7,8 @@ organization:
   - "[[aiquery.io]]"
 projects:
   - "[[aq-client]]"
-status: active
+status:
+  - completed
 priority: P2
 date: 2026-05-09
 tags:
