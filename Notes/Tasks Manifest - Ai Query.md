@@ -9,6 +9,8 @@ status: active
 ---
 ## Active Tasks
 
+- Query Response Data Diffing Tasks ![[260518T2007 (Mon) Feat - Query Response Data Diffing#Pending]]
+
 - May 16 Developer Meeting Pending Tasks ![[260516T2157 (Sat) Developer Meeting#Pending]]
 - May 12 Weekly Scrum Tasks ![[260512T1951 (Tue) Weekly Scrum Meeting#Pending]]
 - Refactoring
@@ -82,7 +84,7 @@ status: active
 	- ➡️ [[rapid-response bugs]]
 - ➡️ [[end to end prod testing & checklist|End-to-End Prod Testing Checklist]]
 ## Blocked Tasks
-- ⏸️ 🟠 implementation of query diffs (blocked: after filtering v2) — [[Query Response Data Diffing]]
+- ⏸️ 🟠 implementation of query diffs (blocked: after filtering v2) — [[260518T2007 (Mon) Feat - Query Response Data Diffing]]
 - ⏸️ 🟡 logs and metrics — [[Frontend - Observability (Logging & Metrics)|Frontend Observability]] (blocked: active tasks; may go to Rajput)
 - ⏸️ 🟡 agent feature configuration (paused: needs more discussion)
 

@@ -1,6 +1,6 @@
 ---
 status:
-  - backlog
+  - active
 tags:
   - task
   - architecture
@@ -11,7 +11,9 @@ categories:
 type: "[[Task]]"
 projects:
   - "[[aq-backend]]"
-priority: P2
+  - "[[aq-client]]"
+  - "[[aq-devops]]"
+priority: P1
 ---
 
 ## Status
@@ -19,6 +21,3 @@ Design document is complete — markdown lives in the docs repo, also shared as 
 
 ## Pending
 - [ ] Service Layer implementation (blocked: will be done when actually implemented)
-
-## Related Notes
-- [[Tasks Manifest - Ai Query]]
