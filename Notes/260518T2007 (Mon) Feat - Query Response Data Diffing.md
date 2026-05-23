@@ -137,7 +137,7 @@ parquet
 4-6000 rows roughly equals 1mb from agent 
 at max 1mb or smaller than 1000 agents. Clickhouse recommends keeping the IN statement for querying data within a list of 1000 items
 
-save the resolved exeuction targets in the db against the diff with a ttl, and also enrich these agent documents.
+- **save the resolved exeuction targets in the db against the diff with a ttl, and also enrich these agent documents.**
 query diff document should be created with the validation endpont, with the state of 'validation'.
 OPitonal Optimization: Batch the list of resolved agents to insert in the mongodb instead of inserting 6000 agents in the mongodb at once.
 need a dedicated data table
