@@ -31,14 +31,22 @@ Design document is complete — markdown lives in the docs repo, also shared as 
 	- the views of the query detail diff
 	- dfference b/w IO of prototype vs actual backend
 	- run the prototype
-- setup the infra trigger
+- setup the backend-infra trigger
 	- add endpoints for validation and initiation of query-diffs
+	- don't accept the query executions if there's no common agents or if the common agents have not responded with any data to diff
+	- resolve the agent groups to valid agents (avoid calling mongodb from the serverlesss)
+	- batch the list of resolved common agents if exceeding the max agent list (compute the payload size supported by 1mb size cap)
 	- save a pending query-diff document and initiate a work message in the query-diff queue
+	- mount the work messages into a new query diff job queue (batch them if required)
+	- listen for the processed batches from the serverless after the computing of the query-diff (or its batches is done) and accordingly update the query diff pending document
 - setup the step by step migration plan
 		- setup the hello world function
-		- setup the mongo connection and attempt retrieval of any single document
-		- setup the retrieval of a specific query's response data and save in temp storage in the disk
-		- accept the inputs of query ids and retrieve and store the response data of input query ids in the disk
+		- retrieve the query-response data from clickhouse for the 2 executions for each of common agents and process the diffing.
+		- assume that the sorting of the `data` field for query-response-data document is not required since, clickhouse ensures that the data is stored and retrieved always in the same way, so the stringification of the data results in a deterministic key always
+		- keep storing the diff results locally (in disk) until the entire batch is processed
+		- When processing is done
+			- save the diffing result in the s3 bucket (this will queries using s3-athena by the backend-infra repo code)
+			- **send out the message in the queue to the serverless with an appropriate type**
 		- migrate the algo to python
 		- perform the algo on the received 2 sets of response data
 		- save it in db
