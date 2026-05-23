@@ -18,12 +18,8 @@ priority: P1
 
 ## Status
 Design document is complete — markdown lives in the docs repo, also shared as a Google Doc with the team.
-
-
-
-
 ## Tasks
-## Completed
+### Completed
 - [x] Design Document
 - [x] Prototype implementation
 ### Pending
@@ -124,29 +120,30 @@ POST /query-diff/create
 // Atleast one or more agents or agent-groups selected as execution targets don't return invalid/empty data, and therefore a diff was not generated for them. The diff operation is in progress for remaining execution_targets
 ```
 
-query diff prompt: (till conceptual sql)
-```
-What does "Prefer requiring compatible SQL/question context for apples-to-apples comparison." in the backend validation mean?
+### Discussion with Rajput
 
-Does this mean that we backend is supposed to ensure that the sql of baseline and target query is semantically same even if not exactly same i.e. SELECT A, B FROM X should be seen as semantically equal to SELECT B,A FROM X. even when the sql string is not the same.
+quesitons
 
-If this is what it means than mark it as optional and v2 enhancement and implementation should mark it with jsdocs. Otherwise add this as well in the validation section and explain the former question.
+if one agent execution is a too long list 
+should I even fetch per agent
 
-  
+the resolved agents are too many to show to the users
 
-Also, the inline documentation for caution against failed, warning agents shoud be added in the actual implementation with a possible enhancement/update to filter out the warning agents. For now we go with the recommended approach of includint the success and warning rows if exist.
+empty data should be considered for diffing
+any pointers on validating the code
+parquet
 
-  
 
-Furthermore, should the resolution of agent groups to agents also happen at the backend level and passed to the serverless as a plain agent list so that the serverless function doesn't have to resolve it into agents.
+4-6000 rows roughly equals 1mb from agent 
+at max 1mb or smaller than 1000 agents. Clickhouse recommends keeping the IN statement for querying data within a list of 1000 items
 
-The downside is that the message might then contain possible a list of thousands of resolved agents which might exceed the message payload size allowed for sqs resulting in a failed pipeline. I'm inclined towards letting the serverless connect to mongodb to resolve the agent groups into the agents list. but then if the exclusion list is vrey large then it should still be supported by the sqs payload size, though its going to be smaller than the original execution targets. Please confirm the max size of the message for sqs which the serverless would read, I did a quick search saying its 1mb but not sure. Please confirm.
+save the resolved exeuction targets in the db against the diff with a ttl, and also enrich these agent documents.
+query diff document should be created with the validation endpont, with the state of 'validation'.
+OPitonal Optimization: Batch the list of resolved agents to insert in the mongodb instead of inserting 6000 agents in the mongodb at once.
+need a dedicated data table
+- how to convert json to parquet
+- check if the ordered document when sconverted to entries, always result 
 
-  
-
-Furthermore, type on result queue matters much more than on work queue. and that should be documented somewhere in the plan.
-
-  
-
-Also can you please explain the conceptual sql? I'm getting the impression that you're fetching all the rows against both runs in one go instead of fetching per agent sequentially and processing it along with agent batch. Please tell what approach are you going with and how.
-```
+- figma for query diff
+- fix the query composer responsiveness
+- agent ids should be copy-able from the UI directly 
