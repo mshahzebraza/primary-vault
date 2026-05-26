@@ -91,35 +91,6 @@ Design document is complete — markdown lives in the docs repo, also shared as 
 
 - Note: Make sure the queries are completed agianst which you're creating the diff in the client
 
-- `query-diff/validate`
-```
-// is there any common execution targets for the 2 runs
-// cache the resolved common list of agents
-// OPTIONAL: return the execution targets on which the diff can run (exclude the ones which wasn't common between the 2 executions or against which no data was received in either of these 2 executions)
-
-POST /query-diff/validate
-{
-	baseline_query_id,
-	target_query_id
-}
-
-```
-- `query-diff/create`
-```
-// is there any common execution targets
-
-
-POST /query-diff/create
-{
-	baseline_query_id,
-	target_query_id,
-	execution_targets: 'all-valid-execution-targets' | [target-a, target-b, ...]
-}
-
-
-// Atleast one or more agents or agent-groups selected as execution targets don't return invalid/empty data, and therefore a diff was not generated for them. The diff operation is in progress for remaining execution_targets
-```
-
 ### Discussion with Rajput
 
 quesitons
@@ -138,8 +109,7 @@ parquet
 at max 1mb or smaller than 1000 agents. Clickhouse recommends keeping the IN statement for querying data within a list of 1000 items
 
 - **save the resolved exeuction targets in the db against the diff with a ttl, and also enrich these agent documents.**
-query diff document should be created with the validation endpont, with the state of 'validation'.
-OPitonal Optimization: Batch the list of resolved agents to insert in the mongodb instead of inserting 6000 agents in the mongodb at once.
+- **Opitonal Optimization: Batch the list of resolved agents to insert in the mongodb instead of inserting 6000 agents in the mongodb at once.**
 need a dedicated data table
 - how to convert json to parquet
 - check if the ordered document when sconverted to entries, always result 
@@ -147,3 +117,20 @@ need a dedicated data table
 - figma for query diff
 - fix the query composer responsiveness
 - agent ids should be copy-able from the UI directly 
+
+
+### UI/UX of the feature
+
+#### Workflow
+Creation:
+- query list page: select any 2 queries, and use the bulk action to "prepare diff". A redirect to a create-diff page, with the 2 queries loaded in memory.
+- create-diff page: 
+	- 2 queries selection input, with title of queries visible, allowing search within the queries. Along with another title input for the OPTIONAL diff title that defaults to `diff-{query-1}-{query-2}-{datetime}`. 
+	- submit should redirect to a list of Diffs, with a status of `validating`.
+	- upon completion of validation, the diff can be opened to view the resolved agents, (just like an agent list).
+	- user can toggle all as selected, unselected for diffing. Or toggle the individual agents as selected/unselected.
+		- He needs to see how many, and what agents are selected for diffing.
+		- Probabla a left side pane should be created to collect all the selected items to show to the user.
+		- Otherwise, the list should have a dedicated section to pin the resolved agents rows selected for diffing at the top.
+		- bottom line is that user should be able to select some or all of the resolved agents and then run the diff on them.
+	- the diffing algo starts running and the users can then view the diffing results
