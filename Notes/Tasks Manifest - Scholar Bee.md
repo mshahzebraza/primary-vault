@@ -20,6 +20,9 @@ projects:
 This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
 ## ▶️ In Progress
+- [ ] Search Engine Issues
+	- [ ] When in explicit search mode, the exact search matching should override the ranking factors like open/closed statuses etc. `SE` search should show `SE` programs on top, even if the status is closed
+	- [ ] `CS` search term matches the non-partner data first, instead of partner-data. Because the partner admission program titles, don't have the exact match of `CS` but have title containing terms like `ADCS, BSCS` etc. Even though the tags contain `CS`, it seems the tag score boost for partner is still not enough for them to show before the non-partner exact matches
 - [ ] Favourites API isn't sending the resolved statuses for the `receiving_applications` and `status` properties across the admission program and admission.
 - [ ] **BUG:** Chat Messages Not working in the dev portal ([Jira Ticket Link](https://scholarbee-team.atlassian.net/browse/SB-1227))
 	- [ ] Ask shawaiz to run the chat confirmation cycly in local development

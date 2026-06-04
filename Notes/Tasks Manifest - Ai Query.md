@@ -1,16 +1,21 @@
 ---
-organization: '[[aiquery.io]]'
+organization: "[[aiquery.io]]"
 categories:
-- '[[Work]]'
-- '[[aiquery.io]]'
-- '[[Tasks]]'
-type: '[[Documentation]]'
+  - "[[Work]]"
+  - "[[aiquery.io]]"
+  - "[[Tasks]]"
+type: "[[Documentation]]"
 status: active
 ---
 ## Active Tasks
+- Agent and Agent Group Overview Summary
+	- *Optional* - Create a centralized and reusable service summary schema, and reuse it for agent and agent groups
 - [ ] Change Auto to windows in query mode. And remove auto
-
-- Query Response Data Diffing Tasks ![[260518T2007 (Mon) Feat - Query Response Data Diffing#Pending]]
+- Reasoning effort ai generator
+	- ![[260526T2152 (Tue) Weekly Scrum Meeting#Reasoning Effort Input Changes]]
+- Query Response Data Diffing Tasks 
+	- ![[260526T2152 (Tue) Weekly Scrum Meeting#Diffing Updates]]
+	- ![[260518T2007 (Mon) Feat - Query Response Data Diffing#Pending]]
 
 - May 16 Developer Meeting Pending Tasks ![[260516T2157 (Sat) Developer Meeting#Pending]]
 - May 12 Weekly Scrum Tasks ![[260512T1951 (Tue) Weekly Scrum Meeting#Pending]]
