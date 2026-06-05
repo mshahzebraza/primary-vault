@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /home/mshahzebraza/CC/obsidian-vaults/primary-vault status)",
+      "Bash(git -C /home/mshahzebraza/CC/obsidian-vaults/primary-vault log --oneline -3)"
+    ]
+  }
+}

@@ -8,6 +8,11 @@ type: "[[Documentation]]"
 status: active
 ---
 ## Active Tasks
+
+- Are you sure dialog to be added later? add a todo
+- add a todo to use the schema endpont for showing the exact filterable options i.e. for the response data table. For others we'll keep relying on the table data's rows. (or we could technically create a single row call to be used as schema endpont fallback and cache it for the view rendering)
+
+
 - Agent and Agent Group Overview Summary
 	- *Optional* - Create a centralized and reusable service summary schema, and reuse it for agent and agent groups
 - [ ] Change Auto to windows in query mode. And remove auto
