@@ -20,37 +20,22 @@ projects:
 This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
 ## ▶️ In Progress
-- [ ] Search Engine Issues
-	- [ ] When in explicit search mode, the exact search matching should override the ranking factors like open/closed statuses etc. `SE` search should show `SE` programs on top, even if the status is closed
-	- [ ] `CS` search term matches the non-partner data first, instead of partner-data. Because the partner admission program titles, don't have the exact match of `CS` but have title containing terms like `ADCS, BSCS` etc. Even though the tags contain `CS`, it seems the tag score boost for partner is still not enough for them to show before the non-partner exact matches
+- [ ] [[260605T1106 (Fri) Task - Search Engine Issues Post Eid]]
 - [ ] Favourites API isn't sending the resolved statuses for the `receiving_applications` and `status` properties across the admission program and admission.
-- [ ] **BUG:** Chat Messages Not working in the dev portal ([Jira Ticket Link](https://scholarbee-team.atlassian.net/browse/SB-1227))
-	- [ ] Ask shawaiz to run the chat confirmation cycly in local development
 - [ ] **Enhancement:** use a reusable frontend url link for media domain for email templates, instead of always sending the same link. 
 	- [ ] Instead of putting the redirect url to the exact frontend page, redirect the user to `frontend-domain/redirects?redirect_type=signup-email-confirmation`. For example, redirect the chat messages action button from emails to a generic REDIRECTS page, that maintains a mapping of redirect-type to frontend-route.
 
 ## 🟥 Pending
-- [ ] [[260507T1124 (Thu) Task - Admission Program Lifecycle & Term based Archiving]]
-	- [ ] Meet with product owner to finalise requirements and edge cases
-	- [ ] Decide deduplication strategy (DB query, app-layer filter, or ES index-time)
-	- [ ] Implement listing API update once approach is agreed
 - [ ] Favourite program notification
 - [ ] [[260424T1736 (Fri) Task - Signup parity for Google OAuth callback (required fields)]]
 	- [ ] Ensure required signup fields remain required for Google signup too
 	- [ ] Frontend intercepts OAuth callback and forces completion flow when required fields missing
 	- [ ] Backend rejects incomplete Google signup payloads (no OAuth bypass)
 - [ ] [[260424T1736 (Fri) Task - Admission status offload to frontend (derive openSoon etc)]]
-	- [ ] Backend accepts only value-based filters (no derived buckets like openSoon/closingSoon)
+	- [x] Backend accepts only value-based filters (no derived buckets like openSoon/closingSoon)
 	- [ ] Frontend derives UI state labels from dates/flags/status (covers edge cases)
-- [ ] [[260424T1736 (Fri) Task - Backend: admission dates + receivingApplication + status (rich filters + app draft/submit)]]
-	- [ ] Rich filters API (`withFilters`) returns correct admission programs across admission dates + receivingApplication + status (+ edge cases)
-	- [ ] Application draft creation + submission enforce the same combined rules as listing
-- [ ] [[260424T1736 (Fri) Task - CMS portal strict validation for admissions receivingApplication fields]]
-	- [ ] Strict validation on admission start/end dates + status + receivingApplication fields
-	- [ ] Disallow setting receiving application plan when `receivingApplication=false`
 - [ ] Search Listing to conform to the requirements criteria submitted by the [[SB Outreach Team]]
 - [ ] Review the program creation flow outside the admin CMS (from university portal)
-- [ ] University dropdown lookup should search against both abbreviation and name
 - [ ] Add Draft Admission Program functionality
 	- Add ability to create draft admission programs; hide in ES indexing and DB results
 - [ ] R&D on Elastic Search storage options
@@ -58,7 +43,6 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 	- Data Team should be informed about the es-indexing failures due to bad/stale data
 - [ ] CMS Field of 'Admission Session' needs to be added - Data Entry team will handle it themselves
 - [ ] SEO title key and short name be added for remaining items
-- [ ] Campus Slug to be updated only based on the title
 ## ⚠️ Blocked
 - Review Shahwaiz Chat Socket Testing Video
 	- Blocked; pending on Shahwaiz
@@ -79,6 +63,10 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 - [x] University name+abbreviation search — Shahwaiz
 	- Program and scholarship listing interweaving results — Shahwaiz
 - [x] [[260425T1351 (Sat) Task - Onboarding preferences + self-update endpoint]]
+- [x] [[260507T1124 (Thu) Task - Admission Program Lifecycle & Term based Archiving]] (CMS PR #25)
+- [x] [[260424T1736 (Fri) Task - Backend: admission dates + receivingApplication + status (rich filters + app draft/submit)]] (backend PR #57, #44)
+- [x] [[260424T1736 (Fri) Task - CMS portal strict validation for admissions receivingApplication fields]] (CMS PR #20, #25)
+- [x] Campus Slug backfilled from title (ops-scripts PR #11)
 
 ---
 ## Ideas/Future Requirements
