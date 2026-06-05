@@ -22,6 +22,17 @@ Two ranking issues with the admission program search engine surfaced post-Eid. F
 
 ## Current Tasks
 
+- Scenario 1:
+- Filters:  `Search: Software Engineering` , `University: Comsats`
+- Expectation: All Software Engineering Programs, regardless of status should appear at top
+- Actual Listing Order: 
+	- Bachelor of Science in Software Engineering (BSSE) `OPEN` status
+	- Bachelor of Science in Environmental Sciences (BSEnvSc) `OPEN` status
+	- ...
+	- Bachelor of Science in Software Engineering (BSSE) `CLOSED` status
+
+
+
 - [ ] Investigate explicit-search mode: ensure exact-match score overrides status-based ranking factors when a user is in explicit search mode
   - [ ] Reproduce: search `SE` and confirm status-closed programs rank above explicit `SE` matches
   - [ ] Adjust ES query to apply a `filter` (not `should`) on exact match when explicit mode is active, so status boost cannot outrank it
