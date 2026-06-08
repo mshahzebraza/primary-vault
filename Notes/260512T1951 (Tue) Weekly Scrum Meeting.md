@@ -31,5 +31,5 @@ status:
 	- Its happening on all the table views apparently.
 - [x] `approximate_row_count` needs to be added for the query-list view. Needs a migration, so it should go in on priority
 ### Pending
-- [ ] Queries are fetched twice for almost every view
-- [ ] dashboard widget creation description is truncated without reaching the max-width
+- [x] Queries are fetched twice for almost every view
+- [x] dashboard widget creation description is truncated without reaching the max-width

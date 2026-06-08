@@ -9,21 +9,16 @@ status: active
 ---
 ## Active Tasks
 
-- Are you sure dialog to be added later? add a todo
-- add a todo to use the schema endpont for showing the exact filterable options i.e. for the response data table. For others we'll keep relying on the table data's rows. (or we could technically create a single row call to be used as schema endpont fallback and cache it for the view rendering)
+- [ ]  use the schema endpont for showing the exact filterable options i.e. for the response data table. For others we'll keep relying on the table data's rows. (or we could technically create a single row call to be used as schema endpont fallback and cache it for the view rendering)
 
 
-- Agent and Agent Group Overview Summary
+- [x] Agent and Agent Group Overview Summary
 	- *Optional* - Create a centralized and reusable service summary schema, and reuse it for agent and agent groups
-- [ ] Change Auto to windows in query mode. And remove auto
-- Reasoning effort ai generator
-	- ![[260526T2152 (Tue) Weekly Scrum Meeting#Reasoning Effort Input Changes]]
-- Query Response Data Diffing Tasks 
-	- ![[260526T2152 (Tue) Weekly Scrum Meeting#Diffing Updates]]
-	- ![[260518T2007 (Mon) Feat - Query Response Data Diffing#Pending]]
+- [x] Change Auto to windows in query mode. And remove auto
+- [x] Reasoning effort ai generator
+- [[260518T2007 (Mon) Feat - Query Response Data Diffing | Query Response Data Diffing Tasks]] 
 
-- May 16 Developer Meeting Pending Tasks ![[260516T2157 (Sat) Developer Meeting#Pending]]
-- May 12 Weekly Scrum Tasks ![[260512T1951 (Tue) Weekly Scrum Meeting#Pending]]
+
 - Refactoring
 	- Add Architeture and Patterns  Files for LLMs and Devs (i.e `skills.md`, `*.architecture.md` etc.) with a dedicated compact section of rules/guides/implementation-notes as well as description/explanation for detailed understanding
 	- implement, refactor, standardize or sync the following:

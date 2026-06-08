@@ -134,3 +134,7 @@ Creation:
 		- Otherwise, the list should have a dedicated section to pin the resolved agents rows selected for diffing at the top.
 		- bottom line is that user should be able to select some or all of the resolved agents and then run the diff on them.
 	- the diffing algo starts running and the users can then view the diffing results
+
+
+
+- ![[260526T2152 (Tue) Weekly Scrum Meeting#Diffing Updates]]
