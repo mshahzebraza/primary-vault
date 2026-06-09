@@ -20,6 +20,12 @@ projects:
 This document is meant to document the tasks that do not warrant a dedicated document-note yet. These are the notes which are crude or minor
 
 ## ▶️ In Progress
+- Super Admin Profile Lifecycle Feature
+	- Why the dates are required
+	- why partial docs? if you're managing the applications offsite then should it really be on the portal. Why are we not asking the user to update their documents. 
+	- Applications data will be managed in the applications view, not in the users/signups list
+	- colors 
+	- why are we managing the application states away from the portal/domain
 - [ ] [[260605T1106 (Fri) Task - Search Engine Issues Post Eid]]
 - [ ] Favourites API isn't sending the resolved statuses for the `receiving_applications` and `status` properties across the admission program and admission.
 - [ ] **Enhancement:** use a reusable frontend url link for media domain for email templates, instead of always sending the same link. 
