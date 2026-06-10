@@ -10,9 +10,7 @@ status: active
 ## Active Tasks
 
 
-- [ ] Setup the Saved Filters for Query List
-	- [ ] Setup the UI
-		- [ ] check how filters button is rendered
+- [ ] [[260609T2043 (Tue) Setup the Saved Filters for Query List]]
 - [ ] Optional:  Analyze if its a good thing to allow Compound Component Pattern for the Data Table instead of a single component receiving props for better reusability
 - [ ]  use the schema endpont for showing the exact filterable options i.e. for the response data table. For others we'll keep relying on the table data's rows. (or we could technically create a single row call to be used as schema endpont fallback and cache it for the view rendering)
 
