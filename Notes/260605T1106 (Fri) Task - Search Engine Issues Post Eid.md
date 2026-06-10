@@ -18,7 +18,12 @@ tags:
 ---
 ## Overview
 
-Two ranking issues with the admission program search engine surfaced post-Eid. First, explicit search mode is not overriding ranking factors — a search for `SE` should pin `SE`-matching programs to the top regardless of their open/closed status, but status scoring is currently outweighing exact-match signals. Second, the `CS` search term surfaces non-partner programs before partner programs because partner titles use abbreviations like `ADCS` or `BSCS` rather than a standalone `CS` token — the tag-based boost for partners is not strong enough to overcome the non-partner exact-title match. There is a related open PR (#58 in backend-api: "feat(Search): enhancements in weightage system") that may address these.
+Two ranking issues with the admission program search engine surfaced post-Eid. 
+- First, explicit search mode is not overriding ranking factors — a search for `SE` should pin `SE`-matching programs to the top regardless of their open/closed status, but status scoring is currently outweighing exact-match signals. 
+- Second, the `CS` search term surfaces non-partner programs before partner programs because partner titles use abbreviations like `ADCS` or `BSCS` rather than a standalone `CS` token — the tag-based boost for partners is not strong enough to overcome the non-partner exact-title match. There is a related open PR (#58 in backend-api: "feat(Search): enhancements in weightage system") that may address these.
+- Third: the programs that match multiple tags with same keyword appear higher even when their campuses are better in ranking.
+	- ![[Pasted image 20260610145659.png]]
+
 
 ## Current Tasks
 
@@ -41,3 +46,5 @@ Two ranking issues with the admission program search engine surfaced post-Eid. F
   - [ ] Increase tag-score boost for partner programs, or add a sub-field match on abbreviation tokens, so partner results surface above non-partner exact-title matches
 - [ ] Review open backend-api PR #58 ("feat(Search): enhancements in weightage system") — check if it covers either of the above and coordinate or supersede accordingly
 - [ ] Test both fixes against a representative set of search terms before deploying
+
+
