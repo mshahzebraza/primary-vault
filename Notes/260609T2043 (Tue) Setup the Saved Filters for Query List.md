@@ -20,8 +20,8 @@ ra- [ ] Setup the UI
 - In the `dual-mode`, when the `Current` tab is shown, then along with the regular `Apply Filters` and `Clear` Button, we also need to show a `Save Filter` Button. This should run the callback of `setSavedFilters` (would probably be named something else like `handleFilterSave`) to save the filter in the api. And based on the response of the API, we show a toast message to the user.
 - If API to save the filters is successful, we show the success toast.
 - Then the user can switch to `Saved` filters Tab, and view the list of all the saved filters through a `GET` API Call.
-- Users are also able to delete a specific saved filter item, by clicking on the delete button on the saved filter item card
-- Also, they're able to expan the filter item card (like an accordion) to view the filters content (in a compact format), and choose to either apply or edit the filter item.
+- Users are also able to **Delete** a specific saved filter item, by clicking on the delete button on the saved filter item card
+- Also, they're able to **Expand** the filter item card (like an accordion) to view the filters content (in a compact format), and choose to either **Load** or **Edit** the filter item.
 - If they apply it then the filter would be automatically applied and the tab would automatically change to the `Current` Tab.
 - But if they wanted to edit it, then within the expanded area of the card, they'd be able to have the same filter form which they have in the `Current` Tab, but the actions would be different. Instead of `Apply` Button, they'd have the `Save/Update` Button.
 	- The Save would trigger the API call but would optimisticaly update the UI, however, in case of failure, would need to show a toast of error. and revert the UI update. 
@@ -37,3 +37,5 @@ ra- [ ] Setup the UI
 - [ ] Rename file: `table-filter-formV2.tsx` to `table-filter-form.tsx` and delete the file existing file `table-filter-form.tsx`
 - [ ] Analyze the use of `src/components/data-table/dt-filter-form/select-filter-field.tsx` and if it should be deprecated/removed as well as the types/interfaces within it.
 - [ ] Analyze the difference between `dt-server-side-search-field-v2.tsx` and `dt-server-side-search-field.tsx` and see if `dt-server-side-search-field-v2.tsx` is usable. If yes, then what is the change across the both versions. Maybe it was intended to accept the `filters` prop without casting `as IServerSideFilters | undefined`.
+- [ ] Introduce the React Context for the Data Table components to avoid prop drilling, and use the compound component pattern for it.
+- [ ] Why is FilterSidebar not the in same file as TableFilterForm. Why can't they be merged into one.
