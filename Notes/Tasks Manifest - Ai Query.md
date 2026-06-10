@@ -10,6 +10,10 @@ status: active
 ## Active Tasks
 
 
+-  Make the header of views compact
+	- The header should have Panel Close Button, followed by the Title (Or Breadcrumbs if nested route).
+	- The description would be kept in the view-title-hover-card.
+	- The right of the header row, would house the Docs Button for the view.
 - [ ] [[260609T2043 (Tue) Setup the Saved Filters for Query List]]
 - [ ] Optional:  Analyze if its a good thing to allow Compound Component Pattern for the Data Table instead of a single component receiving props for better reusability
 - [ ]  use the schema endpont for showing the exact filterable options i.e. for the response data table. For others we'll keep relying on the table data's rows. (or we could technically create a single row call to be used as schema endpont fallback and cache it for the view rendering)

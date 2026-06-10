@@ -27,7 +27,16 @@ ra- [ ] Setup the UI
 	- The Save would trigger the API call but would optimisticaly update the UI, however, in case of failure, would need to show a toast of error. and revert the UI update. 
 	- Or could just show a loader in the submit button until the save is completed before updating the UI.
 - How the Filters UI going to look like.
-	- 
+
+### Updated Requirements
+- Update Exisitng Action is going to be always be visible that opens a dialog to select the filter-preset which we need to update
+- Need to support tags filtering in the filters-v2
+- Presets are only going to be supported for the Filters-AST version of filers
+- Title and Description would always be required when saving. 
+	- Option 1: We can temporarily replace the filter form with a save-as-filter-preset form
+	- Option 2: We can show a Form in the footer of the filters panel, just like a checkout section to save it as preset.
+- We could put in the tabs to the Right Side of the title header (there's plenty of white space there.)
+
 
 
 
