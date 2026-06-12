@@ -91,7 +91,7 @@ status: active
 	- [ ] Add **Actions** dropdown (load preset / save as preset / go to create query)
 	- [ ] Add "Save as preset" action to individual query history items
 	- [ ] *(Optional)* Multi-select on history items to batch-save as a preset
-	- ➡️ [[rapid response refactoring and enhancements]]
+	- ➡️ [[260612T2035 (Fri) rapid response refactoring and enhancements]]
 	- ➡️ [[rapid-response bugs]]
 - ➡️ [[end to end prod testing & checklist|End-to-End Prod Testing Checklist]]
 ## Blocked Tasks
