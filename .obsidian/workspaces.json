@@ -17,7 +17,7 @@
                   {
                     "id": "a0e307992ec15a39",
                     "type": "tabs",
-                    "dimension": 51.43129770992366,
+                    "dimension": 57.63358778625955,
                     "children": [
                       {
                         "id": "e3b09ac1a6e5e157",
@@ -51,7 +51,7 @@
                   {
                     "id": "7d65696061190b6c",
                     "type": "tabs",
-                    "dimension": 48.56870229007634,
+                    "dimension": 42.36641221374045,
                     "children": [
                       {
                         "id": "4d9d2e43cd8784d1",
@@ -91,17 +91,59 @@
                     }
                   },
                   {
+                    "id": "bc738d574803a310",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Notes/260611T2153 (Thu) Document ShadCN theming architecture setup and maintenance.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "260611T2153 (Thu) Document ShadCN theming architecture setup and maintenance"
+                    }
+                  },
+                  {
+                    "id": "97df39cc7b55ef1c",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Notes/260609T2043 (Tue) Setup the Saved Searches.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "260609T2043 (Tue) Setup the Saved Searches"
+                    }
+                  },
+                  {
+                    "id": "171c7dd6a0f3f3b0",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Notes/260612T2031 (Fri) UI Overhaul.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "260612T2031 (Fri) UI Overhaul"
+                    }
+                  },
+                  {
                     "id": "2571587663eeaa44",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/260609T2043 (Tue) Setup the Saved Filters for Query List.md",
+                        "file": "Notes/260609T2043 (Tue) Setup the Saved Searches.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "260609T2043 (Tue) Setup the Saved Filters for Query List"
+                      "title": "260609T2043 (Tue) Setup the Saved Searches"
                     }
                   },
                   {
@@ -118,7 +160,8 @@
                       "title": "260518T2007 (Mon) Feat - Query Response Data Diffing"
                     }
                   }
-                ]
+                ],
+                "currentTab": 1
               }
             ],
             "direction": "vertical"
@@ -153,7 +196,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "[\"related-tasks\"]",
+                    "query": "\"\\\"Setup documentation, process, agent-skills and rules around theming and styling setup and maintenance\"\"",
                     "matchingCase": true,
                     "explainSearch": false,
                     "collapseAll": true,
@@ -174,7 +217,8 @@
                   "title": "Bookmarks"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "horizontal",
@@ -288,8 +332,8 @@
           "zk-prefixer:Create new unique note": false
         }
       },
-      "active": "c6b8c7fd017382f2",
-      "mtime": "2026-06-11T00:19:50+05:00"
+      "active": "bc738d574803a310",
+      "mtime": "2026-06-13T00:03:25+05:00"
     },
     "Personal": {
       "main": {
