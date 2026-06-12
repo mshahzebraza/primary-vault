@@ -10,15 +10,13 @@ status: active
 ## Active Tasks
 
 
--  Make the header of views compact
-	- The header should have Panel Close Button, followed by the Title (Or Breadcrumbs if nested route).
-	- The description would be kept in the view-title-hover-card.
-	- The right of the header row, would house the Docs Button for the view.
-- [ ] [[260609T2043 (Tue) Setup the Saved Filters for Query List]]
+
+- [ ] [[260609T2043 (Tue) Setup the Saved Searches]]
 - [ ] Optional:  Analyze if its a good thing to allow Compound Component Pattern for the Data Table instead of a single component receiving props for better reusability
 - [ ]  use the schema endpont for showing the exact filterable options i.e. for the response data table. For others we'll keep relying on the table data's rows. (or we could technically create a single row call to be used as schema endpont fallback and cache it for the view rendering)
+- [ ] [[260612T2031 (Fri) UI Overhaul]]
 
-
+- [ ] [[260611T2153 (Thu) Document ShadCN theming architecture setup and maintenance]]
 - [x] Agent and Agent Group Overview Summary
 	- *Optional* - Create a centralized and reusable service summary schema, and reuse it for agent and agent groups
 - [x] Change Auto to windows in query mode. And remove auto

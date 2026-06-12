@@ -1,12 +1,30 @@
 ---
-type: "[[Journal]]"
+type: "[[Task]]"
 categories:
   - "[[Personal]]"
-date: 2026-06-09
+  - "[[Work]]"
+  - "[[Tasks]]"
+date: 2026-06-12
 tags:
   - journal
+organization:
+  - "[[aiquery.io]]"
+projects:
+  - "[[aq-client]]"
+status: backlog
+priority: P2
+related-bugs:
 ---
-ra- [ ] Setup the UI
+
+## Overview
+> Save the seached UIs as ASTs in the backgrounds. V1 includes saving the filters only. V2 would mean the integration of sorting. V3 could be the implementation of tags
+
+## Milestones
+- [ ] Filter Presets
+- [ ] Sort Presets
+- [ ] Tags (create and filter)
+
+- [ ] Setup the UI
 	- [ ] check how filters button is rendered
 - [ ] discussion
 	- [ ] inspiration of rapid response history items

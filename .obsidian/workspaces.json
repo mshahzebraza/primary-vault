@@ -118,8 +118,7 @@
                       "title": "260518T2007 (Mon) Feat - Query Response Data Diffing"
                     }
                   }
-                ],
-                "currentTab": 1
+                ]
               }
             ],
             "direction": "vertical"
@@ -289,8 +288,8 @@
           "zk-prefixer:Create new unique note": false
         }
       },
-      "active": "2571587663eeaa44",
-      "mtime": "2026-06-10T20:05:00+05:00"
+      "active": "c6b8c7fd017382f2",
+      "mtime": "2026-06-11T00:19:50+05:00"
     },
     "Personal": {
       "main": {
