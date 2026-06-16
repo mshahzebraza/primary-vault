@@ -28,9 +28,11 @@ related-tasks:
 - Investigation UX
 - Analyze Flow
 - Testing
-- Ask the Fleet
+- Ask the Fleet - Conversation thread
 	- prompt the fleet about the queries in human language
 	- would run the query and aggregate the search on the query response
+	- *Would we need to have multiple aggregated search. or a query based on aggregated search*
+		- for now, we only do one.
 - File Detonation (way later)
 	- to investigate an exe file by detonating it.
 	- detonating it in a sandbox, and returns the monitoring data
@@ -65,5 +67,9 @@ related-tasks:
 	- *using MCP and alerts*
 	- can a pair of mcp client and server be communicating to each other?
 	- *do we need to ask for admin permission to trigger investigation. since they are not available.*
+
+- In the Ask-Fleet view, should we *allow them to create the agent groups* on the fly as well, since that makes it just a single prompt which doesn't even require them to generate agent-groups.
+	- We could maybe introduce temporary agent-groups as well (that might expire like queries)
+
 ## Action Items
 - [ ] Ask Rajput for the UX flows and ask for understanding
