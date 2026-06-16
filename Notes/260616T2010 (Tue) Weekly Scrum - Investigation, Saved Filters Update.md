@@ -29,13 +29,14 @@ related-tasks:
 - Analyze Flow
 - Testing
 - Ask the Fleet - Conversation thread
-	- prompt the fleet about the queries in human language
+	- prompt the fleet (planner agent) about the queries in human language
 	- would run the query and aggregate the search on the query response
 	- *Would we need to have multiple aggregated search. or a query based on aggregated search*
 		- for now, we only do one.
 - File Detonation (way later)
-	- to investigate an exe file by detonating it.
+	- to investigate an `exe` file by detonating it.
 	- detonating it in a sandbox, and returns the monitoring data
+	- based on the monitoring/telemetry of the detonation-sandbox, we could attempt to run the queries to see if other agents might have run the `exe` files, or if they exhibit similar behavior
 - aiquery becoming the IR and Compliance tool now
 	- for companies that don't have a dedicated IR tool; and are not that big
 	- Gap between EDR/Monitoring Tools etc.
@@ -44,6 +45,12 @@ related-tasks:
 - EDRs - how they relate to conclusive analysis (EDR)
 - NDR/XDR? (Network, Extended)
 - `dll` files in temp directory
+
+- what was the good news about the client form Nick?
+- was Rick from Hospital or the new client?
+	- and who is Rogers?
+	- how is Belcar in the triangle?
+	- 
 
 - how you catch it when it happens for large corps for the things that its collecting
 	- they don't. They just assume the bugs and they take action (mostly manually)
