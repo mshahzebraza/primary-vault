@@ -7,7 +7,16 @@ categories:
 type: "[[Documentation]]"
 status: active
 ---
-## Active Tasks
+
+## Context
+> Brief note on why this meeting happened / what triggered it.
+
+## Discussion
+
+## Decisions Made
+
+## Action Items
+- [ ] ## Active Tasks
 
 
 

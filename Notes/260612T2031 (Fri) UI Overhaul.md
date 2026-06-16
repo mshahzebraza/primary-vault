@@ -42,4 +42,11 @@ related-bugs:
 
 
 ## Assets
+- Query Smith
 ![[query-smith-canvas-inspiration-1.png]]
+![[Pasted image 20260614222810.png]]
+- Dashboard Widgets (specifically the header and body of widgets). and Overall Layout of Platform
+
+![[Pasted image 20260614175804.png]]
+- [This Gif](https://cdn.dribbble.com/userupload/46513805/file/b726a6281991c3028d80144ba400148d.mp4) on Dashboard Animation and the snapshot below![[Pasted image 20260614222627.png]]
+- 
