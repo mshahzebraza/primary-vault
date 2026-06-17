@@ -47,7 +47,7 @@ related-tasks:
 - `dll` files in temp directory
 
 - what was the good news about the client form Nick?
-- was Rick from Hospital or the new client?
+- was Rick from Hospital or the new client? Rick is the CEO of the partner.
 	- and who is Rogers?
 	- how is Belcar in the triangle?
 	- 
