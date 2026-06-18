@@ -23,7 +23,8 @@ related-bugs:
 	- [ ] The right of the header row, would house the Docs Button for the view.
 - [ ] Enhance the AI Query Canvas 
 	- [ ] [[query-smith-canvas-inspiration-1.png]] - https://dribbble.com/shots/25988985-Organization-chart-SaaS-Dark-Mode-design
-	- [ ] 
+- [ ] Create Query View
+	- [ ] Use the side floating hovercards (like the guide cards) to house the actions like "User Presets" or "Use AI" instead of putting the action button inline with the label. Or just use an input button positioned within the input container (atleast visually)
 
 
 
@@ -49,4 +50,6 @@ related-bugs:
 
 ![[Pasted image 20260614175804.png]]
 - [This Gif](https://cdn.dribbble.com/userupload/46513805/file/b726a6281991c3028d80144ba400148d.mp4) on Dashboard Animation and the snapshot below![[Pasted image 20260614222627.png]]
+- API Keys ![[Pasted image 20260618225433.png]]
+- Agent Documentation ![[Pasted image 20260618225618.png]]
 - 
