@@ -16,13 +16,13 @@ status: active
 ## Decisions Made
 
 ## Action Items
-- [ ] ## Active Tasks
+### Active Tasks
 
 
 
-- [ ] [[260609T2043 (Tue) Setup the Saved Searches]]
+- [x] [[260609T2043 (Tue) Setup the Saved Searches]]
 - [ ] Optional:  Analyze if its a good thing to allow Compound Component Pattern for the Data Table instead of a single component receiving props for better reusability
-- [ ]  use the schema endpont for showing the exact filterable options i.e. for the response data table. For others we'll keep relying on the table data's rows. (or we could technically create a single row call to be used as schema endpont fallback and cache it for the view rendering)
+- [ ] use the schema endpont for showing the exact filterable options i.e. for the response data table. For others we'll keep relying on the table data's rows. (or we could technically create a single row call to be used as schema endpont fallback and cache it for the view rendering)
 - [ ] [[260612T2031 (Fri) UI Overhaul]]
 
 - [ ] [[260611T2153 (Thu) Document ShadCN theming architecture setup and maintenance]]

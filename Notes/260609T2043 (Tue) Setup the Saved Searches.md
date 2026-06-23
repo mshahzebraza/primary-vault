@@ -6,12 +6,13 @@ categories:
   - "[[Tasks]]"
 date: 2026-06-12
 tags:
-  - journal
+  - feature
 organization:
   - "[[aiquery.io]]"
 projects:
   - "[[aq-client]]"
-status: backlog
+status:
+  - completed
 priority: P2
 related-bugs:
 ---
@@ -20,9 +21,9 @@ related-bugs:
 > Save the seached UIs as ASTs in the backgrounds. V1 includes saving the filters only.  V2 would mean the integration of sorting. V3 could be the implementation of tags
 
 ## Milestones
-- [ ] Filter Presets
-- [ ] Sort Presets
-- [ ] Tags (create and filter)
+- [x] Filter Presets
+- [x] Sort Presets
+- [x] Tags (create and filter)
 
 - [ ] Setup the UI
 	- [ ] check how filters button is rendered
