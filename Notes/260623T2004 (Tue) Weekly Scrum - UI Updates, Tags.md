@@ -19,7 +19,7 @@ status:
 ---
 ## Discussion
 - tags should be applied to query packs
-
+- add other filters in the v2 apis and support for them in the filters panel
 ## Decisions Made
 
 ## Action Items
