@@ -11,14 +11,14 @@ organization:
   - "[[aiquery.io]]"
 projects:
   - "[[aq-client]]"
-attendees: []
+attendees:
+  - "[[Nick]]"
+  - "[[Rajput]]"
 status:
+  - active
 ---
-- 
-## Context
-> Brief note on why this meeting happened / what triggered it.
-
 ## Discussion
+- tags should be applied to query packs
 
 ## Decisions Made
 
