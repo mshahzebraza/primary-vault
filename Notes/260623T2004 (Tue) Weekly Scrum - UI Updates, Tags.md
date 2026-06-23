@@ -18,7 +18,7 @@ status:
   - active
 ---
 ## Discussion
-- tags should be applied to query packs
+- tags should be applied to query packs, query presets
 - add other filters in the v2 apis and support for them in the filters panel
 ## Decisions Made
 
