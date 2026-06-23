@@ -39,6 +39,7 @@ status:
 	- the bottom block is for the USER (name and email) and LOGOUT
 - *Sub-Tenants*
 - *Brand  color standardization*: Purple Shade
+- *Ask Fleet MVP Discussion*
 ## Decisions Made
 
 ## Action Items
