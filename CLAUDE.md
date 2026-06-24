@@ -23,7 +23,8 @@ Every note under `Notes/` must have frontmatter conforming to `Templates/Bases/M
 - `type` — multitext wikilink: `[[Task]]`, `[[Bug]]`, `[[Meeting]]`, `[[RnD]]`, `[[Documentation]]`, `[[Journal]]`, `[[Reference]]`
 - `organization` — single org wikilink (work notes only)
 - `categories` — quoted wikilinks e.g. `"[[Work]]"`, `"[[Tasks]]"`, `"[[Meetings]]"`, `"[[Personal]]"`
-- `status` — `backlog | active | blocked | done`
+- `status` — `backlog | active | blocked | done | closed`. `done` = all required items in `## Current Tasks` complete; open `## Enhancements` items are expected and do not block it. `closed` = fully retired (done with no follow-up, or cancelled).
+- `has-enhancements` — checkbox; `true` when `status: done` but `## Enhancements` still has open `[ ]` items. Synced by the `sync-enhancements` skill.
 - `priority` — `P1 | P2 | P3`
 - `date` — `YYYY-MM-DD`
 - `tags` — plain string labels (not wikilinks)

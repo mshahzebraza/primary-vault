@@ -10,7 +10,9 @@ Notes under `Notes/` follow the **canonical property schema** in [[Documentation
 | `organization` | multitext | Single org wikilink for work notes, e.g. `"[[aiquery.io]]"` |
 | `projects` | multitext | Multi-value; project hubs are **not** categories |
 | `categories` | multitext | Quoted wikilinks to hub notes in `Categories/` |
-| `status` / `priority` | text | Tasks, bugs (see plan §2.1) |
+| `status` | text | Task/bug lifecycle — see **Status lifecycle** below |
+| `priority` | text | `P1` (urgent) · `P2` (normal) · `P3` (nice to have) |
+| `has-enhancements` | checkbox | `true` when `status: done` but `## Enhancements` still has open `[ ]` items. Set by `sync-enhancements` skill or manually. Omit/`false` for notes with no Enhancements section. |
 | `date` | date | Meetings, journals, dailies |
 | `related-tasks` | multitext | Meeting ↔ task linking |
 | `tags` | tags | Topical labels (not wikilinks) |
@@ -18,6 +20,18 @@ Notes under `Notes/` follow the **canonical property schema** in [[Documentation
 | `url` | text | Source URL for external-source notes |
 
 **YAML:** Quote list items: `- "[[Meetings]]"`.
+
+## Status lifecycle (tasks and bugs)
+
+| Value | Meaning |
+|-------|---------|
+| `backlog` | Not started — exists but no active work |
+| `active` | Being worked on right now |
+| `blocked` | Waiting on an external dependency — note the blocker inline |
+| `done` | All **required** items in `## Current Tasks` are complete. `## Enhancements` may still have open items — that is expected and does not block `done`. |
+| `closed` | Fully retired — either done with no follow-up, or explicitly cancelled/superseded. Use when you want the note out of all active views. |
+
+`has-enhancements: true` flags notes that are `done` but still have open `[ ]` items under `## Enhancements`. Use the `Enhancement Backlog` base to review these.
 
 ## Legacy (removed)
 

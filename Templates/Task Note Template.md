@@ -7,8 +7,8 @@ organization:
 projects: []
 status: backlog
 priority: P2
-date:
-  "{ date: YYYY-MM-DD }":
+date: YYYY-MM-DD
+has-enhancements: false
 related-bugs:
 ---
 
@@ -18,7 +18,8 @@ related-bugs:
 ## Current Tasks
 - [ ] 
 
-
+## Enhancements
+> Optional improvements — open items here do not block `status: done`.
 
 ![[Related Bugs.base]]
 

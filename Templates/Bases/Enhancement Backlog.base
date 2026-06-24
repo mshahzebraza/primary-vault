@@ -1,0 +1,38 @@
+filters:
+  and:
+    - file.path.contains("Notes/")
+    - file.ext == "md"
+    - type.containsAny(link("Task"), link("Bug"), link("RnD"))
+    - note.status == "done"
+    - note["has-enhancements"] == true
+properties:
+  file.name:
+    displayName: Note
+  note.organization:
+    displayName: Organization
+  note.projects:
+    displayName: Projects
+  note.priority:
+    displayName: Priority
+  note.date:
+    displayName: Date
+views:
+  - type: table
+    name: Enhancement Backlog
+    order:
+      - file.name
+      - organization
+      - projects
+      - priority
+      - date
+    sort:
+      - property: note.priority
+        direction: ASC
+      - property: note.date
+        direction: DESC
+    columnSize:
+      file.name: 420
+      note.organization: 160
+      note.projects: 180
+      note.priority: 100
+      note.date: 120
