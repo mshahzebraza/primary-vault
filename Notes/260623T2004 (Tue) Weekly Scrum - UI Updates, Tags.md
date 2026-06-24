@@ -42,8 +42,8 @@ status:
 ## Decisions Made
 
 ## Action Items
-- [ ] `exist[query_sandbox] = false` (Urgent)
-- [ ] add tags to the query entries columns
+- [x] `exist[query_sandbox] = false` (Urgent)
+- [x] add tags to the query entries columns
 - [ ] info message showing filters are applied in the view
 - [ ] liveshell panel should be to right
 - [ ] settings UI has content touching the header. add spacing
