@@ -3,8 +3,7 @@ type: "[[Meeting]]"
 categories:
   - "[[Personal]]"
   - "[[Meetings]]"
-date:
-  "{ date: YYYY-MM-DD }":
+date: 2026-06-23
 tags:
   - journal
 organization:

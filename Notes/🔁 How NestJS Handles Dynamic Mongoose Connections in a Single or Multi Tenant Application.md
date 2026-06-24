@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 aliases:
 - 🔁 How NestJS Handles Dynamic Mongoose Connections in a Single/Multi-Tenant Application
 categories:

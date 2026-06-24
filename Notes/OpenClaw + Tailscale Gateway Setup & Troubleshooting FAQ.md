@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 categories:
 - '[[TechLearning]]'
 tags:

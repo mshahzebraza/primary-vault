@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 aliases:
 - 🔐 How Does `req.user` Get Set in NestJS When Using Passport?
 categories:

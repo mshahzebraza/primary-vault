@@ -69,7 +69,7 @@ This document is meant to document the tasks that do not warrant a dedicated doc
 	- Program and scholarship listing interweaving results — Shahwaiz
 - [x] [[260425T1351 (Sat) Task - Onboarding preferences + self-update endpoint]]
 - [x] [[260507T1124 (Thu) Task - Admission Program Lifecycle & Term based Archiving]] (CMS PR #25)
-- [x] [[260424T1736 (Fri) Task - Backend: admission dates + receivingApplication + status (rich filters + app draft/submit)]] (backend PR #57, #44)
+- [x] [[260424T1736 (Fri) Task - Backend: admission dates + receivingApplication + status (rich filters + app draft & submit]] (backend PR #57, #44)
 - [x] [[260424T1736 (Fri) Task - CMS portal strict validation for admissions receivingApplication fields]] (CMS PR #20, #25)
 - [x] Campus Slug backfilled from title (ops-scripts PR #11)
 

@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 aliases:
 - Backup/Clone a MongoDB database using Mongo Tools
 categories:

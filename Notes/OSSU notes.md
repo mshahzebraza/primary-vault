@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 tags:
 - index
 - ossu
@@ -17,4 +18,3 @@ Self-paced CS curriculum notes.
 - [[Lecture 2|Lecture 2 — Strings, I/O, Branching]]
 - [[Lecture 3|Lecture 3 — Iteration]]
 - [[Lecture 4|Lecture 4 — String Loops, Guess & Check, Binary]]
-- [[Resources--e53a3010|Resources]]

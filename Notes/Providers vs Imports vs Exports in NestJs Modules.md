@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 aliases:
 - Providers v/s Imports in NestJs Modules
 categories:

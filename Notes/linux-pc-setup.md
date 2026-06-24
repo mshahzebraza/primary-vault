@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 tags:
 - index
 - linux

@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 aliases:
 - 🧩 Why Do We Use `forFeature` and `InjectModel` with Mongoose in NestJS
 categories:
@@ -21,7 +22,7 @@ I saw this repeated pattern in my modules: `MongooseModule.forFeature(...)` in t
 
 ## Does it recreate the connection on every `InjectModel` of `forFeature` call?
 So even if you register the same model in `CatsModule`, `UsersModule`, `ReportsModule`, etc. — NestJS:
-- **Reuses the existing model instance** under the hood ([[sync/knowledge/🔄 Is It Okay to Use the Same Mongoose Model in Multiple Modules.md|detail in this note 🔗]])
+- **Reuses the existing model instance** under the hood ([[🔄 Is It Okay to Use the Same Mongoose Model in Multiple Modules|detail in this note 🔗]])
 - Does **not create duplicates** in memory
 - Ensures that each module has access to what it needs, without polluting the global scope
 

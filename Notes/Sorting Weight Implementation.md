@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 status: null
 tags:
 - feature

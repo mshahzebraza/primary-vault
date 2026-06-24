@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 aliases:
 - OpenClaw/Clawdbot Setup
 categories:

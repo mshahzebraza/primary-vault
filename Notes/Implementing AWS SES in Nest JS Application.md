@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 status: completed
 tags:
 - devops

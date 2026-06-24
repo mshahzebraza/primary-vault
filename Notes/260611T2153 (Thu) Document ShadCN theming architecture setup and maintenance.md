@@ -1,4 +1,16 @@
-
+---
+type: "[[Documentation]]"
+categories:
+  - "[[Work]]"
+  - "[[Tasks]]"
+date: 2026-06-11
+tags:
+  - theming
+  - shadcn
+organization: "[[aiquery.io]]"
+status: active
+priority: P2
+---
 
 ## Overview
 Setup documentation, process, agent-skills and rules around theming and styling setup and maintenance

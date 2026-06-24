@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 aliases:
 - 🔄 Is It Okay to Use the Same Mongoose Model in Multiple Modules?
 categories:

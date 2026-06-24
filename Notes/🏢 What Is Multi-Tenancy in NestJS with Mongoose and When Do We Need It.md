@@ -1,4 +1,5 @@
 ---
+type: "[[Reference]]"
 aliases:
 - 🏢 What Is Multi-Tenancy in NestJS with Mongoose and When Do We Need It?
 categories:
