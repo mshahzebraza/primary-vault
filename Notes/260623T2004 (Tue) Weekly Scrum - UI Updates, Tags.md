@@ -44,7 +44,7 @@ status:
 ## Action Items
 - [x] `exist[query_sandbox] = false` (Urgent)
 - [x] add tags to the query entries columns
-- [ ] info message showing filters are applied in the view
+- [ ] ![[resolve-meeting-plan-visual.png]]
 - [ ] liveshell panel should be to right
 - [x] settings UI has content touching the header. add spacing
 - [x] liveshell - ai assistance input needs to expand to atleast 2 lines (like the generate ai input. and scroll vertically instead of horizontal)
