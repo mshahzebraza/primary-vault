@@ -27,9 +27,7 @@ status:
 		- switch liveshell host (which when clicked should end the session before switching host)
 	- below: device info (like the agent info view block; or the rapid response hover card)
 	- right: ai assistance expanded; bottom should be aligned with the bottom of the left pane (terminal + card-at-bottom)
-- Liveshell Search Issue (600 agents wouldn't be rendered at the same place)
 - *add the search for the views* -> NO. for now 
-- *color of the sidebar*
 - Sidebar
 	- icons removal of nested views
 	- Initial Avatar with initials like google meet
@@ -39,6 +37,7 @@ status:
 	- the bottom block is for the USER (name and email) and LOGOUT
 - *Sub-Tenants* - Future
 - *Brand  color standardization*: Purple Shade
+- *color of the sidebar* - should be brand color
 - *Ask Fleet MVP Discussion*
 ## Decisions Made
 
