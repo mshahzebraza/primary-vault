@@ -1,0 +1,305 @@
+<RichText id="intro">
+
+# Resolve meetings & keep the vault from drifting
+
+**Objective.** Stop meeting notes from becoming dead ends. Today rough items captured in a scrum (sidebar redesign, "tags on query packs", liveshell tweaks) sit inside the meeting note and never reach a feature doc or the manifest, so they are invisible to your Bases and impossible to find later. This plan adds two project-scoped skills: **`resolve-meeting`** (process one meeting into the right notes) and **`vault-audit`** (find drift on demand). Both reuse what the vault already has — the Task-note shape, the manifests, the templates, and `scripts/vault_metadata.py`.
+
+**Done means.** Running `/resolve-meeting <note>` reads a rough meeting note, asks all its clarifying questions at once, shows you a summary of what it understood plus a routing plan, and — after one approval — files every item into the correct feature doc or manifest section, links the meeting both ways, marks superseded instructions, and fixes frontmatter. `/vault-audit` produces a findings report (loose ends, broken links, metadata violations) without editing anything.
+
+A few conventions are still open — see **Open Questions** at the bottom.
+
+</RichText>
+
+<Callout id="decision" tone="decision">
+
+**Committed approach (settled with you).** Two separate skills, not one. New feature docs **reuse the existing Task note shape** (`## Overview → ## Milestones → ## Tasks`) — no new template. The resolve flow is **summarize → batch all questions → you approve once → execute**, never per-item nagging and never silent auto-edits. The existing-drift cleanup is **deferred**: this plan ships the skills and hands you the audit findings; you choose when to clean up.
+
+</Callout>
+
+<RichText id="model-h">
+
+### How your notes connect today
+
+The vault already has a working three-layer shape. The skills' job is to keep items flowing down it instead of getting stranded at the top.
+
+</RichText>
+
+<Diagram
+  id="diag-graph"
+  data={{
+    html: `<div class="stack">
+  <div class="layer" data-rough>
+    <div class="lbl">CAPTURE</div>
+    <div class="node warn">Meeting note<div class="sub">rough items, often stranded here</div></div>
+  </div>
+  <div class="conn">related-tasks &#8595;&#8593; (two-way link)</div>
+  <div class="layer" data-rough>
+    <div class="lbl">KNOWLEDGE</div>
+    <div class="card">Feature doc<div class="sub">Overview / Milestones / Tasks</div></div>
+    <div class="card">Feature doc<div class="sub">e.g. Saved Searches, UI Overhaul</div></div>
+  </div>
+  <div class="conn">embed &#33;&#91;&#91;note#section&#93;&#93; &#8595;</div>
+  <div class="layer" data-rough>
+    <div class="lbl">INDEX</div>
+    <div class="node">Tasks Manifest<div class="sub">In Progress / Pending / Blocked / Done</div></div>
+    <div class="node">Categories + Bases<div class="sub">queried views</div></div>
+  </div>
+</div>`,
+    css: `.stack{display:flex;flex-direction:column;gap:10px;align-items:center;color:var(--wf-ink)}
+.layer{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;padding:12px 16px;border:1px solid var(--wf-line);border-radius:12px;background:var(--wf-card);width:100%;box-sizing:border-box;position:relative}
+.lbl{position:absolute;top:6px;left:12px;font-size:11px;letter-spacing:.12em;color:var(--wf-muted)}
+.node{padding:12px 16px;border:1px solid var(--wf-line);border-radius:10px;background:var(--wf-paper);min-width:200px;text-align:center;margin-top:10px}
+.card{padding:12px 16px;border:1px dashed var(--wf-accent);border-radius:10px;background:var(--wf-accent-soft);min-width:200px;text-align:center;margin-top:10px}
+.warn{border-color:var(--wf-warn);background:var(--wf-paper)}
+.sub{font-size:12px;color:var(--wf-muted);margin-top:4px}
+.conn{font-size:12px;color:var(--wf-muted)}`,
+    caption: "The three layers already exist. Drift happens when items stay in the CAPTURE layer and never get linked down."
+  }}
+/>
+
+<RichText id="skill1-h">
+
+### Skill 1 — `resolve-meeting` (the workflow)
+
+A five-phase pipeline with a single approval gate. Phases 1–3 are read-only and end in a summary you sign off on; only phase 4 writes.
+
+</RichText>
+
+<Diagram
+  id="diag-flow"
+  data={{
+    html: `<div class="flow">
+  <div class="ph" data-rough><div class="n">1 · INTAKE</div><div class="d">Read note + frontmatter. Pull recent same-org meetings & feature docs for context.</div></div>
+  <div class="ar">&#8594;</div>
+  <div class="ph" data-rough><div class="n">2 · UNDERSTAND</div><div class="d">Extract every action item. Classify each: feature / task / decision / bug / question.</div></div>
+  <div class="ar">&#8594;</div>
+  <div class="ph" data-rough><div class="n">3 · CLARIFY</div><div class="d">Show summary of understanding + ALL questions in one batch.</div></div>
+  <div class="gate">approve once</div>
+  <div class="ph go" data-rough><div class="n">4 · EXECUTE</div><div class="d">Route items, update/create feature docs, link both ways, mark superseded, fix metadata.</div></div>
+  <div class="ar">&#8594;</div>
+  <div class="ph" data-rough><div class="n">5 · CONFIRM</div><div class="d">Report links created, docs touched, manifest changes, items handed back to you.</div></div>
+</div>`,
+    css: `.flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;color:var(--wf-ink)}
+.ph{flex:1 1 150px;min-width:150px;padding:12px;border:1px solid var(--wf-line);border-radius:10px;background:var(--wf-card)}
+.ph.go{border-color:var(--wf-ok);background:var(--wf-accent-soft)}
+.n{font-size:12px;letter-spacing:.06em;color:var(--wf-muted);margin-bottom:6px}
+.d{font-size:13px}
+.ar{align-self:center;color:var(--wf-muted);font-size:18px}
+.gate{align-self:center;padding:6px 10px;border:1px dashed var(--wf-warn);border-radius:999px;font-size:12px;color:var(--wf-ink);white-space:nowrap}`,
+    caption: "Phases 1–3 never write. The dashed gate is your single approval; phase 4 is the only writing phase."
+  }}
+/>
+
+<RichText id="route-h">
+
+### Routing logic (phase 4)
+
+Each extracted item is classified once and sent to exactly one home. This is the rule set the skill encodes — it is also what makes items findable afterward, because every home is either a linked feature doc or a manifest section. Templates guide each note but are not a cage: the skill adds or renames sections when an item does not fit the default layout.
+
+</RichText>
+
+<Diagram
+  id="diag-route"
+  data={{
+    html: `<div class="route">
+  <div class="start" data-rough>Extracted item</div>
+  <div class="branches">
+    <div class="br" data-rough><div class="t">substantial / multi-step</div><div class="o">Feature doc — find existing by title/wikilink, update its section + add <b>related-tasks</b> link. If none, create one in Task shape and set status backlog/active.</div></div>
+    <div class="br" data-rough><div class="t">small / standalone</div><div class="o">Manifest — drop into the correct section (In Progress / Pending / Blocked), link to a related task note if one exists.</div></div>
+    <div class="br" data-rough><div class="t">decision</div><div class="o">Feature doc Decisions — record it, and mark any instruction it overrides as superseded (callout + link), closing the loose end.</div></div>
+    <div class="br" data-rough><div class="t">bug</div><div class="o">Existing bug note if present, else a manifest bug line under the right priority.</div></div>
+    <div class="br" data-rough><div class="t">open question</div><div class="o">Manifest "Open Questions" or handed back to you in the CONFIRM report — never silently dropped.</div></div>
+  </div>
+</div>`,
+    css: `.route{display:flex;flex-direction:column;align-items:center;gap:12px;color:var(--wf-ink)}
+.start{padding:10px 18px;border:1px solid var(--wf-accent);border-radius:10px;background:var(--wf-accent-soft);font-weight:600}
+.branches{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.br{flex:1 1 200px;min-width:200px;max-width:260px;padding:12px;border:1px solid var(--wf-line);border-radius:10px;background:var(--wf-card)}
+.t{font-size:12px;letter-spacing:.04em;color:var(--wf-muted);margin-bottom:6px;border-bottom:1px solid var(--wf-line);padding-bottom:4px}
+.o{font-size:13px}`,
+    caption: "Classification is mutually exclusive — one item, one home. Every home is linked, so nothing is left only inside the meeting note."
+  }}
+/>
+
+<Callout id="reuse" tone="info">
+
+**Reuses, does not reinvent.** Feature-doc creation calls the same logic as the `make-note` skill (timestamped filename, metadata-contract frontmatter). Frontmatter validation shells out to the existing `python3 scripts/vault_metadata.py audit` rather than re-checking fields in the skill. Templates come from `Templates/` (Task, Meeting, Bug). The skill is routing + linking glue, not new machinery.
+
+</Callout>
+
+<RichText id="skill2-h">
+
+### Skill 2 — `vault-audit` (find drift on demand)
+
+Read-only. Produces a report; never edits. It is the recurring counterpart to the one-time findings below — run it monthly or after a busy sprint.
+
+</RichText>
+
+<Checklist
+  id="audit-checks"
+  items={[
+    { "id": "c1", "label": "Stranded meeting items — meeting notes whose action items are not linked into any feature doc or manifest", "checked": false },
+    { "id": "c2", "label": "Metadata violations — wraps scripts/vault_metadata.py audit (bad status values, unfilled date placeholders, legacy keys, wrong categories)", "checked": false },
+    { "id": "c3", "label": "Broken / orphaned wikilinks and embeds (![[note#section]] pointing at moved or renamed notes)", "checked": false },
+    { "id": "c4", "label": "Manifest hygiene — done [x] items left in active sections, inline spec blobs that should be their own note, missing canonical section order", "checked": false },
+    { "id": "c5", "label": "Possible supersession — same feature named done in one note and reopened later with no superseded marker", "checked": false }
+  ]}
+/>
+
+<RichText id="files-h">
+
+### Where the files live
+
+Both are project-scoped, so they only trigger in this vault and are versioned with it — same place as the `make-note` skill added earlier this session.
+
+</RichText>
+
+<FileTree
+  id="tree"
+  title="New skill files"
+  entries={[
+    { "path": ".claude/skills/make-note/SKILL.md", "change": "added", "note": "Already created this session — resolve-meeting reuses its note-creation rules." },
+    { "path": ".claude/skills/resolve-meeting/SKILL.md", "change": "added", "note": "The 5-phase workflow + routing rules." },
+    { "path": ".claude/skills/vault-audit/SKILL.md", "change": "added", "note": "Read-only drift report; wraps scripts/vault_metadata.py audit." }
+  ]}
+/>
+
+<Code
+  id="skill-shape"
+  filename=".claude/skills/resolve-meeting/SKILL.md"
+  language="md"
+  caption="Planned shape — the description drives auto-triggering; the body is the procedure."
+  code={`---
+name: resolve-meeting
+description: Process a rough meeting note into the vault. Trigger on "resolve this meeting", "process my scrum notes", "sort out this meeting". Extracts items, batches clarifying questions, summarizes understanding, then on approval routes each item to the right feature doc or manifest, links the meeting both ways, marks superseded instructions, and fixes metadata.
+---
+
+# resolve-meeting
+
+## 1. Intake
+Read the target note + frontmatter. Grep recent same-org meetings and
+feature docs (by organization + wikilinks) for context.
+
+## 2. Understand
+Extract every action item. Classify each: feature | task | decision | bug | question.
+
+## 3. Clarify  (STOP — read-only until approved)
+Present: (a) a summary of understanding, (b) ALL clarifying questions at once,
+(c) the routing plan (what goes where). Wait for one approval.
+
+## 4. Execute
+- feature  -> find existing feature doc; update section + add related-tasks link;
+             else create via make-note rules in Task shape, set status.
+- task     -> manifest, correct section, link related task note.
+- decision -> feature doc Decisions; mark superseded instruction with a callout + link.
+- set related-tasks on the meeting note (both directions).
+- run: python3 scripts/vault_metadata.py audit  -> fix flagged frontmatter.
+
+## Adapt the note, do not force-fit
+Templates are a baseline, not a cage. If an item does not fit the template
+sections, add or rename sections in the task/feature note to match the need.
+Never drop info just because there is no matching section.
+
+## 5. Confirm
+Report created/updated notes (links), manifest changes, and items handed back.`}
+/>
+
+<RichText id="findings-h">
+
+### Current drift — findings to act on later
+
+This is the one-time audit you asked for. The cleanup is deferred (your scope choice); use this as the worklist whenever you run it, or let `vault-audit` regenerate it.
+
+</RichText>
+
+<Table
+  id="findings"
+  density="compact"
+  columns={["Area", "Issue", "Concrete example"]}
+  rows={[
+    ["Stranded items", "Newest scrum's action items never reached a feature doc or manifest", "260623 Weekly Scrum — sidebar redesign, liveshell-to-right, tags on query packs, settings spacing"],
+    ["Supersession", "Feature marked done, then reopened with no link saying which wins", "Tags: [x] in Setup Saved Searches, then reappears as new work in 260623 scrum"],
+    ["Metadata", "Unfilled template placeholder left in a live note", "260623 scrum still has date: \"{ date: YYYY-MM-DD }\""],
+    ["Metadata", "Illegal status value vs the contract (backlog|active|blocked|done)", "Setup Saved Searches uses status: completed"],
+    ["Metadata", "Work meetings categorized Personal; manifests typed inconsistently", "Scrums tagged [[Personal]]; AiQuery manifest typed [[Documentation]] vs ScholarBee [[Task]]"],
+    ["Manifest hygiene", "Top of AiQuery manifest is an undifferentiated dump; full spec pasted inline", "Done [x] mixed with open [ ]; Ctrl+Enter feature spec inlined as one checklist item"],
+    ["Open loops", "Scrum Unknowns sections never resolved or closed", "260616 scrum — client questions, bulk-write-tool question left hanging"]
+  ]}
+/>
+
+<RichText id="scope-h">
+
+### Scope & non-goals
+
+</RichText>
+
+<Callout id="nongoals" tone="warning">
+
+**In scope:** the two SKILL.md files, the routing/linking procedure, reuse of `make-note` + `vault_metadata.py` + templates. **Out of scope (deferred):** the one-time cleanup of existing drift, any change to the Bases/Categories views, a new "Feature" template (we reuse the Task shape), and the supersession-marker convention (Open Question below). **Not touched:** no bulk edits to existing notes during this build — `resolve-meeting` only writes when you run it on a specific note.
+
+</Callout>
+
+<RichText id="verify-h">
+
+### Verification
+
+</RichText>
+
+<Checklist
+  id="verify"
+  items={[
+    { "id": "v1", "label": "Dry run on a real note: /resolve-meeting on the 260623 scrum — confirm it extracts the sidebar/tags/liveshell items and STOPS at the summary before writing", "checked": false },
+    { "id": "v2", "label": "After approval, confirm new/updated feature docs carry correct frontmatter: python3 scripts/vault_metadata.py audit reports clean", "checked": false },
+    { "id": "v3", "label": "Confirm the meeting note gained related-tasks links and the manifest gained the routed items in the right sections", "checked": false },
+    { "id": "v4", "label": "Run /vault-audit and confirm it reports the known drift rows above without editing any file", "checked": false },
+    { "id": "v5", "label": "Auto-trigger check: phrase \"resolve this scrum\" with no slash command — confirm resolve-meeting fires from its description", "checked": false }
+  ]}
+/>
+
+<RichText id="oq-h">
+
+### Open Questions
+
+</RichText>
+
+<QuestionForm
+  id="open-questions"
+  questions={[
+    {
+      "id": "supersede-marker",
+      "title": "How should a superseded instruction be marked?",
+      "subtitle": "When a decision overrides earlier instructions, the skill needs one consistent convention so old items stop reading as active.",
+      "mode": "single",
+      "options": [
+        { "id": "callout", "label": "Collapsed callout + link", "detail": "> [!info]- Superseded by [[new note]] — keeps history, hides it by default.", "recommended": true },
+        { "id": "strike", "label": "Strikethrough + link", "detail": "~~old item~~ → [[new]] — lightweight, stays visible." },
+        { "id": "move", "label": "Move to a Superseded/Archive section", "detail": "Relocate out of active sections entirely." }
+      ],
+      "required": false
+    },
+    {
+      "id": "decisions-home",
+      "title": "Where do meeting decisions live?",
+      "subtitle": "There is no decision-log note today.",
+      "mode": "single",
+      "options": [
+        { "id": "feature", "label": "In the relevant feature doc's Decisions section", "detail": "Co-located with the work it affects.", "recommended": true },
+        { "id": "log", "label": "A dedicated Decisions Log note per org", "detail": "One chronological place to scan all decisions." },
+        { "id": "manifest", "label": "A Decisions section in the manifest", "detail": "Keeps everything in the one go-to board." }
+      ],
+      "required": false
+    },
+    {
+      "id": "aiquery-manifest",
+      "title": "Should vault-audit flag the AiQuery manifest for restructuring to the canonical section order?",
+      "mode": "single",
+      "options": [
+        { "id": "flag", "label": "Yes, flag it as a finding", "detail": "Report it; you restructure when ready.", "recommended": true },
+        { "id": "autofix", "label": "Let resolve-meeting normalize it as it touches sections", "detail": "Gradual cleanup as a side effect of resolving meetings." },
+        { "id": "leave", "label": "Leave it alone", "detail": "The dump works for you; do not touch structure." }
+      ],
+      "required": false
+    }
+  ]}
+  submitLabel="Send answers"
+/>
