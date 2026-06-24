@@ -28,7 +28,7 @@ status:
 	- below: device info (like the agent info view block; or the rapid response hover card)
 	- right: ai assistance expanded; bottom should be aligned with the bottom of the left pane (terminal + card-at-bottom)
 - *add the search for the views* -> NO. for now 
-- Sidebar
+- Sidebar v2
 	- icons removal of nested views
 	- Initial Avatar with initials like google meet
 	- Show Tenants as items when clicked on current tenant block
