@@ -57,3 +57,8 @@ related-bugs:
 ![[Pasted image 20260619184930.png]]
 - Create Query Pack (Stepped Wizard Flow - [UI Link](https://dribbble.com/shots/26006457-Ethiopian-Govt-Birth-Certificate-Register-Interface-Redesign)) ![[Pasted image 20260621170705.png]]
 - Create Query AI - [Link here](https://dribbble.com/shots/26996553-DevTools-Flow-Details-Node-in-SaaS-API-Testing) ![[Pasted image 20260622200431.png]]
+- Dialogs - Read Only UIs
+![[Pasted image 20260625024031.png]]
+- Dialog Forms
+![[Pasted image 20260625024116.png]]
+![[Pasted image 20260625024131.png]]
