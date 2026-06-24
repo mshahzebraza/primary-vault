@@ -50,6 +50,6 @@ related-tasks:
 - [x] Add tags to query entries columns
 - [x] Settings UI spacing (content touching header)
 - [x] Liveshell AI assistance input: expand to 2 lines, scroll vertically
-- [ ] Liveshell panel to the right — see [[Tasks Manifest - Ai Query]]
-- [ ] Show IP address in agent list by default — see [[Tasks Manifest - Ai Query]]
+- [x] Liveshell panel to the right — see [[Tasks Manifest - Ai Query]]
+- [x] Show IP address in agent list by default — see [[Tasks Manifest - Ai Query]]
 - [ ] [[260624 Task - Sidebar v2 Redesign]] (Phase 1: Figma)
