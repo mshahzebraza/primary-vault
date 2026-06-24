@@ -16,7 +16,7 @@ projects:
 attendees:
   - "[[Rajput]]"
 related-tasks:
-  - "[[260505 (Tue) Task - MFA Feature (Firebase TOTP)]]"
+  - "[[260505 Task - MFA Feature (Firebase TOTP)]]"
 status:
   - completed
 ---
@@ -26,7 +26,7 @@ status:
 
 ## Discussion
 
-- Walked through the step-by-step TOTP enrollment and login flows — details captured in [[260505 (Tue) Task - MFA Feature (Firebase TOTP)]].
+- Walked through the step-by-step TOTP enrollment and login flows — details captured in [[260505 Task - MFA Feature (Firebase TOTP)]].
 - Decided to split User Settings into **Account** and **Security** tabs.
 
 ## Decisions Made
@@ -34,4 +34,4 @@ status:
 - User Settings will have separate **Account** and **Security** tabs only.
 
 ## Action Items
-- [ ] See [[260505 (Tue) Task - MFA Feature (Firebase TOTP)]] for all outstanding tasks.
+- [ ] See [[260505 Task - MFA Feature (Firebase TOTP)]] for all outstanding tasks.

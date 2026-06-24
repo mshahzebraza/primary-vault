@@ -23,15 +23,15 @@ Map the content to ONE primary type (frontmatter `type` is a wikilink):
 
 If unsure between two, ask the user. Don't guess on type — it drives every Base view.
 
-## 2. Get the timestamp (always, before naming)
+## 2. Get the date (always, before naming)
 
 ```bash
-date +"%y%m%dT%H%M"   # e.g. 260624T2014
-date +"%a"            # weekday, e.g. Tue
+date +"%y%m%d"   # e.g. 260624
 ```
 
-Filename: `YYMMDDTHHMM (Weekday) <Type> - <Title>.md`
-Example: `260624T2014 (Tue) Task - Wire up auth refresh.md`
+Filename: `YYMMDD <Type> - <Title>.md`
+Example: `260624 Task - Wire up auth refresh.md`
+The full date goes in the `date` frontmatter field (`YYYY-MM-DD`). Time is not in the filename.
 Save under `Notes/` (dailies go in `Daily/`, journals follow the Journal template's location).
 
 ## 3. Fill frontmatter from the metadata contract

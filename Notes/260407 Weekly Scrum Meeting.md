@@ -28,7 +28,7 @@ status:
 	- BUG: query editor gives UI jerk when content in the editor is too much due to a resizing change added earlier. Steps to repro;  
 		- Add a realistic query - you can just do select * from users, or load a preset
 		- Then open save preset or schedule, the SQL editor in the pop up module should be incorrectly sized - then if you add anything at that point (space, character, etc.) you will see it snap back to the right size
-	- [[260409 (Thu) BUG - Data Table pagination row causes the parent container to scroll|BUG: Data Table pagination row causes the parent container to scroll]]
+	- [[260409 BUG - Data Table pagination row causes the parent container to scroll|BUG: Data Table pagination row causes the parent container to scroll]]
 
 ## Decisions Made
 

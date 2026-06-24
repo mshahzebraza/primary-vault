@@ -18,7 +18,7 @@ attendees:
 status:
   - active
 related-tasks:
-  - "[[260518T2007 (Mon) Feat - Query Response Data Diffing]]"
+  - "[[260518 Feat - Query Response Data Diffing]]"
 ---
 
 ## Context

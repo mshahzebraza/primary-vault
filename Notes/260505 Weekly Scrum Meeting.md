@@ -16,8 +16,8 @@ attendees:
 status:
   - active
 related-tasks:
-  - "[[260509T1213 (Sat) Task - Rapid Response View Enhancements]]"
-  - "[[260505 (Tue) Task - Team Settings & Role Management]]"
+  - "[[260509 Task - Rapid Response View Enhancements]]"
+  - "[[260505 Task - Team Settings & Role Management]]"
 ---
 
 ## Context
@@ -43,11 +43,11 @@ Weekly scrum covering UI/UX improvements across Settings, Team Management, and t
 
 ### Team Settings & Role Management
 
-→ [[260505 (Tue) Task - Team Settings & Role Management]]
+→ [[260505 Task - Team Settings & Role Management]]
 
 ### Rapid Response View
 
-→ [[260509T1213 (Sat) Task - Rapid Response View Enhancements]]
+→ [[260509 Task - Rapid Response View Enhancements]]
 
 ---
 
@@ -60,13 +60,13 @@ Weekly scrum covering UI/UX improvements across Settings, Team Management, and t
 
 ### Team Settings
 
-→ [[260505 (Tue) Task - Team Settings & Role Management#Tasks]]
+→ [[260505 Task - Team Settings & Role Management#Tasks]]
 
 ### Rapid Response View
 
 - [x] Auto-close the primary sidebar when Query Smith opens.
 - [x] Remove the **Load Query** button; implement click-to-load.
-- [ ] Remaining items → [[260509T1213 (Sat) Task - Rapid Response View Enhancements]]
+- [ ] Remaining items → [[260509 Task - Rapid Response View Enhancements]]
 
 ### Misc
 

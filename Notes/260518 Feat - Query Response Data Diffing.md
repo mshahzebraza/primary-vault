@@ -137,4 +137,4 @@ Creation:
 
 
 
-- ![[260526T2152 (Tue) Weekly Scrum Meeting#Diffing Updates]]
+- ![[260526 Weekly Scrum Meeting#Diffing Updates]]

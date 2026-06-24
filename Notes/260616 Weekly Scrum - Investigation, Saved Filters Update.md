@@ -18,7 +18,7 @@ attendees:
 status:
   - active
 related-tasks:
-  - "[[260609T2043 (Tue) Setup the Saved Searches]]"
+  - "[[260609 Setup the Saved Searches]]"
 ---
 
 ## Context

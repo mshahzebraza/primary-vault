@@ -23,9 +23,9 @@ status:
   - active
 priority: P1
 related-tasks:
-  - "[[260423T0904 (Thu) Timezone Dropdown List adjustments based on Daylight Savings]]"
-  - "[[260423T1204 (Thu) Task - Integrate transfer ownership action in team settings view]]"
-  - "[[260425T1604 (Sat) Add Agents to existing group]]"
+  - "[[260423 Timezone Dropdown List adjustments based on Daylight Savings]]"
+  - "[[260423 Task - Integrate transfer ownership action in team settings view]]"
+  - "[[260425 Add Agents to existing group]]"
 ---
 
 ## Context
@@ -61,7 +61,7 @@ Source Sheet URL: https://docs.google.com/spreadsheets/d/1tXi9jqdq1CPOsHri8by7_K
   - Oldest extensions show first, newest last — should be inverse. Sheet also calls out optional pill distinction for AMD vs ARM on deploy flows. 🔥🔥
 - [x] Query Overview Dialog Sql input should be copy-able
 	- [x] query-pack preset detail view for queries dropdown should have copy-able
-- [x] [ID: 22] Need - Bug - [[260423T0904 (Thu) Timezone Dropdown List adjustments based on Daylight Savings]]
+- [x] [ID: 22] Need - Bug - [[260423 Timezone Dropdown List adjustments based on Daylight Savings]]
   - Sheet: Resolved y, Confirmed working (ppe) n — verify on PPE after deploy.
 - [x] [ID: 24] Nice - Bug - Refresh not showing toast on Settings > Team page
   - Previously marked QA failed; verify toast after fix on PPE.
@@ -94,7 +94,7 @@ Source Sheet URL: https://docs.google.com/spreadsheets/d/1tXi9jqdq1CPOsHri8by7_K
   - Frontend needs to allow the device name to be showing undefined with an id and tooltip saying device may be uninstalled etc.
   - because realistic solve is to remove expired / do not offer edit & rerun for expired blank packs. (Rajput/Shazeb)
 
-- [x] [ID: 45] Need - Bug - [[260425T1604 (Sat) Add Agents to existing group|Add agents to an existing static group in the UI]]
+- [x] [ID: 45] Need - Bug - [[260425 Add Agents to existing group|Add agents to an existing static group in the UI]]
 	- See dedicated task note for full context/description.
 
 - [x] Refactor the logic of hooks into a consolidated hook with multiple smaller hooks related to each of the functions like dialog, deletion, dialog, transfer ownership for the team settings view.
@@ -125,7 +125,7 @@ Source Sheet URL: https://docs.google.com/spreadsheets/d/1tXi9jqdq1CPOsHri8by7_K
 - [x] UI Bug: Query SQL Input in the Query Schedule, View Detail Dialog is one-line and scrollable.
   - Take a reference from Query Pack Schedule SQL Input (it also has sql highlighting)
 - [x] In API Roles Page, Expiry Pill positioning and Range is not correct
-- [x] [[260423T1204 (Thu) Task - Integrate transfer ownership action in team settings view]]
+- [x] [[260423 Task - Integrate transfer ownership action in team settings view]]
   - API code block
 ```
 {[domain}}/tenant/transfer-ownership  
@@ -148,7 +148,7 @@ body: {
 - [x] [ID: 7] Need/Nice - Task - Remove attack group/name mode from the UI
 - [x] [ID: 8] Need/Nice - Task - Change attack to be MITRE TID & make Yara be its own mode
 - [x] [ID: 9] Need - Task - Change 'compliance' mode to always say 'Vulnerability'
-- [x] [ID: 14] Need/Nice - Bug - [[260419T1504 (Sun) BUG - query editor gives UI jerk when content in the editor is too much due to a resizing change added earlier]]
+- [x] [ID: 14] Need/Nice - Bug - [[260419 BUG - query editor gives UI jerk when content in the editor is too much due to a resizing change added earlier]]
 - [x] [ID: 23] Nice - Bug - Point rapid response 'Need Help?' link to rapid response page
 - [x] [ID: 25] Nice - Bug - On settings > Team page – search seems to be broken
 - [x] [ID: 28] Nice - Bug - On settings > Invite page – search is broken also

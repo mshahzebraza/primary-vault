@@ -11,10 +11,11 @@ Three canonical work orgs — always use wikilink syntax:
 
 ## Note filename convention
 
-All time-stamped notes use `YYMMDDTHHMM (Weekday) <Type> - <Title>.md`.
-Examples: `260507T1124 (Thu) Task - ...`, `260423T1204 (Thu) Meeting - ...`
+All time-stamped notes use `YYMMDD <Type> - <Title>.md`.
+Examples: `260507 Task - ...`, `260423 Meeting - ...`
 
-Use `date +"%y%m%dT%H%M"` to get the current timestamp before creating any note.
+Use `date +"%y%m%d"` to get the current date before creating any note.
+The full timestamp goes in the `date` frontmatter field only — not in the filename.
 
 ## Metadata contract
 

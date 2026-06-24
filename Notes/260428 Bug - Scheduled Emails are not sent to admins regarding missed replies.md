@@ -15,7 +15,7 @@ status:
 priority: P1
 jira: "[SB-1227](https://scholarbee-team.atlassian.net/browse/SB-1227)"
 related-tasks:
-  - "[[260407 (Tue) Emails  Notification regarding missed replies from campus admins to students]]"
+  - "[[260407 Emails  Notification regarding missed replies from campus admins to students]]"
 ---
 
 ## Description

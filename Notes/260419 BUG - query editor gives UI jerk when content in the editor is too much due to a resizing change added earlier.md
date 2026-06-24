@@ -26,4 +26,4 @@ priority: P1
 2. Then open save preset or schedule, the SQL editor in the pop up module should be incorrectly sized - then if you add anything at that point (space, character, etc.) you will see it snap back to the right size
 
 ## Solution / Fix
-Fixed in [this PR](https://github.com/AIQuery-Project/client/pull/511) and also created [[260420T0004 (Mon) Monaco SQL Editor Height Resizing Issue Report | this report]] explaining the issue
+Fixed in [this PR](https://github.com/AIQuery-Project/client/pull/511) and also created [[260420 Monaco SQL Editor Height Resizing Issue Report | this report]] explaining the issue

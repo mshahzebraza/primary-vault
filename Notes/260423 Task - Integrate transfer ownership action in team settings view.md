@@ -32,8 +32,8 @@ Integrate **Transfer Ownership** action in **Settings → Team** with an explici
 - [x] QA: permission constraints (root/admin only), self-transfer prevention, error states
 
 ## Follow-ups / Bugs found post-integration
-- [x] [[260424T2242 (Fri) Bug - Transfer ownership success but failure toast (response validation)|False failure shown after successful transfer (response validation failing)]]
-- [x] [[260424T2242 (Fri) Bug - Transfer ownership mutation sequencing (toast.promise unwrap)|Roles not updating in Team Settings view after successful transfer (mutation sequencing / unwrap)]]
+- [x] [[260424 Bug - Transfer ownership success but failure toast (response validation)|False failure shown after successful transfer (response validation failing)]]
+- [x] [[260424 Bug - Transfer ownership mutation sequencing (toast.promise unwrap)|Roles not updating in Team Settings view after successful transfer (mutation sequencing / unwrap)]]
 
 
 ![[Related Meetings.base]]

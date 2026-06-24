@@ -14,7 +14,7 @@ projects:
 status: active
 priority: P2
 related-tasks:
-  - "[[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]"
+  - "[[260623 Weekly Scrum - UI Updates, Tags]]"
 ---
 
 ## Overview

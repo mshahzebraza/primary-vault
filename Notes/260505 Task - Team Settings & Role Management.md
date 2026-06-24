@@ -14,12 +14,12 @@ date: 2026-05-05
 tags:
   - team-settings
 related-meetings:
-  - "[[260505T1905 (Tue) Weekly Scrum Meeting]]"
+  - "[[260505 Weekly Scrum Meeting]]"
 ---
 
 ## Overview
 
-Team Settings enhancements covering the invitation flow, role assignment, user type visibility, and access restrictions for Liveshell. Derived from the [[260505T1905 (Tue) Weekly Scrum Meeting|2026-05-05 Weekly Scrum]].
+Team Settings enhancements covering the invitation flow, role assignment, user type visibility, and access restrictions for Liveshell. Derived from the [[260505 Weekly Scrum Meeting|2026-05-05 Weekly Scrum]].
 
 ## Role Permissions Reference
 

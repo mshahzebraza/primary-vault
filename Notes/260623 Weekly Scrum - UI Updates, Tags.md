@@ -14,9 +14,9 @@ attendees:
   - "[[Rajput]]"
 status: done
 related-tasks:
-  - "[[260624T2323 (Wed) Task - Sidebar v2 Redesign]]"
-  - "[[260612T2031 (Fri) UI Overhaul]]"
-  - "[[260609T2043 (Tue) Setup the Saved Searches]]"
+  - "[[260624 Task - Sidebar v2 Redesign]]"
+  - "[[260612 UI Overhaul]]"
+  - "[[260609 Setup the Saved Searches]]"
 ---
 ## Discussion
 - tags should be applied to query packs, query presets
@@ -41,8 +41,8 @@ related-tasks:
 - *color of the sidebar* - should be brand color
 - *Ask Fleet MVP Discussion*
 ## Decisions Made
-- No search for views (for now) — see [[260612T2031 (Fri) UI Overhaul#Decisions]]
-- Brand color = purple shade; sidebar color = brand color — see [[260624T2323 (Wed) Task - Sidebar v2 Redesign#Decisions]]
+- No search for views (for now) — see [[260612 UI Overhaul#Decisions]]
+- Brand color = purple shade; sidebar color = brand color — see [[260624 Task - Sidebar v2 Redesign#Decisions]]
 - Sub-Tenants → deferred to future
 
 ## Action Items
@@ -52,4 +52,4 @@ related-tasks:
 - [x] Liveshell AI assistance input: expand to 2 lines, scroll vertically
 - [ ] Liveshell panel to the right — see [[Tasks Manifest - Ai Query]]
 - [ ] Show IP address in agent list by default — see [[Tasks Manifest - Ai Query]]
-- [ ] [[260624T2323 (Wed) Task - Sidebar v2 Redesign]] (Phase 1: Figma)
+- [ ] [[260624 Task - Sidebar v2 Redesign]] (Phase 1: Figma)

@@ -4,7 +4,7 @@ categories:
   - "[[Journal]]"
 date: 2026-05-08
 related-tasks:
-  - "[[260507T1124 (Thu) Task - Admission Program Lifecycle & Term based Archiving]]"
+  - "[[260507 Task - Admission Program Lifecycle & Term based Archiving]]"
 ---
 
 ## Scratch

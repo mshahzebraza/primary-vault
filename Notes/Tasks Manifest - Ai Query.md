@@ -10,17 +10,17 @@ status: active
 
 ## ▶️ In Progress
 
-- [ ] [[260624T2323 (Wed) Task - Sidebar v2 Redesign]]
-- [ ] [[260612T2031 (Fri) UI Overhaul]]
-- [ ] [[260611T2153 (Thu) Document ShadCN theming architecture setup and maintenance]]
-- [ ] [[260624T2222 (Wed) Task - Ctrl+Enter Submit for SQL Editor with Hover Hint]]
-- [ ] [[260518T2007 (Mon) Feat - Query Response Data Diffing | Query Response Data Diffing Tasks]]
-- [ ] Reset Password - Revert MFA Mode and Back to Login ![[260509T2233 (Sat) Task - Reset Password - Revert MFA Mode and Back to Login#Current Tasks]]
-- [ ] Rapid Response View Enhancements ![[260509T1213 (Sat) Task - Rapid Response View Enhancements#Current Tasks]]
+- [ ] [[260624 Task - Sidebar v2 Redesign]]
+- [ ] [[260612 UI Overhaul]]
+- [ ] [[260611 Document ShadCN theming architecture setup and maintenance]]
+- [ ] [[260624 Task - Ctrl+Enter Submit for SQL Editor with Hover Hint]]
+- [ ] [[260518 Feat - Query Response Data Diffing | Query Response Data Diffing Tasks]]
+- [ ] Reset Password - Revert MFA Mode and Back to Login ![[260509 Task - Reset Password - Revert MFA Mode and Back to Login#Current Tasks]]
+- [ ] Rapid Response View Enhancements ![[260509 Task - Rapid Response View Enhancements#Current Tasks]]
 	- [ ] Add **Actions** dropdown (load preset / save as preset / go to create query)
 	- [ ] Add "Save as preset" action to individual query history items
 	- [ ] *(Optional)* Multi-select on history items to batch-save as a preset
-	- ➡️ [[260612T2035 (Fri) rapid response refactoring and enhancements]]
+	- ➡️ [[260612 rapid response refactoring and enhancements]]
 	- ➡️ [[rapid-response bugs]]
 - [ ] Update the TOTP Revert wording according to Nick's comment:
 	> When shortened – just call it "2FA" or "MFA". When written out – "two factor authentication".
@@ -30,22 +30,22 @@ status: active
 - [ ] Vertical scroll caused by too many exports in metadata tab of query detail view
 - [ ] Revert the agent group custom extension test deployments
 - [ ] Try to add Title+description JSX in select options of the change user role dialog
-- [ ] Bug Bash Tasks ![[260417T2004 (Fri) April Bug Bash Meeting#Pending]]
+- [ ] Bug Bash Tasks ![[260417 April Bug Bash Meeting#Pending]]
 - [ ] Refactor/Restructure the Login Form and MFA — prefer Compound Component Pattern
-- [ ] Optimization: Team Settings & Role Management Tasks ![[260505 (Tue) Task - Team Settings & Role Management#Optimization]]
-- [ ] [[260406 (Mon) add end to end testing of create query flow]]
+- [ ] Optimization: Team Settings & Role Management Tasks ![[260505 Task - Team Settings & Role Management#Optimization]]
+- [ ] [[260406 add end to end testing of create query flow]]
 - [ ] User is logged out even when active on another tab — sync session activity across tabs
 - [ ] Create a variation pattern for the agent list views
-- [ ] *Query Detail's Query List Panel* ![[260411 (Sat) Create Query List Panel in Query Detail View#Pending]]
+- [ ] *Query Detail's Query List Panel* ![[260411 Create Query List Panel in Query Detail View#Pending]]
 - [ ] Change highlighting of the sidebar from BLUE to PURPLE
 - [ ] Rename dashboard collection/sections to dashboard tabs
 - [ ] Current filters identification for all views
-- [ ] **[[260406 (Mon) update the shadcn version, components and theme]]**
+- [ ] **[[260406 update the shadcn version, components and theme]]**
 - [ ] View Layout: handle help button dynamically; description and breadcrumbs should be optional
 - [ ] use schema endpoint for filterable options in the response data table
 - [ ] Optional: analyze if Compound Component Pattern for Data Table improves reusability
-- [ ] Show IP address in agent list by default — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
-- [ ] Liveshell layout redesign — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
+- [ ] Show IP address in agent list by default — from [[260623 Weekly Scrum - UI Updates, Tags]]
+- [ ] Liveshell layout redesign — from [[260623 Weekly Scrum - UI Updates, Tags]]
 	- [ ] Liveshell panel should be to the right
 	- [ ] History of recent commands in liveshell
 	- [ ] Above: session duration + switch liveshell host (ends session before switching)
@@ -75,7 +75,7 @@ status: active
 - ➡️ [[PPE to PROD checklist|PPE → PROD Checklist & Settings Tasks]]
 - ➡️ 🔴 [[Filtering V2 - Athena, Clickhouse and MongoDB]]
 - ➡️ 🔴 [[Possible Areas to Update of Filtering Architecture]]
-- ➡️ [[260509T1213 (Sat) Task - Rapid Response View Enhancements]]
+- ➡️ [[260509 Task - Rapid Response View Enhancements]]
 - ➡️ [[end to end prod testing & checklist|End-to-End Prod Testing Checklist]]
 
 ---
@@ -103,7 +103,7 @@ status: active
 
 ## ⚠️ Blocked
 
-- ⏸️ 🟠 implementation of query diffs (blocked: after Filtering V2) — [[260518T2007 (Mon) Feat - Query Response Data Diffing]]
+- ⏸️ 🟠 implementation of query diffs (blocked: after Filtering V2) — [[260518 Feat - Query Response Data Diffing]]
 - ⏸️ 🟡 logs and metrics — [[Frontend - Observability (Logging & Metrics)|Frontend Observability]] (blocked: active tasks; may go to Rajput)
 - ⏸️ 🟡 agent feature configuration (paused: needs more discussion)
 
@@ -111,25 +111,25 @@ status: active
 
 ## ✅ Completed
 
-- [x] [[260609T2043 (Tue) Setup the Saved Searches]]
+- [x] [[260609 Setup the Saved Searches]]
 - [x] Agent and Agent Group Overview Summary
 	- *Optional* — Create a centralized and reusable service summary schema, and reuse it for agent and agent groups
 - [x] Change Auto to windows in query mode. Remove auto
 - [x] Reasoning effort AI generator
 - [x] Enable Copy to Clipboard of RO_TextField — bigger, only visible on hover
 - [x] The disabled MFA is not updated in the team settings table
-- [x] MFA Feature Screen [[260505 (Tue) Task - MFA Feature (Firebase TOTP)#Tasks]]
-- [x] `exist[query_sandbox] = false` — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
-- [x] Add tags to query entries columns — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
-- [x] Settings UI spacing (content touching header) — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
-- [x] Liveshell AI assistance input: expand to 2 lines, scroll vertically — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
+- [x] MFA Feature Screen [[260505 Task - MFA Feature (Firebase TOTP)#Tasks]]
+- [x] `exist[query_sandbox] = false` — from [[260623 Weekly Scrum - UI Updates, Tags]]
+- [x] Add tags to query entries columns — from [[260623 Weekly Scrum - UI Updates, Tags]]
+- [x] Settings UI spacing (content touching header) — from [[260623 Weekly Scrum - UI Updates, Tags]]
+- [x] Liveshell AI assistance input: expand to 2 lines, scroll vertically — from [[260623 Weekly Scrum - UI Updates, Tags]]
 
 ---
 
 ## Ideas/Future Requirements
 
-- Tags on query packs and query presets — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]] (tags on query entries already done; this extends to packs/presets)
-- v2 API filters: add more filter types + filter panel support — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
+- Tags on query packs and query presets — from [[260623 Weekly Scrum - UI Updates, Tags]] (tags on query entries already done; this extends to packs/presets)
+- v2 API filters: add more filter types + filter panel support — from [[260623 Weekly Scrum - UI Updates, Tags]]
 - Sub-Tenants — future (deferred in 2026-06-23 scrum)
 - Ask Fleet MVP — flagged for future discussion
 

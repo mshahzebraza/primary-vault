@@ -15,7 +15,7 @@ tags:
   - feature
   - frontend
 related-meetings:
-  - "[[260505T1905 (Tue) Weekly Scrum Meeting]]"
+  - "[[260505 Weekly Scrum Meeting]]"
 ---
 
 ## Overview

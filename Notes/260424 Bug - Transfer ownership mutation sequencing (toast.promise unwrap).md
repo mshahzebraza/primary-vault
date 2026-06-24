@@ -17,7 +17,7 @@ projects:
 status:
   - completed
 priority: P2
-parent-task: "[[260423T1204 (Thu) Task - Integrate transfer ownership action in team settings view]]"
+parent-task: "[[260423 Task - Integrate transfer ownership action in team settings view]]"
 ---
 
 ## Overview
