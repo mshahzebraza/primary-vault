@@ -26,6 +26,8 @@ Every note under `Notes/` must have frontmatter conforming to `Templates/Bases/M
 - `priority` — `P1 | P2 | P3`
 - `date` — `YYYY-MM-DD`
 - `tags` — plain string labels (not wikilinks)
+- `read` — checkbox, **external-source notes only** (videos, articles, tutorials). Default `false` when creating from an external source. Set `true` only when user says they've already consumed it.
+- `url` — source URL for external-source notes
 - Do NOT use legacy fields: `base`, `path_area`, `original_path`, `org`, `client`
 
 ## Task notes

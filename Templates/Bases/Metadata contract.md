@@ -14,6 +14,8 @@ Notes under `Notes/` follow the **canonical property schema** in [[Documentation
 | `date` | date | Meetings, journals, dailies |
 | `related-tasks` | multitext | Meeting ↔ task linking |
 | `tags` | tags | Topical labels (not wikilinks) |
+| `read` | checkbox | External-source notes only (`[[Reference]]`, TechLearning). `false` = dumped, not yet consumed. `true` = reviewed at least once. Omit for self-authored notes. |
+| `url` | text | Source URL for external-source notes |
 
 **YAML:** Quote list items: `- "[[Meetings]]"`.
 

@@ -13,6 +13,8 @@
     "aliases": "aliases",
     "attendees": "multitext",
     "source": "text",
+    "url": "text",
+    "read": "checkbox",
     "topics": "multitext",
     "cssclasses": "multitext"
   }
