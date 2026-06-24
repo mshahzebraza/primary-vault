@@ -52,6 +52,8 @@ related-bugs:
 - [This Gif](https://cdn.dribbble.com/userupload/46513805/file/b726a6281991c3028d80144ba400148d.mp4) on Dashboard Animation and the snapshot below![[Pasted image 20260614222627.png]]
 - API Keys ![[Pasted image 20260618225433.png]]
 - Agent Documentation ![[Pasted image 20260618225618.png]]
-- Settings UI ![[Pasted image 20260619184930.png]]
+- Settings UI
+![[Pasted image 20260625023924.png]]
+![[Pasted image 20260619184930.png]]
 - Create Query Pack (Stepped Wizard Flow - [UI Link](https://dribbble.com/shots/26006457-Ethiopian-Govt-Birth-Certificate-Register-Interface-Redesign)) ![[Pasted image 20260621170705.png]]
 - Create Query AI - [Link here](https://dribbble.com/shots/26996553-DevTools-Flow-Details-Node-in-SaaS-API-Testing) ![[Pasted image 20260622200431.png]]
