@@ -1,5 +1,5 @@
 {
-  "format": "YYMMDDTHHmm (ddd)",
+  "format": "YYMMDD",
   "folder": "/Notes",
   "template": "Templates/Journal Template"
 }
