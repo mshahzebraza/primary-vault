@@ -17,13 +17,8 @@ projects:
 - [ ] [[260611 Document ShadCN theming architecture setup and maintenance]]
 - [ ] [[260624 Task - Ctrl+Enter Submit for SQL Editor with Hover Hint]]
 - [ ] [[260518 Feat - Query Response Data Diffing | Query Response Data Diffing Tasks]]
-- [x] Reset Password - Revert MFA Mode and Back to Login ![[260509 Task - Reset Password - Revert MFA Mode and Back to Login#Current Tasks]]
-- [ ] Rapid Response View Enhancements ![[260509 Task - Rapid Response View Enhancements#Current Tasks]]
-	- [ ] Add **Actions** dropdown (load preset / save as preset / go to create query)
-	- [ ] Add "Save as preset" action to individual query history items
-	- [ ] *(Optional)* Multi-select on history items to batch-save as a preset
-	- ➡️ [[260612 rapid response refactoring and enhancements]]
-	- ➡️ [[rapid-response bugs]]
+- ➡️ [[260612 rapid response refactoring and enhancements]]
+- ➡️ [[rapid-response bugs]]
 - [ ] Update the TOTP Revert wording according to Nick's comment:
 	> When shortened – just call it "2FA" or "MFA". When written out – "two factor authentication".
 - [ ] `toast.promise` pattern causes toast for each failure instead of a single toast on final failure
@@ -113,18 +108,10 @@ projects:
 
 ## ✅ Completed
 
+- [x] [[260509 Task - Rapid Response View Enhancements]]
+- [x] [[260509 Task - Reset Password - Revert MFA Mode and Back to Login]]
+- [x] [[260505 Task - MFA Feature (Firebase TOTP)]]
 - [x] [[260609 Setup the Saved Searches]]
-- [x] Agent and Agent Group Overview Summary
-	- *Optional* — Create a centralized and reusable service summary schema, and reuse it for agent and agent groups
-- [x] Change Auto to windows in query mode. Remove auto
-- [x] Reasoning effort AI generator
-- [x] Enable Copy to Clipboard of RO_TextField — bigger, only visible on hover
-- [x] The disabled MFA is not updated in the team settings table
-- [x] MFA Feature Screen [[260505 Task - MFA Feature (Firebase TOTP)#Tasks]]
-- [x] `exist[query_sandbox] = false` — from [[260623 Weekly Scrum - UI Updates, Tags]]
-- [x] Add tags to query entries columns — from [[260623 Weekly Scrum - UI Updates, Tags]]
-- [x] Settings UI spacing (content touching header) — from [[260623 Weekly Scrum - UI Updates, Tags]]
-- [x] Liveshell AI assistance input: expand to 2 lines, scroll vertically — from [[260623 Weekly Scrum - UI Updates, Tags]]
 
 ---
 
