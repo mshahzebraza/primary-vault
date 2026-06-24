@@ -5,7 +5,8 @@ categories:
   - "[[Tasks]]"
   - "[[aiquery.io]]"
 organization: "[[aiquery.io]]"
-projects: []
+projects:
+  - "[[aq-client]]"
 status: backlog
 priority: P2
 ---

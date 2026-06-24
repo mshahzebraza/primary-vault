@@ -6,6 +6,8 @@ categories:
   - "[[Tasks]]"
 type: "[[Task]]"
 status: active
+projects:
+  - "[[aq-client]]"
 ---
 
 ## ▶️ In Progress
@@ -15,7 +17,7 @@ status: active
 - [ ] [[260611 Document ShadCN theming architecture setup and maintenance]]
 - [ ] [[260624 Task - Ctrl+Enter Submit for SQL Editor with Hover Hint]]
 - [ ] [[260518 Feat - Query Response Data Diffing | Query Response Data Diffing Tasks]]
-- [ ] Reset Password - Revert MFA Mode and Back to Login ![[260509 Task - Reset Password - Revert MFA Mode and Back to Login#Current Tasks]]
+- [x] Reset Password - Revert MFA Mode and Back to Login ![[260509 Task - Reset Password - Revert MFA Mode and Back to Login#Current Tasks]]
 - [ ] Rapid Response View Enhancements ![[260509 Task - Rapid Response View Enhancements#Current Tasks]]
 	- [ ] Add **Actions** dropdown (load preset / save as preset / go to create query)
 	- [ ] Add "Save as preset" action to individual query history items

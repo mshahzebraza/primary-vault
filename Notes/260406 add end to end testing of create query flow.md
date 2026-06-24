@@ -5,7 +5,8 @@ categories:
   - "[[Tasks]]"
 organization:
   - "[[aiquery.io]]"
-projects: []
+projects:
+  - "[[aq-client]]"
 status: backlog
 priority: P2
 date: 2026-04-06

@@ -8,7 +8,7 @@ categories:
   - "[[Tasks]]"
 type: "[[Task]]"
 projects:
-  - "[[aq-marketing]]"
+  - "[[aq-client]]"
 priority: P2
 ---
 

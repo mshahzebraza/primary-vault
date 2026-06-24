@@ -1,15 +1,16 @@
 ---
 status: backlog
 tags:
-- RnD
-- architecture
-organization: '[[aiquery.io]]'
+  - RnD
+  - architecture
+organization: "[[aiquery.io]]"
 categories:
-- '[[Work]]'
-- '[[aiquery.io]]'
-- '[[Tasks]]'
-type: '[[RnD]]'
-projects: []
+  - "[[Work]]"
+  - "[[aiquery.io]]"
+  - "[[Tasks]]"
+type: "[[RnD]]"
+projects:
+  - "[[aq-client]]"
 priority: P2
 ---
 
