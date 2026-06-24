@@ -1,0 +1,216 @@
+<RichText id="intro">
+
+# Vault audit — 2026-06-24
+
+A full read-only health pass over the 158-note vault: metadata, link graph, meeting linkage, manifest hygiene, and supersession. Nothing was edited.
+
+**Headline:** the vault is healthy in content but **leaky in connections**. The single biggest issue is exactly what the new `resolve-meeting` skill targets — **14 of 21 meeting notes have zero inbound links**, meaning their action items were captured and then never wired into a feature doc or manifest. Most of the rest is low-severity reference drift and by-design "unresolved" type labels that only *look* alarming until you separate them out.
+
+This report sorts findings into **fix now** (real bugs), **structural drift**, and **decisions** (systemic graph gaps that are choices, not errors). The three graph-gap decisions are now settled — see Decisions at the bottom.
+
+</RichText>
+
+<Diagram
+  id="scorecard"
+  data={{
+    html: `<div class="grid">
+  <div class="card risk" data-rough><div class="big">14 / 21</div><div class="t">Meeting notes stranded</div><div class="s">zero inbound links — items never routed</div></div>
+  <div class="card risk" data-rough><div class="big">~12</div><div class="t">Real broken links + 1 note with no frontmatter</div><div class="s">actionable bugs</div></div>
+  <div class="card warn" data-rough><div class="big">46</div><div class="t">Orphan notes</div><div class="s">no inbound links (incl. the 14 meetings)</div></div>
+  <div class="card warn" data-rough><div class="big">55</div><div class="t">Notes missing <code>type</code></div><div class="s">bulk-set to [[Reference]]</div></div>
+  <div class="card muted" data-rough><div class="big">169</div><div class="t">By-design type labels</div><div class="s">[[Task]] etc. — not bugs</div></div>
+  <div class="card muted" data-rough><div class="big">11 + 7</div><div class="t">Missing hubs + person notes</div><div class="s">decided: leave as labels</div></div>
+</div>`,
+    css: `.grid{display:flex;flex-wrap:wrap;gap:12px;color:var(--wf-ink)}
+.card{flex:1 1 160px;min-width:160px;padding:14px;border:1px solid var(--wf-line);border-radius:12px;background:var(--wf-card)}
+.card.risk{border-color:var(--wf-warn)}
+.card.warn{border-color:var(--wf-accent)}
+.card.muted{background:var(--wf-paper)}
+.big{font-size:26px;font-weight:700}
+.t{font-size:13px;margin-top:4px}
+.s{font-size:12px;color:var(--wf-muted);margin-top:4px}
+code{background:var(--wf-accent-soft);padding:0 4px;border-radius:4px}`,
+    caption: "Severity at a glance. Red = fix; blue = structural drift; grey = systemic, a decision not a bug."
+  }}
+/>
+
+<RichText id="triage-h">
+
+### How I de-noised the link graph
+
+A naive scan reports **385 "broken" links** — which is misleading. Most are intentional. Here is the triage that turns 385 into ~12 real bugs.
+
+</RichText>
+
+<Diagram
+  id="triage"
+  data={{
+    html: `<div class="funnel">
+  <div class="row total" data-rough><span class="lab">385 raw unresolved links</span></div>
+  <div class="split">
+    <div class="col ok" data-rough><div class="n">169</div><div class="d">type labels <code>[[Task]]</code> etc. — by design</div></div>
+    <div class="col ok" data-rough><div class="n">62</div><div class="d">.base / image embeds that resolve fine</div></div>
+    <div class="col ok" data-rough><div class="n">10</div><div class="d">template scratch docs (Base Home, Vault System Plan)</div></div>
+    <div class="col dec" data-rough><div class="n">11</div><div class="d">missing project hubs (aq-client, sb-backend…)</div></div>
+    <div class="col dec" data-rough><div class="n">~120</div><div class="d">missing person + concept notes (Rajput 15x, Nick 6x, MongoDB…)</div></div>
+    <div class="col bug" data-rough><div class="n">~12</div><div class="d">GENUINE broken links + 1 frontmatter-less note</div></div>
+  </div>
+</div>`,
+    css: `.funnel{display:flex;flex-direction:column;gap:12px;color:var(--wf-ink)}
+.row.total{padding:10px 16px;border:1px solid var(--wf-line);border-radius:10px;background:var(--wf-card);text-align:center;font-weight:600}
+.split{display:flex;flex-wrap:wrap;gap:10px}
+.col{flex:1 1 150px;min-width:150px;padding:12px;border:1px solid var(--wf-line);border-radius:10px;background:var(--wf-paper)}
+.col.ok{border-color:var(--wf-ok)}
+.col.dec{border-color:var(--wf-accent)}
+.col.bug{border-color:var(--wf-warn);background:var(--wf-accent-soft)}
+.n{font-size:20px;font-weight:700}
+.d{font-size:12px;color:var(--wf-muted);margin-top:4px}
+code{background:var(--wf-accent-soft);padding:0 3px;border-radius:4px}`,
+    caption: "Only the right-most red bucket is real work. The grey buckets are choices — and the decision is to leave them as labels (see Decisions)."
+  }}
+/>
+
+<RichText id="fixnow-h">
+
+### Fix now — real bugs
+
+Small, concrete, low-risk. Most are one-line edits.
+
+</RichText>
+
+<Table
+  id="bugs"
+  density="compact"
+  columns={["Where", "Problem", "Fix"]}
+  rows={[
+    ["260611T2153 Document ShadCN theming…", "No frontmatter at all (audit: unreadable) — yet linked as ACTIVE in the AiQuery manifest", "Add Task/Documentation frontmatter"],
+    ["Tasks Manifest - Scholar Bee", "Links to ‘…app draft/submit)’ but the real note is ‘…app draft & submit’ (now an orphan)", "Fix the wikilink to match the real filename"],
+    ["260415 Signup Simplification (x3), Personal manifest (x2)", "5 empty [[ ]] links", "Remove or fill the link targets"],
+    ["Sprint Planning scrum + 2 scratch docs", "Embed [[Related Tasks.base]] — that base does not exist (only Related Bugs/Meetings)", "Point at an existing base or create Related Tasks.base"],
+    ["Work.md / OSSU notes / NestJS forFeature note", "Malformed links: [[...]], [[Resources--e53a3010]], legacy path [[sync/knowledge/….md]]", "Repair or delete each"],
+    ["260609 Setup Saved Searches", "status: completed — illegal value (must be backlog|active|blocked|done)", "Set status: done"],
+    ["260623 Weekly Scrum - UI Updates, Tags", "Unfilled template placeholder left in date field", "Set date: 2026-06-23"]
+  ]}
+/>
+
+<RichText id="stranded-h">
+
+### Structural drift #1 — stranded meetings
+
+This is the headline. 14 of 21 meeting notes are graph-orphans: their `## Action Items` were never linked into a feature doc or manifest, so they are invisible to your Bases. This is precisely the inflow `resolve-meeting` is built to stop — these 14 are its backlog.
+
+</RichText>
+
+<Table
+  id="stranded"
+  density="compact"
+  columns={["Stranded meeting (0 inbound links)", "Kind"]}
+  rows={[
+    ["260623T2004 Weekly Scrum - UI Updates, Tags", "Scrum (newest)"],
+    ["260616T2010 Weekly Scrum - Investigation, Saved Filters", "Scrum"],
+    ["260617T1352 Chat Bot Demo", "Demo"],
+    ["260512T1951 Weekly Scrum Meeting", "Scrum"],
+    ["260414 Weekly Scrum Meeting", "Scrum"],
+    ["260407 Weekly Scrum Meeting", "Scrum"],
+    ["260516T2157 Developer Meeting", "Dev"],
+    ["260502T2005 Developers Meeting - MFA Flow", "Dev"],
+    ["260429T2304 Developers Meeting - MFA", "Dev"],
+    ["260412 Developers Meeting", "Dev"],
+    ["260427T1404 Sprint 11 Review Meeting", "Review"],
+    ["260415T1204 Signup Simplification", "Meeting"],
+    ["260321 AI Meeting", "Meeting"],
+    ["260321 Maam Shazia Meeting", "Meeting"]
+  ]}
+/>
+
+<Callout id="stranded-note" tone="decision">
+
+**Remediation:** run `/resolve-meeting` on these 14, newest first. The 260623 scrum especially — it carries live, unrouted items (sidebar redesign, liveshell-to-right, tags on query packs, settings spacing). Then re-run this audit; the stranded count should drop toward zero as items get linked.
+
+</Callout>
+
+<RichText id="drift2-h">
+
+### Structural drift #2 — metadata, manifest & supersession
+
+</RichText>
+
+<Columns id="drift2">
+<Column id="drift2-meta" label="Metadata & manifest">
+
+<Table
+  id="meta-tbl"
+  density="compact"
+  columns={["Issue", "Detail"]}
+  rows={[
+    ["55 notes missing type", "Mostly reference/knowledge (Lecture 1-4, NestJS notes, OpenClaw, Installation…) — DECIDED: bulk-set to [[Reference]]"],
+    ["Work meetings tagged [[Personal]]", "Scrums categorized Personal instead of [[Work]]"],
+    ["AiQuery manifest typed [[Documentation]]", "ScholarBee manifest is [[Task]] — inconsistent"],
+    ["AiQuery manifest top is a dump", "Done [x] mixed with open [ ]; full Ctrl+Enter spec pasted inline as one checklist item — DECIDED: normalize + extract now"]
+  ]}
+/>
+
+</Column>
+<Column id="drift2-sup" label="Supersession">
+
+<Callout id="sup-note" tone="warning">
+
+**Tags** is marked done in *Setup Saved Searches* (`[x] Tags (create and filter)`), then reappears as **new** work in the 260623 scrum 7 days later ("tags on query packs", "tags on query entries columns"). Nothing links the two or marks the old one superseded — so both read as current. This is the supersession gap the resolve flow closes with a `> [!info]- Superseded by …` marker.
+
+</Callout>
+
+</Column>
+</Columns>
+
+<RichText id="decisions-h">
+
+### Systemic graph gaps (settled)
+
+These inflate Obsidian's "unresolved links" but are choices, not errors. The decision (below) is to **leave them as labels** — no stub notes — except the missing-`type` notes, which get bulk-set to `[[Reference]]`.
+
+</RichText>
+
+<Table
+  id="gaps"
+  density="compact"
+  columns={["Gap", "Count", "Examples", "Decision"]}
+  rows={[
+    ["Notes missing type", "55", "Lecture 1-4, NestJS notes, OpenClaw…", "Bulk-set to [[Reference]]; hand-fix the few real tasks"],
+    ["Type labels unresolved", "169", "[[Task]], [[Meeting]], [[Bug]]…", "Accept — they drive the Bases (no change)"],
+    ["Missing project hubs", "11", "aq-client, sb-backend, aq-devops, sb-ai…", "Do NOT create — accept as labels"],
+    ["Missing person notes", "7", "Rajput (15x), Nick (6x), Aliza (3x), Zahi…", "Do NOT create — accept as labels"],
+    ["Concept/evergreen stubs", "~13", "MongoDB (4x), stepperize (2x), LRU eviction…", "Do NOT create — accept as labels"]
+  ]}
+/>
+
+<RichText id="attack-h">
+
+### Recommended order of attack
+
+</RichText>
+
+<Checklist
+  id="attack"
+  items={[
+    { "id": "a1", "label": "Fix the 7 ‘fix now’ rows above (frontmatter-less ShadCN note + manifest link mismatch first — both touch active work)", "checked": false },
+    { "id": "a2", "label": "Run /resolve-meeting on the 14 stranded meetings, newest first (start with 260623 scrum)", "checked": false },
+    { "id": "a3", "label": "Bulk-set the 55 missing-type reference/knowledge notes to [[Reference]] (hand-fix the few that are actually tasks)", "checked": false },
+    { "id": "a4", "label": "Normalize the AiQuery manifest to the canonical section order AND lift the inline Ctrl+Enter spec blob into its own note", "checked": false },
+    { "id": "a5", "label": "Graph-gap decision is settled: do NOT create hub/person/concept stubs — leave them as unresolved labels", "checked": true },
+    { "id": "a6", "label": "Re-run /vault-audit to confirm stranded + broken counts dropped", "checked": false }
+  ]}
+/>
+
+<RichText id="decided-h">
+
+### Decisions made (2026-06-24)
+
+</RichText>
+
+<Callout id="decided" tone="decision">
+
+1. **55 notes missing `type`** → bulk-set the reference/knowledge ones to `[[Reference]]`; hand-fix any that are actually tasks.
+2. **Missing project-hub and person notes** → **do not create them.** Accept `[[aq-client]]`, `[[Rajput]]`, etc. as unresolved labels; no stub notes.
+3. **AiQuery manifest** → **normalize now** to the canonical section order (`In Progress → Pending → Blocked → Completed → Ideas → Tech Debt`) and extract the inline Ctrl+Enter spec blob into its own note.
+
+</Callout>
