@@ -16,8 +16,6 @@ tags:
   - backend
   - frontend
   - admissions
-  - api
-  - edge-cases
 ---
 
 ## Overview

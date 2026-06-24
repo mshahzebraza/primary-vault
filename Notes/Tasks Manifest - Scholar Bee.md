@@ -8,7 +8,6 @@ type:
 status:
   - active
 tags:
-  - orphan-tasks
   - minor-tasks
   - evergreen
 projects:

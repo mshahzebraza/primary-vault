@@ -12,9 +12,8 @@ status:
 priority: P2
 date: 2026-05-09
 tags:
-  - rapid-response
-  - query-smith
-  - presets
+  - feature
+  - frontend
 related-meetings:
   - "[[260505T1905 (Tue) Weekly Scrum Meeting]]"
 ---

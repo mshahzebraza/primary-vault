@@ -12,8 +12,6 @@ priority: P2
 date: 2026-05-07
 tags:
   - admission-programs
-  - listing-api
-  - session-deduplication
 related-meetings:
   - "[[260507T1105 (Thu) Daily Note]]"
   - "[[260508T1431 (Fri) Daily Note]]"

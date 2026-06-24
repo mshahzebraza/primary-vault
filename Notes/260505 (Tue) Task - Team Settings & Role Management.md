@@ -13,8 +13,6 @@ priority: P2
 date: 2026-05-05
 tags:
   - team-settings
-  - role-management
-  - invitations
 related-meetings:
   - "[[260505T1905 (Tue) Weekly Scrum Meeting]]"
 ---

@@ -2,8 +2,6 @@
 status: active
 tags:
   - freelance
-  - project
-  - client-aurangzeb
 organization: "[[Freelance]]"
 categories:
   - "[[Work]]"

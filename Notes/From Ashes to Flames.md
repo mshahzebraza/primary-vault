@@ -1,6 +1,5 @@
 ---
 tags:
-  - note
   - journal
 categories:
   - "[[Personal]]"

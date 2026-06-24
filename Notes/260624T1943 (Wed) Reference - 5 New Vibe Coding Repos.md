@@ -8,10 +8,8 @@ date: 2026-06-24
 url: https://www.youtube.com/watch?v=UnzD_bwylWs
 source: "YouTube — Sean Kochel"
 tags:
-  - vibe-coding
   - ai-tools
   - agentic-workflow
-  - github-repos
 ---
 
 # 5 New Vibe Coding Repos (Sean Kochel)

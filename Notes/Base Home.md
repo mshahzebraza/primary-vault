@@ -3,8 +3,6 @@ type: "[[Documentation]]"
 categories:
   - "[[Documentation]]"
 tags:
-  - hub
-  - navigation
   - plan
 date: 2026-04-05
 ---

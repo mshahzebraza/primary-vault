@@ -12,7 +12,6 @@ status:
 priority: P2
 date: 2026-05-09
 tags:
-  - reset-password
   - mfa
   - auth
 ---

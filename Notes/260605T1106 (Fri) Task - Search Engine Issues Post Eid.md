@@ -12,8 +12,6 @@ priority: P2
 date: 2026-06-05
 tags:
   - search-engine
-  - elasticsearch
-  - ranking
   - admission-programs
 ---
 ## Overview

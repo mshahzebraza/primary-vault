@@ -6,9 +6,8 @@ categories:
   - "[[Tasks]]"
 date: 2026-04-23
 tags:
-  - optimization
-  - clean-code
   - ui
+  - frontend
 organization:
   - "[[aiquery.io]]"
 projects:
