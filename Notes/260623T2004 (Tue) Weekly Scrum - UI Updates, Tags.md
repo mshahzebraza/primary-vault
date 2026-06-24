@@ -42,9 +42,9 @@ status:
 ## Decisions Made
 
 ## Action Items
+- [ ] `exist[query_sandbox] = false` (Urgent)
 - [ ] add tags to the query entries columns
 - [ ] info message showing filters are applied in the view
-- [ ] `exist[sandbox] = false` (Urgent)
 - [ ] liveshell panel should be to right
 - [ ] settings UI has content touching the header. add spacing
 - [ ] liveshell - ai assistance input needs to expand to atleast 2 lines (like the generate ai input. and scroll vertically instead of horizontal)
