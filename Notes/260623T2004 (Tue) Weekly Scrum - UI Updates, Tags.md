@@ -37,7 +37,7 @@ status:
 	- Show `user-role` alongside tenant name
 	- the top block is for the SWITCHING (tenant name, user role)
 	- the bottom block is for the USER (name and email) and LOGOUT
-- *Sub-Tenants*
+- *Sub-Tenants* - Future
 - *Brand  color standardization*: Purple Shade
 - *Ask Fleet MVP Discussion*
 ## Decisions Made
@@ -45,7 +45,7 @@ status:
 ## Action Items
 - [ ] add tags to the query entries columns
 - [ ] info message showing filters are applied in the view
-- [ ] `exist[sandbox] = false`
+- [ ] `exist[sandbox] = false` (Urgent)
 - [ ] liveshell panel should be to right
 - [ ] settings UI has content touching the header. add spacing
 - [ ] liveshell - ai assistance input needs to expand to atleast 2 lines (like the generate ai input. and scroll vertically instead of horizontal)
