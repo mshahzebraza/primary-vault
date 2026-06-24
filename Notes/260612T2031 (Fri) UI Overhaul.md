@@ -39,6 +39,9 @@ related-bugs:
 
 
 
+## Decisions
+- **No search for views** — decided 2026-06-23 scrum. Keep views without a search bar for now.
+
 ## Assets
 - Query Smith
 ![[query-smith-canvas-inspiration-1.png]]

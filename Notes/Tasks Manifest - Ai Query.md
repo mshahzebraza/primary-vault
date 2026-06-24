@@ -10,6 +10,7 @@ status: active
 
 ## ▶️ In Progress
 
+- [ ] [[260624T2323 (Wed) Task - Sidebar v2 Redesign]]
 - [ ] [[260612T2031 (Fri) UI Overhaul]]
 - [ ] [[260611T2153 (Thu) Document ShadCN theming architecture setup and maintenance]]
 - [ ] [[260624T2222 (Wed) Task - Ctrl+Enter Submit for SQL Editor with Hover Hint]]
@@ -43,6 +44,13 @@ status: active
 - [ ] View Layout: handle help button dynamically; description and breadcrumbs should be optional
 - [ ] use schema endpoint for filterable options in the response data table
 - [ ] Optional: analyze if Compound Component Pattern for Data Table improves reusability
+- [ ] Show IP address in agent list by default — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
+- [ ] Liveshell layout redesign — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
+	- [ ] Liveshell panel should be to the right
+	- [ ] History of recent commands in liveshell
+	- [ ] Above: session duration + switch liveshell host (ends session before switching)
+	- [ ] Below: device info (like agent info view block / rapid response hover card)
+	- [ ] Right: AI assistance expanded; bottom aligned with bottom of left pane
 
 ### Refactoring
 - Add Architecture and Patterns files for LLMs and devs (`skills.md`, `*.architecture.md` etc.)
@@ -111,10 +119,19 @@ status: active
 - [x] Enable Copy to Clipboard of RO_TextField — bigger, only visible on hover
 - [x] The disabled MFA is not updated in the team settings table
 - [x] MFA Feature Screen [[260505 (Tue) Task - MFA Feature (Firebase TOTP)#Tasks]]
+- [x] `exist[query_sandbox] = false` — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
+- [x] Add tags to query entries columns — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
+- [x] Settings UI spacing (content touching header) — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
+- [x] Liveshell AI assistance input: expand to 2 lines, scroll vertically — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
 
 ---
 
 ## Ideas/Future Requirements
+
+- Tags on query packs and query presets — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]] (tags on query entries already done; this extends to packs/presets)
+- v2 API filters: add more filter types + filter panel support — from [[260623T2004 (Tue) Weekly Scrum - UI Updates, Tags]]
+- Sub-Tenants — future (deferred in 2026-06-23 scrum)
+- Ask Fleet MVP — flagged for future discussion
 
 ---
 

@@ -1,20 +1,22 @@
 ---
 type: "[[Meeting]]"
 categories:
-  - "[[Personal]]"
+  - "[[Work]]"
   - "[[Meetings]]"
 date: 2026-06-23
 tags:
   - journal
-organization:
-  - "[[aiquery.io]]"
+organization: "[[aiquery.io]]"
 projects:
   - "[[aq-client]]"
 attendees:
   - "[[Nick]]"
   - "[[Rajput]]"
-status:
-  - active
+status: done
+related-tasks:
+  - "[[260624T2323 (Wed) Task - Sidebar v2 Redesign]]"
+  - "[[260612T2031 (Fri) UI Overhaul]]"
+  - "[[260609T2043 (Tue) Setup the Saved Searches]]"
 ---
 ## Discussion
 - tags should be applied to query packs, query presets
@@ -39,13 +41,15 @@ status:
 - *color of the sidebar* - should be brand color
 - *Ask Fleet MVP Discussion*
 ## Decisions Made
+- No search for views (for now) — see [[260612T2031 (Fri) UI Overhaul#Decisions]]
+- Brand color = purple shade; sidebar color = brand color — see [[260624T2323 (Wed) Task - Sidebar v2 Redesign#Decisions]]
+- Sub-Tenants → deferred to future
 
 ## Action Items
 - [x] `exist[query_sandbox] = false` (Urgent)
-- [x] add tags to the query entries columns
-- [ ] ![[resolve-meeting-plan-visual.png]]
-- [ ] liveshell panel should be to right
-- [x] settings UI has content touching the header. add spacing
-- [x] liveshell - ai assistance input needs to expand to atleast 2 lines (like the generate ai input. and scroll vertically instead of horizontal)
-- [ ] show the IP address in the agent list by default
-- [ ] Figma for Sidebar
+- [x] Add tags to query entries columns
+- [x] Settings UI spacing (content touching header)
+- [x] Liveshell AI assistance input: expand to 2 lines, scroll vertically
+- [ ] Liveshell panel to the right — see [[Tasks Manifest - Ai Query]]
+- [ ] Show IP address in agent list by default — see [[Tasks Manifest - Ai Query]]
+- [ ] [[260624T2323 (Wed) Task - Sidebar v2 Redesign]] (Phase 1: Figma)
