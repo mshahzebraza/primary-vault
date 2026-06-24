@@ -25,10 +25,7 @@ related-bugs:
 	- [ ] [[query-smith-canvas-inspiration-1.png]] - https://dribbble.com/shots/25988985-Organization-chart-SaaS-Dark-Mode-design
 - [ ] Create Query View
 	- [ ] Use the side floating hovercards (like the guide cards) to house the actions like "User Presets" or "Use AI" instead of putting the action button inline with the label. Or just use an input button positioned within the input container (atleast visually)
-
-
-
-
+- [ ] Use the preset (--preset b1GKy1vJD). view live [here](https://ui.shadcn.com/create?preset=b1GKy1vJD&template=vite)
 
 
 
