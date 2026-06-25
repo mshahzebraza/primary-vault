@@ -41,7 +41,7 @@ projects:
 - [ ] View Layout: handle help button dynamically; description and breadcrumbs should be optional
 - [ ] use schema endpoint for filterable options in the response data table
 - [ ] Optional: analyze if Compound Component Pattern for Data Table improves reusability
-- [ ] Show IP address in agent list by default — from [[260623 Weekly Scrum - UI Updates, Tags]]
+- [x] Show IP address in agent list by default — from [[260623 Weekly Scrum - UI Updates, Tags]]
 - [ ] Liveshell layout redesign — from [[260623 Weekly Scrum - UI Updates, Tags]]
 	- [ ] Liveshell panel should be to the right
 	- [ ] History of recent commands in liveshell
@@ -118,6 +118,8 @@ projects:
 ## Ideas/Future Requirements
 
 - Tags on query packs and query presets — from [[260623 Weekly Scrum - UI Updates, Tags]] (tags on query entries already done; this extends to packs/presets)
+- Hover tooltip on tag overflow badge (+N) — hovering the `+N` chip shows a card of hidden tags; very low priority (Nick follow-up)
+- Fix field label mismatch: `created_at`/`created_by` displayed as "Initiated On"/"Initiated By" in query results — minor inconsistency (Nick follow-up)
 - v2 API filters: add more filter types + filter panel support — from [[260623 Weekly Scrum - UI Updates, Tags]]
 - Sub-Tenants — future (deferred in 2026-06-23 scrum)
 - Ask Fleet MVP — flagged for future discussion

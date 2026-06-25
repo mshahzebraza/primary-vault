@@ -44,6 +44,7 @@ related-bugs:
 
 ## Assets
 - Query Smith
+-  Profound (tailwind showcase). [Link here](https://www.tryprofound.com/?utm_source=tailwindcss) ![[Pasted image 20260625064216.png]]
 ![[query-smith-canvas-inspiration-1.png]]
 ![[Pasted image 20260614222810.png]]
 - Dashboard Widgets (specifically the header and body of widgets). and Overall Layout of Platform
