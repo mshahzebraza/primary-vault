@@ -35,6 +35,7 @@ Community-built components on top of ShadCN.
 - [Chanhdai](https://chanhdai.com/)
 - [ShadCN Form](https://www.shadcn-form.com/)
 - [Components Work](https://components.work/)
+- [ShadCN UI Expansions — Interactive Stepper](https://shadcnui-expansions.typeart.cc/docs/interactive-stepper) — multi-step progress component; horizontal/vertical, disabled steps, ref-based external control, context-driven sub-components
 - [ShadCN Studio](https://shadcnstudio.com/docs/components) — includes async-ready [Combobox](https://shadcnstudio.com/docs/components/combobox)
 - [ShadCN Blocks](https://www.shadcnblocks.com/components/collapsible) — includes good [combobox implementations](https://www.shadcnblocks.com/component/combobox/combobox-with-states-1)
 - [Blocks.so](https://blocks.so/ai) — high-level blocks including AI components
