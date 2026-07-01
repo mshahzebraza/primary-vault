@@ -22,6 +22,7 @@ Weekly AiQuery meeting focused on changes to existing query flows and feature en
 
 ## Discussion
 - Task 1: Create and Listing Views for Query, Query Pack, Query Schedules, And Query Pack Schedules should have support of filter-presets, tags-creation etc.
+	- Also need to pass the hard coded filters to the backend when creating the filter-presets specific to the views  in client (even when the resources are same in the backend)
 - Task 2: Changed interface of Execution Targets
 ```
 export interface ExecutionTarget {

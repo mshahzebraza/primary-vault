@@ -12,6 +12,7 @@ projects:
 
 ## ▶️ In Progress
 
+- [ ] The AI Panel Initial Node is not auto selected when AI Panel is opened
 - [ ] [[260624 Task - Sidebar v2 Redesign]]
 - [ ] [[260612 UI Overhaul]]
 - [ ] [[260611 Document ShadCN theming architecture setup and maintenance]]
