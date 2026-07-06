@@ -12,6 +12,12 @@ projects:
 
 ## ▶️ In Progress
 
+- [ ] Show the agent groups against resources
+	- [ ] Show the agent  gropus belonging to the query (in detail page)
+	- [ ] Show the agent  gropus belonging to the agents (in detail page; overview -> detail page)
+	- [ ] Add Detail Pages to Query-Pack, Query-Schedule just like query and agent pages have their own detail/overview page (wednesday) - less priority
+- [ ] Agent Groups Augmentation (using secondary fetch requests) and resolves the filter (Filter is harder)
+- [ ] Tags filter selection list should be client-side searchable (combobox instead of regular selection)
 - [ ] The AI Panel Initial Node is not auto selected when AI Panel is opened
 - [ ] [[260624 Task - Sidebar v2 Redesign]]
 - [ ] [[260612 UI Overhaul]]
