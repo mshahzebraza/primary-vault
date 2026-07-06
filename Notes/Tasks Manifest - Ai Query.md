@@ -12,6 +12,7 @@ projects:
 
 ## ▶️ In Progress
 
+- [ ] Agent group selection from view to create query doesn't show up until we move through all the paginated response options
 - [ ] Show the agent groups against resources
 	- [ ] Show the agent  gropus belonging to the query (in detail page)
 	- [ ] Show the agent  gropus belonging to the agents (in detail page; overview -> detail page)

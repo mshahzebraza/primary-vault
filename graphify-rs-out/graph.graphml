@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <key id="node_type" for="node" attr.name="node_type" attr.type="string"/>
+  <key id="source_file" for="node" attr.name="source_file" attr.type="string"/>
+  <key id="community" for="node" attr.name="community" attr.type="int"/>
+  <key id="relation" for="edge" attr.name="relation" attr.type="string"/>
+  <key id="confidence" for="edge" attr.name="confidence" attr.type="string"/>
+  <key id="confidence_score" for="edge" attr.name="confidence_score" attr.type="double"/>
+  <key id="weight" for="edge" attr.name="weight" attr.type="double"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="scripts_vault_metadata_py">
+      <data key="label">vault_metadata</data>
+      <data key="node_type">File</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_import_argparse">
+      <data key="label">argparse</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_import_re">
+      <data key="label">re</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_import_sys">
+      <data key="label">sys</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_import_pathlib_path">
+      <data key="label">pathlib.Path</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_import_yaml">
+      <data key="label">yaml</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_load_fm_body">
+      <data key="label">load_fm_body()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_dump_fm_body">
+      <data key="label">dump_fm_body()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_categories_str_list">
+      <data key="label">categories_str_list()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_has_category_meetings">
+      <data key="label">has_category_meetings()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_has_category_tasks">
+      <data key="label">has_category_tasks()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_merge_wikilinks">
+      <data key="label">merge_wikilinks()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_normalize_file">
+      <data key="label">normalize_file()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_audit_file">
+      <data key="label">audit_file()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_cmd_normalize">
+      <data key="label">cmd_normalize()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_cmd_audit">
+      <data key="label">cmd_audit()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_remove_legacy_file">
+      <data key="label">remove_legacy_file()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_cmd_remove_legacy">
+      <data key="label">cmd_remove_legacy()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_vault_metadata_py_main">
+      <data key="label">main()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/vault_metadata.py</data>
+      <data key="community">0</data>
+    </node>
+    <node id="scripts_category_cleanup_py">
+      <data key="label">category_cleanup</data>
+      <data key="node_type">File</data>
+      <data key="source_file">./scripts/category_cleanup.py</data>
+      <data key="community">1</data>
+    </node>
+    <node id="scripts_category_cleanup_py_import_argparse">
+      <data key="label">argparse</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/category_cleanup.py</data>
+      <data key="community">1</data>
+    </node>
+    <node id="scripts_category_cleanup_py_import_re">
+      <data key="label">re</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/category_cleanup.py</data>
+      <data key="community">1</data>
+    </node>
+    <node id="scripts_category_cleanup_py_import_pathlib_path">
+      <data key="label">pathlib.Path</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/category_cleanup.py</data>
+      <data key="community">1</data>
+    </node>
+    <node id="scripts_category_cleanup_py_import_yaml">
+      <data key="label">yaml</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/category_cleanup.py</data>
+      <data key="community">1</data>
+    </node>
+    <node id="scripts_category_cleanup_py_strip_category_name">
+      <data key="label">strip_category_name()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/category_cleanup.py</data>
+      <data key="community">1</data>
+    </node>
+    <node id="scripts_category_cleanup_py_load_fm">
+      <data key="label">load_fm()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/category_cleanup.py</data>
+      <data key="community">1</data>
+    </node>
+    <node id="scripts_category_cleanup_py_save_fm">
+      <data key="label">save_fm()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/category_cleanup.py</data>
+      <data key="community">1</data>
+    </node>
+    <node id="scripts_category_cleanup_py_cleanup_note">
+      <data key="label">cleanup_note()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/category_cleanup.py</data>
+      <data key="community">1</data>
+    </node>
+    <node id="scripts_category_cleanup_py_main">
+      <data key="label">main()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/category_cleanup.py</data>
+      <data key="community">1</data>
+    </node>
+    <node id="scripts_normalize_property_keys_py">
+      <data key="label">normalize_property_keys</data>
+      <data key="node_type">File</data>
+      <data key="source_file">./scripts/normalize_property_keys.py</data>
+      <data key="community">2</data>
+    </node>
+    <node id="scripts_normalize_property_keys_py_import_argparse">
+      <data key="label">argparse</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/normalize_property_keys.py</data>
+      <data key="community">2</data>
+    </node>
+    <node id="scripts_normalize_property_keys_py_import_re">
+      <data key="label">re</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/normalize_property_keys.py</data>
+      <data key="community">2</data>
+    </node>
+    <node id="scripts_normalize_property_keys_py_import_sys">
+      <data key="label">sys</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/normalize_property_keys.py</data>
+      <data key="community">2</data>
+    </node>
+    <node id="scripts_normalize_property_keys_py_import_pathlib_path">
+      <data key="label">pathlib.Path</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/normalize_property_keys.py</data>
+      <data key="community">2</data>
+    </node>
+    <node id="scripts_normalize_property_keys_py_import_yaml">
+      <data key="label">yaml</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/normalize_property_keys.py</data>
+      <data key="community">2</data>
+    </node>
+    <node id="scripts_normalize_property_keys_py_dump_fm">
+      <data key="label">dump_fm()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/normalize_property_keys.py</data>
+      <data key="community">2</data>
+    </node>
+    <node id="scripts_normalize_property_keys_py_is_bug_type">
+      <data key="label">is_bug_type()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/normalize_property_keys.py</data>
+      <data key="community">2</data>
+    </node>
+    <node id="scripts_normalize_property_keys_py_process_file">
+      <data key="label">process_file()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/normalize_property_keys.py</data>
+      <data key="community">2</data>
+    </node>
+    <node id="scripts_normalize_property_keys_py_main">
+      <data key="label">main()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/normalize_property_keys.py</data>
+      <data key="community">2</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py">
+      <data key="label">migrate_notes_flat</data>
+      <data key="node_type">File</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">3</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_import_argparse">
+      <data key="label">argparse</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">3</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_import_hashlib">
+      <data key="label">hashlib</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">3</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_import_json">
+      <data key="label">json</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">3</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_import_os">
+      <data key="label">os</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">3</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_import_re">
+      <data key="label">re</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">3</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_import_shutil">
+      <data key="label">shutil</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">3</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_import_pathlib_path">
+      <data key="label">pathlib.Path</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">3</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_import_typing_any">
+      <data key="label">typing.Any</data>
+      <data key="node_type">Module</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">3</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_load_path_map">
+      <data key="label">load_path_map()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">10</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_load_path_map_reverse">
+      <data key="label">load_path_map_reverse()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">10</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_canonical_path_for_metadata">
+      <data key="label">canonical_path_for_metadata()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">15</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_metadata_for_inject">
+      <data key="label">metadata_for_inject()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">15</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_split_first_frontmatter">
+      <data key="label">split_first_frontmatter()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">4</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_join_frontmatter">
+      <data key="label">join_frontmatter()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">16</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_fm_has_key">
+      <data key="label">fm_has_key()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">4</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_yaml_quote">
+      <data key="label">yaml_quote()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">5</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_org_wikilink">
+      <data key="label">org_wikilink()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">11</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_strip_wikilink">
+      <data key="label">strip_wikilink()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">12</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_derive_metadata">
+      <data key="label">derive_metadata()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">11</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_inject_lines_for_meta">
+      <data key="label">inject_lines_for_meta()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">14</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_strip_categories_block">
+      <data key="label">strip_categories_block()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">8</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_derive_categories_wikilinks">
+      <data key="label">derive_categories_wikilinks()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">12</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_categories_yaml_lines">
+      <data key="label">categories_yaml_lines()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">5</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_cmd_sync_categories">
+      <data key="label">cmd_sync_categories()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">8</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_inject_frontmatter">
+      <data key="label">inject_frontmatter()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">14</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_collect_notes_files">
+      <data key="label">collect_notes_files()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">7</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_build_path_map">
+      <data key="label">build_path_map()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">17</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_basename_no_ext">
+      <data key="label">basename_no_ext()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">18</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_collect_basename_index">
+      <data key="label">collect_basename_index()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">18</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_resolve_link_target">
+      <data key="label">resolve_link_target()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">13</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_rewrite_wikilinks">
+      <data key="label">rewrite_wikilinks()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">13</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_rewrite_markdown_links">
+      <data key="label">rewrite_markdown_links()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">6</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_rewrite_notes_paths">
+      <data key="label">rewrite_notes_paths()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">6</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_cmd_inject">
+      <data key="label">cmd_inject()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">7</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_cmd_flatten">
+      <data key="label">cmd_flatten()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">17</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_restore_original_path_line">
+      <data key="label">restore_original_path_line()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">5</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_cmd_rewrite">
+      <data key="label">cmd_rewrite()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">6</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_cmd_fix_meta">
+      <data key="label">cmd_fix_meta()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">16</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_cmd_audit_metadata">
+      <data key="label">cmd_audit_metadata()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">4</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_cmd_validate">
+      <data key="label">cmd_validate()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">9</data>
+    </node>
+    <node id="scripts_migrate_notes_flat_py_main">
+      <data key="label">main()</data>
+      <data key="node_type">Function</data>
+      <data key="source_file">./scripts/migrate_notes_flat.py</data>
+      <data key="community">9</data>
+    </node>
+    <edge id="e0" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_import_argparse">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e1" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_import_re">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e2" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_import_sys">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e3" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_import_pathlib_path">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e4" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_import_yaml">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e5" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_load_fm_body">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e6" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_dump_fm_body">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e7" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_categories_str_list">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e8" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_has_category_meetings">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e9" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_has_category_tasks">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e10" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_merge_wikilinks">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e11" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_normalize_file">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e12" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_audit_file">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e13" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_cmd_normalize">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e14" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_cmd_audit">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e15" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_remove_legacy_file">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e16" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_cmd_remove_legacy">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e17" source="scripts_vault_metadata_py" target="scripts_vault_metadata_py_main">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e18" source="scripts_vault_metadata_py_has_category_meetings" target="scripts_vault_metadata_py_categories_str_list">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e19" source="scripts_vault_metadata_py_has_category_tasks" target="scripts_vault_metadata_py_categories_str_list">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e20" source="scripts_vault_metadata_py_normalize_file" target="scripts_vault_metadata_py_load_fm_body">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e21" source="scripts_vault_metadata_py_normalize_file" target="scripts_vault_metadata_py_has_category_meetings">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e22" source="scripts_vault_metadata_py_normalize_file" target="scripts_vault_metadata_py_merge_wikilinks">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e23" source="scripts_vault_metadata_py_normalize_file" target="scripts_vault_metadata_py_has_category_tasks">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e24" source="scripts_vault_metadata_py_normalize_file" target="scripts_vault_metadata_py_dump_fm_body">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e25" source="scripts_vault_metadata_py_audit_file" target="scripts_vault_metadata_py_load_fm_body">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e26" source="scripts_vault_metadata_py_audit_file" target="scripts_vault_metadata_py_has_category_meetings">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e27" source="scripts_vault_metadata_py_cmd_normalize" target="scripts_vault_metadata_py_normalize_file">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e28" source="scripts_vault_metadata_py_cmd_audit" target="scripts_vault_metadata_py_audit_file">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e29" source="scripts_vault_metadata_py_remove_legacy_file" target="scripts_vault_metadata_py_load_fm_body">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e30" source="scripts_vault_metadata_py_remove_legacy_file" target="scripts_vault_metadata_py_dump_fm_body">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e31" source="scripts_vault_metadata_py_cmd_remove_legacy" target="scripts_vault_metadata_py_remove_legacy_file">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e32" source="scripts_category_cleanup_py" target="scripts_category_cleanup_py_import_argparse">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e33" source="scripts_category_cleanup_py" target="scripts_category_cleanup_py_import_re">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e34" source="scripts_category_cleanup_py" target="scripts_category_cleanup_py_import_pathlib_path">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e35" source="scripts_category_cleanup_py" target="scripts_category_cleanup_py_import_yaml">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e36" source="scripts_category_cleanup_py" target="scripts_category_cleanup_py_strip_category_name">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e37" source="scripts_category_cleanup_py" target="scripts_category_cleanup_py_load_fm">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e38" source="scripts_category_cleanup_py" target="scripts_category_cleanup_py_save_fm">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e39" source="scripts_category_cleanup_py" target="scripts_category_cleanup_py_cleanup_note">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e40" source="scripts_category_cleanup_py" target="scripts_category_cleanup_py_main">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e41" source="scripts_category_cleanup_py_cleanup_note" target="scripts_category_cleanup_py_load_fm">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e42" source="scripts_category_cleanup_py_cleanup_note" target="scripts_category_cleanup_py_strip_category_name">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e43" source="scripts_category_cleanup_py_cleanup_note" target="scripts_category_cleanup_py_save_fm">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e44" source="scripts_category_cleanup_py_main" target="scripts_category_cleanup_py_cleanup_note">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e45" source="scripts_normalize_property_keys_py" target="scripts_normalize_property_keys_py_import_argparse">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e46" source="scripts_normalize_property_keys_py" target="scripts_normalize_property_keys_py_import_re">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e47" source="scripts_normalize_property_keys_py" target="scripts_normalize_property_keys_py_import_sys">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e48" source="scripts_normalize_property_keys_py" target="scripts_normalize_property_keys_py_import_pathlib_path">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e49" source="scripts_normalize_property_keys_py" target="scripts_normalize_property_keys_py_import_yaml">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e50" source="scripts_normalize_property_keys_py" target="scripts_normalize_property_keys_py_dump_fm">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e51" source="scripts_normalize_property_keys_py" target="scripts_normalize_property_keys_py_is_bug_type">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e52" source="scripts_normalize_property_keys_py" target="scripts_normalize_property_keys_py_process_file">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e53" source="scripts_normalize_property_keys_py" target="scripts_normalize_property_keys_py_main">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e54" source="scripts_normalize_property_keys_py_process_file" target="scripts_normalize_property_keys_py_is_bug_type">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e55" source="scripts_normalize_property_keys_py_process_file" target="scripts_normalize_property_keys_py_dump_fm">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e56" source="scripts_normalize_property_keys_py_main" target="scripts_normalize_property_keys_py_process_file">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e57" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_import_argparse">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e58" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_import_hashlib">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e59" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_import_json">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e60" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_import_os">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e61" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_import_re">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e62" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_import_shutil">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e63" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_import_pathlib_path">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e64" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_import_typing_any">
+      <data key="relation">imports</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e65" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_load_path_map">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e66" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_load_path_map_reverse">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e67" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_canonical_path_for_metadata">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e68" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_metadata_for_inject">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e69" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_split_first_frontmatter">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e70" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_join_frontmatter">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e71" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_fm_has_key">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e72" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_yaml_quote">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e73" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_org_wikilink">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e74" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_strip_wikilink">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e75" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_derive_metadata">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e76" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_inject_lines_for_meta">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e77" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_strip_categories_block">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e78" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_derive_categories_wikilinks">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e79" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_categories_yaml_lines">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e80" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_cmd_sync_categories">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e81" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_inject_frontmatter">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e82" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_collect_notes_files">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e83" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_build_path_map">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e84" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_basename_no_ext">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e85" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_collect_basename_index">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e86" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_resolve_link_target">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e87" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_rewrite_wikilinks">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e88" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_rewrite_markdown_links">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e89" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_rewrite_notes_paths">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e90" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_cmd_inject">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e91" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_cmd_flatten">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e92" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_restore_original_path_line">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e93" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_cmd_rewrite">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e94" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_cmd_fix_meta">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e95" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_cmd_audit_metadata">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e96" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_cmd_validate">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e97" source="scripts_migrate_notes_flat_py" target="scripts_migrate_notes_flat_py_main">
+      <data key="relation">defines</data>
+      <data key="confidence">Extracted</data>
+      <data key="confidence_score">1</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e98" source="scripts_migrate_notes_flat_py_load_path_map_reverse" target="scripts_migrate_notes_flat_py_load_path_map">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e99" source="scripts_migrate_notes_flat_py_canonical_path_for_metadata" target="scripts_migrate_notes_flat_py_load_path_map_reverse">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e100" source="scripts_migrate_notes_flat_py_metadata_for_inject" target="scripts_migrate_notes_flat_py_derive_metadata">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e101" source="scripts_migrate_notes_flat_py_metadata_for_inject" target="scripts_migrate_notes_flat_py_canonical_path_for_metadata">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e102" source="scripts_migrate_notes_flat_py_derive_metadata" target="scripts_migrate_notes_flat_py_org_wikilink">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e103" source="scripts_migrate_notes_flat_py_inject_lines_for_meta" target="scripts_migrate_notes_flat_py_yaml_quote">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e104" source="scripts_migrate_notes_flat_py_derive_categories_wikilinks" target="scripts_migrate_notes_flat_py_org_wikilink">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e105" source="scripts_migrate_notes_flat_py_derive_categories_wikilinks" target="scripts_migrate_notes_flat_py_strip_wikilink">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e106" source="scripts_migrate_notes_flat_py_categories_yaml_lines" target="scripts_migrate_notes_flat_py_yaml_quote">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e107" source="scripts_migrate_notes_flat_py_cmd_sync_categories" target="scripts_migrate_notes_flat_py_metadata_for_inject">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e108" source="scripts_migrate_notes_flat_py_cmd_sync_categories" target="scripts_migrate_notes_flat_py_derive_categories_wikilinks">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e109" source="scripts_migrate_notes_flat_py_cmd_sync_categories" target="scripts_migrate_notes_flat_py_split_first_frontmatter">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e110" source="scripts_migrate_notes_flat_py_cmd_sync_categories" target="scripts_migrate_notes_flat_py_strip_categories_block">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e111" source="scripts_migrate_notes_flat_py_cmd_sync_categories" target="scripts_migrate_notes_flat_py_categories_yaml_lines">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e112" source="scripts_migrate_notes_flat_py_cmd_sync_categories" target="scripts_migrate_notes_flat_py_join_frontmatter">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e113" source="scripts_migrate_notes_flat_py_inject_frontmatter" target="scripts_migrate_notes_flat_py_inject_lines_for_meta">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e114" source="scripts_migrate_notes_flat_py_inject_frontmatter" target="scripts_migrate_notes_flat_py_split_first_frontmatter">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e115" source="scripts_migrate_notes_flat_py_inject_frontmatter" target="scripts_migrate_notes_flat_py_join_frontmatter">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e116" source="scripts_migrate_notes_flat_py_collect_basename_index" target="scripts_migrate_notes_flat_py_basename_no_ext">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e117" source="scripts_migrate_notes_flat_py_resolve_link_target" target="scripts_migrate_notes_flat_py_basename_no_ext">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e118" source="scripts_migrate_notes_flat_py_rewrite_wikilinks" target="scripts_migrate_notes_flat_py_resolve_link_target">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e119" source="scripts_migrate_notes_flat_py_cmd_inject" target="scripts_migrate_notes_flat_py_collect_notes_files">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e120" source="scripts_migrate_notes_flat_py_cmd_inject" target="scripts_migrate_notes_flat_py_metadata_for_inject">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e121" source="scripts_migrate_notes_flat_py_cmd_inject" target="scripts_migrate_notes_flat_py_inject_frontmatter">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e122" source="scripts_migrate_notes_flat_py_cmd_flatten" target="scripts_migrate_notes_flat_py_collect_notes_files">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e123" source="scripts_migrate_notes_flat_py_cmd_flatten" target="scripts_migrate_notes_flat_py_build_path_map">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e124" source="scripts_migrate_notes_flat_py_restore_original_path_line" target="scripts_migrate_notes_flat_py_yaml_quote">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e125" source="scripts_migrate_notes_flat_py_cmd_rewrite" target="scripts_migrate_notes_flat_py_collect_basename_index">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e126" source="scripts_migrate_notes_flat_py_cmd_rewrite" target="scripts_migrate_notes_flat_py_rewrite_wikilinks">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e127" source="scripts_migrate_notes_flat_py_cmd_rewrite" target="scripts_migrate_notes_flat_py_rewrite_markdown_links">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e128" source="scripts_migrate_notes_flat_py_cmd_rewrite" target="scripts_migrate_notes_flat_py_split_first_frontmatter">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e129" source="scripts_migrate_notes_flat_py_cmd_rewrite" target="scripts_migrate_notes_flat_py_rewrite_notes_paths">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e130" source="scripts_migrate_notes_flat_py_cmd_rewrite" target="scripts_migrate_notes_flat_py_restore_original_path_line">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e131" source="scripts_migrate_notes_flat_py_cmd_rewrite" target="scripts_migrate_notes_flat_py_join_frontmatter">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e132" source="scripts_migrate_notes_flat_py_cmd_fix_meta" target="scripts_migrate_notes_flat_py_split_first_frontmatter">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e133" source="scripts_migrate_notes_flat_py_cmd_fix_meta" target="scripts_migrate_notes_flat_py_canonical_path_for_metadata">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e134" source="scripts_migrate_notes_flat_py_cmd_fix_meta" target="scripts_migrate_notes_flat_py_derive_metadata">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e135" source="scripts_migrate_notes_flat_py_cmd_fix_meta" target="scripts_migrate_notes_flat_py_inject_lines_for_meta">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e136" source="scripts_migrate_notes_flat_py_cmd_fix_meta" target="scripts_migrate_notes_flat_py_join_frontmatter">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e137" source="scripts_migrate_notes_flat_py_cmd_audit_metadata" target="scripts_migrate_notes_flat_py_split_first_frontmatter">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e138" source="scripts_migrate_notes_flat_py_cmd_audit_metadata" target="scripts_migrate_notes_flat_py_fm_has_key">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e139" source="scripts_migrate_notes_flat_py_cmd_audit_metadata" target="scripts_migrate_notes_flat_py_cmd_inject">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e140" source="scripts_migrate_notes_flat_py_cmd_validate" target="scripts_migrate_notes_flat_py_split_first_frontmatter">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e141" source="scripts_migrate_notes_flat_py_main" target="scripts_migrate_notes_flat_py_cmd_inject">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e142" source="scripts_migrate_notes_flat_py_main" target="scripts_migrate_notes_flat_py_cmd_flatten">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e143" source="scripts_migrate_notes_flat_py_main" target="scripts_migrate_notes_flat_py_cmd_rewrite">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e144" source="scripts_migrate_notes_flat_py_main" target="scripts_migrate_notes_flat_py_cmd_validate">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e145" source="scripts_migrate_notes_flat_py_main" target="scripts_migrate_notes_flat_py_cmd_fix_meta">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e146" source="scripts_migrate_notes_flat_py_main" target="scripts_migrate_notes_flat_py_cmd_audit_metadata">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+    <edge id="e147" source="scripts_migrate_notes_flat_py_main" target="scripts_migrate_notes_flat_py_cmd_sync_categories">
+      <data key="relation">calls</data>
+      <data key="confidence">Inferred</data>
+      <data key="confidence_score">0.7</data>
+      <data key="weight">1</data>
+    </edge>
+  </graph>
+</graphml>

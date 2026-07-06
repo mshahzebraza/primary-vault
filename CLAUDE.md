@@ -66,3 +66,12 @@ Sections: `## Scratch` then one `## <Org> Work` section per active organisation.
 - `Categories/aiquery.io.md` → AiQuery work filtered view
 - `Notes/Tasks Manifest - Scholar Bee.md` — authoritative ScholarBee task board
 - `Notes/Tasks Manifest - Personal.md` — personal setup tasks
+
+## graphify-rs
+
+This project has a graphify-rs knowledge graph at /home/mshahzebraza/.graphify-rs/primary-vault-2b29ec2ba9d37974/.
+
+Rules:
+- Before answering architecture or codebase questions, read /home/mshahzebraza/.graphify-rs/primary-vault-2b29ec2ba9d37974/GRAPH_REPORT.md for god nodes and community structure
+- If /home/mshahzebraza/.graphify-rs/primary-vault-2b29ec2ba9d37974/wiki/index.md exists, navigate it instead of reading raw files
+- After modifying code files in this session, run `graphify-rs build --path . --output /home/mshahzebraza/.graphify-rs/primary-vault-2b29ec2ba9d37974 --no-llm --update` to keep the graph current (fast, AST-only, ~2-5s)

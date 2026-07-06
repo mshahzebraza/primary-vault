@@ -1,0 +1,5 @@
+graphify-rs-out/
+.obsidian/
+.makemd/
+.git/
+.claude/

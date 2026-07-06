@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "graphify-rs": {
+      "type": "stdio",
+      "command": "graphify-rs",
+      "args": [
+        "serve",
+        "--graph",
+        "/home/mshahzebraza/CC/obsidian-vaults/primary-vault/graphify-rs-out/graph.json"
+      ],
+      "env": {}
+    }
+  }
+}

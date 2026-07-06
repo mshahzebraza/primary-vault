@@ -12,7 +12,7 @@
               {
                 "id": "3d68a255fe2b1867",
                 "type": "split",
-                "dimension": 48.655409631019396,
+                "dimension": 37.273295809881176,
                 "children": [
                   {
                     "id": "a0e307992ec15a39",
@@ -30,20 +30,6 @@
                           },
                           "icon": "lucide-table",
                           "title": "Tasks"
-                        }
-                      },
-                      {
-                        "id": "a7d1f246d308caf5",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "Notes/260407 (Tue) Weekly Scrum Meeting.md",
-                            "mode": "source",
-                            "source": false
-                          },
-                          "icon": "lucide-file",
-                          "title": "260407 (Tue) Weekly Scrum Meeting"
                         }
                       }
                     ]
@@ -74,10 +60,10 @@
               {
                 "id": "af1c47ef0320bc69",
                 "type": "tabs",
-                "dimension": 51.344590368980604,
+                "dimension": 62.726704190118824,
                 "children": [
                   {
-                    "id": "9d0b38dc6591876f",
+                    "id": "20645d1d3093ed4a",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
@@ -91,91 +77,48 @@
                     }
                   },
                   {
-                    "id": "c6b8c7fd017382f2",
+                    "id": "b4dde04fdf1cefa7",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/260616T2010 (Tue) Weekly Scrum - Investigation, Saved Filters Update.md",
+                        "file": "Notes/260612 UI Overhaul.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "260616T2010 (Tue) Weekly Scrum - Investigation, Saved Filters Update"
+                      "title": "260612 UI Overhaul"
                     }
                   },
                   {
-                    "id": "f708774f3a4721ec",
+                    "id": "7c8758e2ad9073c6",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/260612T2031 (Fri) UI Overhaul.md",
+                        "file": "Notes/260630 Meeting - AiQuery Weekly.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "260612T2031 (Fri) UI Overhaul"
+                      "title": "260630 Meeting - AiQuery Weekly"
                     }
                   },
                   {
-                    "id": "bc738d574803a310",
+                    "id": "643809da80796dad",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/260611T2153 (Thu) Document ShadCN theming architecture setup and maintenance.md",
+                        "file": "Notes/260630 Documentation - NeoVim Personal Guide & Cheat Sheet.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "260611T2153 (Thu) Document ShadCN theming architecture setup and maintenance"
-                    }
-                  },
-                  {
-                    "id": "97df39cc7b55ef1c",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Notes/260609T2043 (Tue) Setup the Saved Searches.md",
-                        "mode": "source",
-                        "source": false
-                      },
-                      "icon": "lucide-file",
-                      "title": "260609T2043 (Tue) Setup the Saved Searches"
-                    }
-                  },
-                  {
-                    "id": "2571587663eeaa44",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Notes/260609T2043 (Tue) Setup the Saved Searches.md",
-                        "mode": "source",
-                        "source": false
-                      },
-                      "icon": "lucide-file",
-                      "title": "260609T2043 (Tue) Setup the Saved Searches"
-                    }
-                  },
-                  {
-                    "id": "d742fe0a3f820ab2",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Notes/260518T2007 (Mon) Feat - Query Response Data Diffing.md",
-                        "mode": "source",
-                        "source": false
-                      },
-                      "icon": "lucide-file",
-                      "title": "260518T2007 (Mon) Feat - Query Response Data Diffing"
+                      "title": "260630 Documentation - NeoVim Personal Guide & Cheat Sheet"
                     }
                   }
-                ],
-                "currentTab": 1
+                ]
               }
             ],
             "direction": "vertical"
@@ -210,7 +153,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "\"\\\"Setup documentation, process, agent-skills and rules around theming and styling setup and maintenance\"\"",
+                    "query": "How I Rank #1 on Google with Claude Code ",
                     "matchingCase": true,
                     "explainSearch": false,
                     "collapseAll": true,
@@ -236,7 +179,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 200,
+        "width": 230,
         "collapsed": true
       },
       "right": {
@@ -284,13 +227,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Notes/260609T2043 (Tue) Setup the Saved Searches.md",
+                    "file": "Notes/Tasks Manifest - Ai Query.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of 260609T2043 (Tue) Setup the Saved Searches"
+                  "title": "Outline of Tasks Manifest - Ai Query"
                 }
               },
               {
@@ -323,7 +266,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 2
           }
         ],
         "direction": "horizontal",
@@ -345,8 +288,8 @@
           "zk-prefixer:Create new unique note": false
         }
       },
-      "active": "c6b8c7fd017382f2",
-      "mtime": "2026-06-17T13:51:44+05:00"
+      "active": "20645d1d3093ed4a",
+      "mtime": "2026-07-06T22:30:55+05:00"
     },
     "Personal": {
       "main": {
