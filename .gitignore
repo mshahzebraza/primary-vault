@@ -21,3 +21,7 @@ scripts/*
 # Exclude macOS Finder (System Explorer) View States
 .DS_Store
 .makemd/*
+
+# graphify knowledge graph (regenerated on every commit)
+graphify-rs-out/
+graphify-out/

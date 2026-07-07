@@ -67,11 +67,11 @@ Sections: `## Scratch` then one `## <Org> Work` section per active organisation.
 - `Notes/Tasks Manifest - Scholar Bee.md` — authoritative ScholarBee task board
 - `Notes/Tasks Manifest - Personal.md` — personal setup tasks
 
-## graphify-rs
+## Knowledge graph (graphify-rs)
 
-This project has a graphify-rs knowledge graph at /home/mshahzebraza/.graphify-rs/primary-vault-2b29ec2ba9d37974/.
+The vault has a knowledge graph at `graphify-rs-out/` built from note frontmatter + wikilinks (no LLM/API — works on Claude Pro).
 
-Rules:
-- Before answering architecture or codebase questions, read /home/mshahzebraza/.graphify-rs/primary-vault-2b29ec2ba9d37974/GRAPH_REPORT.md for god nodes and community structure
-- If /home/mshahzebraza/.graphify-rs/primary-vault-2b29ec2ba9d37974/wiki/index.md exists, navigate it instead of reading raw files
-- After modifying code files in this session, run `graphify-rs build --path . --output /home/mshahzebraza/.graphify-rs/primary-vault-2b29ec2ba9d37974 --no-llm --update` to keep the graph current (fast, AST-only, ~2-5s)
+- Before answering cross-vault questions ("what connects X and Y", "what do I have on Z"), read `graphify-rs-out/GRAPH_REPORT.md` for god nodes and communities, or run `graphify-rs query "<question>" --graph graphify-rs-out/graph.json`
+- Navigate `graphify-rs-out/wiki/index.md` for community-clustered summaries instead of grepping raw notes
+- After creating or editing notes in a session, run `./scripts/graphify-build.sh --quiet` to refresh the graph (~5s, deterministic). Git hooks also rebuild it on every commit
+- The graph is also exposed as the `graphify-rs` MCP server (`.mcp.json`) with query/path/community tools

@@ -1,5 +1,6 @@
-graphify-rs-out/
-.obsidian/
-.makemd/
-.git/
-.claude/
+graphify-rs-out
+scripts
+.obsidian
+.makemd
+.git
+.claude
