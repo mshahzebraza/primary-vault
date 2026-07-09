@@ -12,6 +12,10 @@ projects:
 
 ## ▶️ In Progress
 
+- [ ] Fix the sql formatting in the query smith for linebreaks and indents
+- [ ] allow the agent group renames using the admin api
+- [ ] Use the recurring as the default selected mode in schedule dialogs
+	- [ ] use ONE TIME instead of Non-Recurring everywhere for the schedule mode context
 - [ ] Agent group selection from view to create query doesn't show up until we move through all the paginated response options
 - [ ] Show the agent groups against resources
 	- [ ] Show the agent  gropus belonging to the query (in detail page)
