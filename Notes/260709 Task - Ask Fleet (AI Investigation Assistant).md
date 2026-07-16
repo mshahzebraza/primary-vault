@@ -34,6 +34,8 @@ Ask Fleet (aka AI Assistance / "Ask the Fleet") is a natural-language query feat
 
 ### Enhancements
 - [ ] Examples on session landing page should not auto-change every few seconds — load randomly on new visit only
+- [ ] Info Icon with tooltip to explain what the "Query Snapshot" means. ![[Query Snapshot meaning tooltip.png]]
+- [ ] Make sure the snapshot and data sync timestamps are updated after few seconds for each message even when no state changes
 - [ ] Loading status should continue when first response is fetched but rest is pending; color of status dot can change (blue/orange) or show green dot inside loader. ![[loading statuss should continue even when first respones.png]]
 - [ ] Refactor the panels and message components in the `ask-fleet-session.view.tsx`
 

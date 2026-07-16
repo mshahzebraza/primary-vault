@@ -1,6 +1,6 @@
 {
-  "collapse-filter": true,
-  "search": "aiquery",
+  "collapse-filter": false,
+  "search": "cool resources",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -25,6 +25,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 8,
-  "close": true
+  "scale": 0.4925639019848427,
+  "close": false
 }
