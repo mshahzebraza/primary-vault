@@ -25,6 +25,7 @@ projects:
 - [ ] Tags filter selection list should be client-side searchable (combobox instead of regular selection)
 - [ ] The AI Panel Initial Node is not auto selected when AI Panel is opened
 - [ ] [[260624 Task - Sidebar v2 Redesign]]
+- [ ] [[260709 Task - Ask Fleet (AI Investigation Assistant)]]
 - [ ] [[260612 UI Overhaul]]
 - [ ] [[260611 Document ShadCN theming architecture setup and maintenance]]
 - [ ] [[260624 Task - Ctrl+Enter Submit for SQL Editor with Hover Hint]]
@@ -134,7 +135,6 @@ projects:
 - Fix field label mismatch: `created_at`/`created_by` displayed as "Initiated On"/"Initiated By" in query results — minor inconsistency (Nick follow-up)
 - v2 API filters: add more filter types + filter panel support — from [[260623 Weekly Scrum - UI Updates, Tags]]
 - Sub-Tenants — future (deferred in 2026-06-23 scrum)
-- Ask Fleet MVP — flagged for future discussion
 
 ---
 

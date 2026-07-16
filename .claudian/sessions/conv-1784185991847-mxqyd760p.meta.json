@@ -1,0 +1,27 @@
+{
+  "id": "conv-1784185991847-mxqyd760p",
+  "providerId": "claude",
+  "title": "Discover repo skills",
+  "titleGenerationStatus": "success",
+  "createdAt": 1784185991847,
+  "updatedAt": 1784187556899,
+  "lastResponseAt": 1784187556899,
+  "sessionId": "de681387-e269-469d-aaeb-e885129dfd8b",
+  "selectedModel": "haiku",
+  "providerState": {
+    "providerSessionId": "de681387-e269-469d-aaeb-e885129dfd8b"
+  },
+  "externalContextPaths": [
+    "/home/mshahzebraza/CC/obsidian-vaults/primary-vault"
+  ],
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 10,
+    "cacheCreationInputTokens": 3552,
+    "cacheReadInputTokens": 25532,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 29094,
+    "percentage": 15
+  }
+}

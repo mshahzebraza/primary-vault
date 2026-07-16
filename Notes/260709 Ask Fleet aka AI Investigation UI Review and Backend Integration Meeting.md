@@ -1,13 +1,17 @@
 ---
-type: "[[Journal]]"
+type: "[[Meeting]]"
 categories:
-  - "[[Personal]]"
+  - "[[Work]]"
+  - "[[Meetings]]"
 date: 2026-07-09
 tags:
   - journal
 organization:
   - "[[aiquery.io]]"
+attendees:
+  - "[[Rajput]]"
 related-tasks:
+  - "[[260709 Task - Ask Fleet (AI Investigation Assistant)]]"
 ---
 ## Changes
 - add some purple

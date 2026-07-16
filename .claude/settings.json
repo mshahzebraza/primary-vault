@@ -1,14 +1,21 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /home/mshahzebraza/.claude/skills/ 2>/dev/null || echo \"No user skills directory\")",
+      "Read(//home/mshahzebraza/.claude/skills/**)",
+      "Bash(for skill in /home/mshahzebraza/CC/obsidian-vaults/primary-vault/.claude/skills/*/SKILL.md; do echo \"=== $\\(basename $\\(dirname $skill\\)\\) ===\" && head -20 \"$skill\" && echo \"\"; done)"
+    ]
+  },
   "hooks": {
     "PreToolUse": [
       {
+        "matcher": "Glob|Grep",
         "hooks": [
           {
-            "command": "[ -f \"graphify-rs-out/graph.json\" ] && echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"additionalContext\":\"graphify-rs: vault knowledge graph exists. Read graphify-rs-out/GRAPH_REPORT.md or query graphify-rs-out/graph.json before grepping raw notes.\"}}' || true",
-            "type": "command"
+            "type": "command",
+            "command": "[ -f \"graphify-rs-out/graph.json\" ] && echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"additionalContext\":\"graphify-rs: vault knowledge graph exists. Read graphify-rs-out/GRAPH_REPORT.md or query graphify-rs-out/graph.json before grepping raw notes.\"}}' || true"
           }
-        ],
-        "matcher": "Glob|Grep"
+        ]
       }
     ]
   }
