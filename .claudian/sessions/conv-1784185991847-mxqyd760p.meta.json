@@ -4,8 +4,8 @@
   "title": "Discover repo skills",
   "titleGenerationStatus": "success",
   "createdAt": 1784185991847,
-  "updatedAt": 1784187556899,
-  "lastResponseAt": 1784187556899,
+  "updatedAt": 1784190226433,
+  "lastResponseAt": 1784190226433,
   "sessionId": "de681387-e269-469d-aaeb-e885129dfd8b",
   "selectedModel": "haiku",
   "providerState": {
@@ -16,12 +16,12 @@
   ],
   "usage": {
     "model": "haiku",
-    "inputTokens": 10,
-    "cacheCreationInputTokens": 3552,
-    "cacheReadInputTokens": 25532,
+    "inputTokens": 8,
+    "cacheCreationInputTokens": 2796,
+    "cacheReadInputTokens": 50661,
     "contextWindow": 200000,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 29094,
-    "percentage": 15
+    "contextTokens": 53465,
+    "percentage": 27
   }
 }
