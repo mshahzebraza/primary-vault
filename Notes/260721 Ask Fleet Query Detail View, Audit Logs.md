@@ -24,7 +24,7 @@ status:
 ## Discussion
 - Diffing UX Artificact
 - Audit Logs - Meeting Pending
-- 
+	- should live under the liveshell audit in settings view
 
 ## Decisions Made
 Ask Fleet
