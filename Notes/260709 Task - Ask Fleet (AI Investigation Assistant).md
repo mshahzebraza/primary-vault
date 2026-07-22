@@ -36,14 +36,14 @@ Ask Fleet (aka AI Assistance / "Ask the Fleet") is a natural-language query feat
 - [ ] Examples on session landing page should not auto-change every few seconds — load randomly on new visit only
 - [ ] Info Icon with tooltip to explain what the "Query Snapshot" means. ![[Query Snapshot meaning tooltip.png]]
 - [ ] Make sure the snapshot and data sync timestamps are updated after few seconds for each message even when no state changes
-- [ ] Loading status should continue when first response is fetched but rest is pending; color of status dot can change (blue/orange) or show green dot inside loader. ![[loading statuss should continue even when first respones.png]]
+- [x] Loading status should continue when first response is fetched but rest is pending; color of status dot can change (blue/orange) or show green dot inside loader. ![[loading statuss should continue even when first respones.png]]
 - [ ] Refactor the panels and message components in the `ask-fleet-session.view.tsx`
 
 ### Features
 - [ ] **Data table maximize pop-up** — Create a dialog to maximize data table responses so users can view more content without chat view width/height restrictions
 - [ ] **Rerun message query** — Add "Rerun for message" button to run underlying query in current time (not query snapshot time). Currently, refreshing query snapshot just re-queries the same snapshot, not updated data.
 - [ ] **Target selection for rerun/suggestions** — When clicking AI-generated follow-up suggestions or Rerun button, let user choose to continue with current targets or execute on different target selection
-- [ ] **Dedicated query results view** — Create a dedicated query detail view variant for queries (separate from chat view). Include query snapshot view button that redirects to this dedicated view with query snapshot results.
+- [ ] **Dedicated query results view** — Create a dedicated query detail view variant for queries (separate from chat view). Include query snapshot view button that redirects to this dedicated view with query snapshot results. `ask-fleet/session/:sid/messages/:mid/query/:qid`
 
 ## Decisions
 - Brand color accent (purple) applied to Ask Fleet — consistent with the app-wide brand color decision.
