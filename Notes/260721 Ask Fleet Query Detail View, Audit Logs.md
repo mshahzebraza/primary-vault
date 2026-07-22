@@ -29,7 +29,7 @@ status:
 	- minimal filters: `event`
 	- clicking on the rows should open info ina dialog/expandable-row/right-sheet-or-panel
 	- schema awaited from backend
-	- there's going to be `search` and `export` feature
+	- there's going to be `search` and `export` endpoint
 
 ## Decisions Made
 Ask Fleet
