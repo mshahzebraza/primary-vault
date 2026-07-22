@@ -30,7 +30,7 @@ status:
 	- clicking on the rows should open info ina dialog/expandable-row/right-sheet-or-panel
 	- schema awaited from backend
 	- there's going to be `search` and `export` endpoint
-	- export should be customizable to choose a date range
+	- export should be customizable to choose a "date range" or select "all data" in which case there's going to be no date range selection.
 
 ## Decisions Made
 Ask Fleet
