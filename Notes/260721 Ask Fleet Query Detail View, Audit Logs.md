@@ -26,10 +26,11 @@ status:
 - Audit Logs - Meeting Pending
 	- should live under the liveshell audit in settings view
 	- table with some info
-	- minimal filters: `event`
+	- minimal filters: `event`, and maybe another field
 	- clicking on the rows should open info ina dialog/expandable-row/right-sheet-or-panel
 	- schema awaited from backend
 	- there's going to be `search` and `export` endpoint
+	- export should be customizable to choose a date range
 
 ## Decisions Made
 Ask Fleet
