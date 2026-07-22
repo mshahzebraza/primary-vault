@@ -25,6 +25,11 @@ status:
 - Diffing UX Artificact
 - Audit Logs - Meeting Pending
 	- should live under the liveshell audit in settings view
+	- table with some info
+	- minimal filters: `event`
+	- clicking on the rows should open info ina dialog/expandable-row/right-sheet-or-panel
+	- schema awaited from backend
+	- there's going to be `search` and `export` feature
 
 ## Decisions Made
 Ask Fleet
